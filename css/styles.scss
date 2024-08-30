@@ -43,13 +43,15 @@
 :root{
     --primary-color: #{$primary-color};
     --secondary-color: #{$secondary-color};
-    --text-color: #{$text-color};
+    --black-color: #{$black-color};
     --card-color: #{$card-color};
     --link-color: #{$link-color};
     --link-hover-color: #{$link-hover-color};
     --border-color: #{$border-color};
     --white-color: #{$white-color};
     --border-radius-small: #{$border-radius-small};
+	--sa-btn-padding: #{$sa-btn-padding};
+	--sa-font-strong: #{$sa-font-strong};
 }
 * { 
     box-sizing: border-box; 
@@ -108,12 +110,59 @@ color: inherit;
 text-decoration: none; 
 }
 
+ul, li{
+	list-style: none;
+}
+
 body{
     background: var(--white-color);
-    color: var(--text-color);
+    color: var(--black-color);
     font-family: IRANSans, sans-serif;
     font-size: 14px;
     line-height: 1.5;
     direction: rtl;
 
 }
+.header {
+	#navbarNav{
+		justify-content: flex-end;
+	}
+}
+.header{
+	.navbar-brand{
+		margin-right: 0;
+	}
+}
+.footer{
+	background: var(--black-color);
+}
+.saei-btn{
+	background-color: var(--primary-color);
+	color: var(--black-color);
+	padding: var(--sa-btn-padding);
+	border: none;
+}
+.footer-menu {
+	.footer-menu-title {
+		font-weight: var(--sa-font-strong);
+	}
+	.footer-menu-item{
+		color: var(--white-color);
+	}
+}
+.footer-contact-info{
+	ul{
+		li{
+			color: var(--white-color)
+		}
+	}
+}
+.footer-contact-info{
+	ul{
+		li{
+			i{
+				color: var(--primary-color)
+			}
+		}
+	}
+} 

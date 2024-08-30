@@ -1,7 +1,7 @@
 $primary-color: #FFCC00;
 $white-color: #FFFFFF;
 $secondary-color: #000000;
-$text-color: #333; // Define your text color
+$black-color: #333; // Define your text color
 $card-color: #f5f5f5; // Define your background color
 $border-color: #ddd; // Define your border color
 $link-color: #007bff; // Define your link color
@@ -13,4 +13,11 @@ $border-radius-small: 5px;
 $border-radius-medium: 10px;
 //border-radius large
 $border-radius-large: 15px;
+
+//padding sa-btn-padding
+$sa-btn-padding: 15px 30px;
+
+//font-weight sa-font-strong
+$sa-font-strong: 800;
+
 
