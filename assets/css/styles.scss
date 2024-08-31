@@ -49,9 +49,26 @@
     --link-hover-color: #{$link-hover-color};
     --border-color: #{$border-color};
     --white-color: #{$white-color};
+	--light-color: #{$light-color};
     --border-radius-small: #{$border-radius-small};
 	--sa-btn-padding: #{$sa-btn-padding};
-	--sa-font-strong: #{$sa-font-strong};
+	--sa-font-weight-strong: #{$sa-font-weight-strong};
+	--sa-font-size-stronge: #{$sa-font-size-stronge};
+	--sa-font-size-paragraphe: #{$sa-font-size-paragraphe};
+	--sa-font-size-1: #{$sa-font-size-1};
+	--sa-font-size-1-5: #{$sa-font-size-1-5};
+	--sa-font-size-2: #{$sa-font-size-2};
+	--sa-sec-padding: #{$sa-sec-padding};
+	--sa-p-1: #{$sa-p-1};
+	--sa-p-1-5: #{$sa-p-1-5};
+	--sa-p-2: #{$sa-p-2};
+	--sa-p-2-5: #{$sa-p-2-5};
+	--sa-p-3: #{$sa-p-3};
+	--sa-p-3-5: #{$sa-p-3-5};
+	--sa-p-4: #{$sa-p-4};
+	--sa-p-4-5: #{$sa-p-4-5};
+	--sa-p-5: #{$sa-p-5};
+
 }
 * { 
     box-sizing: border-box; 
@@ -71,8 +88,11 @@ h2,
 h3, 
 h4, 
 h5, 
-h6 { 
-font-family: "IranYekanBold", sans-serif; 
+h6,
+p { 
+font-family: "IRANSans-num-b", sans-serif; 
+margin:0;
+line-height: 2;
 } 
 
 h1 { 
@@ -114,6 +134,12 @@ ul, li{
 	list-style: none;
 }
 
+img{
+	width: 100%;
+}
+
+//========== CUSTOME DISIGN ==========
+
 body{
     background: var(--white-color);
     color: var(--black-color);
@@ -122,6 +148,27 @@ body{
     line-height: 1.5;
     direction: rtl;
 
+}
+.saei-btn{
+	background-color: var(--primary-color);
+	color: var(--black-color);
+	padding: var(--sa-btn-padding);
+	border: none;
+}
+.saei-btn.sa-revers{
+	background-color: var(--black-color);
+	color: var(--primary-color);
+	padding: var(--sa-btn-padding);
+	border: none;
+}
+.sec-padding{
+	padding: var(--sa-sec-padding);
+}
+
+
+//============= HEADER ===============
+.header{
+	height: 70px;
 }
 .header {
 	#navbarNav{
@@ -133,22 +180,177 @@ body{
 		margin-right: 0;
 	}
 }
+.header{
+	.sa-logo{
+		width: 100px;
+	}
+}
+.header{
+	.navbar{
+		.nav-item{
+			.nav-link{
+				font-weight: var(--sa-font-weight-strong);
+				color: var(--black-color);
+			}
+		}
+	}
+}
+
+//============= MAIN ===============
+
+//== 1. ABOUT US ==
+.about-us{
+	.sa-banner{
+		background-image: url("../img/palceholder.webp");
+		background-size: inherit;
+		background-repeat: no-repeat;
+		background-position: right;
+		height: calc(100vh - 130px);
+	}
+}
+.sa-banner{
+	position: relative;
+}
+.sa-b-content{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: var(--sa-p-2);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sa-b-content{
+	h2{
+		font-size: var(--sa-font-size-stronge);
+		font-weight: var(--sa-font-weight-strong);
+	}
+	p{
+		font-size: var(--sa-font-size-paragraphe)
+	}
+}
+.about-us-plus{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    background: var(--primary-color);
+}
+.about-us-plus{
+	.aup-title{
+		display: flex;
+		align-items: center;
+	}
+}
+
+.about-us-plus{
+	.aup-title{
+		.aup-title-text {
+			margin: 0;
+		}
+	}
+}
+
+//== 2. SERVICES ==
+.sa-s-c-top{
+	margin-bottom: 2rem;
+}
+.sa-s-content{
+	padding: 1.5rem 0;;
+}
+.sa-s-c-t-text{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.sa-s-c-b-text{
+    display: flex;
+    justify-content: flex-end;
+}
+.sa-s-c-t-text,
+.sa-s-c-b-text{
+	p{
+		width: 80%;
+		font-size: var(--sa-font-size-1);
+		font-weight: var(--sa-font-weight-strong);
+	}
+}
+
+//== 3. OUR TEAM ==
+.sa-team-banner{
+	padding: var(--sa-p-5);
+    background-image: url(../img/our-team.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 20px solid var(--primary-color);
+}
+.sa-team-banner{
+	.wrapper{
+		width: 100%;
+	}
+}
+.sa-t-c-title{
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100%;
+}
+.sa-t-c-card{
+    min-height: 100%;
+    background: var(--light-color);
+    padding: var(--sa-p-1-5);
+}
+
+//== 4. DIGITAAL TRANSFORM ==
+.sa-digital-transform{
+	.wrapper{
+		width: 75%;
+		margin: auto;
+	}
+}
+
+.sa-dtc-item{
+	.sa-dtci-description{
+		width: 70%;
+		display: flex;
+		align-items: center;
+	}
+	.sa-dtci-img{
+		width: 20%;
+	}
+}
+.sa-dt-btn{
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+
+//============= FOOTER ===============
 .footer{
 	background: var(--black-color);
 }
-.saei-btn{
-	background-color: var(--primary-color);
-	color: var(--black-color);
-	padding: var(--sa-btn-padding);
-	border: none;
-}
+
 .footer-menu {
 	.footer-menu-title {
-		font-weight: var(--sa-font-strong);
+		font-weight: var(--sa-font-weight-strong);
 	}
 	.footer-menu-item{
 		color: var(--white-color);
 	}
+}
+.footer-content{
+	position: relative;
+    padding: 3rem 0 0 3rem;
+    border-left: 2px solid #ffcc00;
+    border-top: 2px solid #ffcc00;
+    border-radius: 10px 0 0 0;
 }
 .footer-contact-info{
 	ul{
@@ -165,4 +367,27 @@ body{
 			}
 		}
 	}
-} 
+}
+.link-call-info{
+	display: inline-flex;
+	direction: ltr;
+}
+.sa-footer-social{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: -34px;
+    bottom: 0px;
+    color: var(--primary-color);
+    padding: var(--sa-p-1-5);
+    background: var(--black-color);
+}
+.sa-footer-social{
+	a{
+		color: var(--primary-color);
+		font-size: var(--sa-font-size-1-5);
+	}
+}
+
