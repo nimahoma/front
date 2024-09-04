@@ -22,9 +22,30 @@ require_once get_template_directory() . '/inc/accordion-functions.php';
 
  /* INCLUDE STYLE SHEET */
 function saeiTheme_enqueue_styles() {
-    wp_enqueue_style( 'style', get_stylesheet_uri() );
+    wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+
+    wp_enqueue_style( 'fontawesome-css', get_template_directory_uri() . '/assets/css/all.css' );
+
+    wp_enqueue_style( 'saei-css', get_template_directory_uri() . '/assets/css/styles.css' );
+    
+    // Enqueue your theme's main stylesheet
+    wp_enqueue_style( 'saeiTheme-style', get_stylesheet_uri() );
+    
+    // Enqueue Bootstrap JS (including Popper.js and Bootstrap bundle)
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'saeiTheme_enqueue_styles' );
+
+ /* REGISTER HEADER */
+function saeiTheme_custom_menu() {
+    register_nav_menus(
+        array(
+            'saeiTheme-custom-menu' => __( 'Main Menu' ),
+            'saeiTheme-custom-menu_2' => __( 'Secondary Menu' )
+        )
+    );
+}
+add_action( 'init', 'saeiTheme_custom_menu' );
 
 /* REGISTER FOOTER WIDGETS */
 function saeiTheme_register_footer_widgets() {
