@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <?php
                 wp_nav_menu( array(
-                    'theme_location' => 'primary',
+                    'theme_location' => 'saeiTheme-custom-menu',
                     'menu_class'     => 'navbar-nav',
                     'container'      => false,
                     'fallback_cb'    => '__return_false',
