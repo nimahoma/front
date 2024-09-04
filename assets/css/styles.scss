@@ -42,9 +42,8 @@
 }
 :root{
     --primary-color: #{$primary-color};
-    --secondary-color: #{$secondary-color};
     --black-color: #{$black-color};
-    --card-color: #{$card-color};
+	--dark-color: #{$dark-color};
     --link-color: #{$link-color};
     --link-hover-color: #{$link-hover-color};
     --border-color: #{$border-color};
@@ -89,7 +88,8 @@ h3,
 h4, 
 h5, 
 h6,
-p { 
+p ,
+span{ 
 font-family: "IRANSans-num-b", sans-serif; 
 margin:0;
 line-height: 2;
@@ -149,16 +149,31 @@ body{
     direction: rtl;
 
 }
+
+.sa-logo{
+	img{
+		width: auto;
+	}
+}
 .saei-btn{
+	width: 184px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: var(--primary-color);
 	color: var(--black-color);
-	padding: var(--sa-btn-padding);
 	border: none;
+}
+.saei-btn{
+	span{
+		font-size: 16px;
+		line-height: 21px;
+	}
 }
 .saei-btn.sa-revers{
 	background-color: var(--black-color);
 	color: var(--primary-color);
-	padding: var(--sa-btn-padding);
 	border: none;
 }
 .sec-padding{
@@ -167,22 +182,18 @@ body{
 
 
 //============= HEADER ===============
-.header{
-	height: 70px;
-}
+// .header{
+// 	height: 70px;
+// }
 .header {
+    display: flex;
+    align-items: center;
+	padding: 4px 0;
 	#navbarNav{
 		justify-content: flex-end;
 	}
-}
-.header{
 	.navbar-brand{
 		margin-right: 0;
-	}
-}
-.header{
-	.sa-logo{
-		width: 100px;
 	}
 }
 .header{
@@ -205,7 +216,7 @@ body{
 		background-size: inherit;
 		background-repeat: no-repeat;
 		background-position: right;
-		height: calc(100vh - 130px);
+		height: calc(100vh - 64px);
 	}
 }
 .sa-banner{
@@ -239,16 +250,13 @@ body{
 	.aup-title{
 		display: flex;
 		align-items: center;
-	}
-}
-
-.about-us-plus{
-	.aup-title{
+		
 		.aup-title-text {
 			margin: 0;
 		}
 	}
 }
+
 
 //== 2. SERVICES ==
 .sa-s-c-top{
@@ -337,31 +345,27 @@ body{
 	background: var(--black-color);
 }
 
-.footer-menu {
-	.footer-menu-title {
-		font-weight: var(--sa-font-weight-strong);
-	}
-	.footer-menu-item{
-		color: var(--white-color);
-	}
-}
 .footer-content{
 	position: relative;
     padding: 3rem 0 0 3rem;
     border-left: 2px solid #ffcc00;
     border-top: 2px solid #ffcc00;
     border-radius: 10px 0 0 0;
-}
-.footer-contact-info{
-	ul{
-		li{
-			color: var(--white-color)
+	
+	.footer-menu {
+		.footer-menu-title {
+			font-weight: var(--sa-font-weight-strong);
+		}
+		.footer-menu-item{
+			color: var(--white-color);
 		}
 	}
 }
 .footer-contact-info{
 	ul{
 		li{
+			color: var(--white-color);
+
 			i{
 				color: var(--primary-color)
 			}
@@ -383,8 +387,7 @@ body{
     color: var(--primary-color);
     padding: var(--sa-p-1-5);
     background: var(--black-color);
-}
-.sa-footer-social{
+	
 	a{
 		color: var(--primary-color);
 		font-size: var(--sa-font-size-1-5);
