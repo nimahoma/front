@@ -47,6 +47,7 @@
     --link-color: #{$link-color};
     --link-hover-color: #{$link-hover-color};
     --border-color: #{$border-color};
+	--border-color-light: #{$border-color-light};
     --white-color: #{$white-color};
 	--light-color: #{$light-color};
     --border-radius-small: #{$border-radius-small};
@@ -67,6 +68,9 @@
 	--sa-p-4: #{$sa-p-4};
 	--sa-p-4-5: #{$sa-p-4-5};
 	--sa-p-5: #{$sa-p-5};
+	--sa-box-shadow-small: #{$sa-box-shadow-small};
+	--sa-box-shadow-medium: #{$sa-box-shadow-medium};
+	--sa-box-shadow-large: #{$sa-box-shadow-large};
 
 }
 * { 
@@ -176,19 +180,104 @@ body{
 	color: var(--primary-color);
 	border: none;
 }
+.item-border-bottom{
+	border-bottom: var(--border-color-light);
+}
 .sec-padding{
 	padding: var(--sa-sec-padding);
 }
+.page-section-top{
+	padding-top: 3rem;
+}
+.page-section-bottom{
+	border-bottom: 2px solid var(--primary-color);
+	margin-bottom: 1rem;
+}
+.border-bottom-light{
+    border-bottom: 1px solid var(--border-color-light);
+}
+.sa-Paragraph-box{
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+.sa-Paragraph-box,
+.sa-tumbnails-box{
+	.title{
+		margin-bottom: 0.69rem;
+	}
+}
+.sa-tumbnails-box,
+.sa-img-box{
+	margin-bottom: 2rem;
+}
 
+
+//=========== CUSTOME TABS ===========
+
+.tab-content-item{
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+	.tci-description{
+		width: 45%;
+		padding: 1rem;
+		position: relative;
+		.sa-Paragraph-box{
+			margin: 0;
+		}
+	}
+	.tci-img {
+		width: 55%;
+		.sa-img-box{
+			height: 100%;
+			margin: 0;
+			img{
+				height: 100%;
+			}
+		}
+	}
+}
+.key-moments{
+	.sa-Paragraph-box{
+		position: relative;
+		span{
+			
+			position: absolute;
+			left: 1rem;
+			color: #888;
+			bottom: 0;
+			line-height: 1;
+		}
+	}
+}
+
+
+
+//========== Sticky Sidebar ==========
+.page-sticky-sidebar{
+	width: 25%;
+}
+
+//========== PAGE-WRAPPER ============
+.page-wrapper{
+	padding-top: 64px;
+}
 
 //============= HEADER ===============
 // .header{
 // 	height: 70px;
 // }
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+	height: 64px;
+	padding: 4px 0;
     display: flex;
     align-items: center;
-	padding: 4px 0;
+    background: var(--white-color);
+	box-shadow: var(--sa-box-shadow-small);
+    z-index: 99;
 	#navbarNav{
 		justify-content: flex-end;
 	}
@@ -206,6 +295,23 @@ body{
 		}
 	}
 }
+
+
+/*============================================================================
+==============================================================================
+==============================================================================
+
+
+
+            HOMEPAGE
+
+
+=============================================================================
+=============================================================================
+============================================================================*/
+
+
+
 
 //============= MAIN ===============
 
@@ -338,6 +444,39 @@ body{
 	justify-content: center;
 	margin-top: 2rem;
 }
+
+
+
+
+/*============================================================================
+==============================================================================
+==============================================================================
+
+
+
+						ABOU US PAGE
+
+
+=============================================================================
+=============================================================================
+============================================================================*/
+
+.page-wrapper#about-us{
+	display: flex;
+}
+
+.page-content-wrapper{
+	width: 75%;
+}
+
+
+
+
+
+
+
+
+
 
 
 //============= FOOTER ===============
