@@ -33,6 +33,7 @@
   --link-color: #007bff;
   --link-hover-color: #0056b3;
   --border-color: #ddd;
+  --border-color-light: #f2f2f2;
   --white-color: #FFFFFF;
   --light-color: #F5F5F5;
   --border-radius-small: 5px;
@@ -53,6 +54,9 @@
   --sa-p-4: 4rem;
   --sa-p-4-5: 4.5rem;
   --sa-p-5: 5rem;
+  --sa-box-shadow-small: 0 0 10px rgba(0, 0, 0, 0.1);
+  --sa-box-shadow-medium: 0 0 20px rgba(0, 0, 0, 0.1);
+  --sa-box-shadow-large: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -159,14 +163,96 @@ body {
   border: none;
 }
 
+.item-border-bottom {
+  border-bottom: var(--border-color-light);
+}
+
 .sec-padding {
   padding: var(--sa-sec-padding);
 }
 
+.page-section-top {
+  padding-top: 3rem;
+}
+
+.page-section-bottom {
+  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.border-bottom-light {
+  border-bottom: 1px solid var(--border-color-light);
+}
+
+.sa-Paragraph-box {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sa-Paragraph-box .title,
+.sa-tumbnails-box .title {
+  margin-bottom: 0.69rem;
+}
+
+.sa-tumbnails-box,
+.sa-img-box {
+  margin-bottom: 2rem;
+}
+
+.tab-content-item {
+  display: flex;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.tab-content-item .tci-description {
+  width: 45%;
+  padding: 1rem;
+  position: relative;
+}
+.tab-content-item .tci-description .sa-Paragraph-box {
+  margin: 0;
+}
+.tab-content-item .tci-img {
+  width: 55%;
+}
+.tab-content-item .tci-img .sa-img-box {
+  height: 100%;
+  margin: 0;
+}
+.tab-content-item .tci-img .sa-img-box img {
+  height: 100%;
+}
+
+.key-moments .sa-Paragraph-box {
+  position: relative;
+}
+.key-moments .sa-Paragraph-box span {
+  position: absolute;
+  left: 1rem;
+  color: #888;
+  bottom: 0;
+  line-height: 1;
+}
+
+.page-sticky-sidebar {
+  width: 25%;
+}
+
+.page-wrapper {
+  padding-top: 64px;
+}
+
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  padding: 4px 0;
   display: flex;
   align-items: center;
-  padding: 4px 0;
+  background: var(--white-color);
+  box-shadow: var(--sa-box-shadow-small);
+  z-index: 99;
 }
 .header #navbarNav {
   justify-content: flex-end;
@@ -180,6 +266,18 @@ body {
   color: var(--black-color);
 }
 
+/*============================================================================
+==============================================================================
+==============================================================================
+
+
+
+            HOMEPAGE
+
+
+=============================================================================
+=============================================================================
+============================================================================*/
 .about-us .sa-banner {
   background-image: url("../img/palceholder.webp");
   background-size: inherit;
@@ -303,6 +401,26 @@ body {
   margin-top: 2rem;
 }
 
+/*============================================================================
+==============================================================================
+==============================================================================
+
+
+
+						ABOU US PAGE
+
+
+=============================================================================
+=============================================================================
+============================================================================*/
+.page-wrapper#about-us {
+  display: flex;
+}
+
+.page-content-wrapper {
+  width: 75%;
+}
+
 .footer {
   background: var(--black-color);
 }
@@ -348,6 +466,4 @@ body {
 .sa-footer-social a {
   color: var(--primary-color);
   font-size: var(--sa-font-size-1-5);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

@@ -4,6 +4,7 @@ $dark-color: #33333333; // Define your background color
 $black-color: #000000; // Define your text color
 $white-color: #FFFFFF; // Define your text color
 $border-color: #ddd; // Define your border color
+$border-color-light: #f2f2f2; // Define your border color
 $link-color: #007bff; // Define your link color
 $link-hover-color: darken($link-color, 15%); // Define your link hover color
 
@@ -40,6 +41,15 @@ $sa-sec-padding: 5rem 0;
 
 //font-weight sa-font-strong
 $sa-font-weight-strong: 800;
+
+//box-sa-shadow-small
+$sa-box-shadow-small: 0 0 10px rgba(0, 0, 0, 0.1);
+
+//box-sa-shadow-medium
+$sa-box-shadow-medium: 0 0 20px rgba(0, 0, 0, 0.1);
+
+//box-sa-shadow-large
+$sa-box-shadow-large: 0 0 30px rgba(0, 0, 0, 0.1);
 
 
 
