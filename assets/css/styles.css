@@ -1,30 +1,51 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 @font-face {
-  font-family: IRANSans;
+  font-family: Yekan-Bakh-Thin;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/YekanBakhFaNum-Thin.woff") format("woff"), url("../fonts/YekanBakh-thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: Yekan-Bakh-Light;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/YekanBakhFaNum-Light.woff") format("woff"), url("../fonts/YekanBakhFaNum-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: Yekan-Bakh-Regular;
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/IRANSansWeb.eot");
-  src: url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansWeb.woff2") format("woff2"), url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.ttf") format("truetype");
+  src: url("../fonts/YekanBakhFaNum-Regular.woff") format("woff"), url("../fonts/YekanBakhFaNum-Regular.woff2") format("woff2");
 }
 @font-face {
-  font-family: IRANSans-bold;
+  font-family: Yekan-Bakh-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/YekanBakhFaNum-SemiBold.woff") format("woff"), url("../fonts/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: Yekan-Bakh-Bold;
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/IRANSansWeb_Bold.eot");
-  src: url("../fonts/IRANSansWeb_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansWeb_Bold.woff2") format("woff2"), url("../fonts/IRANSansWeb_Bold.woff") format("woff"), url("../fonts/IRANSansWeb_Bold.ttf") format("truetype");
+  src: url("../fonts/YekanBakhFaNum-Bold.woff") format("woff"), url("../fonts/YekanBakhFaNum-Bold.woff2") format("woff2");
 }
 @font-face {
-  font-family: IRANSans-num;
+  font-family: Yekan-Bakh-ExtraBold;
   font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/IRANSansWeb(FaNum).eot");
-  src: url("../fonts/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansWeb(FaNum).woff2") format("woff2"), url("../fonts/IRANSansWeb(FaNum).woff") format("woff"), url("../fonts/IRANSansWeb(FaNum).ttf") format("truetype");
+  font-weight: 800;
+  src: url("../fonts/YekanBakhFaNum-ExtraBold.woff") format("woff"), url("../fonts/YekanBakhFaNum-ExtraBold.woff2") format("woff2");
 }
 @font-face {
-  font-family: IRANSans-num-b;
+  font-family: Yekan-Bakh-Black;
   font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/IRANSansWeb(FaNum)_Bold.eot");
-  src: url("../fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), url("../fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"), url("../fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+  font-weight: 900;
+  src: url("../fonts/YekanBakhFaNum-Black.woff") format("woff"), url("../fonts/YekanBakhFaNum-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: Yekan-Bakh-ExtraBlack;
+  font-style: normal;
+  font-weight: 950;
+  src: url("../fonts/YekanBakhFaNum-ExtraBlack.woff") format("woff"), url("../fonts/YekanBakhFaNum-ExtraBlack.woff2") format("woff2");
 }
 :root {
   --primary-color: #FFCC00;
@@ -77,12 +98,25 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-span {
-  font-family: "IRANSans-num-b", sans-serif;
+h6 {
+  font-family: "Yekan-Bakh-Bold", sans-serif;
   margin: 0;
   line-height: 2;
+}
+
+p,
+span,
+a {
+  font-family: "Yekan-Bakh-Regular", sans-serif;
+  margin: 0;
+  line-height: 2;
+}
+
+.en-font {
+  font-family: "Gilroy-Bold", sans-serif;
+  direction: ltr;
+  text-align: left;
+  line-height: 1.2;
 }
 
 h1 {
@@ -131,7 +165,7 @@ img {
 body {
   background: var(--white-color);
   color: var(--black-color);
-  font-family: IRANSans, sans-serif;
+  font-family: "Yekan-Bakh-Regular", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   direction: rtl;
@@ -197,6 +231,16 @@ body {
 .sa-tumbnails-box,
 .sa-img-box {
   margin-bottom: 2rem;
+}
+
+.sa-strong-title {
+  font-size: var(--sa-font-size-stronge);
+  font-weight: var(--sa-font-weight-strong);
+}
+
+.ltr-lang {
+  direction: ltr;
+  line-height: 1.2;
 }
 
 .tab-content-item {
@@ -466,4 +510,6 @@ body {
 .sa-footer-social a {
   color: var(--primary-color);
   font-size: var(--sa-font-size-1-5);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
