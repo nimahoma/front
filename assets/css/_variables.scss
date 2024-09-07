@@ -1,6 +1,8 @@
 $primary-color: #FFCC00; 
 $light-color: #F5F5F5; // Define your background color
-$dark-color: #33333333; // Define your background color
+$slogan-color: #21272A; // Define your background color
+$gray-color: #828282; // Define your background color
+$text-color: #333333; // Define your text color
 $black-color: #000000; // Define your text color
 $white-color: #FFFFFF; // Define your text color
 $border-color: #ddd; // Define your border color
@@ -30,7 +32,7 @@ $sa-p-4-5: 4.5rem;
 $sa-p-5: 5rem;
 
 //font-size sa-font-size
-$sa-font-size-1: 1rem;
+$sa-font-size-1: 16px; // Define your base font size
 $sa-font-size-1-5: 1.5rem;
 $sa-font-size-2: 2rem;
 $sa-font-size-stronge: 48px; // Define your strong font size
@@ -40,7 +42,7 @@ $sa-font-size-paragraphe: 20px; // Define your paragraph font size
 $sa-sec-padding: 5rem 0;
 
 //font-weight sa-font-strong
-$sa-font-weight-strong: 800;
+$sa-font-weight-strong: 600;
 
 //box-sa-shadow-small
 $sa-box-shadow-small: 0 0 10px rgba(0, 0, 0, 0.1);
