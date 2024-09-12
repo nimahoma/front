@@ -113,6 +113,7 @@
   --sa-font-size-stronge: 48px;
   --sa-font-size-paragraphe: 20px;
   --sa-font-size-1: 16px;
+  --sa-font-size-subtitle: 24px;
   --sa-font-size-1-5: 1.5rem;
   --sa-font-size-2: 2rem;
   --sa-sec-padding: 5rem 0;
@@ -139,7 +140,6 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
   direction: rtl;
 }
 
@@ -235,6 +235,10 @@ body {
   direction: rtl;
 }
 
+.no-padding {
+  padding: 0 !important;
+}
+
 .sa-logo img {
   width: auto;
 }
@@ -308,7 +312,6 @@ body {
 .sa-strong-title {
   font-size: var(--sa-font-size-stronge);
   font-weight: var(--sa-font-weight-strong);
-  margin-bottom: 1.5rem;
 }
 
 .ltr-lang {
@@ -353,6 +356,23 @@ body {
 
 .page-sticky-sidebar {
   width: 25%;
+  position: sticky;
+  top: 24%;
+  height: max-content;
+  margin-bottom: 3rem;
+}
+
+.sa-scrollspy-nav .sa-ss-nav-item {
+  display: flex;
+  padding: 10px 20px;
+  border-right: 4px solid #E0E0E0;
+  color: var(--gray-color);
+  transition: background-color 0.3s ease;
+}
+.sa-scrollspy-nav .sa-ss-nav-item.active {
+  color: var(--text-color);
+  border-right: 8px solid var(--primary-color);
+  transition: background-color 0.3s ease;
 }
 
 .page-wrapper {
@@ -537,6 +557,28 @@ body {
 
 .page-content-wrapper {
   width: 75%;
+}
+
+.sa-resources.page-section-bottom.page-section-top {
+  border: none;
+}
+
+.sa-resources-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.sa-resources-item .sa-ri-decription h5 {
+  font-size: var(--sa-font-size-subtitle);
+}
+.sa-resources-item .sa-ri-decription h6 {
+  font-size: var(--sa-font-size-1);
+  line-height: 150%;
+}
+.sa-resources-item .sa-ri-btn .saei-btn {
+  width: 100%;
+}
+.sa-resources-item .sa-ri-btn .saei-btn i {
+  margin-left: 8px;
 }
 
 .footer {
