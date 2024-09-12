@@ -8,133 +8,586 @@
 		<link rel="stylesheet" href="assets/css/styles.css" />
 		<title>خانه</title>
 
-        <style>
-            .tabs-container {
-                display: flex;
-                align-items: center;
-                overflow: hidden;
-                position: relative;
-                width: 400px;
-            }
-            .tabs-wrapper {
-                display: flex;
-                overflow-x: auto;
-                scroll-behavior: smooth;
-            }
-            .tab {
-                flex: 0 0 auto;
-                padding: 10px 20px;
-                cursor: pointer;
-            }
-            .tab.active {
-                background-color: #f0f0f0;
-            }
-            .arrow {
-                cursor: pointer;
-                padding: 10px;
-                background-color: #f0f0f0;
-                border: 1px solid #ccc;
-            }
-            .arrow.hidden {
-                display: none;
-            }
-            /* Custom scrollbar styles */
-            .tabs-wrapper::-webkit-scrollbar {
-                height: 8px;
-            }
-            .tabs-wrapper::-webkit-scrollbar-thumb {
-                background-color: #888;
-                border-radius: 10px;
-            }
-            .tabs-wrapper::-webkit-scrollbar-track {
-                background-color: #f0f0f0;
-            }
-        </style>
+		<style>
+			.tabs-container {
+				display: flex;
+				align-items: center;
+				overflow: hidden;
+				position: relative;
+				width: 400px;
+			}
+			.tabs-wrapper {
+				display: flex;
+				overflow-x: auto;
+				scroll-behavior: smooth;
+			}
+			.tab {
+				flex: 0 0 auto;
+				padding: 10px 20px;
+				cursor: pointer;
+			}
+			.tab.active {
+				background-color: #f0f0f0;
+			}
+			.arrow {
+				cursor: pointer;
+				padding: 10px;
+				background-color: #f0f0f0;
+				border: 1px solid #ccc;
+			}
+			.arrow.hidden {
+				display: none;
+			}
+			/* Custom scrollbar styles */
+			.tabs-wrapper::-webkit-scrollbar {
+				height: 8px;
+			}
+			.tabs-wrapper::-webkit-scrollbar-thumb {
+				background-color: #888;
+				border-radius: 10px;
+			}
+			.tabs-wrapper::-webkit-scrollbar-track {
+				background-color: #f0f0f0;
+			}
+		</style>
 	</head>
 
-    <body>
-        <div class="tabs-container">
-            <div class="arrow" id="prev-arrow">&lt;</div>
-            <div class="tabs-wrapper" id="tabs-wrapper">
-                <div class="tab active" data-target="#tab1">Tab 1</div>
-                <div class="tab" data-target="#tab2">Tab 2</div>
-                <div class="tab" data-target="#tab3">Tab 3</div>
-                <div class="tab" data-target="#tab4">Tab 4</div>
-                <div class="tab" data-target="#tab5">Tab 5</div>
-                <div class="tab" data-target="#tab6">Tab 6</div>
-                <div class="tab" data-target="#tab7">Tab 7</div>
-                <div class="tab" data-target="#tab8">Tab 8</div>
-                <div class="tab" data-target="#tab9">Tab 9</div>
-                <div class="tab" data-target="#tab10">Tab 10</div>
+	<body>
+		<div class="tabs-container">
+			<div class="arrow" id="prev-arrow">&lt;</div>
+			<div class="tabs-wrapper" id="tabs-wrapper">
+				<div class="tab active" data-target="#tab1">Tab 1</div>
+				<div class="tab" data-target="#tab2">Tab 2</div>
+				<div class="tab" data-target="#tab3">Tab 3</div>
+			</div>
+			<div class="arrow" id="next-arrow">&gt;</div>
+		</div>
+		<div class="tab-content">
+			<div id="tab1" class="tab-pane active">Content 1</div>
+			<div id="tab2" class="tab-pane">Content 2</div>
+			<div id="tab3" class="tab-pane">Content 3</div>
+		</div>
+
+		<!-- 
+
+
+        <section
+        class="key-moments page-section-bottom page-section-top"
+        id="key-moments-3"
+    >
+        <div class="sa-paragraph-box no-padding">
+            <div class="title">
+                <h1 class="sa-strong-title">لحظات شاخص</h1>
             </div>
-            <div class="arrow" id="next-arrow">&gt;</div>
         </div>
-        <div class="tab-content">
-            <div id="tab1" class="tab-pane active">Content 1</div>
-            <div id="tab2" class="tab-pane">Content 2</div>
-            <div id="tab3" class="tab-pane">Content 3</div>
-            <div id="tab4" class="tab-pane">Content 4</div>
-            <div id="tab5" class="tab-pane">Content 5</div>
-            <div id="tab6" class="tab-pane">Content 6</div>
-            <div id="tab7" class="tab-pane">Content 7</div>
-            <div id="tab8" class="tab-pane">Content 8</div>
-            <div id="tab9" class="tab-pane">Content 9</div>
-            <div id="tab10" class="tab-pane">Content 10</div>
+        <div class="sa-tabs">
+            <ul class="nav nav-fill nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a
+                        class="nav-link fa-num-font active"
+                        id="fill-tab-0"
+                        data-bs-toggle="tab"
+                        href="#sa-tabpanel-0"
+                        role="tab"
+                        aria-controls="sa-tabpanel-0"
+                        aria-selected="true"
+                    >
+                        ۲۰۲۴
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a
+                        class="nav-link fa-num-font"
+                        id="fill-tab-1"
+                        data-bs-toggle="tab"
+                        href="#sa-tabpanel-1"
+                        role="tab"
+                        aria-controls="sa-tabpanel-1"
+                        aria-selected="false"
+                    >
+                        ۲۰۲۳
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a
+                        class="nav-link fa-num-font"
+                        id="fill-tab-2"
+                        data-bs-toggle="tab"
+                        href="#sa-tabpanel-2"
+                        role="tab"
+                        aria-controls="sa-tabpanel-2"
+                        aria-selected="false"
+                    >
+                        ۲۰۲۲
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content pt-5" id="tab-content">
+                <div
+                    class="tab-pane active"
+                    id="sa-tabpanel-0"
+                    role="tabpanel"
+                    aria-labelledby="fill-tab-0"
+                >
+                    <div class="tab-content-wrapper">
+                        <div
+                            class="tab-content-item border-bottom-light"
+                        >
+                            <div class="tci-description">
+                                <div class="sa-paragraph-box">
+                                    <div class="title">
+                                        <h5>عنوان رویداد</h5>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            لورم ایپسوم متن
+                                            ساختگی با تولید
+                                            سادگی نامفهوم از
+                                            صنعت چاپ، و با
+                                            استفاده از طراحان
+                                            گرافیک است، چاپگرها
+                                            و متون بلکه روزنامه
+                                            و مجله در ستون و
+                                            سطرآنچنان که لازم
+                                            است، و برای شرایط
+                                            فعلی تکنولوژی مورد
+                                            نیاز، و کاربردهای
+                                            متنوع با هدف بهبود
+                                            ابزارهای کاربردی می
+                                            باشد، کتابهای زیادی
+                                            در شصت و سه درصد
+                                            گذشته حال و آینده،
+                                            شناخت فراوان جامعه و
+                                            متخصصان را می طلبد.
+                                        </p>
+                                        <span
+                                            class="key-moments-date"
+                                            >12 آبان 1402</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tci-img">
+                                <div class="sa-img-box">
+                                    <img
+                                        src="assets/img/palceholder.webp"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-content-item border-bottom-light"
+                        >
+                            <div class="tci-description">
+                                <div class="sa-paragraph-box">
+                                    <div class="title">
+                                        <h5>عنوان رویداد</h5>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            لورم ایپسوم متن
+                                            ساختگی با تولید
+                                            سادگی نامفهوم از
+                                            صنعت چاپ، و با
+                                            استفاده از طراحان
+                                            گرافیک است، چاپگرها
+                                            و متون بلکه روزنامه
+                                            و مجله در ستون و
+                                            سطرآنچنان که لازم
+                                            است، و برای شرایط
+                                            فعلی تکنولوژی مورد
+                                            نیاز، و کاربردهای
+                                            متنوع با هدف بهبود
+                                            ابزارهای کاربردی می
+                                            باشد، کتابهای زیادی
+                                            در شصت و سه درصد
+                                            گذشته حال و آینده،
+                                            شناخت فراوان جامعه و
+                                            متخصصان را می طلبد.
+                                        </p>
+                                        <span
+                                            class="key-moments-date"
+                                            >12 آبان 1402</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tci-img">
+                                <div class="sa-img-box">
+                                    <img
+                                        src="assets/img/palceholder.webp"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-item full">
+                            <div
+                                class="sa-paragraph-box full-width-box-tab"
+                            >
+                                <div class="title">
+                                    <h5>عنوان رویداد</h5>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        لورم ایپسوم متن ساختگی
+                                        با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با
+                                        استفاده از طراحان گرافیک
+                                        است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و
+                                        سطرآنچنان که لازم است، و
+                                        برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای
+                                        متنوع با هدف بهبود
+                                        ابزارهای کاربردی می
+                                        باشد، کتابهای زیادی در
+                                        شصت و سه درصد گذشته حال
+                                        و آینده، شناخت فراوان
+                                        جامعه و متخصصان را می
+                                        طلبد.
+                                    </p>
+                                    <span
+                                        class="key-moments-date"
+                                        >12 آبان 1402</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="tab-pane"
+                    id="sa-tabpanel-1"
+                    role="tabpanel"
+                    aria-labelledby="fill-tab-1"
+                >
+                    <div class="tab-content-wrapper">
+                        <div
+                            class="tab-content-item border-bottom-light"
+                        >
+                            <div class="tci-description">
+                                <div class="sa-paragraph-box">
+                                    <div class="title">
+                                        <h5>عنوان رویداد</h5>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            لورم ایپسوم متن
+                                            ساختگی با تولید
+                                            سادگی نامفهوم از
+                                            صنعت چاپ، و با
+                                            استفاده از طراحان
+                                            گرافیک است، چاپگرها
+                                            و متون بلکه روزنامه
+                                            و مجله در ستون و
+                                            سطرآنچنان که لازم
+                                            است، و برای شرایط
+                                            فعلی تکنولوژی مورد
+                                            نیاز، و کاربردهای
+                                            متنوع با هدف بهبود
+                                            ابزارهای کاربردی می
+                                            باشد، کتابهای زیادی
+                                            در شصت و سه درصد
+                                            گذشته حال و آینده،
+                                            شناخت فراوان جامعه و
+                                            متخصصان را می طلبد.
+                                        </p>
+                                        <span
+                                            class="key-moments-date"
+                                            >12 آبان 1402</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tci-img">
+                                <div class="sa-img-box">
+                                    <img
+                                        src="assets/img/palceholder.webp"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-content-item border-bottom-light"
+                        >
+                            <div class="tci-description">
+                                <div class="sa-paragraph-box">
+                                    <div class="title">
+                                        <h5>عنوان رویداد</h5>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            لورم ایپسوم متن
+                                            ساختگی با تولید
+                                            سادگی نامفهوم از
+                                            صنعت چاپ، و با
+                                            استفاده از طراحان
+                                            گرافیک است، چاپگرها
+                                            و متون بلکه روزنامه
+                                            و مجله در ستون و
+                                            سطرآنچنان که لازم
+                                            است، و برای شرایط
+                                            فعلی تکنولوژی مورد
+                                            نیاز، و کاربردهای
+                                            متنوع با هدف بهبود
+                                            ابزارهای کاربردی می
+                                            باشد، کتابهای زیادی
+                                            در شصت و سه درصد
+                                            گذشته حال و آینده،
+                                            شناخت فراوان جامعه و
+                                            متخصصان را می طلبد.
+                                        </p>
+                                        <span
+                                            class="key-moments-date"
+                                            >12 آبان 1402</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tci-img">
+                                <div class="sa-img-box">
+                                    <img
+                                        src="assets/img/palceholder.webp"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-item full">
+                            <div
+                                class="sa-paragraph-box full-width-box-tab"
+                            >
+                                <div class="title">
+                                    <h5>عنوان رویداد</h5>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        لورم ایپسوم متن ساختگی
+                                        با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با
+                                        استفاده از طراحان گرافیک
+                                        است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و
+                                        سطرآنچنان که لازم است، و
+                                        برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای
+                                        متنوع با هدف بهبود
+                                        ابزارهای کاربردی می
+                                        باشد، کتابهای زیادی در
+                                        شصت و سه درصد گذشته حال
+                                        و آینده، شناخت فراوان
+                                        جامعه و متخصصان را می
+                                        طلبد.
+                                    </p>
+                                    <span
+                                        class="key-moments-date"
+                                        >12 آبان 1402</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="tab-pane"
+                    id="sa-tabpanel-2"
+                    role="tabpanel"
+                    aria-labelledby="fill-tab-2"
+                >
+                    <div class="tab-content-wrapper">
+                        <div
+                            class="tab-content-item border-bottom-light"
+                        >
+                            <div class="tci-description">
+                                <div class="sa-paragraph-box">
+                                    <div class="title">
+                                        <h5>عنوان رویداد</h5>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            لورم ایپسوم متن
+                                            ساختگی با تولید
+                                            سادگی نامفهوم از
+                                            صنعت چاپ، و با
+                                            استفاده از طراحان
+                                            گرافیک است، چاپگرها
+                                            و متون بلکه روزنامه
+                                            و مجله در ستون و
+                                            سطرآنچنان که لازم
+                                            است، و برای شرایط
+                                            فعلی تکنولوژی مورد
+                                            نیاز، و کاربردهای
+                                            متنوع با هدف بهبود
+                                            ابزارهای کاربردی می
+                                            باشد، کتابهای زیادی
+                                            در شصت و سه درصد
+                                            گذشته حال و آینده،
+                                            شناخت فراوان جامعه و
+                                            متخصصان را می طلبد.
+                                        </p>
+                                        <span
+                                            class="key-moments-date"
+                                            >12 آبان 1402</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tci-img">
+                                <div class="sa-img-box">
+                                    <img
+                                        src="assets/img/palceholder.webp"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-content-item border-bottom-light"
+                        >
+                            <div class="tci-description">
+                                <div class="sa-paragraph-box">
+                                    <div class="title">
+                                        <h5>عنوان رویداد</h5>
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            لورم ایپسوم متن
+                                            ساختگی با تولید
+                                            سادگی نامفهوم از
+                                            صنعت چاپ، و با
+                                            استفاده از طراحان
+                                            گرافیک است، چاپگرها
+                                            و متون بلکه روزنامه
+                                            و مجله در ستون و
+                                            سطرآنچنان که لازم
+                                            است، و برای شرایط
+                                            فعلی تکنولوژی مورد
+                                            نیاز، و کاربردهای
+                                            متنوع با هدف بهبود
+                                            ابزارهای کاربردی می
+                                            باشد، کتابهای زیادی
+                                            در شصت و سه درصد
+                                            گذشته حال و آینده،
+                                            شناخت فراوان جامعه و
+                                            متخصصان را می طلبد.
+                                        </p>
+                                        <span
+                                            class="key-moments-date"
+                                            >12 آبان 1402</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tci-img">
+                                <div class="sa-img-box">
+                                    <img
+                                        src="assets/img/palceholder.webp"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-item full">
+                            <div
+                                class="sa-paragraph-box full-width-box-tab"
+                            >
+                                <div class="title">
+                                    <h5>عنوان رویداد</h5>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        لورم ایپسوم متن ساختگی
+                                        با تولید سادگی نامفهوم
+                                        از صنعت چاپ، و با
+                                        استفاده از طراحان گرافیک
+                                        است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و
+                                        سطرآنچنان که لازم است، و
+                                        برای شرایط فعلی تکنولوژی
+                                        مورد نیاز، و کاربردهای
+                                        متنوع با هدف بهبود
+                                        ابزارهای کاربردی می
+                                        باشد، کتابهای زیادی در
+                                        شصت و سه درصد گذشته حال
+                                        و آینده، شناخت فراوان
+                                        جامعه و متخصصان را می
+                                        طلبد.
+                                    </p>
+                                    <span
+                                        class="key-moments-date"
+                                        >12 آبان 1402</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
+ -->
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const tabsWrapper = document.getElementById('tabs-wrapper');
-                const tabs = document.querySelectorAll('.tab');
-                const prevArrow = document.getElementById('prev-arrow');
-                const nextArrow = document.getElementById('next-arrow');
-    
-                let activeIndex = 0;
-    
-                function updateActiveTab(index) {
-                    tabs[activeIndex].classList.remove('active');
-                    document.querySelector(tabs[activeIndex].dataset.target).classList.remove('active');
-                    activeIndex = index;
-                    tabs[activeIndex].classList.add('active');
-                    document.querySelector(tabs[activeIndex].dataset.target).classList.add('active');
-                    tabs[activeIndex].scrollIntoView({ inline: 'center' });
-                    updateArrows();
-                }
-    
-                function updateArrows() {
-                    if (activeIndex === 0) {
-                        prevArrow.classList.add('hidden');
-                    } else {
-                        prevArrow.classList.remove('hidden');
-                    }
-                    if (activeIndex === tabs.length - 1) {
-                        nextArrow.classList.add('hidden');
-                    } else {
-                        nextArrow.classList.remove('hidden');
-                    }
-                }
-    
-                prevArrow.addEventListener('click', function() {
-                    if (activeIndex > 0) {
-                        updateActiveTab(activeIndex - 1);
-                    }
-                });
-    
-                nextArrow.addEventListener('click', function() {
-                    if (activeIndex < tabs.length - 1) {
-                        updateActiveTab(activeIndex + 1);
-                    }
-                });
-    
-                tabs.forEach((tab, index) => {
-                    tab.addEventListener('click', function() {
-                        updateActiveTab(index);
-                    });
-                });
-    
-                updateArrows();
-            });
-        </script>
-    </body>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const tabsWrapper = document.getElementById("tabs-wrapper");
+				const tabs = document.querySelectorAll(".tab");
+				const prevArrow = document.getElementById("prev-arrow");
+				const nextArrow = document.getElementById("next-arrow");
+
+				let activeIndex = 0;
+
+				function updateActiveTab(index) {
+					tabs[activeIndex].classList.remove("active");
+					document
+						.querySelector(tabs[activeIndex].dataset.target)
+						.classList.remove("active");
+					activeIndex = index;
+					tabs[activeIndex].classList.add("active");
+					document
+						.querySelector(tabs[activeIndex].dataset.target)
+						.classList.add("active");
+					tabs[activeIndex].scrollIntoView({ inline: "center" });
+					updateArrows();
+				}
+
+				function updateArrows() {
+					if (activeIndex === 0) {
+						prevArrow.classList.add("hidden");
+					} else {
+						prevArrow.classList.remove("hidden");
+					}
+					if (activeIndex === tabs.length - 1) {
+						nextArrow.classList.add("hidden");
+					} else {
+						nextArrow.classList.remove("hidden");
+					}
+				}
+
+				prevArrow.addEventListener("click", function () {
+					if (activeIndex > 0) {
+						updateActiveTab(activeIndex - 1);
+					}
+				});
+
+				nextArrow.addEventListener("click", function () {
+					if (activeIndex < tabs.length - 1) {
+						updateActiveTab(activeIndex + 1);
+					}
+				});
+
+				tabs.forEach((tab, index) => {
+					tab.addEventListener("click", function () {
+						updateActiveTab(index);
+					});
+				});
+
+				updateArrows();
+			});
+		</script>
+	</body>
 </html>
