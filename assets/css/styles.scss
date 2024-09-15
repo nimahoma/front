@@ -528,6 +528,10 @@ body{
 		background-repeat: no-repeat;
 		background-position: right;
 		height: calc(100vh - 64px);
+		.container{
+			position: relative;
+			height: 100%;
+		}
 	}
 }
 .sa-banner{
@@ -536,10 +540,11 @@ body{
 .sa-b-content{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     padding: var(--sa-p-2);
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
 }
 .sa-b-content{
@@ -564,6 +569,13 @@ body{
 		
 		.aup-title-text {
 			margin: 0;
+		}
+	}
+	.aup-btn{
+		.saei-btn{
+			&:hover{
+				color: var(--text-color);
+			}
 		}
 	}
 }
@@ -660,7 +672,7 @@ body{
 
 
 
-						ABOU US PAGE
+						ABOU SAEI PAGE
 
 
 =============================================================================
@@ -691,6 +703,9 @@ body{
 			}
 		}
 	}
+}
+.sa-paragraph-box.full-width-box-tab{
+	position: relative;
 }
 
 
@@ -782,29 +797,44 @@ body{
 
 
 .tabs-container {
-	display: flex;
-	align-items: center;
-	overflow: hidden;
-	position: relative;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 .tabs-wrapper {
-	display: flex;
-	overflow-x: auto;
-	scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 0;
+    overflow: hidden;
+	.tab{
+		border-bottom: 2px solid #E0E0E0;
+		background: var(--white-color);
+		&.active{
+			border-bottom: 2px solid var(--primary-color);
+			background: var(--white-color);
+		}
+	}
 }
 .tab {
-	flex: 0 0 auto;
-	padding: 10px 20px;
-	cursor: pointer;
+    display: flex;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: inherit;
+    justify-content: center;
 }
 .tab.active {
 	background-color: #f0f0f0;
 }
 .arrow {
-	cursor: pointer;
-	padding: 10px;
-	background-color: #f0f0f0;
-	border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: var(--white-color);
+    font-size: 20px;
+	i{
+		font-weight: 400;
+	}
 }
 .arrow.hidden {
 	display: none;
