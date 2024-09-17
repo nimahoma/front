@@ -336,11 +336,10 @@ body{
 	padding: var(--sa-sec-padding);
 }
 .page-section-top{
-	padding-top: 2rem;
+	padding-top: 4rem;
 }
 .page-section-bottom{
 	border-bottom: 2px solid var(--primary-color);
-	margin-bottom: 1rem;
 }
 .border-bottom-light{
     border-bottom: 1px solid var(--border-color-light);
@@ -392,6 +391,9 @@ body{
 		}
 	}
 }
+.first-things{
+	padding-top: 5rem;
+}
 
 
 //=========== CUSTOME TABS ===========
@@ -441,8 +443,11 @@ body{
     margin-bottom: 3rem;
 }
 .sa-scrollspy-nav{
+    display: flex;
+    flex-direction: column;
 	.sa-ss-nav-item{
-		display: flex;
+		display: inline-flex;
+		width: max-content;
 		padding: 10px 20px;
 		border-right: 4px solid #E0E0E0;
 		color: var(--gray-color);
@@ -456,15 +461,8 @@ body{
 }
 
 
-//========== PAGE-WRAPPER ============
-.page-wrapper{
-	padding-top: 64px;
-}
-
 //============= HEADER ===============
-// .header{
-// 	height: 70px;
-// }
+
 .header {
     position: fixed;
     top: 0;
@@ -530,7 +528,6 @@ body.admin-bar{
 ==============================================================================
 
 
-
             HOMEPAGE
 
 
@@ -550,7 +547,7 @@ body.admin-bar{
 		background-size: inherit;
 		background-repeat: no-repeat;
 		background-position: right;
-		height: calc(100vh - 64px);
+		height: 100vh;
 		.container{
 			position: relative;
 			height: 100%;
@@ -566,8 +563,9 @@ body.admin-bar{
     width: 70%;
     padding: var(--sa-p-2);
     position: absolute;
-    top: 50%;
+	margin-top: 64px;
     left: 0;
+    top: 50%;
     transform: translateY(-50%);
 }
 .sa-b-content{

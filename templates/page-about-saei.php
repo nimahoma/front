@@ -17,34 +17,46 @@ Template Name: About Saei
 get_template_part( 'parts/header' );
 ?>
 
+<body <?php body_class(); ?>>
+	
 		<div class="about-saei-page">
 			<div class="container">
 				<div class="page-wrapper Internal-pages" id="about-us">
 					<aside class="page-sticky-sidebar">
-						<div class="sa-scrollspy-nav" id="sa-scrollspy-nav">
-							<a class="sa-ss-nav-item" href="#our-history-1"
+						<div
+							class="sa-scrollspy-nav sticky-navbar"
+							id="sticky-navbar"
+						>
+							<a
+								class="sa-ss-nav-item active"
+								href="#our-history-1"
+								data-target="#our-history-1"
 								>داستان ما</a
 							>
-							<a class="sa-ss-nav-item" href="#what-we-doing-2"
+							<a
+								class="sa-ss-nav-item"
+								href="#what-we-doing-2"
+								data-target="#what-we-doing-2"
 								>چه می‌کنیم؟</a
 							>
-							<a class="sa-ss-nav-item" href="#key-moments-3"
+							<a
+								class="sa-ss-nav-item"
+								href="#key-moments-3"
+								data-target="#key-moments-3"
 								>لحظات شاخص</a
 							>
-							<a class="sa-ss-nav-item" href="#sa-resources-4"
+							<a
+								class="sa-ss-nav-item"
+								href="#sa-resources-4"
+								data-target="#sa-resources-4"
 								>منابع</a
 							>
 						</div>
 					</aside>
-					<div
-						class="page-content-wrapper"
-						data-bs-spy="scroll"
-						data-bs-target="#sa-scrollspy-nav"
-						data-bs-smooth-scroll="true"
-						tabindex="0"
-					>
+
+					<div class="page-content-wrapper">
 						<section
-							class="our-history page-section-bottom page-section-top"
+							class="section-scroll our-history page-section-bottom page-section-top"
 							id="our-history-1"
 						>
 							<div class="sa-paragraph-box border-bottom-light">
@@ -194,9 +206,8 @@ get_template_part( 'parts/header' );
 								</div>
 							</div>
 						</section>
-
 						<section
-							class="what-we-doing page-section-bottom page-section-top"
+							class="section-scroll what-we-doing page-section-bottom page-section-top"
 							id="what-we-doing-2"
 						>
 							<div class="sa-paragraph-box">
@@ -219,15 +230,11 @@ get_template_part( 'parts/header' );
 								</div>
 							</div>
 							<div class="sa-img-box">
-								<img
-									src="<?php echo get_template_directory_uri(); ?>/assets/img/palceholder.webp"
-									alt=""
-								/>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/palceholder.webp" alt="" />
 							</div>
 						</section>
-
 						<section
-							class="key-moments test-tab page-section-bottom page-section-top"
+							class="section-scroll key-moments test-tab page-section-bottom page-section-top"
 							id="key-moments-3"
 						>
 							<div class="sa-paragraph-box no-padding">
@@ -255,12 +262,6 @@ get_template_part( 'parts/header' );
 									</div>
 									<div class="tab" data-target="#tab5">
 										۲۰۲۰
-									</div>
-									<div class="tab" data-target="#tab6">
-										۲۰۱۹
-									</div>
-									<div class="tab" data-target="#tab7">
-										۲۰۱۸
 									</div>
 								</div>
 								<div class="arrow" id="next-arrow">
@@ -923,273 +924,10 @@ get_template_part( 'parts/header' );
 										</div>
 									</div>
 								</div>
-								<div id="tab6" class="tab-pane">
-									<div class="tab-content-wrapper">
-										<div
-											class="tab-content-item border-bottom-light"
-										>
-											<div class="tci-description">
-												<div class="sa-paragraph-box">
-													<div class="title">
-														<h5>
-															عنوان رویداد ۲۰۱۹
-														</h5>
-													</div>
-													<div class="description">
-														<p>
-															لورم ایپسوم متن
-															ساختگی با تولید
-															سادگی نامفهوم از
-															صنعت چاپ، و با
-															استفاده از طراحان
-															گرافیک است، چاپگرها
-															و متون بلکه روزنامه
-															و مجله در ستون و
-															سطرآنچنان که لازم
-															است، و برای شرایط
-															فعلی تکنولوژی مورد
-															نیاز، و کاربردهای
-															متنوع با هدف بهبود
-															ابزارهای کاربردی می
-															باشد، کتابهای زیادی
-															در شصت و سه درصد
-															گذشته حال و آینده،
-															شناخت فراوان جامعه و
-															متخصصان را می طلبد.
-														</p>
-														<span
-															class="key-moments-date"
-															>12 آبان 1402</span
-														>
-													</div>
-												</div>
-											</div>
-											<div class="tci-img">
-												<div class="sa-img-box">
-													<img
-														src="<?php echo get_template_directory_uri(); ?>/assets/img/palceholder.webp"
-														alt=""
-													/>
-												</div>
-											</div>
-										</div>
-										<div
-											class="tab-content-item border-bottom-light"
-										>
-											<div class="tci-description">
-												<div class="sa-paragraph-box">
-													<div class="title">
-														<h5>عنوان رویداد</h5>
-													</div>
-													<div class="description">
-														<p>
-															لورم ایپسوم متن
-															ساختگی با تولید
-															سادگی نامفهوم از
-															صنعت چاپ، و با
-															استفاده از طراحان
-															گرافیک است، چاپگرها
-															و متون بلکه روزنامه
-															و مجله در ستون و
-															سطرآنچنان که لازم
-															است، و برای شرایط
-															فعلی تکنولوژی مورد
-															نیاز، و کاربردهای
-															متنوع با هدف بهبود
-															ابزارهای کاربردی می
-															باشد، کتابهای زیادی
-															در شصت و سه درصد
-															گذشته حال و آینده،
-															شناخت فراوان جامعه و
-															متخصصان را می طلبد.
-														</p>
-														<span
-															class="key-moments-date"
-															>12 آبان 1402</span
-														>
-													</div>
-												</div>
-											</div>
-											<div class="tci-img">
-												<div class="sa-img-box">
-													<img
-														src="<?php echo get_template_directory_uri(); ?>/assets/img/palceholder.webp"
-														alt=""
-													/>
-												</div>
-											</div>
-										</div>
-										<div class="tab-content-item full">
-											<div
-												class="sa-paragraph-box full-width-box-tab"
-											>
-												<div class="title">
-													<h5>عنوان رویداد</h5>
-												</div>
-												<div class="description">
-													<p>
-														لورم ایپسوم متن ساختگی
-														با تولید سادگی نامفهوم
-														از صنعت چاپ، و با
-														استفاده از طراحان گرافیک
-														است، چاپگرها و متون بلکه
-														روزنامه و مجله در ستون و
-														سطرآنچنان که لازم است، و
-														برای شرایط فعلی تکنولوژی
-														مورد نیاز، و کاربردهای
-														متنوع با هدف بهبود
-														ابزارهای کاربردی می
-														باشد، کتابهای زیادی در
-														شصت و سه درصد گذشته حال
-														و آینده، شناخت فراوان
-														جامعه و متخصصان را می
-														طلبد.
-													</p>
-													<span
-														class="key-moments-date"
-														>12 آبان 1402</span
-													>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="tab7" class="tab-pane">
-									<div class="tab-content-wrapper">
-										<div
-											class="tab-content-item border-bottom-light"
-										>
-											<div class="tci-description">
-												<div class="sa-paragraph-box">
-													<div class="title">
-														<h5>
-															عنوان رویداد ۲۰۱۸
-														</h5>
-													</div>
-													<div class="description">
-														<p>
-															لورم ایپسوم متن
-															ساختگی با تولید
-															سادگی نامفهوم از
-															صنعت چاپ، و با
-															استفاده از طراحان
-															گرافیک است، چاپگرها
-															و متون بلکه روزنامه
-															و مجله در ستون و
-															سطرآنچنان که لازم
-															است، و برای شرایط
-															فعلی تکنولوژی مورد
-															نیاز، و کاربردهای
-															متنوع با هدف بهبود
-															ابزارهای کاربردی می
-															باشد، کتابهای زیادی
-															در شصت و سه درصد
-															گذشته حال و آینده،
-															شناخت فراوان جامعه و
-															متخصصان را می طلبد.
-														</p>
-														<span
-															class="key-moments-date"
-															>12 آبان 1402</span
-														>
-													</div>
-												</div>
-											</div>
-											<div class="tci-img">
-												<div class="sa-img-box">
-													<img
-														src="<?php echo get_template_directory_uri(); ?>/assets/img/palceholder.webp"
-														alt=""
-													/>
-												</div>
-											</div>
-										</div>
-										<div
-											class="tab-content-item border-bottom-light"
-										>
-											<div class="tci-description">
-												<div class="sa-paragraph-box">
-													<div class="title">
-														<h5>عنوان رویداد</h5>
-													</div>
-													<div class="description">
-														<p>
-															لورم ایپسوم متن
-															ساختگی با تولید
-															سادگی نامفهوم از
-															صنعت چاپ، و با
-															استفاده از طراحان
-															گرافیک است، چاپگرها
-															و متون بلکه روزنامه
-															و مجله در ستون و
-															سطرآنچنان که لازم
-															است، و برای شرایط
-															فعلی تکنولوژی مورد
-															نیاز، و کاربردهای
-															متنوع با هدف بهبود
-															ابزارهای کاربردی می
-															باشد، کتابهای زیادی
-															در شصت و سه درصد
-															گذشته حال و آینده،
-															شناخت فراوان جامعه و
-															متخصصان را می طلبد.
-														</p>
-														<span
-															class="key-moments-date"
-															>12 آبان 1402</span
-														>
-													</div>
-												</div>
-											</div>
-											<div class="tci-img">
-												<div class="sa-img-box">
-													<img
-														src="<?php echo get_template_directory_uri(); ?>/assets/img/palceholder.webp"
-														alt=""
-													/>
-												</div>
-											</div>
-										</div>
-										<div class="tab-content-item full">
-											<div
-												class="sa-paragraph-box full-width-box-tab"
-											>
-												<div class="title">
-													<h5>عنوان رویداد</h5>
-												</div>
-												<div class="description">
-													<p>
-														لورم ایپسوم متن ساختگی
-														با تولید سادگی نامفهوم
-														از صنعت چاپ، و با
-														استفاده از طراحان گرافیک
-														است، چاپگرها و متون بلکه
-														روزنامه و مجله در ستون و
-														سطرآنچنان که لازم است، و
-														برای شرایط فعلی تکنولوژی
-														مورد نیاز، و کاربردهای
-														متنوع با هدف بهبود
-														ابزارهای کاربردی می
-														باشد، کتابهای زیادی در
-														شصت و سه درصد گذشته حال
-														و آینده، شناخت فراوان
-														جامعه و متخصصان را می
-														طلبد.
-													</p>
-													<span
-														class="key-moments-date"
-														>12 آبان 1402</span
-													>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
 						</section>
-
 						<section
-							class="sa-resources page-section-bottom page-section-top"
+							class="section-scroll sa-resources page-section-bottom page-section-top"
 							id="sa-resources-4"
 						>
 							<div class="sa-paragraph-box no-padding">
@@ -1309,6 +1047,8 @@ get_template_part( 'parts/header' );
 				const tabs = document.querySelectorAll(".tab");
 				const prevArrow = document.getElementById("prev-arrow");
 				const nextArrow = document.getElementById("next-arrow");
+				const navbarLinks =
+					document.querySelectorAll(".sticky-navbar a");
 
 				let activeIndex = 0;
 
@@ -1322,7 +1062,11 @@ get_template_part( 'parts/header' );
 					document
 						.querySelector(tabs[activeIndex].dataset.target)
 						.classList.add("active");
-					tabs[activeIndex].scrollIntoView({ inline: "center" });
+					tabs[activeIndex].scrollIntoView({
+						behavior: "smooth",
+						block: "nearest",
+						inline: "center",
+					});
 					updateArrows();
 				}
 
@@ -1352,13 +1096,53 @@ get_template_part( 'parts/header' );
 				});
 
 				tabs.forEach((tab, index) => {
-					tab.addEventListener("click", function () {
+					tab.addEventListener("click", function (event) {
+						event.preventDefault();
+						event.stopPropagation();
 						updateActiveTab(index);
 					});
 				});
 
 				updateArrows();
+
+				// Scrollspy functionality
+				function onScroll() {
+					let currentSection = "";
+					document
+						.querySelectorAll(".section-scroll")
+						.forEach((section) => {
+							const sectionTop = section.offsetTop;
+							if (pageYOffset >= sectionTop - 50) {
+								currentSection = section.getAttribute("id");
+							}
+						});
+
+					navbarLinks.forEach((link) => {
+						link.classList.remove("active");
+						if (
+							link.getAttribute("data-target") ===
+							`#${currentSection}`
+						) {
+							link.classList.add("active");
+						}
+					});
+				}
+
+				window.addEventListener("scroll", onScroll);
+
+				navbarLinks.forEach((link) => {
+					link.addEventListener("click", function (event) {
+						event.preventDefault();
+						const targetId = this.getAttribute("data-target");
+						document
+							.querySelector(targetId)
+							.scrollIntoView({ behavior: "smooth" });
+					});
+				});
 			});
 		</script>
+</body>
+
+
 <?php get_template_part( 'parts/footer' ); ?>
 <?php wp_footer(); ?>
