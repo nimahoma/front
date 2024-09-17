@@ -1514,61 +1514,63 @@
 		<script src="assets/js/bootstrap.bundle.min.js"></script>
 
 		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				const tabsWrapper = document.getElementById("tabs-wrapper");
-				const tabs = document.querySelectorAll(".tab");
-				const prevArrow = document.getElementById("prev-arrow");
-				const nextArrow = document.getElementById("next-arrow");
-
-				let activeIndex = 0;
-
-				function updateActiveTab(index) {
-					tabs[activeIndex].classList.remove("active");
-					document
-						.querySelector(tabs[activeIndex].dataset.target)
-						.classList.remove("active");
-					activeIndex = index;
-					tabs[activeIndex].classList.add("active");
-					document
-						.querySelector(tabs[activeIndex].dataset.target)
-						.classList.add("active");
-					tabs[activeIndex].scrollIntoView({ inline: "center" });
-					updateArrows();
-				}
-
-				function updateArrows() {
-					if (activeIndex === 0) {
-						prevArrow.classList.add("hidden");
-					} else {
-						prevArrow.classList.remove("hidden");
-					}
-					if (activeIndex === tabs.length - 1) {
-						nextArrow.classList.add("hidden");
-					} else {
-						nextArrow.classList.remove("hidden");
-					}
-				}
-
-				prevArrow.addEventListener("click", function () {
-					if (activeIndex > 0) {
-						updateActiveTab(activeIndex - 1);
-					}
-				});
-
-				nextArrow.addEventListener("click", function () {
-					if (activeIndex < tabs.length - 1) {
-						updateActiveTab(activeIndex + 1);
-					}
-				});
-
-				tabs.forEach((tab, index) => {
-					tab.addEventListener("click", function () {
-						updateActiveTab(index);
-					});
-				});
-
-				updateArrows();
-			});
-		</script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tabsWrapper = document.getElementById("tabs-wrapper");
+                const tabs = document.querySelectorAll(".tab");
+                const prevArrow = document.getElementById("prev-arrow");
+                const nextArrow = document.getElementById("next-arrow");
+        
+                let activeIndex = 0;
+        
+                function updateActiveTab(index) {
+                    tabs[activeIndex].classList.remove("active");
+                    document
+                        .querySelector(tabs[activeIndex].dataset.target)
+                        .classList.remove("active");
+                    activeIndex = index;
+                    tabs[activeIndex].classList.add("active");
+                    document
+                        .querySelector(tabs[activeIndex].dataset.target)
+                        .classList.add("active");
+                    tabs[activeIndex].scrollIntoView({ inline: "center" });
+                    updateArrows();
+                }
+        
+                function updateArrows() {
+                    if (activeIndex === 0) {
+                        prevArrow.classList.add("hidden");
+                    } else {
+                        prevArrow.classList.remove("hidden");
+                    }
+                    if (activeIndex === tabs.length - 1) {
+                        nextArrow.classList.add("hidden");
+                    } else {
+                        nextArrow.classList.remove("hidden");
+                    }
+                }
+        
+                prevArrow.addEventListener("click", function () {
+                    if (activeIndex > 0) {
+                        updateActiveTab(activeIndex - 1);
+                    }
+                });
+        
+                nextArrow.addEventListener("click", function () {
+                    if (activeIndex < tabs.length - 1) {
+                        updateActiveTab(activeIndex + 1);
+                    }
+                });
+        
+                tabs.forEach((tab, index) => {
+                    tab.addEventListener("click", function (event) {
+                        event.preventDefault(); // Prevent the default behavior
+                        event.stopPropagation(); // Stop the event from bubbling up
+                        updateActiveTab(index);
+                    });
+                });
+        
+                updateArrows();
+            });
+        </script>
 	</body>
 </html>
