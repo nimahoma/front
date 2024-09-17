@@ -94,31 +94,12 @@
   font-weight: 950;
   src: url("../fonts/YekanBakhNoEn-ExtraBlack.woff") format("woff"), url("../fonts/YekanBakhNoEn-ExtraBlack.woff2") format("woff2");
 }
-@font-face {
-  font-family: Gilroy-Bold;
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/Gilroy-Bold.ttf") format("ttf");
-}
-@font-face {
-  font-family: Gilroy-SemiBold;
-  font-style: normal;
-  font-weight: 450;
-  src: url("../fonts/Gilroy-SemiBold.ttf") format("ttf");
-}
-@font-face {
-  font-family: Gilroy-Regular;
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Gilroy-Regular.ttf") format("ttf");
-}
 :root {
   --primary-color: #FFCC00;
   --black-color: #000000;
   --text-color: #333333;
   --slogan-color: #21272A;
   --gray-color: #828282;
-  --smoke-color: #F2F2F2;
   --link-color: #007bff;
   --link-hover-color: #0056b3;
   --border-color: #ddd;
@@ -186,7 +167,6 @@ a {
   font-family: "Gilroy-Bold", sans-serif;
   direction: ltr;
   text-align: left;
-  line-height: 120%;
 }
 
 .fa-num-font {
@@ -459,10 +439,6 @@ body {
   background-color: var(--primary-color);
 }
 
-body.admin-bar .header {
-  margin-top: 32px;
-}
-
 /*============================================================================
 ==============================================================================
 ==============================================================================
@@ -667,79 +643,6 @@ body.admin-bar .header {
   margin-bottom: 1rem;
 }
 
-.know-us .sa-thumbnail-layout .sa-tl-item .img-wrapper {
-  align-items: flex-end;
-}
-
-/*============================================================================
-==============================================================================
-==============================================================================
-
-
-						JOB OFFERS
-
-
-=============================================================================
-=============================================================================
-=============================================================================*/
-.sa-teams-item-layout {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.sa-teams-item .sa-ti-wrapper .title {
-  padding: 16px;
-}
-.sa-teams-item .sa-ti-wrapper .subtitle {
-  padding: 0 16px;
-}
-.sa-teams-item .sa-ti-wrapper .sa-ti-modal-link {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  margin: 16px 0;
-  border: none;
-  background: var(--white-color);
-  transition: background-color 0.3s ease-in-out;
-}
-.sa-teams-item .sa-ti-wrapper .sa-ti-modal-link span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 48px;
-  position: relative;
-  font-size: var(--sa-font-size-1);
-  background-color: var(--primary-color);
-  color: var(--black-color);
-  transition: background-color 0.3s ease-in-out;
-}
-.sa-teams-item .sa-ti-wrapper .sa-ti-modal-link span img {
-  width: auto;
-  position: absolute;
-  right: 12%;
-  top: 30%;
-}
-.sa-teams-item .sa-ti-wrapper .sa-ti-modal-link:hover, .sa-teams-item .sa-ti-wrapper .sa-ti-modal-link:active {
-  background-color: var(--smoke-color);
-}
-.sa-teams-item .sa-ti-wrapper .sa-ti-modal-link:hover span, .sa-teams-item .sa-ti-wrapper .sa-ti-modal-link:active span {
-  background-color: var(--white-color);
-}
-
-/*============================================================================
-==============================================================================
-==============================================================================
-
-
-						FOOTER
-
-
-=============================================================================
-=============================================================================
-=============================================================================*/
 .footer {
   background: var(--text-color);
 }
@@ -789,14 +692,11 @@ body.admin-bar .header {
   left: -34px;
   bottom: 0px;
   color: var(--primary-color);
-  padding: 1rem 1.5rem 3rem;
   background: var(--text-color);
 }
 .sa-footer-social a {
   color: var(--primary-color);
   font-size: var(--sa-font-size-1-5);
-  display: flex;
-  margin: 0 0 10px;
 }
 
 .tabs-container {
@@ -860,28 +760,6 @@ body.admin-bar .header {
 
 .tabs-wrapper::-webkit-scrollbar-track {
   background-color: #f0f0f0;
-}
-
-/*============================================================================
-==============================================================================
-==============================================================================
-
-
-						RESPONSIVE DESIGN
-
-
-=============================================================================
-=============================================================================
-============================================================================*/
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1600px) {
-  .about-us .sa-banner {
-    background-size: cover;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
