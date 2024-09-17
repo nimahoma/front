@@ -1,201 +1,213 @@
 <!doctype html>
 <html lang="fa">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/all.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>خانه</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/all.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<title>خانه</title>
 
-    <style>
-        .tabs-container {
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            position: relative;
-            width: 400px; /* Adjust this width to show only 5 tabs */
-        }
-        .tabs-wrapper {
-            display: flex;
-            overflow-x: auto;
-            scroll-behavior: smooth;
-        }
-        .tab {
-            width: 100px;
-            flex: 0 0 auto;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .tab.active {
-            background-color: #f0f0f0;
-        }
-        .arrow {
-            cursor: pointer;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-        }
-        .arrow.hidden {
-            display: none;
-        }
-        /* Custom scrollbar styles */
-        .tabs-wrapper::-webkit-scrollbar {
-            height: 8px;
-        }
-        .tabs-wrapper::-webkit-scrollbar-thumb {
-            background-color: #888;
-            border-radius: 10px;
-        }
-        .tabs-wrapper::-webkit-scrollbar-track {
-            background-color: #f0f0f0;
-        }
-        .test-section {
-            height: 600px;
-        }
-        .sticky-navbar {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 10px;
-            z-index: 1000;
-        }
-        .sticky-navbar a {
-            display: block;
-            padding: 5px 10px;
-            text-decoration: none;
-            color: #000;
-        }
-        .sticky-navbar a.active {
-            background-color: #007bff;
-            color: #fff;
-        }
-    </style>
-</head>
+		<style>
+			.tabs-container {
+				display: flex;
+				align-items: center;
+				overflow: hidden;
+				position: relative;
+				width: 400px; /* Adjust this width to show only 5 tabs */
+			}
+			.tabs-wrapper {
+				display: flex;
+				overflow-x: auto;
+				scroll-behavior: smooth;
+			}
+			.tab {
+				width: 100px;
+				flex: 0 0 auto;
+				padding: 10px 20px;
+				cursor: pointer;
+			}
+			.tab.active {
+				background-color: #f0f0f0;
+			}
+			.arrow {
+				cursor: pointer;
+				padding: 10px;
+				background-color: #f0f0f0;
+				border: 1px solid #ccc;
+			}
+			.arrow.hidden {
+				display: none;
+			}
+			/* Custom scrollbar styles */
+			.tabs-wrapper::-webkit-scrollbar {
+				height: 8px;
+			}
+			.tabs-wrapper::-webkit-scrollbar-thumb {
+				background-color: #888;
+				border-radius: 10px;
+			}
+			.tabs-wrapper::-webkit-scrollbar-track {
+				background-color: #f0f0f0;
+			}
+			.section-scroll {
+				height: 600px;
+			}
+			.sticky-navbar {
+				position: fixed;
+				top: 20px;
+				right: 20px;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				padding: 10px;
+				z-index: 1000;
+			}
+			.sticky-navbar a {
+				display: block;
+				padding: 5px 10px;
+				text-decoration: none;
+				color: #000;
+			}
+			.sticky-navbar a.active {
+				background-color: #007bff;
+				color: #fff;
+			}
+		</style>
+	</head>
 
-<body>
-    <div class="sticky-navbar" id="sticky-navbar">
-        <a href="#sction_1" data-target="#sction_1">Section 1</a>
-        <a href="#sction_2" data-target="#sction_2">Section 2</a>
-        <a href="#sction_3" data-target="#sction_3">Section 3</a>
-        <a href="#sction_4" data-target="#sction_4">Section 4</a>
-        <a href="#sction_5" data-target="#sction_5">Section 5</a>
-    </div>
+	<body>
+		<div class="sticky-navbar" id="sticky-navbar">
+			<a href="#sction_1" data-target="#sction_1">Section 1</a>
+			<a href="#sction_2" data-target="#sction_2">Section 2</a>
+			<a href="#sction_3" data-target="#sction_3">Section 3</a>
+			<a href="#sction_4" data-target="#sction_4">Section 4</a>
+			<a href="#sction_5" data-target="#sction_5">Section 5</a>
+		</div>
 
-    <div class="test-section" id="sction_1"></div>
-    <div class="test-section" id="sction_2"></div>
-    <div class="test-section" id="sction_3">
-        <div class="tabs-container">
-            <div class="arrow" id="prev-arrow">&lt;</div>
-            <div class="tabs-wrapper" id="tabs-wrapper">
-                <div class="tab active" data-target="#tab1">Tab 1</div>
-                <div class="tab" data-target="#tab2">Tab 2</div>
-                <div class="tab" data-target="#tab3">Tab 3</div>
-                <div class="tab" data-target="#tab4">Tab 4</div>
-                <div class="tab" data-target="#tab5">Tab 5</div>
-            </div>
-            <div class="arrow" id="next-arrow">&gt;</div>
-        </div>
-        <div class="tab-content">
-            <div id="tab1" class="tab-pane active">Content 1</div>
-            <div id="tab2" class="tab-pane">Content 2</div>
-            <div id="tab3" class="tab-pane">Content 3</div>
-            <div id="tab4" class="tab-pane">Content 4</div>
-            <div id="tab5" class="tab-pane">Content 5</div>
-        </div>
-    </div>
-    <div class="test-section" id="sction_4"></div>
-    <div class="test-section" id="sction_5"></div>
+		<div class="section-scroll" id="sction_1"></div>
+		<div class="section-scroll" id="sction_2"></div>
+		<div class="section-scroll" id="sction_3">
+			<div class="tabs-container">
+				<div class="arrow" id="prev-arrow">&lt;</div>
+				<div class="tabs-wrapper" id="tabs-wrapper">
+					<div class="tab active" data-target="#tab1">Tab 1</div>
+					<div class="tab" data-target="#tab2">Tab 2</div>
+					<div class="tab" data-target="#tab3">Tab 3</div>
+					<div class="tab" data-target="#tab4">Tab 4</div>
+					<div class="tab" data-target="#tab5">Tab 5</div>
+				</div>
+				<div class="arrow" id="next-arrow">&gt;</div>
+			</div>
+			<div class="tab-content">
+				<div id="tab1" class="tab-pane active">Content 1</div>
+				<div id="tab2" class="tab-pane">Content 2</div>
+				<div id="tab3" class="tab-pane">Content 3</div>
+				<div id="tab4" class="tab-pane">Content 4</div>
+				<div id="tab5" class="tab-pane">Content 5</div>
+			</div>
+		</div>
+		<div class="section-scroll" id="sction_4"></div>
+		<div class="section-scroll" id="sction_5"></div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const tabsWrapper = document.getElementById("tabs-wrapper");
-            const tabs = document.querySelectorAll(".tab");
-            const prevArrow = document.getElementById("prev-arrow");
-            const nextArrow = document.getElementById("next-arrow");
-            const navbarLinks = document.querySelectorAll(".sticky-navbar a");
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const tabsWrapper = document.getElementById("tabs-wrapper");
+				const tabs = document.querySelectorAll(".tab");
+				const prevArrow = document.getElementById("prev-arrow");
+				const nextArrow = document.getElementById("next-arrow");
+				const navbarLinks =
+					document.querySelectorAll(".sticky-navbar a");
 
-            let activeIndex = 0;
+				let activeIndex = 0;
 
-            function updateActiveTab(index) {
-                tabs[activeIndex].classList.remove("active");
-                document
-                    .querySelector(tabs[activeIndex].dataset.target)
-                    .classList.remove("active");
-                activeIndex = index;
-                tabs[activeIndex].classList.add("active");
-                document
-                    .querySelector(tabs[activeIndex].dataset.target)
-                    .classList.add("active");
-                tabs[activeIndex].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-                updateArrows();
-            }
+				function updateActiveTab(index) {
+					tabs[activeIndex].classList.remove("active");
+					document
+						.querySelector(tabs[activeIndex].dataset.target)
+						.classList.remove("active");
+					activeIndex = index;
+					tabs[activeIndex].classList.add("active");
+					document
+						.querySelector(tabs[activeIndex].dataset.target)
+						.classList.add("active");
+					tabs[activeIndex].scrollIntoView({
+						behavior: "smooth",
+						block: "nearest",
+						inline: "center",
+					});
+					updateArrows();
+				}
 
-            function updateArrows() {
-                if (activeIndex === 0) {
-                    prevArrow.classList.add("hidden");
-                } else {
-                    prevArrow.classList.remove("hidden");
-                }
-                if (activeIndex === tabs.length - 1) {
-                    nextArrow.classList.add("hidden");
-                } else {
-                    nextArrow.classList.remove("hidden");
-                }
-            }
+				function updateArrows() {
+					if (activeIndex === 0) {
+						prevArrow.classList.add("hidden");
+					} else {
+						prevArrow.classList.remove("hidden");
+					}
+					if (activeIndex === tabs.length - 1) {
+						nextArrow.classList.add("hidden");
+					} else {
+						nextArrow.classList.remove("hidden");
+					}
+				}
 
-            prevArrow.addEventListener("click", function () {
-                if (activeIndex > 0) {
-                    updateActiveTab(activeIndex - 1);
-                }
-            });
+				prevArrow.addEventListener("click", function () {
+					if (activeIndex > 0) {
+						updateActiveTab(activeIndex - 1);
+					}
+				});
 
-            nextArrow.addEventListener("click", function () {
-                if (activeIndex < tabs.length - 1) {
-                    updateActiveTab(activeIndex + 1);
-                }
-            });
+				nextArrow.addEventListener("click", function () {
+					if (activeIndex < tabs.length - 1) {
+						updateActiveTab(activeIndex + 1);
+					}
+				});
 
-            tabs.forEach((tab, index) => {
-                tab.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    updateActiveTab(index);
-                });
-            });
+				tabs.forEach((tab, index) => {
+					tab.addEventListener("click", function (event) {
+						event.preventDefault();
+						event.stopPropagation();
+						updateActiveTab(index);
+					});
+				});
 
-            updateArrows();
+				updateArrows();
 
-            // Scrollspy functionality
-            function onScroll() {
-                let currentSection = "";
-                document.querySelectorAll(".test-section").forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    if (pageYOffset >= sectionTop - 50) {
-                        currentSection = section.getAttribute("id");
-                    }
-                });
+				// Scrollspy functionality
+				function onScroll() {
+					let currentSection = "";
+					document
+						.querySelectorAll(".section-scroll")
+						.forEach((section) => {
+							const sectionTop = section.offsetTop;
+							if (pageYOffset >= sectionTop - 50) {
+								currentSection = section.getAttribute("id");
+							}
+						});
 
-                navbarLinks.forEach(link => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("data-target") === `#${currentSection}`) {
-                        link.classList.add("active");
-                    }
-                });
-            }
+					navbarLinks.forEach((link) => {
+						link.classList.remove("active");
+						if (
+							link.getAttribute("data-target") ===
+							`#${currentSection}`
+						) {
+							link.classList.add("active");
+						}
+					});
+				}
 
-            window.addEventListener("scroll", onScroll);
+				window.addEventListener("scroll", onScroll);
 
-            navbarLinks.forEach(link => {
-                link.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const targetId = this.getAttribute("data-target");
-                    document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
-                });
-            });
-        });
-    </script>
-</body>
+				navbarLinks.forEach((link) => {
+					link.addEventListener("click", function (event) {
+						event.preventDefault();
+						const targetId = this.getAttribute("data-target");
+						document
+							.querySelector(targetId)
+							.scrollIntoView({ behavior: "smooth" });
+					});
+				});
+			});
+		</script>
+	</body>
 </html>

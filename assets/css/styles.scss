@@ -1,6 +1,5 @@
 @import "_variables";
 
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 // fonts
 @font-face {
 	font-family: Yekan-Bakh-FaNum-Thin;
@@ -129,12 +128,31 @@
 	src: url('../fonts/YekanBakhNoEn-ExtraBlack.woff') format('woff'),   
 	url('../fonts/YekanBakhNoEn-ExtraBlack.woff2') format('woff2');		 
 }
+@font-face {
+	font-family: Gilroy-Bold;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/Gilroy-Bold.ttf') format('ttf');	 
+}
+@font-face {
+	font-family: Gilroy-SemiBold;
+	font-style: normal;
+	font-weight: 450;
+	src: url('../fonts/Gilroy-SemiBold.ttf') format('ttf');	 
+}
+@font-face {
+	font-family: Gilroy-Regular;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/Gilroy-Regular.ttf') format('ttf');	 
+}
 :root{
     --primary-color: #{$primary-color};
     --black-color: #{$black-color};
 	--text-color: #{$text-color};
 	--slogan-color: #{$slogan-color};
 	--gray-color: #{$gray-color};
+	--smoke-color: #{$smoke-color};
     --link-color: #{$link-color};
     --link-hover-color: #{$link-hover-color};
     --border-color: #{$border-color};
@@ -203,7 +221,7 @@ line-height: 150%;
 	font-family: 'Gilroy-Bold', sans-serif;
 	direction: ltr;
 	text-align: left;
-	line-height: 150%;
+	line-height: 120%;
 }
 
 .fa-num-font{
@@ -318,11 +336,10 @@ body{
 	padding: var(--sa-sec-padding);
 }
 .page-section-top{
-	padding-top: 2rem;
+	padding-top: 4rem;
 }
 .page-section-bottom{
 	border-bottom: 2px solid var(--primary-color);
-	margin-bottom: 1rem;
 }
 .border-bottom-light{
     border-bottom: 1px solid var(--border-color-light);
@@ -374,6 +391,9 @@ body{
 		}
 	}
 }
+.first-things{
+	padding-top: 5rem;
+}
 
 
 //=========== CUSTOME TABS ===========
@@ -423,8 +443,11 @@ body{
     margin-bottom: 3rem;
 }
 .sa-scrollspy-nav{
+    display: flex;
+    flex-direction: column;
 	.sa-ss-nav-item{
-		display: flex;
+		display: inline-flex;
+		width: max-content;
 		padding: 10px 20px;
 		border-right: 4px solid #E0E0E0;
 		color: var(--gray-color);
@@ -438,15 +461,8 @@ body{
 }
 
 
-//========== PAGE-WRAPPER ============
-.page-wrapper{
-	padding-top: 64px;
-}
-
 //============= HEADER ===============
-// .header{
-// 	height: 70px;
-// }
+
 .header {
     position: fixed;
     top: 0;
@@ -501,11 +517,15 @@ body{
 	}
 }
 
+body.admin-bar{
+	.header{
+		margin-top: 32px;
+	}
+}
 
 /*============================================================================
 ==============================================================================
 ==============================================================================
-
 
 
             HOMEPAGE
@@ -527,7 +547,7 @@ body{
 		background-size: inherit;
 		background-repeat: no-repeat;
 		background-position: right;
-		height: calc(100vh - 64px);
+		height: 100vh;
 		.container{
 			position: relative;
 			height: 100%;
@@ -543,8 +563,9 @@ body{
     width: 70%;
     padding: var(--sa-p-2);
     position: absolute;
-    top: 50%;
+	margin-top: 64px;
     left: 0;
+    top: 50%;
     transform: translateY(-50%);
 }
 .sa-b-content{
@@ -714,7 +735,6 @@ body{
 ==============================================================================
 
 
-
 						DIGITAL TRANSFORM
 
 
@@ -728,10 +748,90 @@ body{
 		margin-bottom: 1rem;
 	}
 }
+.know-us{
+	.sa-thumbnail-layout{
+		.sa-tl-item{
+			.img-wrapper{
+				align-items: flex-end;
+			}
+		}
+	}
+}
 
 
+/*============================================================================
+==============================================================================
+==============================================================================
 
-//============= FOOTER ===============
+
+						JOB OFFERS
+
+
+=============================================================================
+=============================================================================
+=============================================================================*/
+.sa-teams-item-layout{
+    display: grid; 
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.sa-teams-item{
+	.sa-ti-wrapper{
+		.title{
+			padding: 16px;
+		}
+		.subtitle{
+			padding: 0 16px;
+		}
+		.sa-ti-modal-link{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 16px;
+			margin: 16px 0;
+			border: none;
+			background: var(--white-color);
+			transition: background-color 0.3s ease-in-out;
+			span{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 48px;
+				position: relative;
+				font-size: var(--sa-font-size-1);
+				background-color: var(--primary-color);
+				color: var(--black-color);
+				transition: background-color 0.3s ease-in-out;
+				img{
+					width: auto;
+					position: absolute;
+					right: 12%;
+					top: 30%;
+				}
+			}
+			&:hover,&:active{
+				background-color: var(--smoke-color);
+				span{
+					background-color: var(--white-color);
+				}
+			}
+		}
+	}
+}
+
+
+/*============================================================================
+==============================================================================
+==============================================================================
+
+
+						FOOTER
+
+
+=============================================================================
+=============================================================================
+=============================================================================*/
 .footer{
 	background: var(--text-color);
 }
@@ -786,12 +886,13 @@ body{
     left: -34px;
     bottom: 0px;
     color: var(--primary-color);
-    padding: var(--sa-p-1-5);
+    padding: 1rem 1.5rem 3rem;
     background: var(--text-color);
-	
 	a{
 		color: var(--primary-color);
 		font-size: var(--sa-font-size-1-5);
+		display: flex;
+		margin: 0 0 10px;
 	}
 }
 
@@ -849,4 +950,52 @@ body{
 }
 .tabs-wrapper::-webkit-scrollbar-track {
 	background-color: #f0f0f0;
+}
+
+
+
+
+/*============================================================================
+==============================================================================
+==============================================================================
+
+
+						RESPONSIVE DESIGN
+
+
+=============================================================================
+=============================================================================
+============================================================================*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	
+}
+
+@media only screen and (min-width: 1600px) {
+		.about-us{
+			.sa-banner {
+				background-size: cover;
+			}
+		}
 }
