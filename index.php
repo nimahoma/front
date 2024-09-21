@@ -138,9 +138,11 @@
 											ساختگی با تولید سادگی نامفهوم از
 											صنعت چاپ، و با استفاده از طراحان
 										</p>
-										<button class="saei-btn">
-											به ما بپیوندید
-										</button>
+										<div class="sa-t-c-btn">
+											<button class="saei-btn">
+												به ما بپیوندید
+											</button>
+										</div>
 									</div>
 								</div>
 								<div class="col-12 col-md-3">

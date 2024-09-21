@@ -147,6 +147,8 @@
   --sa-box-shadow-small: 0 0 10px rgba(0, 0, 0, 0.1);
   --sa-box-shadow-medium: 0 0 20px rgba(0, 0, 0, 0.1);
   --sa-box-shadow-large: 0 0 30px rgba(0, 0, 0, 0.1);
+  --sa-font-size-stronge-mobile: 25px;
+  --sa-font-size-paragraphe-mobile: 16px;
 }
 
 * {
@@ -763,7 +765,7 @@ body.admin-bar .header {
   margin-bottom: 0.25rem;
 }
 .footer-content .footer-menu-title {
-  font-weight: 700;
+  font-weight: 800;
   font-family: Yekan-Bakh-ExtraBold;
   margin-bottom: 0.5rem;
 }
@@ -790,10 +792,10 @@ body.admin-bar .header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  left: -34px;
+  left: -25px;
   bottom: 0px;
   color: var(--primary-color);
-  padding: 1rem 1.5rem 3rem;
+  padding: 1rem 1rem 3rem;
   background: var(--text-color);
 }
 .sa-footer-social a {
@@ -878,6 +880,157 @@ body.admin-bar .header {
 =============================================================================
 ============================================================================*/
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .first-things {
+    padding-top: 4rem;
+  }
+  .last-things {
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+  .sec-padding {
+    padding: 3rem 0;
+  }
+  .sa-strong-title {
+    font-size: var(--sa-font-size-stronge-mobile);
+  }
+  #header.header {
+    padding: 12px 20px;
+    height: auto;
+  }
+  #header.header button.navbar-toggler:focus, #header.header button.navbar-toggler:active {
+    box-shadow: none;
+  }
+  #header.header .navbar .nav-item:before {
+    height: 100%;
+    width: 4px;
+    right: -10px;
+    left: auto;
+  }
+  .hero-banner.sa-banner {
+    height: max-content;
+  }
+  .hero-banner.sa-banner .sa-b-content {
+    position: relative;
+    width: 100%;
+    top: auto;
+    transform: unset;
+    left: auto;
+    right: auto;
+  }
+  .hero-banner.sa-banner .sa-b-content .sa-strong-title {
+    font-size: var(--sa-font-size-stronge-mobile);
+  }
+  .hero-banner.sa-banner .sa-b-content p {
+    font-size: var(--sa-font-size-paragraphe-mobile);
+  }
+  .about-us-plus {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .about-us-plus .aup-title h4 {
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .about-us-plus .aup-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .sa-s-content {
+    padding: 1rem 0;
+  }
+  .sa-s-content .sa-s-c-top .sa-s-c-t-img {
+    margin-bottom: 1rem;
+  }
+  .sa-s-content .sa-s-c-bottom .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sa-s-content .sa-s-c-bottom .sa-s-c-t-img {
+    margin-bottom: 1rem;
+  }
+  .sa-s-content .sa-s-c-b-text,
+  .sa-s-content .sa-s-c-t-text {
+    justify-content: center;
+    text-align: center;
+  }
+  .sa-s-content .sa-s-c-b-text p,
+  .sa-s-content .sa-s-c-t-text p {
+    width: 100%;
+  }
+  .sa-team-banner {
+    padding: var(--sa-p-3);
+  }
+  .sa-team-banner .sa-t-content .col-12 {
+    margin-bottom: 1rem;
+  }
+  .sa-team-banner .sa-t-c-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .sa-team-banner .sa-t-c-btn button {
+    width: 100%;
+  }
+  .footer-content .footer-menu-title {
+    color: var(--primary-color);
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .footer-logo a {
+    width: 40%;
+  }
+  .footer-logo a img {
+    width: 100%;
+  }
+  .page-wrapper.Internal-pages {
+    display: block;
+  }
+  .page-sticky-sidebar {
+    width: 100%;
+    top: calc(100% - 48px);
+    margin-bottom: 0;
+    background: var(--white-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+  }
+  .page-sticky-sidebar .sa-scrollspy-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--white-color);
+  }
+  .page-sticky-sidebar .sa-scrollspy-nav .sa-ss-nav-item {
+    border: none;
+    padding: 10px 5px;
+    background: var(--white-color);
+    border-top: 4px solid var(--white-color);
+  }
+  .page-sticky-sidebar .sa-scrollspy-nav .sa-ss-nav-item.active {
+    border: none;
+    border-top: 4px solid var(--primary-color);
+  }
+  .page-content-wrapper {
+    width: 100%;
+  }
+  .tab-content-item {
+    flex-direction: column;
+  }
+  .tab-content-item .tci-description,
+  .tab-content-item .tci-img {
+    width: 100%;
+  }
+  .tab-content-item .sa-paragraph-box span {
+    bottom: 20px;
+  }
+  .sa-thumbnail-layout .sa-tl-item .description {
+    margin-bottom: 1rem;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
