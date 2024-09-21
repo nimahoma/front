@@ -290,7 +290,7 @@ get_template_part( 'parts/header' );
 							</div>
 						</section>
 						<section
-							class="section-scroll case-study page-section-top"
+							class="section-scroll case-study page-section-top last-things"
 							id="case-study-4"
 						>
 							<div class="sa-paragraph-box no-padding">

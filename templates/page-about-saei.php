@@ -927,7 +927,7 @@ get_template_part( 'parts/header' );
 							</div>
 						</section>
 						<section
-							class="section-scroll sa-resources page-section-bottom page-section-top"
+							class="section-scroll sa-resources last-things page-section-top"
 							id="sa-resources-4"
 						>
 							<div class="sa-paragraph-box no-padding">
