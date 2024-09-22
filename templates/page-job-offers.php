@@ -2,9 +2,25 @@
 /*
 Template Name: Job Offers
 */
+?>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php bloginfo( 'name' ); ?></title>
+    <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+    <?php wp_head(); ?>
+</head>
 
-get_header(); // Include the header
+<?php
 
+/*get_header(); // Include the header*/
+get_template_part( 'parts/header' );
+?>
+
+<body <?php body_class(); ?>>
+
+
+<?php
 // Get all categories (departments)
 $categories = get_categories(array(
     'taxonomy' => 'category',
@@ -68,5 +84,56 @@ foreach ($categories as $category) {
 <?php
 }
 
-get_footer(); // Include the footer
-?>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tabsWrapper = document.getElementById("tabs-wrapper");
+    const tabs = document.querySelectorAll(".tab");
+    const prevArrow = document.getElementById("prev-arrow");
+    const nextArrow = document.getElementById("next-arrow");
+    const navbarLinks =
+        document.querySelectorAll(".sticky-navbar a");
+
+    let activeIndex = 0;
+
+    // Scrollspy functionality
+    function onScroll() {
+        let currentSection = "";
+        document
+            .querySelectorAll(".section-scroll")
+            .forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 50) {
+                    currentSection = section.getAttribute("id");
+                }
+            });
+
+        navbarLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (
+                link.getAttribute("data-target") ===
+                `#${currentSection}`
+            ) {
+                link.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", onScroll);
+
+    navbarLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const targetId = this.getAttribute("data-target");
+            document
+                .querySelector(targetId)
+                .scrollIntoView({ behavior: "smooth" });
+        });
+    });
+});
+</script>
+</body>
+
+<?php get_template_part( 'parts/footer' ); ?>
+<?php wp_footer(); ?>
