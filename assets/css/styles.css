@@ -868,6 +868,113 @@ body.admin-bar .header {
   background-color: #f0f0f0;
 }
 
+.sa-modal-teams .modal-content {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: unset;
+}
+.sa-modal-teams .modal-content .modal-header {
+  position: relative;
+  justify-content: space-between;
+  border: unset;
+}
+.sa-modal-teams .modal-content .modal-header .modal-title {
+  direction: ltr;
+}
+.sa-modal-teams .modal-content .modal-header .btn-close {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--black-color);
+  border-radius: 50%;
+  color: var(--black-color);
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1;
+  background-image: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sa-modal-teams .modal-content .modal-header .btn-close:focus {
+  box-shadow: unset;
+}
+
+.sa-modal-teams .modal-body {
+  color: var(--black-color);
+}
+.sa-modal-teams .modal-body .accordion-item {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  background: var(--smoke-color);
+  border: unset;
+  border-radius: unset;
+}
+.sa-modal-teams .modal-body .accordion-item .accordion-header {
+  border: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
+}
+.sa-modal-teams .modal-body .accordion-item .accordion-header button.accordion-button {
+  background: transparent;
+  border: unset;
+  border-radius: unset;
+  box-shadow: unset;
+  position: relative;
+}
+.sa-modal-teams .modal-body .accordion-item .accordion-header button.accordion-button:after {
+  content: "";
+  background-image: unset;
+}
+.sa-modal-teams .modal-body .accordion-item .accordion-header button.accordion-button i {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: rotate(0) translateY(-50%);
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.sa-modal-teams .modal-body .accordion-item .accordion-header button.accordion-button:not(.collapsed) {
+  color: var(--black-color);
+}
+.sa-modal-teams .modal-body .accordion-item .accordion-header button.accordion-button:not(.collapsed) i {
+  top: 35%;
+  transform: rotate(-90deg) translateY(-50%);
+  right: -15px;
+}
+.sa-modal-teams .modal-body .accordion-item .accordion-header .saei-btn {
+  height: 32px;
+  width: 119px;
+  margin-left: 5px;
+}
+.sa-modal-teams .modal-body .accordion-item .accordion-header .saei-btn span {
+  font-weight: 400;
+}
+.sa-modal-teams .modal-body .accordion-item .accordion-body {
+  padding: 0 2rem 1rem;
+}
+
+.modal-dialog-scrollable .modal-body {
+  overflow-y: scroll;
+}
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar {
+  width: 5px;
+  height: auto;
+}
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
 /*============================================================================
 ==============================================================================
 ==============================================================================
@@ -1030,7 +1137,104 @@ body.admin-bar .header {
   .sa-thumbnail-layout .sa-tl-item .description {
     margin-bottom: 1rem;
   }
+  .sa-teams-item-layout {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .sa-modal-teams .modal-content {
+    padding: 1rem;
+  }
+  .sa-modal-teams .modal-content .modal-header .modal-title {
+    font-size: 20px;
+  }
+  .sa-modal-teams .modal-body .accordion-item {
+    padding: 0;
+  }
+  .sa-modal-teams .modal-body .accordion-item .accordion-header {
+    flex-direction: column;
+  }
+  .sa-modal-teams .modal-body .accordion-item .accordion-header .saei-btn {
+    margin-bottom: 1rem;
+  }
 }
+.job-offer-single-page .page-wrapper {
+  justify-content: space-between;
+}
+.job-offer-single-page .page-wrapper .page-content-wrapper {
+  width: 65%;
+}
+.job-offer-single-page .breadcrumb-wrapper .breadcrumb-list {
+  display: flex;
+  padding-top: 2rem;
+}
+.job-offer-single-page .breadcrumb-wrapper span {
+  margin: 0 5px;
+  color: var(--gray-color);
+}
+.job-offer-single-page .breadcrumb-wrapper .sa-breadcrumb-item {
+  color: var(--gray-color);
+}
+.job-offer-single-page .breadcrumb-wrapper .sa-breadcrumb-item.active {
+  color: var(--primary-color);
+}
+
+.job-offer-single-content ul {
+  list-style: disc;
+}
+.job-offer-single-content ul li {
+  list-style: disc;
+  margin-right: 1rem;
+}
+
+.job-offer-single-sidebar {
+  width: 30%;
+}
+.job-offer-single-sidebar .sa-paragraph-box .title {
+  border-bottom: 1px solid var(--primary-color);
+}
+.job-offer-single-sidebar .sa-teams-item-layout {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.job-offer-single-sidebar .sa-teams-item-layout .single-team-item {
+  background-color: var(--smoke-color);
+  margin-bottom: 1rem;
+}
+.job-offer-single-sidebar .sa-teams-item-layout .single-team-item .sa-ti-wrapper .sa-ti-modal-link {
+  background-color: var(--smoke-color);
+  margin-bottom: 0;
+}
+
+.sa-joinus-form {
+  margin-bottom: 2rem;
+}
+.sa-joinus-form .form-group {
+  margin-bottom: 1rem;
+}
+.sa-joinus-form .form-group label {
+  font-size: 14px;
+}
+.sa-joinus-form .form-group .form-control {
+  border: unset;
+  background: var(--light-color);
+  border-radius: unset;
+  border-bottom: 1px solid var(--gray-color);
+  font-size: 14px;
+  line-height: 1.58;
+}
+.sa-joinus-form .form-group .form-control::placeholder {
+  color: #a8a8a8;
+}
+.sa-joinus-form .form-group .form-control:focus, .sa-joinus-form .form-group .form-control:focus-visible, .sa-joinus-form .form-group .form-control:focus-within {
+  border: unset;
+  box-shadow: none;
+}
+.sa-joinus-form .sa-dt-btn {
+  margin: 0;
+  justify-content: flex-end;
+}
+.sa-joinus-form .sa-dt-btn .saei-btn {
+  width: 252px;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */

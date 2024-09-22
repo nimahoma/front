@@ -37,12 +37,12 @@
 										>Home</a
 									>
 								</li> -->
-								<li class="nav-item">
+								<li class="nav-item active">
 									<a class="nav-link" href="#"
 										>فرصت‌های شغلی</a
 									>
 								</li>
-								<li class="nav-item active">
+								<li class="nav-item">
 									<a class="nav-link" href="#"
 										>تحول دیجیتال</a
 									>
@@ -371,7 +371,12 @@
 											</p>
 										</div>
 										<div class="sa-ti-btn">
-											<button class="sa-ti-modal-link">
+											<button
+												type="button"
+												class="sa-ti-modal-link"
+												data-bs-toggle="modal"
+												data-bs-target="#teams-hr_modal"
+											>
 												<span>
 													<img
 														src="assets/img/chevron-vector.png"
@@ -386,119 +391,235 @@
 							</div>
 						</section>
 
-						<button
-							type="button"
-							class="btn btn-primary"
-							data-bs-toggle="modal"
-							data-bs-target="#exampleModalCenteredScrollable"
-						>
-							Vertically centered scrollable modal
-						</button>
 						<div
 							class="modal fade"
-							id="exampleModalCenteredScrollable"
+							id="teams-hr_modal"
 							data-bs-keyboard="false"
 							tabindex="-1"
 							aria-hidden="true"
 						>
 							<div
-								class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+								class="sa-modal-teams modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
 							>
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-title">Modal title</h5>
+										<h3 class="modal-title">
+											HR موقعیت‌های شغلی تیم
+										</h3>
 										<button
 											type="button"
 											class="btn-close"
 											data-bs-dismiss="modal"
 											aria-label="Close"
-										></button>
+										>
+											<i
+												class="fa-sharp-duotone fa-solid fa-xmark"
+											></i>
+										</button>
 									</div>
 									<div class="modal-body">
-										<p>
-											Lorem ipsum dolor sit amet,
-											consectetur adipiscing elit. In
-											aliquet nunc massa, sed posuere eros
-											feugiat ac. Ut vestibulum purus
-											vitae tempor laoreet. Pellentesque
-											mollis cursus ipsum ut interdum.
-											Fusce faucibus a dolor vitae
-											condimentum. Nulla id ex interdum,
-											consequat risus non, elementum
-											lectus. Vestibulum felis dolor,
-											iaculis vel pellentesque sit amet,
-											mattis in lacus. Donec eu aliquam
-											turpis. Pellentesque dignissim sem
-											id sem commodo viverra. Maecenas a
-											ligula eu quam tincidunt
-											pellentesque at at nunc. Quisque
-											euismod, nisi fermentum consequat
-											euismod, sapien urna malesuada
-											augue, a pellentesque mi felis at
-											magna. Nam dignissim arcu ac dolor
-											iaculis faucibus.
-										</p>
-										<p>
-											In interdum eget lorem in tincidunt.
-											Mauris cursus sollicitudin
-											consectetur. Ut sodales pulvinar
-											ante vitae gravida. Etiam ipsum
-											eros, egestas eget ex vitae,
-											lobortis vestibulum est. Cras eu dui
-											consectetur, porttitor tortor nec,
-											rutrum tellus. Pellentesque
-											sagittis, leo vel pulvinar tempor,
-											neque nisl vestibulum ante, non
-											cursus quam lectus suscipit turpis.
-											Cras aliquam massa orci, quis
-											convallis odio imperdiet tempus.
-											Pellentesque facilisis et purus id
-											semper. Quisque mi nisl, consectetur
-											auctor nunc non, tempor porta
-											sapien. Pellentesque et velit quis
-											leo accumsan ultrices sed et felis.
-											Proin malesuada mi eu odio
-											dignissim, et vehicula ante
-											ultrices.
-										</p>
-										<p>
-											Aenean et posuere tortor.
-											Suspendisse eleifend ipsum ligula.
-											Fusce quis ornare enim. Lorem ipsum
-											dolor sit amet, consectetur
-											adipiscing elit. Pellentesque auctor
-											velit in purus malesuada aliquam.
-											Praesent vehicula blandit erat, nec
-											vulputate turpis posuere vitae. Nam
-											pharetra vehicula tortor, ut
-											molestie ligula tincidunt ut.
-											Aliquam sit amet venenatis ipsum, at
-											commodo nunc. Lorem ipsum dolor sit
-											amet, consectetur adipiscing elit.
-											Phasellus ullamcorper nibh et mauris
-											vulputate fringilla.
-										</p>
-										<p>
-											Phasellus vitae justo sem. Phasellus
-											eget rutrum massa, vitae pharetra
-											orci. Phasellus sollicitudin
-											bibendum urna in suscipit. Morbi
-											posuere nulla at lorem sagittis
-											blandit. Quisque non velit eget
-											metus vehicula suscipit sed ut nunc.
-											Etiam sollicitudin sagittis mi, sed
-											tincidunt neque feugiat vel. Fusce
-											elementum aliquet feugiat. Morbi et
-											egestas dui, eget dignissim leo.
-											Etiam a facilisis lacus. Integer
-											convallis sodales magna, dignissim
-											fermentum purus facilisis eu.
-											Pellentesque eleifend id nulla et
-											mattis. Morbi quis sodales augue, ut
-											convallis nisi. Nulla pharetra magna
-											dolor, et rhoncus urna pulvinar
-											eget.
-										</p>
+										<div
+											class="accordion"
+											id="HR_accordion"
+										>
+											<div class="accordion-item">
+												<h2
+													class="accordion-header"
+													id="head_HR"
+												>
+													<button
+														class="accordion-button"
+														type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#HR_teams-xxx"
+														aria-expanded="true"
+														aria-controls="HR_teams-xxx"
+													>
+														<i
+															class="fa-sharp-duotone fa-solid fa-caret-left"
+														></i>
+														برنامه نویس ارشد
+														Front-End
+													</button>
+													<a
+														class="saei-btn"
+														href="#"
+													>
+														<span>درخواست</span>
+													</a>
+												</h2>
+												<div
+													id="HR_teams-xxx"
+													class="accordion-collapse collapse show"
+													aria-labelledby="head_HR"
+													data-bs-parent="#HR_accordion"
+												>
+													<div class="accordion-body">
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن
+														<br />اطلاعات مورد نیاز
+														برای این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2
+													class="accordion-header"
+													id="headingTwo"
+												>
+													<button
+														class="accordion-button collapsed"
+														type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#collapseTwo"
+														aria-expanded="false"
+														aria-controls="collapseTwo"
+													>
+														<i
+															class="fa-sharp-duotone fa-solid fa-caret-left"
+														></i>
+														برنامه نویس Back-End
+													</button>
+													<a
+														class="saei-btn"
+														href="#"
+													>
+														<span>درخواست</span>
+													</a>
+												</h2>
+												<div
+													id="collapseTwo"
+													class="accordion-collapse collapse"
+													aria-labelledby="headingTwo"
+													data-bs-parent="#HR_accordion"
+												>
+													<div class="accordion-body">
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن
+														<br />اطلاعات مورد نیاز
+														برای این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2
+													class="accordion-header"
+													id="headingThree"
+												>
+													<button
+														class="accordion-button collapsed"
+														type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#collapseThree"
+														aria-expanded="false"
+														aria-controls="collapseThree"
+													>
+														<i
+															class="fa-sharp-duotone fa-solid fa-caret-left"
+														></i>
+														برنامه نویس Python
+													</button>
+													<a
+														class="saei-btn"
+														href="#"
+													>
+														<span>درخواست</span>
+													</a>
+												</h2>
+												<div
+													id="collapseThree"
+													class="accordion-collapse collapse"
+													aria-labelledby="headingThree"
+													data-bs-parent="#HR_accordion"
+												>
+													<div class="accordion-body">
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن
+														<br />اطلاعات مورد نیاز
+														برای این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2
+													class="accordion-header"
+													id="headingFour"
+												>
+													<button
+														class="accordion-button collapsed"
+														type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#collapseFour"
+														aria-expanded="false"
+														aria-controls="collapseFour"
+													>
+														<i
+															class="fa-sharp-duotone fa-solid fa-caret-left"
+														></i>
+														برنامه نویس Python
+													</button>
+													<a
+														class="saei-btn"
+														href="#"
+													>
+														<span>درخواست</span>
+													</a>
+												</h2>
+												<div
+													id="collapseFour"
+													class="accordion-collapse collapse"
+													aria-labelledby="headingFour"
+													data-bs-parent="#HR_accordion"
+												>
+													<div class="accordion-body">
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن
+														<br />اطلاعات مورد نیاز
+														برای این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+														اطلاعات مورد نیاز برای
+														این جاب پوزیشن<br />
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -525,6 +646,112 @@
 										روزنامه و مجله در ستون و سطرآنچنان که
 										لازم است.
 									</p>
+								</div>
+							</div>
+
+							<div class="sa-joinus-form">
+								<div class="wrapper">
+									<form id="sa_joinus_form">
+										<div class="row">
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+													<label
+														id="name-label"
+														for="name"
+														>نام کامل خود را وارد
+														کنید</label
+													>
+													<input
+														type="text"
+														name="name"
+														id="name"
+														placeholder="نام و نام خانوادگی"
+														class="form-control"
+														required=""
+													/>
+												</div>
+											</div>
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+													<label
+														id="email-label"
+														for="email"
+														>ایمیل</label
+													>
+													<input
+														type="email"
+														name="email"
+														id="email"
+														placeholder="example@example.com"
+														class="form-control"
+														required=""
+													/>
+												</div>
+											</div>
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+													<label
+														id="file-label"
+														for="file"
+														>آپلود رزومه</label
+													>
+													<input
+														type="file"
+														name="file"
+														id="file"
+														placeholder="روزمه خود را آپلود کنید"
+														class="form-control"
+														required=""
+													/>
+												</div>
+											</div>
+											<div class="col-12 col-md-6">
+												<div class="form-group">
+													<label for="phone"
+														>شماره تماس</label
+													>
+													<div class="relative">
+														<input
+															class="form-control"
+															type="text"
+															maxlength="11"
+															oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+															required=""
+															placeholder="09123456789"
+															name="phone"
+															id="phone"
+															aria-describedby="phone-help"
+															aria-invalid="false"
+														/>
+													</div>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-group">
+													<label
+														>اطلاعات تکمیلی</label
+													>
+													<textarea
+														id="comments"
+														class="form-control"
+														name="comment"
+														rows="5"
+														placeholder="لطفا توضیحات خود را در این قسمت بنویسید"
+													></textarea>
+												</div>
+											</div>
+										</div>
+
+										<div class="sa-dt-btn">
+											<button
+												class="saei-btn"
+												type="submit"
+												id="submit"
+											>
+												<span>ارسال درخواست</span>
+											</button>
+										</div>
+									</form>
 								</div>
 							</div>
 						</section>
