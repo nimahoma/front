@@ -301,6 +301,12 @@ body{
 		width: auto;
 	}
 }
+.sa-background-img{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+}
 .saei-btn{
 	width: 184px;
 	height: 48px;
@@ -632,7 +638,7 @@ body.admin-bar{
 //== 3. OUR TEAM ==
 .sa-team-banner{
 	padding: var(--sa-p-5);
-    background-image: url(../img/our-team.webp);
+    background-image: url(../img/our-team-1.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -654,6 +660,7 @@ body.admin-bar{
     min-height: 100%;
 	h2{
 		color: var(--white-color);
+		line-height: 1;
 	}
 }
 .sa-t-c-card{
@@ -662,25 +669,38 @@ body.admin-bar{
     padding: var(--sa-p-1-5);
 }
 
-//== 4. DIGITAAL TRANSFORM ==
-.sa-digital-transform{
-	.wrapper{
-		width: 75%;
-		margin: auto;
+//== 4. sa-skills ==
+.sa-skills-tiles{
+
+}
+
+.sa-skills-tiles-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+	.sa-skills-tiles-item{
+		.sa-background-img{
+			height: 400px;
+			padding: 3rem 2rem;
+		}
+		.title{
+			background-color: rgba(0, 0, 0, 0.7);
+			h4{
+				color: var(--white-color);
+			}
+		}
+		.skill-dss,
+		.skill-ms,
+		.skill-bds,
+		.skill-dt,
+		.skill-ts,
+		.skill-dea{
+			background-image: url('../img/skill-1.webp');
+		}
 	}
 }
 
-.sa-dtc-item{
-	.sa-dtci-description{
-		width: 70%;
-		display: flex;
-		align-items: center;
-		color: var(--black-color);
-	}
-	.sa-dtci-img{
-		width: 20%;
-	}
-}
+
 .sa-dt-btn{
 	display: flex;
 	justify-content: center;
@@ -1281,6 +1301,10 @@ body.admin-bar{
 				width: 100%;
 			}
 		}
+	}
+	.sa-skills-tiles-wrapper{
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		gap: 15px;
 	}
 	.footer-content {
 		.footer-menu-title{

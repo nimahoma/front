@@ -192,117 +192,90 @@
 				</div>
 			</section>
 
-			<section class="sa-digital-transform sec-padding">
-				<div class="container">
-					<div class="wrapper">
-						<div class="sa-dt-about text-center">
-							<h1 class="sa-strong-title">تحول دیجیتال</h1>
-							<p class="mb-4">
-								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-								صنعت چاپ، و با استفاده از طراحان گرافیک است،
-								چاپگرها و متون بلکه روزنامه و مجله در ستون و
-								سطرآنچنان که لازم است، و برای شرایط فعلی
-								تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
-								بهبود ابزارهای کاربردی می باشد، ورم ایپسوم متن
-								ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-								استفاده از طراحان گرافیک است، چاپگرها و متون
-								بلکه روزنامه
-							</p>
-						</div>
-						<div class="sa-dt-content">
-							<div
-								class="sa-dtc-item d-flex justify-content-between"
-							>
-								<div class="sa-dtci-description">
-									<p>
-										ورم ایپسوم متن ساختگی با تولید سادگی
-										نامفهوم از صنعت چاپ، و با استفاده از
-										طراحان گرافیک است، چاپگرها و متون بلکه
-										روزنامه و مجله در ستون و سطرآنچنان که
-										لازم است، و برای شرایط فعلی تکنولوژی
-										مورد نیاز، چاپگرها و متون بلکه روزنامه و
-										مجله در ستون و سطرآنچنان که لازم است،
-									</p>
-								</div>
-								<div class="sa-dtci-img">
-									<img
-										src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
-										alt=""
-									/>
+			<section class="sa-skills sec-padding">
+					<div class="container">
+						<div class="wrapper">
+							<div class="sa-dt-about text-center">
+								<h1 class="sa-strong-title">توان‌مندی‌ها</h1>
+								<p class="mb-4">
+									لورم ایپسوم متن ساختگی است. لورم ایپسوم متن
+									ساختگی استلورم ایپسوم متن ساختگی<br />
+									استلورم ایپسوم متن ساختگی استلورم ایپسوم متن
+									ساختگی استلورم ایپسوم متن ساختگی<br />
+									استلورم ایپسوم متن ساختگی استلورم ایپسوم متن
+									ساختگی استلورم ایپسوم متن ساختگی<br />
+								</p>
+							</div>
+							<div class="sa-skills-tiles">
+								<div class="sa-skills-tiles-wrapper">
+									<div class="sa-skills-tiles-item">
+										<div
+											class="sa-background-img skill-dss"
+										>
+											<div class="title">
+												<h4 class="en-font">
+													Digital Security Solutions
+												</h4>
+											</div>
+										</div>
+									</div>
+									<div class="sa-skills-tiles-item">
+										<div class="sa-background-img skill-ms">
+											<div class="title">
+												<h4 class="en-font">
+													Managed Services
+												</h4>
+											</div>
+										</div>
+									</div>
+									<div class="sa-skills-tiles-item">
+										<div
+											class="sa-background-img skill-bds"
+										>
+											<div class="title">
+												<h4 class="en-font">
+													Big Data Services
+												</h4>
+											</div>
+										</div>
+									</div>
+									<div class="sa-skills-tiles-item">
+										<div class="sa-background-img skill-dt">
+											<div class="title">
+												<h4 class="en-font">
+													Digital Transformation
+													<br />
+													Consulting Services
+												</h4>
+											</div>
+										</div>
+									</div>
+									<div class="sa-skills-tiles-item">
+										<div class="sa-background-img skill-ts">
+											<div class="title">
+												<h4 class="en-font">
+													Telecom Solution
+												</h4>
+											</div>
+										</div>
+									</div>
+									<div class="sa-skills-tiles-item">
+										<div
+											class="sa-background-img skill-dea"
+										>
+											<div class="title">
+												<h4 class="en-font">
+													Digital Enterprise
+													Application
+												</h4>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div
-								class="sa-dtc-item d-flex justify-content-between flex-row-reverse"
-							>
-								<div class="sa-dtci-description">
-									<p>
-										ورم ایپسوم متن ساختگی با تولید سادگی
-										نامفهوم از صنعت چاپ، و با استفاده از
-										طراحان گرافیک است، چاپگرها و متون بلکه
-										روزنامه و مجله در ستون و سطرآنچنان که
-										لازم است، و برای شرایط فعلی تکنولوژی
-										مورد نیاز، چاپگرها و متون بلکه روزنامه و
-										مجله در ستون و سطرآنچنان که لازم است،
-									</p>
-								</div>
-								<div class="sa-dtci-img">
-									<img
-										src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div
-								class="sa-dtc-item d-flex justify-content-between"
-							>
-								<div class="sa-dtci-description">
-									<p>
-										ورم ایپسوم متن ساختگی با تولید سادگی
-										نامفهوم از صنعت چاپ، و با استفاده از
-										طراحان گرافیک است، چاپگرها و متون بلکه
-										روزنامه و مجله در ستون و سطرآنچنان که
-										لازم است، و برای شرایط فعلی تکنولوژی
-										مورد نیاز، چاپگرها و متون بلکه روزنامه و
-										مجله در ستون و سطرآنچنان که لازم است،
-									</p>
-								</div>
-								<div class="sa-dtci-img">
-									<img
-										src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
-										alt=""
-									/>
-								</div>
-							</div>
-							<div
-								class="sa-dtc-item d-flex justify-content-between flex-row-reverse"
-							>
-								<div class="sa-dtci-description">
-									<p>
-										ورم ایپسوم متن ساختگی با تولید سادگی
-										نامفهوم از صنعت چاپ، و با استفاده از
-										طراحان گرافیک است، چاپگرها و متون بلکه
-										روزنامه و مجله در ستون و سطرآنچنان که
-										لازم است، و برای شرایط فعلی تکنولوژی
-										مورد نیاز، چاپگرها و متون بلکه روزنامه و
-										مجله در ستون و سطرآنچنان که لازم است،
-									</p>
-								</div>
-								<div class="sa-dtci-img">
-									<img
-										src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
-										alt=""
-									/>
-								</div>
-							</div>
-						</div>
-						<div class="sa-dt-btn">
-							<button class="saei-btn">
-								<span>بیشتر بخوانید</span>
-							</button>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 		</div> 
 	
 	
