@@ -263,6 +263,13 @@ body {
   width: auto;
 }
 
+.sa-background-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .saei-btn {
   width: 184px;
   height: 48px;
@@ -561,7 +568,7 @@ body.admin-bar .header {
 
 .sa-team-banner {
   padding: var(--sa-p-5);
-  background-image: url(../img/our-team.webp);
+  background-image: url(../img/our-team-1.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -584,6 +591,7 @@ body.admin-bar .header {
 }
 .sa-t-c-title h2 {
   color: var(--white-color);
+  line-height: 1;
 }
 
 .sa-t-c-card {
@@ -592,19 +600,28 @@ body.admin-bar .header {
   padding: var(--sa-p-1-5);
 }
 
-.sa-digital-transform .wrapper {
-  width: 75%;
-  margin: auto;
+.sa-skills-tiles-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
 }
-
-.sa-dtc-item .sa-dtci-description {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  color: var(--black-color);
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img {
+  height: 400px;
+  padding: 3rem 2rem;
 }
-.sa-dtc-item .sa-dtci-img {
-  width: 20%;
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .title {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .title h4 {
+  color: var(--white-color);
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dss,
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ms,
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-bds,
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dt,
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ts,
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dea {
+  background-image: url("../img/skill-1.webp");
 }
 
 .sa-dt-btn {
@@ -1158,6 +1175,10 @@ body.admin-bar .header {
   }
   .sa-team-banner .sa-t-c-btn button {
     width: 100%;
+  }
+  .sa-skills-tiles-wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 15px;
   }
   .footer-content .footer-menu-title {
     color: var(--primary-color);
