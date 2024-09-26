@@ -28,13 +28,29 @@ function saeiTheme_enqueue_styles() {
 
     wp_enqueue_style( 'saei-css', get_template_directory_uri() . '/assets/css/styles.css' );
     
-    // Enqueue your theme's main stylesheet
     wp_enqueue_style( 'saeiTheme-style', get_stylesheet_uri() );
     
-    // Enqueue Bootstrap JS (including Popper.js and Bootstrap bundle)
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'saeiTheme_enqueue_styles' );
+
+/* ADD THEME SUPPORT */
+function saeiTheme_setup() {
+    add_theme_support( 'post-thumbnails' );
+
+    set_post_thumbnail_size( 150, 150, true ); 
+
+    add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
+
+    add_theme_support( 'html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+    ) );
+}
+add_action( 'after_setup_theme', 'saeiTheme_setup' );
 
  /* REGISTER HEADER */
 function saeiTheme_custom_menu() {
@@ -49,7 +65,6 @@ add_action( 'init', 'saeiTheme_custom_menu' );
 
 /* REGISTER FOOTER WIDGETS */
 function saeiTheme_register_footer_widgets() {
-    // Register the first footer widget area
     register_sidebar( array(
         'name'          => __( 'Footer Column 1', 'saeiTheme' ),
         'id'            => 'footer-1',
@@ -60,7 +75,6 @@ function saeiTheme_register_footer_widgets() {
         'after_title'   => '</h2>',
     ) );
 
-    // Register the second footer widget area
     register_sidebar( array(
         'name'          => __( 'Footer Column 2', 'saeiTheme' ),
         'id'            => 'footer-2',
@@ -71,7 +85,6 @@ function saeiTheme_register_footer_widgets() {
         'after_title'   => '</h2>',
     ) );
 
-    // Register the third footer widget area
     register_sidebar( array(
         'name'          => __( 'Footer Column 3', 'saeiTheme' ),
         'id'            => 'footer-3',
@@ -82,7 +95,6 @@ function saeiTheme_register_footer_widgets() {
         'after_title'   => '</h2>',
     ) );
 
-    // Register the fourth footer widget area
     register_sidebar( array(
         'name'          => __( 'Footer Column 4', 'saeiTheme' ),
         'id'            => 'footer-4',
@@ -103,8 +115,14 @@ function saeiTheme_register_sidebar_widget() {
         'description'   => __( 'Widgets in this area will be shown in the sidebar.', 'saeiTheme' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<div class="sa-paragraph-box no-padding"><div class"title"><h4>',
+        'after_title'   => '</h4></div></div>',
     ) );
 }
 add_action( 'widgets_init', 'saeiTheme_register_sidebar_widget' );
+
+/* REGISTER RELATED JOBS WIDGET */
+function saeiTheme_register_widgets() {
+    register_widget( 'Saei_Related_Posts_Widget' );
+}
+add_action( 'widgets_init', 'saeiTheme_register_widgets' );
