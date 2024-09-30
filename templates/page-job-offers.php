@@ -15,7 +15,7 @@ Template Name: Job Offers
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 
-    <div class="job-offers-page">
+    <div class="page job-offers-page">
         <div class="container">
             <div class="page-wrapper Internal-pages" id="job-offers">
                 <aside class="page-sticky-sidebar">

@@ -17,7 +17,7 @@ Template Name: Digital Transform
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 
-    <div class="digital-transform-page">
+    <div class="page digital-transform-page">
         <div class="container">
             <div class="page-wrapper Internal-pages" id="digital-transform">
                 <aside class="page-sticky-sidebar">

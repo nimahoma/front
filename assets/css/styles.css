@@ -568,7 +568,7 @@ body.admin-bar .header {
 
 .sa-team-banner {
   padding: var(--sa-p-5);
-  background-image: url(../img/our-team-1.webp);
+  background-image: url(../img/our-team-v2.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -593,6 +593,9 @@ body.admin-bar .header {
   color: var(--white-color);
   line-height: 1;
 }
+.sa-t-c-title p {
+  margin-bottom: 0.5rem;
+}
 
 .sa-t-c-card {
   min-height: 100%;
@@ -605,23 +608,33 @@ body.admin-bar .header {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
 }
+.sa-skills-tiles-wrapper .sa-skills-tiles-item a {
+  display: block;
+}
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img {
   height: 400px;
   padding: 3rem 2rem;
 }
-.sa-skills-tiles-wrapper .sa-skills-tiles-item .title {
-  background-color: rgba(0, 0, 0, 0.7);
-}
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .title h4 {
   color: var(--white-color);
 }
-.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dss,
-.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ms,
-.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-bds,
-.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dt,
-.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ts,
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dss {
+  background-image: url("../img/digital-security-solutions.webp");
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ms {
+  background-image: url("../img/managed-services.webp");
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-bds {
+  background-image: url("../img/big-data-services.webp");
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dt {
+  background-image: url("../img/digital-transformation-consulting-services.webp");
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ts {
+  background-image: url("../img/telecome-solutions.webp");
+}
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dea {
-  background-image: url("../img/skill-1.webp");
+  background-image: url("../img/digital-enterprise-application.webp");
 }
 
 .sa-dt-btn {
@@ -750,6 +763,22 @@ body.admin-bar .header {
 }
 .sa-teams-item .sa-ti-wrapper .sa-ti-modal-link:hover span, .sa-teams-item .sa-ti-wrapper .sa-ti-modal-link:active span {
   background-color: var(--white-color);
+}
+
+/*============================================================================
+==============================================================================
+==============================================================================
+
+
+						SKILLS PAGE
+
+
+=============================================================================
+=============================================================================
+=============================================================================*/
+.skill-page .skill-content .description ul, .skill-page .skill-content .description li {
+  list-style: disc;
+  margin-right: 1rem;
 }
 
 /*============================================================================
@@ -1083,7 +1112,7 @@ body.admin-bar .header {
 =============================================================================
 ============================================================================*/
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .first-things {
     padding-top: 4rem;
   }
@@ -1176,6 +1205,13 @@ body.admin-bar .header {
   .sa-team-banner .sa-t-c-btn button {
     width: 100%;
   }
+  .tumbnail-item .tumbnail-decription {
+    margin-bottom: 1.5rem;
+  }
+  .tumbnail-item .tumbnail-decription .title h5 {
+    line-height: 1;
+    margin-top: 0.5rem;
+  }
   .sa-skills-tiles-wrapper {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 15px;
@@ -1261,9 +1297,130 @@ body.admin-bar .header {
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #header.header {
+    padding: 12px 20px;
+    height: auto;
+  }
+  #header.header button.navbar-toggler:focus, #header.header button.navbar-toggler:active {
+    box-shadow: none;
+  }
+  #header.header .navbar .nav-item:before {
+    height: 100%;
+    width: 4px;
+    right: -10px;
+    left: auto;
+  }
+  .container, .container-sm {
+    max-width: 700px;
+  }
+  .tumbnail-item .tumbnail-decription {
+    margin-bottom: 1.5rem;
+  }
+  .tumbnail-item .tumbnail-decription .title h5 {
+    line-height: 1;
+    margin-top: 0.5rem;
+  }
+  .tab-content-item {
+    flex-direction: column;
+  }
+  .tab-content-item .tci-description,
+  .tab-content-item .tci-img {
+    width: 100%;
+  }
+  .tab-content-item .sa-paragraph-box span {
+    bottom: 20px;
+  }
+  .sa-thumbnail-layout .sa-tl-item .description {
+    margin-bottom: 1rem;
+  }
+  .sa-teams-item-layout {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .footer-logo a {
+    width: 20%;
+  }
+  .footer-logo a img {
+    width: 100%;
+  }
+  .footer-content .footer-menu-title {
+    color: var(--primary-color);
+  }
+  .hero-banner.sa-banner {
+    height: max-content;
+  }
+  .hero-banner.sa-banner .sa-b-content {
+    position: relative;
+    top: auto;
+    transform: unset;
+    left: auto;
+    right: auto;
+    margin-right: auto;
+  }
+  .hero-banner.sa-banner .sa-b-content .sa-strong-title {
+    font-size: var(--sa-font-size-stronge-mobile);
+  }
+  .hero-banner.sa-banner .sa-b-content p {
+    font-size: var(--sa-font-size-paragraphe-mobile);
+  }
+  .sa-strong-title {
+    font-size: var(--sa-font-size-stronge-mobile);
+  }
+  .about-us-plus {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .about-us-plus .aup-title {
+    justify-content: center;
+  }
+  .about-us-plus .aup-title h4 {
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .about-us-plus .aup-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .sa-s-content {
+    padding: 1rem 0;
+  }
+  .sa-s-content .sa-s-c-top .sa-s-c-t-img {
+    margin-bottom: 1rem;
+  }
+  .sa-s-content .sa-s-c-bottom .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sa-s-content .sa-s-c-bottom .sa-s-c-t-img {
+    margin-bottom: 1rem;
+  }
+  .sa-s-content .sa-s-c-b-text,
+  .sa-s-content .sa-s-c-t-text {
+    justify-content: center;
+    text-align: center;
+  }
+  .sa-s-content .sa-s-c-b-text p,
+  .sa-s-content .sa-s-c-t-text p {
+    width: 100%;
+  }
+  .sa-team-banner .sa-t-content .col-12 {
+    margin-bottom: 1rem;
+  }
+  .sa-skills-tiles-wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+  }
+  .sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img {
+    height: 310px;
+  }
+}
 @media only screen and (min-width: 1600px) {
   .about-us .sa-banner {
     background-size: cover;
