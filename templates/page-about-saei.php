@@ -17,7 +17,7 @@ Template Name: About Saei
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 
-    <div class="about-saei-page">
+    <div class="page about-saei-page">
         <div class="container">
             <div class="page-wrapper Internal-pages" id="about-us">
                 <aside class="page-sticky-sidebar">

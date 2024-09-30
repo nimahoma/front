@@ -23,24 +23,23 @@
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 
-    <div class="page-wrapper">
+    <div class="page page-wrapper">
         <section class="about-us">
             <div class="wrapper">
                 <div class="hero-banner sa-banner">
                     <div class="container">
                         <div class="sa-b-content">
-                            <h1 class="sa-strong-title sa-slogan-color mb-3 en-font">
+                            <h1
+                                class="sa-strong-title sa-slogan-color mb-3 en-font"
+                            >
                                 Your Partner in <br />
                                 Digital Transformation Journey.
                             </h1>
                             <p class="sa-slogan-color">
-                                در ساعی، با ارائه پیشرفته‌ترین و مناسب‌ترین
-                                راهکارهای فناوری، کسب و کارها را در مسیر رشد
-                                و تحول دیجیتال همراهی می‌کنیم. با ترسیم
-                                افق‌های استراتژیک و بلندمدت، اطمینان می‌دهیم
-                                که از مراحل اولیه تأمین فناوری تا رسیدن به
-                                موفقیت پایدار، در تمامی گام‌ها به عنوان شریک
-                                تجاری قابل اعتماد در کنار شما خواهیم بود.
+                                در ساعی، با ارائه پیشرفته‌ترین و
+                                مناسب‌ترین راه‌کارهای فناوری، کسب و
+                                کارها را در مسیر رشد و تحول دیجیتال
+                                همراهی می‌کنیم.
                             </p>
                         </div>
                     </div>
@@ -136,11 +135,20 @@
                                         تیم‌ها
                                     </h2>
                                     <p>
-                                        لورم ایپسوم متن ساختگی با تولید
-                                        سادگی نامفهوم از صنعت چاپ، و با
-                                        استفاده از طراحان لورم ایپسوم متن
-                                        ساختگی با تولید سادگی نامفهوم از
-                                        صنعت چاپ، و با استفاده از طراحان
+                                        <strong
+                                            >سرمایه انسانی؛ قلب تپنده‌ی
+                                            موفقیت ساعی</strong
+                                        ><br />
+                                        ما همواره در جستجوی استعدادهای
+                                        نوآور و خلاق در حیطه‌های مختلف
+                                        کاری هستیم. یادگیری مداوم و وجود
+                                        فرصتهای برابر برای رشد در کنار
+                                        هم از ارزشهای اصلی سازمان ساعی
+                                        است.  حتی اگر تجربه کاری کافی
+                                        ندارید، میتوانید از فرصت‌های
+                                        اینترنشیپ و کارآموزی بهره بگیرید
+                                        تا در کنار تیم‌های حرفه‌ای ما
+                                        یاد بگیرید و رشد کنید.
                                     </p>
                                     <div class="sa-t-c-btn">
                                         <button class="saei-btn">
@@ -201,7 +209,7 @@
                 <div class="wrapper">
                     <div class="sa-dt-about text-center">
                         <h1 class="sa-strong-title">توان‌مندی‌ها</h1>
-                        <p class="mb-4">
+                        <p class="mb-5">
                             لورم ایپسوم متن ساختگی است. لورم ایپسوم متن
                             ساختگی استلورم ایپسوم متن ساختگی<br />
                             استلورم ایپسوم متن ساختگی استلورم ایپسوم متن
@@ -213,61 +221,86 @@
                     <div class="sa-skills-tiles">
                         <div class="sa-skills-tiles-wrapper">
                             <div class="sa-skills-tiles-item">
-                                <div class="sa-background-img skill-dss">
-                                    <div class="title">
-                                        <h4 class="en-font">
-                                            Digital Security Solutions
-                                        </h4>
+                                <a href="#">
+                                    <div
+                                        class="sa-background-img skill-dss"
+                                    >
+                                        <div class="title">
+                                            <h4 class="en-font">
+                                                Digital Security
+                                                Solutions
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="sa-skills-tiles-item">
-                                <div class="sa-background-img skill-ms">
-                                    <div class="title">
-                                        <h4 class="en-font">
-                                            Managed Services
-                                        </h4>
+                                <a href="#">
+                                    <div
+                                        class="sa-background-img skill-ms"
+                                    >
+                                        <div class="title">
+                                            <h4 class="en-font">
+                                                Managed Services
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="sa-skills-tiles-item">
-                                <div class="sa-background-img skill-bds">
-                                    <div class="title">
-                                        <h4 class="en-font">
-                                            Big Data Services
-                                        </h4>
+                                <a href="#">
+                                    <div
+                                        class="sa-background-img skill-bds"
+                                    >
+                                        <div class="title">
+                                            <h4 class="en-font">
+                                                Big Data Services
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="sa-skills-tiles-item">
-                                <div class="sa-background-img skill-dt">
-                                    <div class="title">
-                                        <h4 class="en-font">
-                                            Digital Transformation
-                                            <br />
-                                            Consulting Services
-                                        </h4>
+                                <a href="#">
+                                    <div
+                                        class="sa-background-img skill-dt"
+                                    >
+                                        <div class="title">
+                                            <h4 class="en-font">
+                                                Digital Transformation
+                                                <br />
+                                                Consulting Services
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="sa-skills-tiles-item">
-                                <div class="sa-background-img skill-ts">
-                                    <div class="title">
-                                        <h4 class="en-font">
-                                            Telecom Solution
-                                        </h4>
+                                <a href="#">
+                                    <div
+                                        class="sa-background-img skill-ts"
+                                    >
+                                        <div class="title">
+                                            <h4 class="en-font">
+                                                Telecom Solution
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="sa-skills-tiles-item">
-                                <div class="sa-background-img skill-dea">
-                                    <div class="title">
-                                        <h4 class="en-font">
-                                            Digital Enterprise
-                                            Application
-                                        </h4>
+                                <a href="#">
+                                    <div
+                                        class="sa-background-img skill-dea"
+                                    >
+                                        <div class="title">
+                                            <h4 class="en-font">
+                                                Digital Enterprise
+                                                Application
+                                            </h4>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

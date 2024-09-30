@@ -638,7 +638,7 @@ body.admin-bar{
 //== 3. OUR TEAM ==
 .sa-team-banner{
 	padding: var(--sa-p-5);
-    background-image: url(../img/our-team-1.webp);
+    background-image: url(../img/our-team-v2.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -662,6 +662,9 @@ body.admin-bar{
 		color: var(--white-color);
 		line-height: 1;
 	}
+	p{
+		margin-bottom: .5rem;
+	}
 }
 .sa-t-c-card{
     min-height: 100%;
@@ -679,24 +682,24 @@ body.admin-bar{
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 32px;
 	.sa-skills-tiles-item{
+		a{
+			display: block;
+		}
 		.sa-background-img{
 			height: 400px;
 			padding: 3rem 2rem;
 		}
 		.title{
-			background-color: rgba(0, 0, 0, 0.7);
 			h4{
 				color: var(--white-color);
 			}
 		}
-		.skill-dss,
-		.skill-ms,
-		.skill-bds,
-		.skill-dt,
-		.skill-ts,
-		.skill-dea{
-			background-image: url('../img/skill-1.webp');
-		}
+		.skill-dss{background-image: url('../img/digital-security-solutions.webp');}
+		.skill-ms{background-image: url('../img/managed-services.webp');}
+		.skill-bds{background-image: url('../img/big-data-services.webp');}
+		.skill-dt{background-image: url('../img/digital-transformation-consulting-services.webp');}
+		.skill-ts{background-image: url('../img/telecome-solutions.webp');}
+		.skill-dea{background-image: url('../img/digital-enterprise-application.webp');}
 	}
 }
 
@@ -1194,7 +1197,7 @@ body.admin-bar{
 ============================================================================*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
 	.first-things{
 		padding-top: 4rem;
 	}
@@ -1299,6 +1302,17 @@ body.admin-bar{
 			margin-top: .5rem;
 			button{
 				width: 100%;
+			}
+		}
+	}
+	.tumbnail-item{
+		.tumbnail-decription{
+			margin-bottom: 1.5rem;
+			.title{
+				h5{
+					line-height: 1;
+					margin-top: .5rem;
+				}
 			}
 		}
 	}
@@ -1408,23 +1422,153 @@ body.admin-bar{
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
 	
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-	
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-	
+	#header.header{
+		padding: 12px 20px;
+		height: auto;
+		button.navbar-toggler{
+			&:focus,&:active{
+				box-shadow: none;
+			}
+		}
+		.navbar{
+			.nav-item{
+				&:before{
+					height: 100%;
+					width: 4px;
+					right: -10px;
+					left: auto;
+				}
+			}
+		}
+	}
+    .container, .container-sm {
+        max-width: 700px;
+    }
+	.tumbnail-item{
+		.tumbnail-decription{
+			margin-bottom: 1.5rem;
+			.title{
+				h5{
+					line-height: 1;
+					margin-top: .5rem;
+				}
+			}
+		}
+	}
+	.tab-content-item{
+		flex-direction: column;
+		.tci-description,
+		.tci-img{
+			width: 100%;
+		}
+		.sa-paragraph-box{
+			span{
+				bottom: 20px;
+			}
+		}
+	}
+	.sa-thumbnail-layout{
+		.sa-tl-item{
+			.description{
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	.sa-teams-item-layout{
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+	.footer-logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+		a{
+			width: 20%;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.footer-content {
+		.footer-menu-title{
+			color: var(--primary-color);
+		}
+	} 
+	.hero-banner.sa-banner{
+		height: max-content;
+		.sa-b-content{
+			position: relative;
+			top: auto;
+			transform: unset;
+			left: auto;
+			right: auto;
+			margin-right: auto;
+			.sa-strong-title{
+				font-size: var(--sa-font-size-stronge-mobile);
+			}
+			p{
+				font-size: var(--sa-font-size-paragraphe-mobile);
+			}
+		}
+	}
+    .sa-strong-title {
+        font-size: var(--sa-font-size-stronge-mobile);
+    }	
+	.about-us-plus{
+		flex-direction: column;
+		padding: 2rem;
+		.aup-title{
+			justify-content: center;
+			h4{
+				line-height: 150%;
+				text-align: center;
+				margin-bottom: 1rem;
+			}
+		}
+		.aup-btn{
+			display: flex;
+			justify-content: center;
+		}
+	}
+	.sa-s-content{
+		padding: 1rem 0;
+		.sa-s-c-top{
+			.sa-s-c-t-img{
+				margin-bottom: 1rem;
+			}
+		}
+		.sa-s-c-bottom{
+			.row{
+				display: flex;
+				flex-direction: column-reverse;
+			}
+			.sa-s-c-t-img{
+				margin-bottom: 1rem;
+			}
+		}
+		.sa-s-c-b-text,
+		.sa-s-c-t-text {
+			justify-content: center;
+			text-align: center;
+			p{
+				width: 100%;
+			}
+		}
+	}
+    .sa-team-banner .sa-t-content .col-12 {
+        margin-bottom: 1rem;
+    }
+	.sa-skills-tiles-wrapper {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 15px;
+		.sa-skills-tiles-item{
+			.sa-background-img{
+				height: 310px;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 1600px) {
