@@ -781,6 +781,62 @@ body.admin-bar .header {
   margin-right: 1rem;
 }
 
+.skill-page .skills-content-wrapper {
+  display: flex;
+  gap: 32px;
+}
+.skill-page .skills-content-wrapper .skills-main-content-wrapper {
+  width: 75%;
+}
+.skill-page .skills-content-wrapper .skills-sidebar-content-wrapper {
+  width: 25%;
+}
+.skill-page .skills-content-wrapper .sa-skills-tiles-wrapper {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 15px;
+  position: sticky;
+  top: 130px;
+  margin-bottom: 2rem;
+}
+.skill-page .skills-content-wrapper .sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img {
+  padding: 1rem;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.skill-page .skills-content-wrapper .sa-skills-tiles-wrapper .sa-skills-tiles-item .title h4 {
+  font-size: 1.2rem;
+  text-shadow: 0px -1px 0 #212121, 0px -1px 0 #212121, 0px 1px 0 #212121, 0px 1px 0 #212121, -1px 0px 0 #212121, 1px 0px 0 #212121, -1px 0px 0 #212121, 1px 0px 0 #212121, -1px -1px 0 #212121, 1px -1px 0 #212121, -1px 1px 0 #212121, 1px 1px 0 #212121, -1px 2px 0 #212121, 0px 2px 0 #212121, 1px 2px 0 #212121, 0 2px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 1px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill-page.big-data-services-page .sa-skills-sidebar-wrapper {
+  position: sticky;
+  top: 130px;
+  margin-bottom: 2rem;
+}
+.skill-page.big-data-services-page .sa-skills-sidebar-wrapper .sa-skill-sidebar-item {
+  height: 69px;
+  font-size: var(--sa-font-size-1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  border: 2px solid var(--primary-color);
+  transition: background-color 0.3s ease;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.skill-page.big-data-services-page .sa-skills-sidebar-wrapper .sa-skill-sidebar-item a .title h4 {
+  font-size: 20px;
+  color: var(--text-color);
+}
+.skill-page.big-data-services-page .sa-skills-sidebar-wrapper .sa-skill-sidebar-item:hover {
+  background-color: var(--white-color);
+  border: 2px solid var(--primary-color);
+}
+
 /*============================================================================
 ==============================================================================
 ==============================================================================
