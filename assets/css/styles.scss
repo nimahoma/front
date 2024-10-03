@@ -743,10 +743,13 @@ body.admin-bar{
 		}
 	}
 	.sa-ri-btn{
-		.saei-btn{
+		a{
 			width: 100%;
-			i{
-				margin-left: 8px;
+			.saei-btn{
+				width: 100%;
+				i{
+					margin-left: 8px;
+				}
 			}
 		}
 	}
