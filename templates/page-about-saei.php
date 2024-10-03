@@ -797,8 +797,10 @@ Template Name: About Saei
                                 <div class="col-12 col-md-4">
                                     <div class="sa-resources-item">
                                         <div class="sa-ri-img mb-2">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/resources-palceholder.webp"
-                                                alt="" />
+                                            <img
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/resources-palceholder.webp"
+                                                alt=""
+                                            />
                                         </div>
                                         <div class="sa-ri-decription">
                                             <div class="title">
@@ -811,11 +813,22 @@ Template Name: About Saei
                                                     از صنعت چاپ،
                                                 </p>
                                             </div>
-                                            <div class="sa-dt-btn sa-ri-btn">
-                                                <button class="saei-btn">
-                                                    <i class="fas fa-download"></i>
-                                                    <span>دانلود</span>
-                                                </button>
+                                            <div
+                                                class="sa-dt-btn sa-ri-btn"
+                                            >
+                                                <a
+                                                    href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
+                                                    download
+                                                >
+                                                    <button
+                                                        class="saei-btn"
+                                                    >
+                                                        <i
+                                                            class="fas fa-download"
+                                                        ></i>
+                                                        <span>دانلود</span>
+                                                    </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -823,8 +836,10 @@ Template Name: About Saei
                                 <div class="col-12 col-md-4">
                                     <div class="sa-resources-item">
                                         <div class="sa-ri-img mb-2">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/resources-palceholder.webp"
-                                                alt="" />
+                                            <img
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/resources-palceholder.webp"
+                                                alt=""
+                                            />
                                         </div>
                                         <div class="sa-ri-decription">
                                             <div class="title">
@@ -837,11 +852,22 @@ Template Name: About Saei
                                                     از صنعت چاپ،
                                                 </p>
                                             </div>
-                                            <div class="sa-dt-btn sa-ri-btn">
-                                                <button class="saei-btn">
-                                                    <i class="fas fa-download"></i>
-                                                    <span>دانلود</span>
-                                                </button>
+                                            <div
+                                                class="sa-dt-btn sa-ri-btn"
+                                            >
+                                                <a
+                                                    href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
+                                                    download
+                                                >
+                                                    <button
+                                                        class="saei-btn"
+                                                    >
+                                                        <i
+                                                            class="fas fa-download"
+                                                        ></i>
+                                                        <span>دانلود</span>
+                                                    </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -849,8 +875,10 @@ Template Name: About Saei
                                 <div class="col-12 col-md-4">
                                     <div class="sa-resources-item">
                                         <div class="sa-ri-img mb-2">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/resources-palceholder.webp"
-                                                alt="" />
+                                            <img
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/resources-palceholder.webp"
+                                                alt=""
+                                            />
                                         </div>
                                         <div class="sa-ri-decription">
                                             <div class="title">
@@ -863,11 +891,22 @@ Template Name: About Saei
                                                     از صنعت چاپ،
                                                 </p>
                                             </div>
-                                            <div class="sa-dt-btn sa-ri-btn">
-                                                <button class="saei-btn">
-                                                    <i class="fas fa-download"></i>
-                                                    <span>دانلود</span>
-                                                </button>
+                                            <div
+                                                class="sa-dt-btn sa-ri-btn"
+                                            >
+                                                <a
+                                                    href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
+                                                    download
+                                                >
+                                                    <button
+                                                        class="saei-btn"
+                                                    >
+                                                        <i
+                                                            class="fas fa-download"
+                                                        ></i>
+                                                        <span>دانلود</span>
+                                                    </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

@@ -673,10 +673,13 @@ body.admin-bar .header {
   font-size: var(--sa-font-size-1);
   line-height: 150%;
 }
-.sa-resources-item .sa-ri-btn .saei-btn {
+.sa-resources-item .sa-ri-btn a {
   width: 100%;
 }
-.sa-resources-item .sa-ri-btn .saei-btn i {
+.sa-resources-item .sa-ri-btn a .saei-btn {
+  width: 100%;
+}
+.sa-resources-item .sa-ri-btn a .saei-btn i {
   margin-left: 8px;
 }
 
