@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../assets/css/all.css" />
+		<link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
 		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/css/styles.css" />
 		<title>خانه</title>
@@ -72,11 +74,24 @@
 				background-color: #007bff;
 				color: #fff;
 			}
+
+			.slider-container {
+				width: 50%;
+			}
 		</style>
 	</head>
 
 	<body>
-		<div class="sticky-navbar" id="sticky-navbar">
+		<div class="slider-container">
+			<div class="owl-carousel owl-theme">
+				<div> <img src="../assets/img/big-data-services.webp" alt="test" /> </div>
+				<div> <img src="../assets/img/digital-enterprise-application.webp" alt="test" /> </div>
+				<div> <img src="../assets/img/digital-security-solutions.webp" alt="test" /> </div>
+				<div> <img src="../assets/img/digital-transformation-consulting-services.webp" alt="test" /> </div>
+			</div>
+		</div>
+
+		<!-- <div class="sticky-navbar" id="sticky-navbar">
 			<a href="#sction_1" data-target="#sction_1">Section 1</a>
 			<a href="#sction_2" data-target="#sction_2">Section 2</a>
 			<a href="#sction_3" data-target="#sction_3">Section 3</a>
@@ -107,9 +122,42 @@
 			</div>
 		</div>
 		<div class="section-scroll" id="sction_4"></div>
-		<div class="section-scroll" id="sction_5"></div>
+		<div class="section-scroll" id="sction_5"></div> -->
+
+
+		<script src="../assets/js/jquery-3.7.1.min.js"></script>
+		<script src="../assets/js/owl.carousel.min.js"></script>
 
 		<script>
+			jQuery('.owl-carousel').owlCarousel({
+				rtl:false,
+				loop:true,
+				nav: true,
+				dots: false,
+				center:true,
+				stagePadding: 100,
+				margin:10,
+				autoplay:true,
+				autoplayTimeout:5000,
+				autoplayHoverPause:true,
+				responsiveClass:true,
+				responsive:{
+					0:{
+						items:1,
+						nav:true
+					},
+					600:{
+						items:1,
+						nav:false
+					},
+					1000:{
+						items:3,
+						nav:true,
+						loop:false
+					}
+				}
+			})
+
 			document.addEventListener("DOMContentLoaded", function () {
 				const tabsWrapper = document.getElementById("tabs-wrapper");
 				const tabs = document.querySelectorAll(".tab");
@@ -209,5 +257,7 @@
 				});
 			});
 		</script>
+
+		
 	</body>
 </html>
