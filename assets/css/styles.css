@@ -144,7 +144,7 @@
   --sa-p-4: 4rem;
   --sa-p-4-5: 4.5rem;
   --sa-p-5: 5rem;
-  --sa-box-shadow-small: 0 0 10px rgba(0, 0, 0, 0.1);
+  --sa-box-shadow-small: 0 4px 10px 0px rgba(0, 0, 0, 0.1);
   --sa-box-shadow-medium: 0 0 20px rgba(0, 0, 0, 0.1);
   --sa-box-shadow-large: 0 0 30px rgba(0, 0, 0, 0.1);
   --sa-font-size-stronge-mobile: 25px;
