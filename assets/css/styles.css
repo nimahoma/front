@@ -442,6 +442,9 @@ body {
 .header .navbar {
   padding: 0;
 }
+.header #navbarNav {
+  justify-content: flex-end;
+}
 .header .navbar-brand {
   margin-right: 0;
 }
@@ -485,10 +488,10 @@ body.admin-bar .header {
 =============================================================================
 ============================================================================*/
 .about-us .sa-banner {
-  background-image: url("../img/hero-banner-abstract.webp");
-  background-size: cover;
+  background-image: url("../img/palceholder.webp");
+  background-size: inherit;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right;
   height: 100vh;
 }
 .about-us .sa-banner .container {
@@ -541,36 +544,16 @@ body.admin-bar .header {
 .sa-s-c-top {
   margin-bottom: 2rem;
 }
-.sa-s-c-top .sa-s-c-t-img {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-}
-.sa-s-c-top .sa-s-c-t-img img {
-  height: 100%;
-  width: auto;
-}
-
-.sa-s-c-bottom .sa-s-c-t-img {
-  height: 200px;
-  display: flex;
-  justify-content: center;
-}
-.sa-s-c-bottom .sa-s-c-t-img img {
-  height: 100%;
-  width: auto;
-}
 
 .sa-s-content {
   padding: 1.5rem 0;
-  width: 80%;
-  margin: auto;
 }
 
 .sa-s-c-t-text {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .sa-s-c-b-text {
@@ -578,46 +561,25 @@ body.admin-bar .header {
   justify-content: flex-end;
 }
 
+.sa-s-c-t-text p,
+.sa-s-c-b-text p {
+  width: 80%;
+}
+
 .sa-team-banner {
   padding: var(--sa-p-5);
-  padding-bottom: 2rem;
   background-image: url(../img/our-team-v2.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 120vh;
+  min-height: 100vh;
   display: flex;
   align-items: flex-end;
   border-bottom: 17px solid var(--primary-color);
 }
+
 .sa-team-banner .wrapper {
   width: 100%;
-}
-.sa-team-banner .wrapper .sa-t-content {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 25% 75%;
-  align-items: flex-end;
-}
-.sa-team-banner .wrapper .sa-t-content .sa-teams-slider-wrapper {
-  margin-bottom: -5rem;
-}
-.sa-team-banner .wrapper .sa-t-content .sa-teams-items-wrapper {
-  width: 85%;
-  margin-right: 8%;
-}
-
-.sa-teams-items-wrapper .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-}
-.sa-teams-items-wrapper .wrapper .sa-teams-item {
-  background-color: var(--smoke-color);
-  padding: 1rem;
-}
-.sa-teams-items-wrapper .wrapper .sa-teams-item .title {
-  margin-bottom: 1rem;
 }
 
 .sa-t-c-title {
@@ -635,38 +597,16 @@ body.admin-bar .header {
   margin-bottom: 0.5rem;
 }
 
-.owl-carousel button span {
-  font-family: sans-serif;
-  color: var(--primary-color);
-  font-size: 7rem;
-  line-height: 0.5;
-  position: absolute;
-  left: -40px;
-  top: 40%;
-}
-.owl-carousel .owl-next span {
-  left: auto;
-  right: -40px;
-}
-
 .sa-t-c-card {
-  height: 360px;
+  min-height: 100%;
   background: var(--light-color);
   padding: var(--sa-p-1-5);
-  text-align: right;
-}
-
-.sa-skills .sa-dt-about p {
-  font-size: 20px;
 }
 
 .sa-skills-tiles-wrapper {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
-}
-.sa-skills-tiles-wrapper .sa-skills-tiles-item {
-  border: 1px solid var(--black-color);
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item a {
   display: block;
@@ -675,35 +615,26 @@ body.admin-bar .header {
   height: 400px;
   padding: 3rem 2rem;
 }
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .title h4 {
+  color: var(--white-color);
+}
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dss {
-  background-image: url("../img/saei-digital-security-solution.webp");
-  background-size: auto;
-  background-position: 170% 150%;
+  background-image: url("../img/digital-security-solutions.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ms {
-  background-image: url("../img/saei-managed-services.webp");
-  background-size: auto;
-  background-position: 130% 170%;
+  background-image: url("../img/managed-services.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-bds {
-  background-image: url("../img/saei-data-services.webp");
-  background-size: auto;
-  background-position: -50% 560%;
+  background-image: url("../img/big-data-services.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dt {
-  background-image: url("../img/saei-digital-transformation.webp");
-  background-size: auto;
-  background-position: top right;
+  background-image: url("../img/digital-transformation-consulting-services.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ts {
-  background-image: url("../img/saei-telecome-solutions.webp");
-  background-size: auto;
-  background-position: 60% 140%;
+  background-image: url("../img/telecome-solutions.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dea {
-  background-image: url("../img/saei-digital-enterprise.webp");
-  background-size: auto;
-  background-position: 60% 300%;
+  background-image: url("../img/digital-enterprise-application.webp");
 }
 
 .sa-dt-btn {
@@ -1226,33 +1157,6 @@ body.admin-bar .header {
 }
 .sa-joinus-form .sa-dt-btn .saei-btn {
   width: 252px;
-}
-
-/*============================================================================
-==============================================================================
-==============================================================================
-
-
-						SKILLS PAGE
-
-
-=============================================================================
-=============================================================================
-============================================================================*/
-.skills-page .sa-scrollspy-nav {
-  align-items: flex-end;
-  margin-left: 3rem;
-}
-.skills-page .sa-scrollspy-nav .sa-ss-nav-item {
-  border-left: 3px solid #E0E0E0;
-  border-right: none;
-  font-size: 20px;
-}
-.skills-page .sa-scrollspy-nav .sa-ss-nav-item.active {
-  border-left: 4px solid #000000;
-}
-.skills-page .sa-scrollspy-nav .en-font {
-  line-height: 150%;
 }
 
 /*============================================================================
