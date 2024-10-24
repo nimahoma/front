@@ -9,95 +9,63 @@
 		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/css/styles.css" />
 		<title>خانه</title>
-
-		<style>
-			.tabs-container {
-				display: flex;
-				align-items: center;
-				overflow: hidden;
-				position: relative;
-				width: 400px; /* Adjust this width to show only 5 tabs */
-			}
-			.tabs-wrapper {
-				display: flex;
-				overflow-x: auto;
-				scroll-behavior: smooth;
-			}
-			.tab {
-				width: 100px;
-				flex: 0 0 auto;
-				padding: 10px 20px;
-				cursor: pointer;
-			}
-			.tab.active {
-				background-color: #f0f0f0;
-			}
-			.arrow {
-				cursor: pointer;
-				padding: 10px;
-				background-color: #f0f0f0;
-				border: 1px solid #ccc;
-			}
-			.arrow.hidden {
-				display: none;
-			}
-			/* Custom scrollbar styles */
-			.tabs-wrapper::-webkit-scrollbar {
-				height: 8px;
-			}
-			.tabs-wrapper::-webkit-scrollbar-thumb {
-				background-color: #888;
-				border-radius: 10px;
-			}
-			.tabs-wrapper::-webkit-scrollbar-track {
-				background-color: #f0f0f0;
-			}
-			.section-scroll {
-				height: 600px;
-			}
-			.sticky-navbar {
-				position: fixed;
-				top: 20px;
-				right: 20px;
-				background-color: #fff;
-				border: 1px solid #ccc;
-				padding: 10px;
-				z-index: 1000;
-			}
-			.sticky-navbar a {
-				display: block;
-				padding: 5px 10px;
-				text-decoration: none;
-				color: #000;
-			}
-			.sticky-navbar a.active {
-				background-color: #007bff;
-				color: #fff;
-			}
-
-			.slider-container {
-				width: 50%;
-			}
-		</style>
 	</head>
 
 	<body>
-		<div class="sticky-navbar" id="sticky-navbar">
-			<a href="#sction_1" data-target="#sction_1">Section 1</a>
-			<a href="#sction_2" data-target="#sction_2">Section 2</a>
-			<a href="#sction_3" data-target="#sction_3">Section 3</a>
-			<a href="#sction_4" data-target="#sction_4">Section 4</a>
-			<a href="#sction_5" data-target="#sction_5">Section 5</a>
-		</div>
-
-		<!-- <div class="slider-container">
-			<div class="owl-carousel owl-theme">
-				<div> <img src="../assets/img/big-data-services.webp" alt="test" /> </div>
-				<div> <img src="../assets/img/digital-enterprise-application.webp" alt="test" /> </div>
-				<div> <img src="../assets/img/digital-security-solutions.webp" alt="test" /> </div>
-				<div> <img src="../assets/img/digital-transformation-consulting-services.webp" alt="test" /> </div>
+		<div class="sa-teams-slider-wrapper" style="width: 85%; margin: auto">
+			<div class="slider-container" dir="ltr">
+				<div class="owl-carousel owl-theme">
+					<div>
+						<div class="sa-t-c-card">
+							<h5 class="mb-2 en-font">WEB DEVELOPMENT</h5>
+							<p>
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+								صنعت چاپ، و با استفاده از طراحان لورم ایپسوم متن
+								ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+								استفاده از طراحان با تولید سادگی نامفهوم از صنعت
+								چاپ،
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="sa-t-c-card">
+							<h5 class="mb-2 en-font">VAS</h5>
+							<p>
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+								صنعت چاپ، و با استفاده از طراحان لورم ایپسوم متن
+								ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+								استفاده از طراحان با تولید سادگی نامفهوم از صنعت
+								چاپ،
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="sa-t-c-card">
+							<h5 class="mb-2 en-font">BigData</h5>
+							<p>
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+								صنعت چاپ، و با استفاده از طراحان لورم ایپسوم متن
+								ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+								استفاده از طراحان با تولید سادگی نامفهوم از صنعت
+								چاپ،
+							</p>
+						</div>
+					</div>
+					<div>
+						<div class="sa-t-c-card">
+							<h5 class="mb-2 en-font">BigData</h5>
+							<p>
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+								صنعت چاپ، و با استفاده از طراحان لورم ایپسوم متن
+								ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+								استفاده از طراحان با تولید سادگی نامفهوم از صنعت
+								چاپ،
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<!-- <div class="section-scroll" id="sction_1"></div>
 		<div class="section-scroll" id="sction_2"></div>
@@ -123,7 +91,6 @@
 		</div>
 		<div class="section-scroll" id="sction_4"></div>
 		<div class="section-scroll" id="sction_5"></div> -->
-
 
 		<script src="../assets/js/jquery-3.7.1.min.js"></script>
 		<script src="../assets/js/owl.carousel.min.js"></script>
