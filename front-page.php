@@ -51,74 +51,50 @@
 					</div>
 				</div>
 
-				<section class="sa-services">
+				<section class="sa-mission">
 					<div class="container">
-						<div class="wrapper sec-padding">
-							<!-- <div class="sa-s-title">
-								<h1 class="sa-strong-title">
-									لورم ایپسوم متن ساختگی
-								</h1>
-							</div> -->
-							<div class="sa-s-content">
-								<div class="sa-s-c-top">
-									<div class="row">
-										<div class="col-12 col-md-6">
-											<div class="sa-s-c-t-img">
-												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/saei-perspective.png"
-													alt=""
-												/>
-											</div>
+						<div class="container-fluid">
+							<div class="wrapper sec-padding">
+								<div class="sa-mission-card mission-box">
+									<div class="sa-m-c-img">
+										<img
+											src="../assets/img/saei-mission.png"
+											alt=""
+										/>
+									</div>
+									<div class="sa-m-c-content">
+										<div class="title">
+											<h4>ماموريت ساعی</h4>
 										</div>
-										<div class="col-12 col-md-6">
-											<div class="sa-s-title">
-												<h4>چشم‌انداز ساعی</h4>
-											</div>
-											<div class="sa-s-c-t-text">
-												<p>
-													لورم ایپسوم متن ساختگی با
-													تولید سادگی نامفهوم از صنعت
-													چاپ، و با استفاده از طراحان
-													گرافیک است، چاپگرها و متون
-													بلکه روزنامه و مجله در ستون
-													و سطرآنچنان که لازم است، و
-													برای شرایط فعلی تکنولوژی
-													مورد نیاز، و کاربردهای متنوع
-													با هدف بهبود ابزارهای
-													کاربردی می باشد،
-												</p>
-											</div>
+										<div class="desc">
+											<p>
+												ماموريت ما ارایه ی راه حلهای
+												نوآورانه برای تسهيل تحول دیجیتال
+												در کسب و کارها و ارتقای ارزشهای
+												فناورانه در کشور است
+											</p>
 										</div>
 									</div>
 								</div>
-								<div class="sa-s-c-bottom">
-									<div class="row">
-										<div class="col-12 col-md-6">
-											<div class="sa-s-title">
-												<h4>ماموریت ساعی</h4>
-											</div>
-											<div class="sa-s-c-t-text">
-												<p>
-													لورم ایپسوم متن ساختگی با
-													تولید سادگی نامفهوم از صنعت
-													چاپ، و با استفاده از طراحان
-													گرافیک است، چاپگرها و متون
-													بلکه روزنامه و مجله در ستون
-													و سطرآنچنان که لازم است، و
-													برای شرایط فعلی تکنولوژی
-													مورد نیاز، و کاربردهای متنوع
-													با هدف بهبود ابزارهای
-													کاربردی می باشد،
-												</p>
-											</div>
+								<div class="sa-mission-card perspective-box">
+									<div class="sa-m-c-img">
+										<img
+											src="../assets/img/saei-perspective.png"
+											alt=""
+										/>
+									</div>
+									<div class="sa-m-c-content">
+										<div class="title">
+											<h4>چشم انداز ساعی</h4>
 										</div>
-										<div class="col-12 col-md-6">
-											<div class="sa-s-c-t-img">
-												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/saei-mission.png"
-													alt=""
-												/>
-											</div>
+										<div class="desc">
+											<p>
+												ما قصد داریم با تمرکز بر نوآوری
+												و جلب رضایت مشتری در تمامی
+												بازارها، تبدیل به شريک برتر
+												سازمان ها در تحول دیجیتال در سطح
+												کشور گردیم
+											</p>
 										</div>
 									</div>
 								</div>
@@ -132,16 +108,23 @@
 						<div class="wrapper">
 							<div class="sa-t-content">
 								<div class="sa-t-c-title">
-									<h2 class="sa-strong-title mb-0">تیم‌ها</h2>
-									<p>
-										<strong
-											>سرمایه انسانی؛ قلب تپنده‌ی موفقیت
-											ساعی</strong
-										><br />
-										ما همواره در جستجوی استعدادهای نوآور و
-										خلاق در حیطه‌های مختلف کاری هستیم.
-										یادگیری مداوم و وجود فرصتهای برابر برای
-									</p>
+									<h2 class="sa-strong-title mb-0">
+										تیــــم‌ها
+									</h2>
+									<div>
+										<p class="mb-2">
+											<strong
+												>سرمایه انسانی؛ قلب تپنده‌ی
+												موفقیت ساعی</strong
+											>
+										</p>
+										<p>
+											ما همواره در جستجوی استعدادهای نوآور
+											و خلاق در حیطه‌های مختلف کاری هستیم.
+											یادگیری مداوم و وجود فرصتهای برابر
+											برای
+										</p>
+									</div>
 									<div class="sa-t-c-btn">
 										<button class="saei-btn">
 											به ما بپیوندید
@@ -151,83 +134,79 @@
 								<div class="sa-teams-items-wrapper">
 									<div class="wrapper">
 										<div class="sa-teams-item">
-											<div class="title mb-3">
-												<h6 class="en-font">
-													DATA SERVICES
-												</h6>
+											<div class="title">
+												<h5 class="en-font">
+													Back Office
+												</h5>
 											</div>
 											<p>
-												با ارائه پیشرفته‌ترین و
-												مناسب‌ترین راه‌کارهای فناوری،
-												کسب و کارها را در مسیر رشد و
-												تحول دیجیتال
-											</p>
-										</div>
-										<div class="sa-teams-item">
-											<div class="title mb-3">
-												<h6 class="en-font">
-													DATA SERVICES
-												</h6>
-											</div>
-											<p>
-												با ارائه پیشرفته‌ترین و
-												مناسب‌ترین راه‌کارهای فناوری،
-												کسب و کارها را در مسیر رشد و
-												تحول دیجیتال
-											</p>
-										</div>
-										<div class="sa-teams-item">
-											<div class="title mb-3">
-												<h6 class="en-font">
-													DATA SERVICES
-												</h6>
-											</div>
-											<p>
-												با ارائه پیشرفته‌ترین و
-												مناسب‌ترین راه‌کارهای فناوری،
-												کسب و کارها را در مسیر رشد و
-												تحول دیجیتال
-											</p>
-										</div>
-										<div class="sa-teams-item">
-											<div class="title mb-3">
-												<h6 class="en-font">
-													DATA SERVICES
-												</h6>
-											</div>
-											<p>
-												با ارائه پیشرفته‌ترین و
-												مناسب‌ترین راه‌کارهای فناوری،
-												کسب و کارها را در مسیر رشد و
-												تحول دیجیتال
+												این تیم وظیفه خطیر حفاظت از
+												سیستمها و داده های مشتریان را
+												برعهده داشته و با استفاده از
 											</p>
 										</div>
 										<div class="sa-teams-item">
 											<div class="title">
-												<h6 class="en-font">
-													PMO (Project Management
-													Office)
-												</h6>
+												<h5 class="en-font">
+													Digital Security
+												</h5>
 											</div>
 											<p>
-												با ارائه پیشرفته‌ترین و
-												مناسب‌ترین راه‌کارهای فناوری،
-												کسب و کارها را در مسیر رشد و
-												تحول دیجیتال
+												این تیم وظیفه خطیر حفاظت از
+												سیستمها و داده های مشتریان را
+												برعهده داشته و با استفاده از
 											</p>
 										</div>
 										<div class="sa-teams-item">
 											<div class="title">
-												<h6 class="en-font">
-													NOC (Network Operation
-													System)
-												</h6>
+												<h5 class="en-font">
+													Data Services
+												</h5>
 											</div>
 											<p>
-												با ارائه پیشرفته‌ترین و
-												مناسب‌ترین راه‌کارهای فناوری،
-												کسب و کارها را در مسیر رشد و
-												تحول دیجیتال
+												این تیم وظیفه خطیر حفاظت از
+												سیستمها و داده های مشتریان را
+												برعهده داشته و با استفاده از
+											</p>
+										</div>
+										<div class="sa-teams-item">
+											<div class="title">
+												<h5 class="en-font">
+													NOC (Network
+													<br />
+													Operation System)
+												</h5>
+											</div>
+											<p>
+												این تیم وظیفه خطیر حفاظت از
+												سیستمها و داده های مشتریان را
+												برعهده داشته و با استفاده از
+											</p>
+										</div>
+										<div class="sa-teams-item">
+											<div class="title">
+												<h5 class="en-font">
+													PMO (Project
+													<br />
+													Managment Office)
+												</h5>
+											</div>
+											<p>
+												این تیم وظیفه خطیر حفاظت از
+												سیستمها و داده های مشتریان را
+												برعهده داشته و با استفاده از
+											</p>
+										</div>
+										<div class="sa-teams-item">
+											<div class="title">
+												<h5 class="en-font">
+													Managed Services
+												</h5>
+											</div>
+											<p>
+												این تیم وظیفه خطیر حفاظت از
+												سیستمها و داده های مشتریان را
+												برعهده داشته و با استفاده از
 											</p>
 										</div>
 									</div>
@@ -243,13 +222,12 @@
 							<div class="sa-dt-about text-center">
 								<h1 class="sa-strong-title">توان‌مندی‌ها</h1>
 								<p class="mb-5">
-									ما مجموعه‌ای گسترده از راه‌کارهای دیجیتال و
-									پلتفرم‌های برتر را ارائه می‌دهیم تا نتایج
-									معنادار
+									ما مجموعه‌ای گسترده از راهکارهای دیجیتال و
+									پلتفرم‌های برتر را ارائه می‌دهیم تا نتایجی
+									معنادار ایجاد
 									<br />
-									ایجاد کنیم، تجربه مشتریان را بهبود بخشیم و
-									با سرعت و مقیاسی کم‌نظیر صنایع را متحول
-									سازیم.
+									کنیم، تجربه مشتریان را بهبود بخشیم و با سرعت
+									و مقیاسی کم‌نظیر صنایع را متحول سازیم
 								</p>
 							</div>
 							<div class="sa-skills-tiles">
@@ -290,7 +268,7 @@
 											>
 												<div class="title">
 													<h4 class="en-font">
-														Big Data Services
+														Data Services
 													</h4>
 												</div>
 											</div>
@@ -318,7 +296,9 @@
 											>
 												<div class="title">
 													<h4 class="en-font">
-														Telecom Solution
+														Telecom
+														<br />
+														Solution
 													</h4>
 												</div>
 											</div>
