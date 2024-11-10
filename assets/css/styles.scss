@@ -137,7 +137,7 @@
 @font-face {
 	font-family: Gilroy-SemiBold;
 	font-style: normal;
-	font-weight: 450;
+	font-weight: 400;
 	src: url('../fonts/Gilroy-SemiBold.ttf') format('ttf');	 
 }
 @font-face {
@@ -573,14 +573,8 @@ body.admin-bar{
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-}
-.sa-b-content{
-	h2{
-		font-size: var(--sa-font-size-stronge);
-		font-weight: var(--sa-font-weight-strong);
-	}
-	p{
-		font-size: var(--sa-font-size-paragraphe)
+	h1{
+		font-weight: 100;
 	}
 }
 .about-us-plus{
@@ -593,9 +587,10 @@ body.admin-bar{
 	.aup-title{
 		display: flex;
 		align-items: center;
-		
-		.aup-title-text {
-			margin: 0;
+		h5{
+			font-size: 20px;
+			font-family: "Yekan-Bakh-Regular", sans-serif;
+			font-weight: 100;
 		}
 	}
 	.aup-btn{
@@ -608,44 +603,45 @@ body.admin-bar{
 }
 
 
-//== 2. SERVICES ==
-.sa-s-c-top{
-	margin-bottom: 2rem;
-	.sa-s-c-t-img{
-		height: 200px;
-		display: flex;
-		justify-content: center;
-		img{
-			height: 100%;
-			width: auto;
+//== 2. MISSION ==
+.sa-mission{
+	.wrapper{
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 5px;
+		.sa-mission-card{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			&:first-child {
+				border-left: 2px solid var(--primary-color);
+			}
+			.sa-m-c-img{
+				width: 25%;
+			}
+			.sa-m-c-content{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				margin: 2rem 3rem;
+				.title{
+					h4{
+						font-size: 35px;
+						font-weight: bold;
+					}
+				}
+				p{
+					font-size: 24px;
+					margin-top: 1rem;
+				}
+			}
 		}
 	}
 }
-.sa-s-c-bottom{
-	.sa-s-c-t-img{
-		height: 200px;
-		display: flex;
-		justify-content: center;
-		img{
-			height: 100%;
-			width: auto;
-		}
-	}
-}
-.sa-s-content{
-	padding: 1.5rem 0;;
-	width: 80%;
-	margin: auto;
-}
-.sa-s-c-t-text{
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-}
-.sa-s-c-b-text{
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 //== 3. OUR TEAM ==
 .sa-team-banner{
@@ -684,8 +680,15 @@ body.admin-bar{
 		.sa-teams-item{
 			background-color: var(--smoke-color);
 			padding: 1rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 			.title{
 				margin-bottom: 1rem;
+				h5{
+					font-family: "Gilroy-SemiBold", sans-serif;
+					font-weight: 400;
+				}
 			}
 		}
 	}
@@ -704,26 +707,6 @@ body.admin-bar{
 		margin-bottom: .5rem;
 	}
 }
-
-.owl-carousel{
-	button{
-		span{
-			font-family: sans-serif;
-			color: var(--primary-color);
-			font-size: 7rem;
-			line-height: 0.5;
-			position: absolute;
-			left: -40px;
-			top: 40%;
-		}
-	}
-	.owl-next{
-		span{
-			left: auto;
-			right: -40px;
-		}
-	}
-}
 .sa-t-c-card{
     height: 360px;
     background: var(--light-color);
@@ -740,7 +723,6 @@ body.admin-bar{
 	}
 }
 .sa-skills-tiles{
-
 }
 
 .sa-skills-tiles-wrapper{
@@ -748,48 +730,42 @@ body.admin-bar{
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 32px;
 	.sa-skills-tiles-item{
-		border: 1px solid var(--black-color);
+		border: 1px solid #BBBBBB;
 		a{
 			display: block;
 		}
 		.sa-background-img{
-			height: 400px;
-			padding: 3rem 2rem;
+			background-size: contain;
+			background-position: center bottom;
+			height: 450px;
+			padding: 1rem 2rem;
 		}
 		.skill-dss{
 			background-image: url('../img/saei-digital-security-solution.webp');
-			background-size: auto;
-			background-position: 170% 150%;
 		}
 		.skill-ms{
 			background-image: url('../img/saei-managed-services.webp');
-			background-size: auto;
-			background-position: 130% 170%;
 		}
 		.skill-bds{
 			background-image: url('../img/saei-data-services.webp');
-			background-size: auto;
-			background-position: -50% 560%;
 		}
 		.skill-dt{
 			background-image: url('../img/saei-digital-transformation.webp');
-			background-size: auto;
-			background-position: top right;
 		}
 		.skill-ts{
 			background-image: url('../img/saei-telecome-solutions.webp');
-			background-size: auto;
-			background-position: 60% 140%;
 		}
 		.skill-dea{
 			background-image: url('../img/saei-digital-enterprise.webp');
-			background-size: auto;
-			background-position: 60% 300%;
+		}
+		.title{
+			h4{
+				font-weight: 300;
+				font-size: 32px;
+			}
 		}
 	}
 }
-
-
 .sa-dt-btn{
 	display: flex;
 	justify-content: center;
@@ -1415,6 +1391,7 @@ body.admin-bar{
 
 
 
+
 /*============================================================================
 ==============================================================================
 ==============================================================================
@@ -1493,31 +1470,6 @@ body.admin-bar{
 		.aup-btn{
 			display: flex;
 			justify-content: center;
-		}
-	}
-	.sa-s-content{
-		padding: 1rem 0;
-		.sa-s-c-top{
-			.sa-s-c-t-img{
-				margin-bottom: 1rem;
-			}
-		}
-		.sa-s-c-bottom{
-			.row{
-				display: flex;
-				flex-direction: column-reverse;
-			}
-			.sa-s-c-t-img{
-				margin-bottom: 1rem;
-			}
-		}
-		.sa-s-c-b-text,
-		.sa-s-c-t-text {
-			justify-content: center;
-			text-align: center;
-			p{
-				width: 100%;
-			}
 		}
 	}
 	.sa-team-banner{

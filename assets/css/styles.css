@@ -103,7 +103,7 @@
 @font-face {
   font-family: Gilroy-SemiBold;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 400;
   src: url("../fonts/Gilroy-SemiBold.ttf") format("ttf");
 }
 @font-face {
@@ -442,9 +442,6 @@ body {
 .header .navbar {
   padding: 0;
 }
-.header #navbarNav {
-  justify-content: flex-end;
-}
 .header .navbar-brand {
   margin-right: 0;
 }
@@ -488,10 +485,10 @@ body.admin-bar .header {
 =============================================================================
 ============================================================================*/
 .about-us .sa-banner {
-  background-image: url("../img/palceholder.webp");
-  background-size: inherit;
+  background-image: url("../img/hero-banner-abstract.webp");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center center;
   height: 100vh;
 }
 .about-us .sa-banner .container {
@@ -514,13 +511,8 @@ body.admin-bar .header {
   top: 50%;
   transform: translateY(-50%);
 }
-
-.sa-b-content h2 {
-  font-size: var(--sa-font-size-stronge);
-  font-weight: var(--sa-font-weight-strong);
-}
-.sa-b-content p {
-  font-size: var(--sa-font-size-paragraphe);
+.sa-b-content h1 {
+  font-weight: 100;
 }
 
 .about-us-plus {
@@ -534,52 +526,96 @@ body.admin-bar .header {
   display: flex;
   align-items: center;
 }
-.about-us-plus .aup-title .aup-title-text {
-  margin: 0;
+.about-us-plus .aup-title h5 {
+  font-size: 20px;
+  font-family: "Yekan-Bakh-Regular", sans-serif;
+  font-weight: 100;
 }
 .about-us-plus .aup-btn .saei-btn:hover {
   color: var(--text-color);
 }
 
-.sa-s-c-top {
-  margin-bottom: 2rem;
+.sa-mission .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
 }
-
-.sa-s-content {
-  padding: 1.5rem 0;
-}
-
-.sa-s-c-t-text {
-  min-height: 100%;
+.sa-mission .wrapper .sa-mission-card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
 }
-
-.sa-s-c-b-text {
+.sa-mission .wrapper .sa-mission-card:first-child {
+  border-left: 2px solid var(--primary-color);
+}
+.sa-mission .wrapper .sa-mission-card .sa-m-c-img {
+  width: 25%;
+}
+.sa-mission .wrapper .sa-mission-card .sa-m-c-content {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 3rem;
 }
-
-.sa-s-c-t-text p,
-.sa-s-c-b-text p {
-  width: 80%;
+.sa-mission .wrapper .sa-mission-card .sa-m-c-content .title h4 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.sa-mission .wrapper .sa-mission-card .sa-m-c-content p {
+  font-size: 24px;
+  margin-top: 1rem;
 }
 
 .sa-team-banner {
   padding: var(--sa-p-5);
+  padding-bottom: 2rem;
   background-image: url(../img/our-team-v2.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   align-items: flex-end;
   border-bottom: 17px solid var(--primary-color);
 }
-
 .sa-team-banner .wrapper {
   width: 100%;
+}
+.sa-team-banner .wrapper .sa-t-content {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 25% 75%;
+  align-items: flex-end;
+}
+.sa-team-banner .wrapper .sa-t-content .sa-teams-slider-wrapper {
+  margin-bottom: -5rem;
+}
+.sa-team-banner .wrapper .sa-t-content .sa-teams-items-wrapper {
+  width: 85%;
+  margin-right: 8%;
+}
+
+.sa-teams-items-wrapper .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.sa-teams-items-wrapper .wrapper .sa-teams-item {
+  background-color: var(--smoke-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sa-teams-items-wrapper .wrapper .sa-teams-item .title {
+  margin-bottom: 1rem;
+}
+.sa-teams-items-wrapper .wrapper .sa-teams-item .title h5 {
+  font-family: "Gilroy-SemiBold", sans-serif;
+  font-weight: 400;
 }
 
 .sa-t-c-title {
@@ -598,9 +634,14 @@ body.admin-bar .header {
 }
 
 .sa-t-c-card {
-  min-height: 100%;
+  height: 360px;
   background: var(--light-color);
   padding: var(--sa-p-1-5);
+  text-align: right;
+}
+
+.sa-skills .sa-dt-about p {
+  font-size: 20px;
 }
 
 .sa-skills-tiles-wrapper {
@@ -608,33 +649,39 @@ body.admin-bar .header {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
 }
+.sa-skills-tiles-wrapper .sa-skills-tiles-item {
+  border: 1px solid #BBBBBB;
+}
 .sa-skills-tiles-wrapper .sa-skills-tiles-item a {
   display: block;
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img {
-  height: 400px;
-  padding: 3rem 2rem;
-}
-.sa-skills-tiles-wrapper .sa-skills-tiles-item .title h4 {
-  color: var(--white-color);
+  background-size: contain;
+  background-position: center bottom;
+  height: 450px;
+  padding: 1rem 2rem;
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dss {
-  background-image: url("../img/digital-security-solutions.webp");
+  background-image: url("../img/saei-digital-security-solution.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ms {
-  background-image: url("../img/managed-services.webp");
+  background-image: url("../img/saei-managed-services.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-bds {
-  background-image: url("../img/big-data-services.webp");
+  background-image: url("../img/saei-data-services.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dt {
-  background-image: url("../img/digital-transformation-consulting-services.webp");
+  background-image: url("../img/saei-digital-transformation.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-ts {
-  background-image: url("../img/telecome-solutions.webp");
+  background-image: url("../img/saei-telecome-solutions.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dea {
-  background-image: url("../img/digital-enterprise-application.webp");
+  background-image: url("../img/saei-digital-enterprise.webp");
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .title h4 {
+  font-weight: 300;
+  font-size: 32px;
 }
 
 .sa-dt-btn {
@@ -1164,6 +1211,33 @@ body.admin-bar .header {
 ==============================================================================
 
 
+						SKILLS PAGE
+
+
+=============================================================================
+=============================================================================
+============================================================================*/
+.skills-page .sa-scrollspy-nav {
+  align-items: flex-end;
+  margin-left: 3rem;
+}
+.skills-page .sa-scrollspy-nav .sa-ss-nav-item {
+  border-left: 3px solid #E0E0E0;
+  border-right: none;
+  font-size: 20px;
+}
+.skills-page .sa-scrollspy-nav .sa-ss-nav-item.active {
+  border-left: 4px solid #000000;
+}
+.skills-page .sa-scrollspy-nav .en-font {
+  line-height: 150%;
+}
+
+/*============================================================================
+==============================================================================
+==============================================================================
+
+
 						RESPONSIVE DESIGN
 
 
@@ -1227,28 +1301,6 @@ body.admin-bar .header {
   .about-us-plus .aup-btn {
     display: flex;
     justify-content: center;
-  }
-  .sa-s-content {
-    padding: 1rem 0;
-  }
-  .sa-s-content .sa-s-c-top .sa-s-c-t-img {
-    margin-bottom: 1rem;
-  }
-  .sa-s-content .sa-s-c-bottom .row {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .sa-s-content .sa-s-c-bottom .sa-s-c-t-img {
-    margin-bottom: 1rem;
-  }
-  .sa-s-content .sa-s-c-b-text,
-  .sa-s-content .sa-s-c-t-text {
-    justify-content: center;
-    text-align: center;
-  }
-  .sa-s-content .sa-s-c-b-text p,
-  .sa-s-content .sa-s-c-t-text p {
-    width: 100%;
   }
   .sa-team-banner {
     padding: var(--sa-p-3);
