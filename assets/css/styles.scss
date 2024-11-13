@@ -574,7 +574,7 @@ body.admin-bar{
     top: 50%;
     transform: translateY(-50%);
 	h1{
-		font-weight: 100;
+		font-weight: 400;
 	}
 }
 .about-us-plus{
@@ -722,8 +722,6 @@ body.admin-bar{
 		}
 	}
 }
-.sa-skills-tiles{
-}
 
 .sa-skills-tiles-wrapper{
     display: grid;
@@ -760,7 +758,7 @@ body.admin-bar{
 		}
 		.title{
 			h4{
-				font-weight: 300;
+				font-weight: 400;
 				font-size: 32px;
 			}
 		}
@@ -787,6 +785,15 @@ body.admin-bar{
 =============================================================================
 =============================================================================
 ============================================================================*/
+ul.oh-our-value{
+	list-style: disc;
+    margin-top: 1rem;
+    padding-right: 2rem;
+	li{
+		list-style: disc;
+		margin-bottom: 1rem;
+	}
+}
 
 .sa-resources.page-section-bottom.page-section-top{
 	border:none;
@@ -861,25 +868,74 @@ body.admin-bar{
 =============================================================================
 =============================================================================
 =============================================================================*/
+.know-us{
+	.our-values-cards{
+		.wrapper{
+			display: grid; 
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			row-gap: 2rem;
+			column-gap: 35px;
+			.ovc-item{
+				display: flex;
+				align-items: center;
+				.img-wrapper{
+					display: flex;
+					align-items: center;
+					margin-left: 1rem;
+					padding-left: 1rem;
+					border-left: 2px solid var(--primary-color);
+					width: 60px;
+					height: 45px;
+				}
+				p{
+					font-family: "Yekan-Bakh-Semibold", sans-serif;
+				}
+			}
+		}
+	}
+}
 .sa-teams-item-layout{
     display: grid; 
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
 .sa-teams-item{
 	.sa-ti-wrapper{
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		.title{
 			padding: 16px;
 		}
 		.subtitle{
 			padding: 0 16px;
+			p{
+				height: 100px;
+				overflow-y: scroll;
+				
+			}
+			
+		/* Custom scrollbar styles */
+		p::-webkit-scrollbar {
+			width: 3px;
 		}
+		p::-webkit-scrollbar-thumb {
+			background-color: #888;
+			border-radius: 10px;
+		}
+		p::-webkit-scrollbar-track {
+			background-color: #f0f0f0;
+		}
+		}
+		
 		.sa-ti-modal-link{
 			width: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			padding: 16px;
-			margin: 16px 0;
+			margin: 0 0 16px;
 			border: none;
 			background: var(--white-color);
 			transition: background-color 0.3s ease-in-out;
@@ -911,6 +967,100 @@ body.admin-bar{
 	}
 }
 
+.sa-employment-steps-box{
+    margin: 4rem 0;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+	.wrapper{
+		display: flex;
+		gap: 60px;
+		align-items: center;
+		.sa-employment-steps-item{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 70px;
+			height: 69px;
+			background-color: #faf0c7;
+			border-radius: 50%;
+			text-align: center;
+			font-size: 32px;
+			padding: 10px;
+			&::after{
+				content: "";
+				position: absolute;
+				width: 170px;
+				height: 170px;
+				border: 1px solid #fff;
+				border-radius: 50%;
+				z-index: 9;
+			}
+			&::before{
+				content: "";
+				width: 100%;
+				height: 100px;
+				background-color: #faf0c7;
+				position: absolute;
+				right: 0;
+				left: 0;
+				z-index: -1;
+			}
+			&::before{
+					bottom: auto;
+					top: 50%;
+				
+				&:nth-child(even){
+					bottom: 50%;
+					top: auto;
+				}
+			}
+			&:nth-child(odd){
+				padding-top: 30px;
+				margin-top: -20px;
+				&::after{
+					bottom: -203px;
+				}
+				&::before{
+						bottom: auto;
+						top: 50%;
+					
+				}
+			}
+			&:nth-child(even){
+				padding-bottom: 30px;
+				margin-top: 20px;
+				&::after{
+					bottom: 107px;
+				}
+				&::before{
+					bottom: 50%;
+					top: auto;
+				}
+			}
+			span{
+				position: absolute;
+				width: 185px;
+				height: 185px;
+				background-color: var(--primary-color);
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 15px solid #faf0c7;
+				font-size: 16px;
+				padding: 1rem;
+			}
+			span.top{
+				bottom: 100px;
+			}
+			span.bottom{
+				bottom: -210px;
+			}
+		}
+	}
+}
 
 
 /*============================================================================
@@ -1371,23 +1521,23 @@ body.admin-bar{
 =============================================================================
 =============================================================================
 ============================================================================*/
-.skills-page{
-	.sa-scrollspy-nav {
-		align-items: flex-end;
-		margin-left: 3rem;
-		.sa-ss-nav-item {
-			border-left: 3px solid #E0E0E0;
-			border-right: none;
-			font-size: 20px;
-			&.active{
-				border-left: 4px solid #000000;
-			}
-		}
-		.en-font{
-			line-height: 150%;
-		}
-	}
-}
+// .skills-page{
+// 	.sa-scrollspy-nav {
+// 		align-items: flex-end;
+// 		margin-left: 3rem;
+// 		.sa-ss-nav-item {
+// 			border-left: 3px solid #E0E0E0;
+// 			border-right: none;
+// 			font-size: 20px;
+// 			&.active{
+// 				border-left: 4px solid #000000;
+// 			}
+// 		}
+// 		.en-font{
+// 			line-height: 150%;
+// 		}
+// 	}
+// }
 
 
 
