@@ -512,7 +512,7 @@ body.admin-bar .header {
   transform: translateY(-50%);
 }
 .sa-b-content h1 {
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .about-us-plus {
@@ -680,7 +680,7 @@ body.admin-bar .header {
   background-image: url("../img/saei-digital-enterprise.webp");
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .title h4 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 32px;
 }
 
@@ -702,6 +702,16 @@ body.admin-bar .header {
 =============================================================================
 =============================================================================
 ============================================================================*/
+ul.oh-our-value {
+  list-style: disc;
+  margin-top: 1rem;
+  padding-right: 2rem;
+}
+ul.oh-our-value li {
+  list-style: disc;
+  margin-bottom: 1rem;
+}
+
 .sa-resources.page-section-bottom.page-section-top {
   border: none;
 }
@@ -768,16 +778,60 @@ body.admin-bar .header {
 =============================================================================
 =============================================================================
 =============================================================================*/
+.know-us .our-values-cards .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 2rem;
+  column-gap: 35px;
+}
+.know-us .our-values-cards .wrapper .ovc-item {
+  display: flex;
+  align-items: center;
+}
+.know-us .our-values-cards .wrapper .ovc-item .img-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--primary-color);
+  width: 60px;
+  height: 45px;
+}
+.know-us .our-values-cards .wrapper .ovc-item p {
+  font-family: "Yekan-Bakh-Semibold", sans-serif;
+}
+
 .sa-teams-item-layout {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.sa-teams-item .sa-ti-wrapper {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .sa-teams-item .sa-ti-wrapper .title {
   padding: 16px;
 }
 .sa-teams-item .sa-ti-wrapper .subtitle {
   padding: 0 16px;
+  /* Custom scrollbar styles */
+}
+.sa-teams-item .sa-ti-wrapper .subtitle p {
+  height: 100px;
+  overflow-y: scroll;
+}
+.sa-teams-item .sa-ti-wrapper .subtitle p::-webkit-scrollbar {
+  width: 3px;
+}
+.sa-teams-item .sa-ti-wrapper .subtitle p::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+.sa-teams-item .sa-ti-wrapper .subtitle p::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
 }
 .sa-teams-item .sa-ti-wrapper .sa-ti-modal-link {
   width: 100%;
@@ -785,7 +839,7 @@ body.admin-bar .header {
   justify-content: center;
   align-items: center;
   padding: 16px;
-  margin: 16px 0;
+  margin: 0 0 16px;
   border: none;
   background: var(--white-color);
   transition: background-color 0.3s ease-in-out;
@@ -813,6 +867,99 @@ body.admin-bar .header {
 }
 .sa-teams-item .sa-ti-wrapper .sa-ti-modal-link:hover span, .sa-teams-item .sa-ti-wrapper .sa-ti-modal-link:active span {
   background-color: var(--white-color);
+}
+
+.sa-employment-steps-box {
+  margin: 4rem 0;
+  padding: 10rem 0;
+  display: flex;
+  justify-content: center;
+}
+.sa-employment-steps-box .wrapper {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 69px;
+  background-color: #faf0c7;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  z-index: 9;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  background-color: #faf0c7;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item::before {
+  bottom: auto;
+  top: 50%;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item::before:nth-child(even) {
+  bottom: 50%;
+  top: auto;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd) {
+  padding-top: 30px;
+  margin-top: -20px;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd)::after {
+  bottom: -203px;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd)::before {
+  bottom: auto;
+  top: 50%;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even) {
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even)::after {
+  bottom: 107px;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even)::before {
+  bottom: 50%;
+  top: auto;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item span {
+  position: absolute;
+  width: 185px;
+  height: 185px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 15px solid #faf0c7;
+  font-size: 16px;
+  padding: 1rem;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item span.top {
+  bottom: 100px;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item span.bottom {
+  bottom: -210px;
 }
 
 /*============================================================================
@@ -1217,22 +1364,6 @@ body.admin-bar .header {
 =============================================================================
 =============================================================================
 ============================================================================*/
-.skills-page .sa-scrollspy-nav {
-  align-items: flex-end;
-  margin-left: 3rem;
-}
-.skills-page .sa-scrollspy-nav .sa-ss-nav-item {
-  border-left: 3px solid #E0E0E0;
-  border-right: none;
-  font-size: 20px;
-}
-.skills-page .sa-scrollspy-nav .sa-ss-nav-item.active {
-  border-left: 4px solid #000000;
-}
-.skills-page .sa-scrollspy-nav .en-font {
-  line-height: 150%;
-}
-
 /*============================================================================
 ==============================================================================
 ==============================================================================

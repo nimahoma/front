@@ -58,7 +58,7 @@
 								<div class="sa-mission-card mission-box">
 									<div class="sa-m-c-img">
 										<img
-											src="../assets/img/saei-mission.png"
+											src="<?php echo get_template_directory_uri(); ?>/assets/img/saei-mission.png"
 											alt=""
 										/>
 									</div>
@@ -79,7 +79,7 @@
 								<div class="sa-mission-card perspective-box">
 									<div class="sa-m-c-img">
 										<img
-											src="../assets/img/saei-perspective.png"
+											src="<?php echo get_template_directory_uri(); ?>/assets/img/saei-perspective.png"
 											alt=""
 										/>
 									</div>
@@ -240,6 +240,7 @@
 												<div class="title">
 													<h4 class="en-font">
 														Digital Security
+														<br />
 														Solutions
 													</h4>
 												</div>

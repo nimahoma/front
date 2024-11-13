@@ -26,46 +26,40 @@ Template Name: Skills Saei
 							id="sticky-navbar"
 						>
 							<a
-								class="sa-ss-nav-item en-font active"
+								class="sa-ss-nav-item active"
 								href="#data_service_1"
 								data-target="#data_service_1"
-								>Big Data Services</a
+								>خدمــــات داده</a
 							>
 							<a
-								class="sa-ss-nav-item en-font"
+								class="sa-ss-nav-item"
 								href="#digital_security_solutions_2"
 								data-target="#digital_security_solutions_2"
-								>Digital Security
-								<br />
-								Solutions</a
+								>خدمات امنیت دیجیتال</a
 							>
 							<a
-								class="sa-ss-nav-item en-font"
+								class="sa-ss-nav-item"
 								href="#managed_services_3"
 								data-target="#managed_services_3"
-								>Managed Services</a
+								>مدیریت خدمات</a
 							>
 							<a
-								class="sa-ss-nav-item en-font"
+								class="sa-ss-nav-item"
 								href="#digital_enterprise_application_4"
 								data-target="#digital_enterprise_application_4"
-								>Digital Enterprise
-								<br />
-								Application</a
+								>برنامه‌های دیجیتال سازمانی</a
 							>
 							<a
-								class="sa-ss-nav-item en-font"
+								class="sa-ss-nav-item"
 								href="#telecome_solutions_5"
 								data-target="#telecome_solutions_5"
-								>Telecome Solutions</a
+								>راهکار‌های مخابرات</a
 							>
 							<a
-								class="sa-ss-nav-item en-font"
+								class="sa-ss-nav-item"
 								href="#digital_transformation_consulting_services_6"
 								data-target="#digital_transformation_consulting_services_6"
-								>Digital Transformation
-								<br />
-								Consulting Services</a
+								>خدمات مشاوره تحول دیجیتال</a
 							>
 						</div>
 					</aside>
@@ -76,9 +70,7 @@ Template Name: Skills Saei
 							id="data_service_1"
 						>
 							<div class="skill-title">
-								<div
-									class="sa-paragraph-box border-bottom-light first-things"
-								>
+								<div class="sa-paragraph-box first-things">
 									<div class="title">
 										<h1 class="sa-strong-title">
 											خدمــــات داده
@@ -99,9 +91,7 @@ Template Name: Skills Saei
 								</div>
 							</div>
 							<div class="skill-content">
-								<div
-									class="sa-paragraph-box border-bottom-light"
-								>
+								<div class="sa-paragraph-box">
 									<div class="title">
 										<h4>خدمات پیاده سازی بیگ دیتا</h4>
 									</div>
@@ -126,9 +116,7 @@ Template Name: Skills Saei
 										</ul>
 									</div>
 								</div>
-								<div
-									class="sa-paragraph-box border-bottom-light"
-								>
+								<div class="sa-paragraph-box">
 									<div class="title">
 										<h4>خدمات انبار داده ها</h4>
 									</div>
@@ -150,9 +138,7 @@ Template Name: Skills Saei
 										</ul>
 									</div>
 								</div>
-								<div
-									class="sa-paragraph-box border-bottom-light"
-								>
+								<div class="sa-paragraph-box">
 									<div class="title">
 										<h4>
 											خدمات نگهداری و پشتیبانی بیگ دیتا
@@ -209,12 +195,10 @@ Template Name: Skills Saei
 							id="digital_security_solutions_2"
 						>
 							<div class="skill-title">
-								<div
-									class="sa-paragraph-box border-bottom-light"
-								>
+								<div class="sa-paragraph-box">
 									<div class="title">
 										<h1 class="sa-strong-title">
-											Digital Security Solutions
+											خدمات امنیت دیجیتال
 										</h1>
 									</div>
 									<div class="description">
@@ -233,7 +217,7 @@ Template Name: Skills Saei
 										<h4>محصولات ما:</h4>
 									</div>
 									<div class="description">
-										<ul>
+										<ul class="oh-our-value">
 											<li>
 												پلتفرم ارائه سرویس یکپارچه سازی
 											</li>
@@ -276,55 +260,27 @@ Template Name: Skills Saei
 							id="managed_services_3"
 						>
 							<div class="skill-title">
-								<div
-									class="sa-paragraph-box border-bottom-light"
-								>
+								<div class="sa-paragraph-box">
 									<div class="title">
 										<h1 class="sa-strong-title">
-											Managed Services
+											مدیریت خدمات
 										</h1>
 									</div>
 									<div class="description">
 										<p>
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
+											واحد خدمات مدیریت شده و امنیت ساعی
+											به ارائه پشتیبانی جامع در تمامی
+											نیازهای زیرساختی و امنیتی به
+											سازمانهای بزرگ اختصاص دارد. با بیش
+											از یک دهه تجربه در ارائه طیف
+											گسترده‌ای از خدمات شامل مدیریت
+											حرفه‌ای سرویس‌ها،مرکز عملیات شبکه و
+											مرکز عملیات امنیت شبانه روزی
+											میتوانید مطمئن باشید که سرویسهای
+											دیجیتال سازمان شما همواره در دسترس،
+											کارآمد امن و همسو با اهداف کسب‌وکار
+											شما باشد
 										</p>
-									</div>
-								</div>
-							</div>
-							<div class="skill-content">
-								<div class="sa-paragraph-box">
-									<!-- <div class="title">
-										<h4>خدمات پیاده سازی بیگ دیتا</h4>
-									</div> -->
-									<div class="description">
-										<ul>
-											<li>
-												متن مورد نظر در حال تهیه می
-												باشد.
-											</li>
-											<li>
-												متن مورد نظر در حال تهیه می
-												باشد. متن مورد نظر در حال تهیه
-												می باشد.
-											</li>
-											<li>
-												متن مورد نظر در حال تهیه می
-												باشد. متن مورد نظر در حال تهیه
-												می باشد. متن مورد نظر در حال
-												تهیه می باشد.
-											</li>
-											<li>
-												متن مورد نظر در حال تهیه می
-												باشد.
-											</li>
-										</ul>
 									</div>
 								</div>
 							</div>
@@ -334,55 +290,22 @@ Template Name: Skills Saei
 							id="digital_enterprise_application_4"
 						>
 							<div class="skill-title">
-								<div
-									class="sa-paragraph-box border-bottom-light"
-								>
+								<div class="sa-paragraph-box">
 									<div class="title">
 										<h1 class="sa-strong-title">
-											Digital Enterprise Application
+											برنامه‌های دیجیتال سازمانی
 										</h1>
 									</div>
 									<div class="description">
 										<p>
-											ساعی با بهره گیری از برترین متخصصان
+											ساعی با بهره‌گیری از برترین متخصصان
 											داخلی و خارجی به سازمان‌ها کمک
 											می‌کند تا فرآیندهای کسب‌وکار خود را
 											بهینه‌سازی کرده و با استفاده از
-											تکنولوژیهای روز جهان مانند SAP,
-											SAGE, MicroSoft اقدام به پیاده‌سازی
-											بهترین رویه‌های جهانی (Best
-											Practices) نمایند.
+											تکنولوژی‌های روز جهان مانند اقدام به
+											پیاده سازی بهترین رویه‌های جهانی
+											نمایند
 										</p>
-									</div>
-								</div>
-							</div>
-							<div class="skill-content">
-								<div class="sa-paragraph-box">
-									<!-- <div class="title">
-										<h4>خدمات پیاده سازی بیگ دیتا</h4>
-									</div> -->
-									<div class="description">
-										<ul>
-											<li>
-												متن مورد نظر در حال تهیه می
-												باشد.
-											</li>
-											<li>
-												متن مورد نظر در حال تهیه می
-												باشد. متن مورد نظر در حال تهیه
-												می باشد.
-											</li>
-											<li>
-												متن مورد نظر در حال تهیه می
-												باشد. متن مورد نظر در حال تهیه
-												می باشد. متن مورد نظر در حال
-												تهیه می باشد.
-											</li>
-											<li>
-												متن مورد نظر در حال تهیه می
-												باشد.
-											</li>
-										</ul>
 									</div>
 								</div>
 							</div>
@@ -392,20 +315,18 @@ Template Name: Skills Saei
 							id="telecome_solutions_5"
 						>
 							<div class="skill-title">
-								<div
-									class="sa-paragraph-box border-bottom-light"
-								>
+								<div class="sa-paragraph-box">
 									<div class="title">
 										<h1 class="sa-strong-title">
-											Telecome Solutions
+											راهکار‌های مخابرات
 										</h1>
 									</div>
 									<div class="description">
 										<p>
-											راه‌کارهای مخابراتی ساعی در تعامل با
-											برترین شرکت‌های صاحب فناوری دنیا و
-											به کارگیری نیروهای متخصص داخلی نقش
-											مهمی در انتقال دانش روز دنیا به صنعت
+											راهکارهای مخابراتی ساعی در تعامل با
+											برترین شرکتهای صاحب فناوری دنیا و به
+											کارگیری نیروهای متخصص داخلی نقش مهمی
+											در انتقال دانش روز دنیا به صنعت
 											مخابرات کشور ایفا کرده است.
 										</p>
 									</div>
@@ -417,7 +338,7 @@ Template Name: Skills Saei
 										<h4>خدمات پیاده سازی بیگ دیتا</h4>
 									</div> -->
 									<div class="description">
-										<ul>
+										<ul class="oh-our-value">
 											<li>
 												سامانه جامع مدیریت ارتباط با
 												مشترکین CRM
@@ -461,13 +382,10 @@ Template Name: Skills Saei
 							id="digital_transformation_consulting_services_6"
 						>
 							<div class="skill-title">
-								<div
-									class="sa-paragraph-box border-bottom-light"
-								>
+								<div class="sa-paragraph-box">
 									<div class="title">
 										<h1 class="sa-strong-title">
-											Digital Transformation Consulting
-											Services
+											خدمات مشاوره تحول دیجیتال
 										</h1>
 									</div>
 									<div class="description">
@@ -481,7 +399,7 @@ Template Name: Skills Saei
 											بین‌المللی و بهره‌مندی از مشاوران
 											متخصص داخلی و خارجی، ما آماده‌ایم تا
 											کسب‌وکار شما را در هر مرحله از مسیر
-											تحول دیجیتال همراهی کنیم.
+											تحول دیجیتال همراهی کنیم
 										</p>
 									</div>
 								</div>
@@ -492,7 +410,7 @@ Template Name: Skills Saei
 										<h4>محصولات ما:</h4>
 									</div> -->
 									<div class="description">
-										<ul>
+										<ul class="oh-our-value">
 											<li>
 												برنامه‌ریزی استراتژیک دیجیتال:
 												همسو کردن اهداف کسب‌وکار شما با
