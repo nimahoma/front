@@ -529,6 +529,25 @@ body.admin-bar{
 	}
 }
 
+
+.header_scrolled {
+	position: fixed;
+	animation-name: header_scrolled;
+	animation-duration: .69s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes header_scrolled {
+	from {
+	  opacity: .85;
+	  top: -70px;
+	}
+	to {
+	  opacity: 1;
+	  top: 0;
+	}
+  }
 /*============================================================================
 ==============================================================================
 ==============================================================================
@@ -573,22 +592,25 @@ body.admin-bar{
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-	h1{
+	h1.sa-strong-title{
+		font-size: 3.5em;
 		font-weight: 400;
+		
 	}
 }
 .about-us-plus{
     display: flex;
     justify-content: space-evenly;
-    padding: 2rem 0;
+    padding: 1rem 0;
     background: var(--primary-color);
+	overflow: hidden;
 }
 .about-us-plus{
 	.aup-title{
 		display: flex;
 		align-items: center;
 		h5{
-			font-size: 20px;
+			font-size: 16px;
 			font-family: "Yekan-Bakh-Regular", sans-serif;
 			font-weight: 100;
 		}

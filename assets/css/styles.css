@@ -473,6 +473,24 @@ body.admin-bar .header {
   margin-top: 32px;
 }
 
+.header_scrolled {
+  position: fixed;
+  animation-name: header_scrolled;
+  animation-duration: 0.69s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes header_scrolled {
+  from {
+    opacity: 0.85;
+    top: -70px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
 /*============================================================================
 ==============================================================================
 ==============================================================================
@@ -511,15 +529,17 @@ body.admin-bar .header {
   top: 50%;
   transform: translateY(-50%);
 }
-.sa-b-content h1 {
+.sa-b-content h1.sa-strong-title {
+  font-size: 3.5em;
   font-weight: 400;
 }
 
 .about-us-plus {
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem 0;
+  padding: 1rem 0;
   background: var(--primary-color);
+  overflow: hidden;
 }
 
 .about-us-plus .aup-title {
@@ -527,7 +547,7 @@ body.admin-bar .header {
   align-items: center;
 }
 .about-us-plus .aup-title h5 {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Yekan-Bakh-Regular", sans-serif;
   font-weight: 100;
 }

@@ -1,38 +1,18 @@
-// SCRIPT FOR OWL CAROUSEL
-// jQuery(".owl-carousel").owlCarousel({
-// 	rtl: false,
-// 	loop: true,
-// 	nav: true,
-// 	dots: false,
-// 	center: true,
-// 	stagePadding: 100,
-// 	margin: 10,
-// 	autoplay: true,
-// 	autoplayTimeout: 4000,
-// 	autoplayHoverPause: true,
-// 	responsiveClass: true,
-// 	responsive: {
-// 		0: {
-// 			items: 1,
-// 			nav: true,
-// 			stagePadding: 40,
-// 		},
-// 		600: {
-// 			items: 1,
-// 			nav: false,
-// 			stagePadding: 50,
-// 		},
-// 		1000: {
-// 			items: 3,
-// 			nav: true,
-// 			loop: true,
-// 			stagePadding: 50,
-// 		},
-// 	},
-// });
+// HEADER MOTION
 
-// TAB SCRIPT
+let header = document.getElementById("header").classList;
+let active_class = "header_scrolled";
+
+window.addEventListener("scroll", (e) => {
+	if (pageYOffset > 200) header.add(active_class);
+	else header.remove(active_class);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
+	// WOW ANIMATION
+	new WOW({ animateClass: "animate__animated" }).init();
+
+	// TAB SCRIPT
 	const tabs = document.querySelectorAll(".tab");
 	const prevArrow = document.getElementById("prev-arrow");
 	const nextArrow = document.getElementById("next-arrow");
