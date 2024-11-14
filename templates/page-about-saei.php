@@ -12,8 +12,6 @@ Template Name: About Saei
     <?php wp_head(); ?>
 </head>
 
-<?php get_template_part( 'parts/header' ); ?>
-
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 
@@ -31,138 +29,207 @@ Template Name: About Saei
                 </aside>
 
                 <div class="page-content-wrapper">
-                    <section class="section-scroll our-history page-section-bottom page-section-top" id="our-history-1">
-                        <div class="sa-paragraph-box border-bottom-light">
-                            <div class="title">
-                                <h1 class="sa-strong-title">داستان ما</h1>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    شرکت SAEI در سال 1389 توسط جمعی از
-                                    متخصصان حوزه فناوری اطلاعات و مخابرات
-                                    تاسیس شد. این شرکت با هدف اولیه ارائه
-                                    خدمات به روز در بخش های فناوری اطلاعات و
-                                    ارتباطات راه دور تاسیس شد.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="sa-paragraph-box border-bottom-light">
-                            <div class="title">
-                                <h4>ماموریت</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    برای ارائه آخرین فن آوری های جهانی به
-                                    مشتریان خود و در عین حال بومی سازی و
-                                    توسعه آنها برای رفع نیازهای خاص آنها.
-                                    این ماموریت بر تعهد به ارائه راه‌حل‌های
-                                    پیشرفته و بهبود مستمر این فناوری‌ها برای
-                                    همسویی با الزامات محلی و افزایش رضایت
-                                    مشتری تاکید دارد.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="sa-paragraph-box border-bottom-light">
-                            <div class="title">
-                                <h4>چشم انداز</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    تبدیل شدن به پلی برای انتقال فناوری و
-                                    توسعه خدمات مهندسی بین ایران و اروپا.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="sa-paragraph-box border-bottom-light">
-                            <div class="title">
-                                <h4>ارزش‌های ما</h4>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی
-                                    نامفهوم از صنعت چاپ، و با استفاده از
-                                    طراحان گرافیک است، چاپگرها و متون بلکه
-                                    روزنامه و مجله در ستون و سطرآنچنان که
-                                    لازم است، و برای شرایط فعلی تکنولوژی
-                                    مورد نیاز، و کاربردهای متنوع با هدف
-                                    بهبود ابزارهای کاربردی می باشد،
-                                </p>
-                            </div>
-                        </div>
-                        <div class="sa-tumbnails-box">
-                            <div class="title">
-                                <h4>تیم رهبری</h4>
-                            </div>
-                            <div class="tumbnails-wrapper">
-                                <div class="row">
-                                    <div class="col-md-3 col-6">
-                                        <div class="tumbnail-item">
-                                            <div class="tumbnail-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
-                                                    alt="" />
-                                            </div>
-                                            <div class="tumbnail-decription">
-                                                <div class="title">
-                                                    <h5>نام شخص</h5>
-                                                </div>
-                                                <div class="subtitle">
-                                                    <h6>پوزیشن کاری</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6">
-                                        <div class="tumbnail-item">
-                                            <div class="tumbnail-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
-                                                    alt="" />
-                                            </div>
-                                            <div class="tumbnail-decription">
-                                                <div class="title">
-                                                    <h5>نام شخص</h5>
-                                                </div>
-                                                <div class="subtitle">
-                                                    <h6>پوزیشن کاری</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6">
-                                        <div class="tumbnail-item">
-                                            <div class="tumbnail-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
-                                                    alt="" />
-                                            </div>
-                                            <div class="tumbnail-decription">
-                                                <div class="title">
-                                                    <h5>نام شخص</h5>
-                                                </div>
-                                                <div class="subtitle">
-                                                    <h6>پوزیشن کاری</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6">
-                                        <div class="tumbnail-item">
-                                            <div class="tumbnail-img">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
-                                                    alt="" />
-                                            </div>
-                                            <div class="tumbnail-decription">
-                                                <div class="title">
-                                                    <h5>نام شخص</h5>
-                                                </div>
-                                                <div class="subtitle">
-                                                    <h6>پوزیشن کاری</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+						<section
+							class="section-scroll our-history page-section-bottom"
+							id="our-history-1"
+						>
+							<div
+								class="sa-paragraph-box border-bottom-light first-things"
+							>
+								<div class="title">
+									<h1 class="sa-strong-title">داستان ما</h1>
+								</div>
+								<div class="description">
+									<p>
+										شرکت SAEI شرکت ساعی که در سال ۱۳۸۹ تاسیس
+										شده است، با بهره‌گیری از تیمی متشکل از
+										بیش از ۱۵۰ نیروی جوان، متخصص و متعهد، به
+										عنوان یکی از شرکت‌های پیشرو در حوزه
+										فناوری اطلاعات و ارتباطات و مخابرات در
+										ایران فعالیت می‌کند این شرکت با تکیه بر
+										دانش فنی پیشرفته و تجربه‌های موفق در
+										مدیریت و اجرای پروژه‌های بزرگ، توانسته
+										است جایگاه خود را به عنوان یک شریک
+										استراتژیک برای شرکت‌ها و سازمان‌های
+										بزرگ، به ویژه در همکاری با شرکت‌های
+										بین‌المللی برتر در زمینه‌ی مخابرات،
+										تثبیت کند
+									</p>
+								</div>
+							</div>
+							<div class="sa-paragraph-box border-bottom-light">
+								<div class="title">
+									<h4>ماموریت ساعی:</h4>
+								</div>
+								<div class="description">
+									<p>
+										ارایه‌ی راه‌حل‌های نوآورانه برای تسهیل
+										تحول دیجیتال در کسب و کارها و ارتقا
+										ارزش‌های فناورانه در کشور
+									</p>
+								</div>
+							</div>
+							<div class="sa-paragraph-box border-bottom-light">
+								<div class="title">
+									<h4>چشم انداز ساعی:</h4>
+								</div>
+								<div class="description">
+									<p>
+										ساعی قصد دارد با تمرکز بر نوآوری، شریک
+										برتر شرکت‌های حوزه‌ی فناوری اطلاعات و
+										مخابرات در مسیر تحول دیجیتال در سطح کشور
+										گردد
+									</p>
+								</div>
+							</div>
+							<div class="sa-paragraph-box border-bottom-light">
+								<div class="title">
+									<h4>ارزش های ما در ساعی</h4>
+								</div>
+								<div class="description">
+									<p>
+										ارزش‌های ما در ساعی پایه و اساس تمامی
+										فعالیت‌ها و تصمیم‌گیری‌های ماست این
+										ارزش‌ها به بخش جدایی‌ناپذیری از فرهنگ
+										ساعی تبدیل شده‌اند و همه‌ی افراد در ساعی
+										در جهت تحقق آن‌ها تلاش خواهند کرد.
+									</p>
+									<ul class="oh-our-value">
+										<li>
+											<strong
+												>صداقت و شفافیت در رفتار و
+												گفتار:</strong
+											>
+											صداقت و شفافیت در رفتار و گفتار در
+											ساعی به مفهوم ایجاد یک محیط کاری است
+											که در آن اعتماد، امانت‌داری و
+											ارتباطات روشن و قابل فهم میان همه‌ی
+											ذینفعان داخلی و خارجی برقرار است.
+										</li>
+										<li>
+											<strong>مسئولیت‌پذیری:</strong>
+											مسئولیت‌پذیری به عنوان یک ارزش
+											سازمانی به معنای تاکید بر پذیرش
+											مسئولیت امور محوله با رعایت
+											امانت‌داری است. این ارزش پایه و اساس
+											ایجاد اعتماد و اعتبار داخل و خارج از
+											سازمان است.
+										</li>
+										<li>
+											<strong>یادگیری و یاددهی:</strong>
+											تاکید بر اهمیت رشد فردی و جمعی از
+											طریق فرایند دایمی آموزش و به
+											اشتراک‌گذاری دانش
+										</li>
+										<li>
+											مشتری مداری: توجه به مشتری و رفع
+											نیازهایش به عنوان رکن اصلی شرکت
+										</li>
+										<li>
+											نوآوری مداوم: نوآوری مداوم به عنوان
+											یک ارزش سازمانی به معنای تعهد به خلق
+											و پیاده‌سازیایده‌ها، محصولات و خدمات
+											جدید و بهبود مستمر آن‌هاست.
+										</li>
+										<li>
+											احترام به ارزش‌های انسانی: احترام به
+											شان و ارزش‌های انسانی در ساعی خارج
+											از توجه به دین، مذهب، ملیت، جایگاه
+											شغلی و ویژگی‌های شخصیتی افراد است.
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sa-tumbnails-box">
+								<div class="title">
+									<h4>تیم رهبری</h4>
+								</div>
+								<div class="tumbnails-wrapper">
+									<div class="row">
+										<div class="col-md-3 col-6">
+											<div class="tumbnail-item">
+												<div class="tumbnail-img">
+													<img
+														src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
+														alt=""
+													/>
+												</div>
+												<div
+													class="tumbnail-decription"
+												>
+													<div class="title">
+														<h5>نام شخص</h5>
+													</div>
+													<div class="subtitle">
+														<h6>پوزیشن کاری</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="tumbnail-item">
+												<div class="tumbnail-img">
+													<img
+														src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
+														alt=""
+													/>
+												</div>
+												<div
+													class="tumbnail-decription"
+												>
+													<div class="title">
+														<h5>نام شخص</h5>
+													</div>
+													<div class="subtitle">
+														<h6>پوزیشن کاری</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="tumbnail-item">
+												<div class="tumbnail-img">
+													<img
+														src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
+														alt=""
+													/>
+												</div>
+												<div
+													class="tumbnail-decription"
+												>
+													<div class="title">
+														<h5>نام شخص</h5>
+													</div>
+													<div class="subtitle">
+														<h6>پوزیشن کاری</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="tumbnail-item">
+												<div class="tumbnail-img">
+													<img
+														src="<?php echo get_template_directory_uri(); ?>/assets/img/thumbnail-palceholder.webp"
+														alt=""
+													/>
+												</div>
+												<div
+													class="tumbnail-decription"
+												>
+													<div class="title">
+														<h5>نام شخص</h5>
+													</div>
+													<div class="subtitle">
+														<h6>پوزیشن کاری</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
 
                     <section class="section-scroll what-we-doing page-section-bottom page-section-top"
                         id="what-we-doing-2">
@@ -918,110 +985,6 @@ Template Name: About Saei
             </div>
         </div>
     </div>
-
-    <!-- Page JavaScript -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const tabsWrapper = document.getElementById("tabs-wrapper");
-        const tabs = document.querySelectorAll(".tab");
-        const prevArrow = document.getElementById("prev-arrow");
-        const nextArrow = document.getElementById("next-arrow");
-        const navbarLinks =
-            document.querySelectorAll(".sticky-navbar a");
-
-        let activeIndex = 0;
-
-        function updateActiveTab(index) {
-            tabs[activeIndex].classList.remove("active");
-            document
-                .querySelector(tabs[activeIndex].dataset.target)
-                .classList.remove("active");
-            activeIndex = index;
-            tabs[activeIndex].classList.add("active");
-            document
-                .querySelector(tabs[activeIndex].dataset.target)
-                .classList.add("active");
-            tabs[activeIndex].scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "center",
-            });
-            updateArrows();
-        }
-
-        function updateArrows() {
-            if (activeIndex === 0) {
-                prevArrow.classList.add("hidden");
-            } else {
-                prevArrow.classList.remove("hidden");
-            }
-            if (activeIndex === tabs.length - 1) {
-                nextArrow.classList.add("hidden");
-            } else {
-                nextArrow.classList.remove("hidden");
-            }
-        }
-
-        prevArrow.addEventListener("click", function() {
-            if (activeIndex > 0) {
-                updateActiveTab(activeIndex - 1);
-            }
-        });
-
-        nextArrow.addEventListener("click", function() {
-            if (activeIndex < tabs.length - 1) {
-                updateActiveTab(activeIndex + 1);
-            }
-        });
-
-        tabs.forEach((tab, index) => {
-            tab.addEventListener("click", function(event) {
-                event.preventDefault();
-                event.stopPropagation();
-                updateActiveTab(index);
-            });
-        });
-
-        updateArrows();
-
-        // Scrollspy functionality
-        function onScroll() {
-            let currentSection = "";
-            document
-                .querySelectorAll(".section-scroll")
-                .forEach((section) => {
-                    const sectionTop = section.offsetTop;
-                    if (pageYOffset >= sectionTop - 50) {
-                        currentSection = section.getAttribute("id");
-                    }
-                });
-
-            navbarLinks.forEach((link) => {
-                link.classList.remove("active");
-                if (
-                    link.getAttribute("data-target") ===
-                    `#${currentSection}`
-                ) {
-                    link.classList.add("active");
-                }
-            });
-        }
-
-        window.addEventListener("scroll", onScroll);
-
-        navbarLinks.forEach((link) => {
-            link.addEventListener("click", function(event) {
-                event.preventDefault();
-                const targetId = this.getAttribute("data-target");
-                document
-                    .querySelector(targetId)
-                    .scrollIntoView({
-                        behavior: "smooth"
-                    });
-            });
-        });
-    });
-    </script>
 
     <?php get_template_part( 'parts/footer' ); ?>
     <?php wp_footer(); ?>

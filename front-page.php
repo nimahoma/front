@@ -30,9 +30,13 @@
 							<div class="container">
 								<div class="sa-b-content">
 									<h1
-										class="sa-strong-title sa-slogan-color mb-3 en-font"
+										class="sa-strong-title sa-slogan-color mb-0 en-font wow animate__slideInDown"
 									>
-										Your Partner in <br />
+										Your Partner in
+									</h1>
+									<h1
+										class="sa-strong-title sa-slogan-color mb-3 en-font wow animate__slideInUp"
+									>
 										Digital Transformation Journey.
 									</h1>
 								</div>
@@ -43,7 +47,7 @@
 
 				<div class="about-us-plus">
 					<div class="aup-title">
-						<h5>
+						<h5 class="wow animate__fadeInLeft">
 							در ساعی، با ارائه پیشرفته‌ترین و مناسب‌ترین
 							راه‌کارهای فناوری، کسب و کارها را در مسیر رشد و تحول
 							دیجیتال همراهی می‌کنیم.
@@ -56,7 +60,7 @@
 						<div class="container-fluid">
 							<div class="wrapper sec-padding">
 								<div class="sa-mission-card mission-box">
-									<div class="sa-m-c-img">
+									<div class="sa-m-c-img wow animate__zoomIn">
 										<img
 											src="<?php echo get_template_directory_uri(); ?>/assets/img/saei-mission.png"
 											alt=""
@@ -64,10 +68,12 @@
 									</div>
 									<div class="sa-m-c-content">
 										<div class="title">
-											<h4>ماموريت ساعی</h4>
+											<h4 class="wow animate__pulse">
+												ماموريت ساعی
+											</h4>
 										</div>
 										<div class="desc">
-											<p>
+											<p class="wow animate__fadeInUp">
 												ماموريت ما ارایه ی راه حلهای
 												نوآورانه برای تسهيل تحول دیجیتال
 												در کسب و کارها و ارتقای ارزشهای
@@ -77,7 +83,7 @@
 									</div>
 								</div>
 								<div class="sa-mission-card perspective-box">
-									<div class="sa-m-c-img">
+									<div class="sa-m-c-img wow animate__zoomIn">
 										<img
 											src="<?php echo get_template_directory_uri(); ?>/assets/img/saei-perspective.png"
 											alt=""
@@ -85,10 +91,12 @@
 									</div>
 									<div class="sa-m-c-content">
 										<div class="title">
-											<h4>چشم انداز ساعی</h4>
+											<h4 class="wow animate__pulse">
+												چشم انداز ساعی
+											</h4>
 										</div>
 										<div class="desc">
-											<p>
+											<p class="wow animate__fadeInUp">
 												ما قصد داریم با تمرکز بر نوآوری
 												و جلب رضایت مشتری در تمامی
 												بازارها، تبدیل به شريک برتر

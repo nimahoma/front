@@ -12,8 +12,6 @@ Template Name: Skills Saei
     <?php wp_head(); ?>
 </head>
 
-<?php get_template_part( 'parts/header' ); ?>
-
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 

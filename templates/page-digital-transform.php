@@ -12,12 +12,10 @@ Template Name: Digital Transform
     <?php wp_head(); ?>
 </head>
 
-<?php get_template_part( 'parts/header' ); ?>
-
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 
-    <div class="page digital-transform-page">
+    <div class="digital-transform-page">
         <div class="container">
             <div class="page-wrapper Internal-pages" id="digital-transform">
                 <aside class="page-sticky-sidebar">
@@ -323,58 +321,7 @@ Template Name: Digital Transform
             </div>
         </div>
     </div>
-
-    <!-- Page JavaScript -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const tabsWrapper = document.getElementById("tabs-wrapper");
-        const tabs = document.querySelectorAll(".tab");
-        const prevArrow = document.getElementById("prev-arrow");
-        const nextArrow = document.getElementById("next-arrow");
-        const navbarLinks =
-            document.querySelectorAll(".sticky-navbar a");
-
-        let activeIndex = 0;
-
-        // Scrollspy functionality
-        function onScroll() {
-            let currentSection = "";
-            document
-                .querySelectorAll(".section-scroll")
-                .forEach((section) => {
-                    const sectionTop = section.offsetTop;
-                    if (pageYOffset >= sectionTop - 50) {
-                        currentSection = section.getAttribute("id");
-                    }
-                });
-
-            navbarLinks.forEach((link) => {
-                link.classList.remove("active");
-                if (
-                    link.getAttribute("data-target") ===
-                    `#${currentSection}`
-                ) {
-                    link.classList.add("active");
-                }
-            });
-        }
-
-        window.addEventListener("scroll", onScroll);
-
-        navbarLinks.forEach((link) => {
-            link.addEventListener("click", function(event) {
-                event.preventDefault();
-                const targetId = this.getAttribute("data-target");
-                document
-                    .querySelector(targetId)
-                    .scrollIntoView({
-                        behavior: "smooth"
-                    });
-            });
-        });
-    });
-    </script>
-
+    
     <?php get_template_part( 'parts/footer' ); ?>
     <?php wp_footer(); ?>
 </body>
