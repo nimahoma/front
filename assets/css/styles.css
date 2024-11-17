@@ -128,7 +128,7 @@
   --border-radius-small: 5px;
   --sa-btn-padding: 15px 30px;
   --sa-font-weight-strong: 600;
-  --sa-font-size-stronge: 48px;
+  --sa-font-size-stronge: 45px;
   --sa-font-size-paragraphe: 20px;
   --sa-font-size-1: 16px;
   --sa-font-size-subtitle: 24px;
@@ -451,7 +451,8 @@ body {
 }
 .header .navbar .nav-item .nav-link {
   line-height: 3;
-  font-weight: var(--sa-font-weight-strong);
+  font-size: 16px;
+  font-family: "Yekan-Bakh-FaNum-SemiBold", sans-serif;
   color: var(--black-color);
 }
 .header .navbar .nav-item:before {
@@ -528,16 +529,18 @@ body.admin-bar .header {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-clip-path: polygon(-0.01em 0, calc(100% + 0.01em) 0, calc(100% + 0.01em) calc(100% + 0.01em), -0.01em calc(100% + 0.01em));
+  clip-path: polygon(-0.01em 0, calc(100% + 0.01em) 0, calc(100% + 0.01em) calc(100% + 0.01em), -0.01em calc(100% + 0.01em));
 }
 .sa-b-content h1.sa-strong-title {
-  font-size: 3.5em;
+  font-size: 55px;
   font-weight: 400;
 }
 
 .about-us-plus {
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem 0;
+  padding: 0.85rem 0;
   background: var(--primary-color);
   overflow: hidden;
 }
@@ -581,12 +584,13 @@ body.admin-bar .header {
   margin: 2rem 3rem;
 }
 .sa-mission .wrapper .sa-mission-card .sa-m-c-content .title h4 {
-  font-size: 35px;
+  font-size: 22px;
   font-weight: bold;
 }
 .sa-mission .wrapper .sa-mission-card .sa-m-c-content p {
-  font-size: 24px;
-  margin-top: 1rem;
+  font-size: 18px;
+  width: 80%;
+  margin: 1rem auto 0;
 }
 
 .sa-team-banner {
@@ -599,14 +603,12 @@ body.admin-bar .header {
   min-height: 120vh;
   display: flex;
   align-items: flex-end;
-  border-bottom: 17px solid var(--primary-color);
 }
 .sa-team-banner .wrapper {
   width: 100%;
 }
 .sa-team-banner .wrapper .sa-t-content {
   display: grid;
-  gap: 32px;
   grid-template-columns: 25% 75%;
   align-items: flex-end;
 }
@@ -614,8 +616,8 @@ body.admin-bar .header {
   margin-bottom: -5rem;
 }
 .sa-team-banner .wrapper .sa-t-content .sa-teams-items-wrapper {
-  width: 85%;
-  margin-right: 8%;
+  width: 95%;
+  margin-right: auto;
 }
 
 .sa-teams-items-wrapper .wrapper {
@@ -625,7 +627,7 @@ body.admin-bar .header {
 }
 .sa-teams-items-wrapper .wrapper .sa-teams-item {
   background-color: var(--smoke-color);
-  padding: 1rem;
+  padding: 0.85rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -636,6 +638,7 @@ body.admin-bar .header {
 .sa-teams-items-wrapper .wrapper .sa-teams-item .title h5 {
   font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 400;
+  font-size: 18px;
 }
 
 .sa-t-c-title {
@@ -648,6 +651,8 @@ body.admin-bar .header {
 .sa-t-c-title h2 {
   color: var(--white-color);
   line-height: 1;
+  font-size: 60px;
+  font-family: "Yekan-Bakh-SemiBold", sans-serif;
 }
 .sa-t-c-title p {
   margin-bottom: 0.5rem;
@@ -660,6 +665,14 @@ body.admin-bar .header {
   text-align: right;
 }
 
+.sa-skills .sa-dt-about {
+  -webkit-clip-path: polygon(-0.2em 0, calc(100% + 0.2em) 0, calc(100% + 0.2em) calc(100% + 0.2em), -0.2em calc(100% + 0.2em));
+  clip-path: polygon(-0.2em 0, calc(100% + 0.2em) 0, calc(100% + 0.2em) calc(100% + 0.2em), -0.2em calc(100% + 0.2em));
+}
+.sa-skills .sa-dt-about h1 {
+  font-size: 60px;
+  font-family: "Yekan-Bakh-SemiBold", sans-serif;
+}
 .sa-skills .sa-dt-about p {
   font-size: 20px;
 }
@@ -667,19 +680,26 @@ body.admin-bar .header {
 .sa-skills-tiles-wrapper {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
+  gap: 19px;
+  background-color: #EAEAEA;
+  padding: 19px 19px;
+  width: 89%;
+  margin: auto;
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item {
-  border: 1px solid #BBBBBB;
+  width: 100%;
+  height: 360px;
+  background-color: var(--white-color);
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item a {
   display: block;
+  height: 100%;
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img {
   background-size: contain;
   background-position: center bottom;
-  height: 450px;
-  padding: 1rem 2rem;
+  height: 100%;
+  padding: 1rem;
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dss {
   background-image: url("../img/saei-digital-security-solution.webp");
@@ -701,7 +721,7 @@ body.admin-bar .header {
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .title h4 {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 25px;
 }
 
 .sa-dt-btn {
@@ -818,7 +838,7 @@ ul.oh-our-value li {
   height: 45px;
 }
 .know-us .our-values-cards .wrapper .ovc-item p {
-  font-family: "Yekan-Bakh-Semibold", sans-serif;
+  font-family: "Yekan-Bakh-SemiBold", sans-serif;
 }
 
 .sa-teams-item-layout {
@@ -827,7 +847,7 @@ ul.oh-our-value li {
 }
 
 .sa-teams-item .sa-ti-wrapper {
-  height: 300px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -840,14 +860,15 @@ ul.oh-our-value li {
   /* Custom scrollbar styles */
 }
 .sa-teams-item .sa-ti-wrapper .subtitle p {
-  height: 100px;
+  height: 75px;
   overflow-y: scroll;
+  padding: 0 0.5rem;
 }
 .sa-teams-item .sa-ti-wrapper .subtitle p::-webkit-scrollbar {
   width: 3px;
 }
 .sa-teams-item .sa-ti-wrapper .subtitle p::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background-color: var(--primary-color);
   border-radius: 10px;
 }
 .sa-teams-item .sa-ti-wrapper .subtitle p::-webkit-scrollbar-track {
@@ -907,7 +928,7 @@ ul.oh-our-value li {
   align-items: center;
   width: 70px;
   height: 69px;
-  background-color: #faf0c7;
+  background-color: #EAEAEA;
   border-radius: 50%;
   text-align: center;
   font-size: 32px;
@@ -926,7 +947,7 @@ ul.oh-our-value li {
   content: "";
   width: 100%;
   height: 100px;
-  background-color: #faf0c7;
+  background-color: #EAEAEA;
   position: absolute;
   right: 0;
   left: 0;
@@ -940,25 +961,25 @@ ul.oh-our-value li {
   bottom: 50%;
   top: auto;
 }
-.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd) {
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even) {
   padding-top: 30px;
   margin-top: -20px;
 }
-.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd)::after {
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even)::after {
   bottom: -203px;
 }
-.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd)::before {
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even)::before {
   bottom: auto;
   top: 50%;
 }
-.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even) {
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd) {
   padding-bottom: 30px;
   margin-top: 20px;
 }
-.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even)::after {
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd)::after {
   bottom: 107px;
 }
-.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even)::before {
+.sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd)::before {
   bottom: 50%;
   top: auto;
 }
@@ -966,19 +987,28 @@ ul.oh-our-value li {
   position: absolute;
   width: 185px;
   height: 185px;
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 15px solid #faf0c7;
+  border: 15px solid #EAEAEA;
   font-size: 16px;
   padding: 1rem;
 }
-.sa-employment-steps-box .wrapper .sa-employment-steps-item span.top {
-  bottom: 100px;
+.sa-employment-steps-box .wrapper .sa-employment-steps-item span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
 }
 .sa-employment-steps-box .wrapper .sa-employment-steps-item span.bottom {
+  bottom: 100px;
+}
+.sa-employment-steps-box .wrapper .sa-employment-steps-item span.top {
   bottom: -210px;
 }
 
@@ -996,62 +1026,6 @@ ul.oh-our-value li {
 .skill-page .skill-content .description ul, .skill-page .skill-content .description li {
   list-style: disc;
   margin-right: 1rem;
-}
-
-.skill-page .skills-content-wrapper {
-  display: flex;
-  gap: 32px;
-}
-.skill-page .skills-content-wrapper .skills-main-content-wrapper {
-  width: 75%;
-}
-.skill-page .skills-content-wrapper .skills-sidebar-content-wrapper {
-  width: 25%;
-}
-.skill-page .skills-content-wrapper .sa-skills-tiles-wrapper {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 15px;
-  position: sticky;
-  top: 130px;
-  margin-bottom: 2rem;
-}
-.skill-page .skills-content-wrapper .sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img {
-  padding: 1rem;
-  height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.skill-page .skills-content-wrapper .sa-skills-tiles-wrapper .sa-skills-tiles-item .title h4 {
-  font-size: 1.2rem;
-  text-shadow: 0px -1px 0 #212121, 0px -1px 0 #212121, 0px 1px 0 #212121, 0px 1px 0 #212121, -1px 0px 0 #212121, 1px 0px 0 #212121, -1px 0px 0 #212121, 1px 0px 0 #212121, -1px -1px 0 #212121, 1px -1px 0 #212121, -1px 1px 0 #212121, 1px 1px 0 #212121, -1px 2px 0 #212121, 0px 2px 0 #212121, 1px 2px 0 #212121, 0 2px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 1px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.15);
-}
-
-.skill-page.big-data-services-page .sa-skills-sidebar-wrapper {
-  position: sticky;
-  top: 130px;
-  margin-bottom: 2rem;
-}
-.skill-page.big-data-services-page .sa-skills-sidebar-wrapper .sa-skill-sidebar-item {
-  height: 69px;
-  font-size: var(--sa-font-size-1);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: var(--primary-color);
-  color: var(--black-color);
-  border: 2px solid var(--primary-color);
-  transition: background-color 0.3s ease;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-.skill-page.big-data-services-page .sa-skills-sidebar-wrapper .sa-skill-sidebar-item a .title h4 {
-  font-size: 20px;
-  color: var(--text-color);
-}
-.skill-page.big-data-services-page .sa-skills-sidebar-wrapper .sa-skill-sidebar-item:hover {
-  background-color: var(--white-color);
-  border: 2px solid var(--primary-color);
 }
 
 /*============================================================================
@@ -1083,11 +1057,6 @@ ul.oh-our-value li {
   line-height: 150%;
   margin-bottom: 0.25rem;
 }
-.footer-content .footer-menu-title {
-  font-weight: 800;
-  font-family: Yekan-Bakh-ExtraBold;
-  margin-bottom: 0.5rem;
-}
 
 .footer-contact-info ul li {
   color: var(--white-color);
@@ -1114,7 +1083,7 @@ ul.oh-our-value li {
   left: -25px;
   bottom: 0px;
   color: var(--primary-color);
-  padding: 1rem 1rem 3rem;
+  padding: 1rem 1rem 0;
   background: var(--text-color);
 }
 .sa-footer-social a {
@@ -1348,13 +1317,14 @@ ul.oh-our-value li {
   margin-bottom: 1rem;
 }
 .sa-joinus-form .form-group label {
-  font-size: 14px;
+  font-size: 16px;
+  margin-bottom: 0.35rem;
 }
 .sa-joinus-form .form-group .form-control {
   border: unset;
   background: var(--light-color);
   border-radius: unset;
-  border-bottom: 1px solid var(--gray-color);
+  border-bottom: 1px solid var(--primary-color);
   font-size: 14px;
   line-height: 1.58;
 }
