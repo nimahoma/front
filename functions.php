@@ -32,6 +32,8 @@ function saeiTheme_enqueue_styles() {
 
     wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/assets/css/animate.css' );
 
+    wp_enqueue_style( 'aos-css', get_template_directory_uri() . '/assets/css/aos.css' );
+
     wp_enqueue_style( 'saei-css', get_template_directory_uri() . '/assets/css/styles.css' );
     
     wp_enqueue_style( 'saeiTheme-style', get_stylesheet_uri() );
@@ -41,6 +43,8 @@ function saeiTheme_enqueue_styles() {
     wp_enqueue_script( 'owl-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), null, true );
 
     wp_enqueue_script( 'wow-js', get_template_directory_uri() . '/assets/js/wow.min.js', array('jquery'), null, true );
+
+    wp_enqueue_script( 'aos-js', get_template_directory_uri() . '/assets/js/aos.js', array('jquery'), null, true );
 
     wp_enqueue_script( 'saei-scripts-js', get_template_directory_uri() . '/assets/js/saei-scripts.js', array('jquery'), null, true );
 }
