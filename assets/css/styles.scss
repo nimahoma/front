@@ -205,7 +205,7 @@ h4,
 h5, 
 h6,
 .header .navbar .nav-item .nav-link{ 
-	font-family: "Yekan-Bakh-Bold", sans-serif; 
+	font-family: "Yekan-Bakh-SemiBold", sans-serif; 
 	margin:0;
 	line-height: 2;
 	color: var(--black-color);
@@ -217,7 +217,7 @@ span,
 a{ 
 font-family: "Yekan-Bakh-Regular", sans-serif; 
 margin:0;
-line-height: 150%;
+line-height: 25px;
 } 
 
 .en-font{
@@ -348,7 +348,7 @@ body{
 	padding-top: 4rem;
 }
 .page-section-bottom{
-	border-bottom: 2px solid var(--primary-color);
+	border-bottom: 1px solid var(--primary-color);
 }
 .border-bottom-light{
     border-bottom: 1px solid var(--border-color-light);
@@ -360,6 +360,9 @@ body{
 .sa-paragraph-box{
 	.title{
 		margin-bottom: 0.69rem;
+		h4{
+			font-size: 20px;
+		}
 	}
 }
 .sa-tumbnails-box,
@@ -409,8 +412,6 @@ body{
 
 .tab-content-item{
     display: flex;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
 	.tci-description{
 		width: 45%;
 		padding: 1rem;
@@ -458,12 +459,12 @@ body{
 		display: inline-flex;
 		width: max-content;
 		padding: 10px 20px;
-		border-right: 4px solid #E0E0E0;
+		border-right: 2px solid #E0E0E0;
 		color: var(--gray-color);
 		transition: background-color 0.3s ease;
 		&.active{
 			color: var(--text-color);
-			border-right: 8px solid var(--primary-color);
+			border-right: 3px solid var(--primary-color);
 			transition: background-color 0.3s ease;
 		}
 	} 
@@ -497,19 +498,41 @@ body{
 			.nav-link{
 				line-height: 3;
 				font-size: 16px;
-				font-family: "Yekan-Bakh-FaNum-SemiBold", sans-serif;
+				font-family: "Yekan-Bakh-FaNum-Regular", sans-serif;
 				color: var(--black-color);
+				margin-left: 1rem;
+				position: relative;
+				&:before{
+					content: "";
+					width: 100%;
+					height: 4px;
+					background-color: var(--white-color);
+					position: absolute;
+					top: 0;
+					right: 0;
+					left: 0;
+					z-index: 9;
+				}
+				&:after{
+					left: 0;
+					display: block !important;
+					margin: 0 auto;
+					width: 90%;
+					content: "";
+					transition: all .3s ease-in-out;
+					transform: translateY(5px);
+					opacity: 0;
+					border-bottom: 1px solid var(--primary-color);
+					-webkit-font-smoothing: antialiased;
+					animation: animatebottom .5s linear;
+				}
+				&:hover:after{
+					transform: translateY(-8px);
+					opacity: 1;
+						-webkit-font-smoothing: antialiased;
+				}
 			}
-			&:before{
-				content: "";
-				width: 100%;
-				height: 4px;
-				background-color: var(--white-color);
-				position: absolute;
-				top: 0;
-				right: 0;
-				left: 0;
-			}
+			
 		}
 	}
 }
@@ -517,8 +540,10 @@ body{
 .header{
 	.navbar{
 		.nav-item.active{
-			&:before{
-				background-color: var(--primary-color);
+			.nav-link{
+				&:before{
+					background-color: var(--primary-color);
+				}
 			}
 		}
 	}
@@ -597,7 +622,6 @@ body.admin-bar{
 	clip-path: polygon(-.01em 0, calc(100% + .01em) 0, calc(100% + .01em) calc(100% + .01em), -.01em calc(100% + .01em));
 	h1.sa-strong-title{
 		font-size: 55px;
-		font-weight: 400;
 		
 	}
 }
@@ -829,21 +853,36 @@ body.admin-bar{
 =============================================================================
 =============================================================================
 ============================================================================*/
+
 ul.oh-our-value{
 	list-style: disc;
-    margin-top: 1rem;
-    padding-right: 2rem;
+	margin-top: 1rem;
+	padding-right: 2rem;
 	li{
+		display: flex	;
 		list-style: disc;
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
+		.oh-ov{
+			display: flex
+		;
+			align-items: center;
+			justify-content: center;
+			min-width: calc(40px + 1rem);
+			max-width: calc(40px + 1rem);
+			min-height: 40px;
+			margin-left: 1.2rem;
+			padding-left: 1rem;
+			border-left: 1px solid var(--primary-color);
+		}
 	}
 }
+
 
 .sa-resources.page-section-bottom.page-section-top{
 	border:none;
 }
 .sa-resources-item{
-	border: 1px solid var(--border-color-light);
+	border: 1px solid #707070;
     margin-bottom: 2rem;
 	.sa-ri-decription{
 		padding: 0 1rem 1rem;
@@ -867,13 +906,21 @@ ul.oh-our-value{
 		}
 	}
 }
+.sa-ri-img{
+	img{
+		width: 70%;
+		display: flex	;
+		margin: auto;
+		padding: 1.5rem;
+	}
+}
 .sa-paragraph-box.full-width-box-tab{
 	position: relative;
 }
 
 
 /*============================================================================
-==============================================================================
+============================================================================== <?php echo get_template_directory_uri(); ?>/assets/
 ==============================================================================
 
 
@@ -951,6 +998,10 @@ ul.oh-our-value{
 		justify-content: space-between;
 		.title{
 			padding: 16px;
+			h5{
+				font-family: "Gilroy-SemiBold", sans-serif;
+				font-weight: 400;
+			}
 		}
 		.subtitle{
 			padding: 0 16px;
@@ -1030,14 +1081,14 @@ ul.oh-our-value{
 			background-color: #EAEAEA;
 			border-radius: 50%;
 			text-align: center;
-			font-size: 32px;
+			font-size: 25px;
 			padding: 10px;
 			&::after{
 				content: "";
 				position: absolute;
 				width: 170px;
 				height: 170px;
-				border: 1px solid #fff;
+				border: 2px solid #fff;
 				border-radius: 50%;
 				z-index: 9;
 			}
@@ -1127,12 +1178,16 @@ ul.oh-our-value{
 =============================================================================
 =============================================================================
 =============================================================================*/
-.skill-page{
+.skills-page{
 	.skill-content{
 		.description{
-			ul,li{
+			ul{
 				list-style: disc;
 				margin-right: 1rem;
+				li{
+					list-style: disc;
+					margin-bottom: .69rem;
+				}
 			}
 		}
 	}
@@ -1223,6 +1278,13 @@ ul.oh-our-value{
 // ==============================================
 // ==============================================
 
+.sa-tabs-list{
+	margin-right: 1rem;
+	li{
+		list-style: disc;
+		margin-bottom: .5rem;
+	}
+}
 .tabs-container {
     position: relative;
     display: flex;
@@ -1236,11 +1298,13 @@ ul.oh-our-value{
     padding: 2rem 0;
     overflow: hidden;
 	.tab{
-		border-bottom: 2px solid #E0E0E0;
+		border-bottom: 4px solid #E0E0E0;
 		background: var(--white-color);
+		font-size: 20px;
 		&.active{
-			border-bottom: 2px solid var(--primary-color);
+			border-bottom: 7px solid var(--primary-color);
 			background: var(--white-color);
+			font-family: "Yekan-Bakh-SemiBold", sans-serif;
 		}
 	}
 }

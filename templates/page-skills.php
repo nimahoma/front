@@ -17,7 +17,7 @@ Template Name: Skills Saei
 
     <div class="page skills-page">
 			<div class="container">
-				<div class="page-wrapper Internal-pages" id="about-us">
+				<div class="page-wrapper Internal-pages" id="skills">
 					<aside class="page-sticky-sidebar">
 						<div
 							class="sa-scrollspy-nav sticky-navbar"
@@ -68,23 +68,13 @@ Template Name: Skills Saei
 							id="data_service_1"
 						>
 							<div class="skill-title">
-								<div class="sa-paragraph-box first-things">
+								<div
+									class="sa-paragraph-box mb-0 pb-0 first-things"
+								>
 									<div class="title">
 										<h1 class="sa-strong-title">
 											خدمــــات داده
 										</h1>
-									</div>
-									<div class="description">
-										<p>
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-											متن مورد نظر در حال تهیه می باشد.
-										</p>
 									</div>
 								</div>
 							</div>
@@ -127,7 +117,7 @@ Template Name: Skills Saei
 											</li>
 											<li>
 												مشاوره در طراحی و توسعه Data
-												Marts 
+												Marts
 											</li>
 											<li>
 												بهبود عملکرد و پایدار سازی انبار
@@ -154,7 +144,7 @@ Template Name: Skills Saei
 											</li>
 											<li>
 												ارائه گزارشهای منظم سطح سلامت و
-												در دسترس بودن سیستم 
+												در دسترس بودن سیستم
 											</li>
 											<li>
 												طراحی و پیاده سازی توافقنامه سطح
@@ -204,7 +194,7 @@ Template Name: Skills Saei
 											واحد امنیت سایبری در ساعی، محصولات و
 											راه‌حل‌های پیشرفته‌ای را برای ارتقاء
 											سطح امنیت و حفاظت از دارایی‌های
-											دیجیتال سازمان‌ها ارائه می‌دهد
+											دیجیتال سازمان‌ها ارائه می‌دهد.
 										</p>
 									</div>
 								</div>
@@ -215,7 +205,7 @@ Template Name: Skills Saei
 										<h4>محصولات ما:</h4>
 									</div>
 									<div class="description">
-										<ul class="oh-our-value">
+										<ul>
 											<li>
 												پلتفرم ارائه سرویس یکپارچه سازی
 											</li>
@@ -227,8 +217,7 @@ Template Name: Skills Saei
 											</li>
 											<li>
 												مدیریت هویت و دسترسیها IAM
-												(Identity and access
-												management) 
+												(Identity and access management)
 											</li>
 											<li>
 												تسهیل و ایمن سازی دسترسی به
@@ -239,7 +228,7 @@ Template Name: Skills Saei
 											</li>
 											<li>
 												معماری اعتماد صفر Zero trust
-												Architecture 
+												Architecture
 											</li>
 											<li>
 												طراحی و پیاده سازی معماری
@@ -266,18 +255,18 @@ Template Name: Skills Saei
 									</div>
 									<div class="description">
 										<p>
-											واحد خدمات مدیریت شده و امنیت ساعی
-											به ارائه پشتیبانی جامع در تمامی
+											واحد خدمات مدیریت شده IT و امنیت
+											ساعی به ارائه پشتیبانی جامع در تمامی
 											نیازهای زیرساختی و امنیتی به
 											سازمانهای بزرگ اختصاص دارد. با بیش
 											از یک دهه تجربه در ارائه طیف
 											گسترده‌ای از خدمات شامل مدیریت
-											حرفه‌ای سرویس‌ها،مرکز عملیات شبکه و
-											مرکز عملیات امنیت شبانه روزی
-											میتوانید مطمئن باشید که سرویسهای
-											دیجیتال سازمان شما همواره در دسترس،
-											کارآمد امن و همسو با اهداف کسب‌وکار
-											شما باشد
+											حرفه‌ای سرویس‌ها،مرکز عملیات شبکه
+											(NOC) و مرکز عملیات امنیت شبانه روزی
+											(SOC) میتوانید مطمئن باشید که
+											سرویسهای دیجیتال سازمان شما همواره
+											در دسترس، کارآمد امن و همسو با اهداف
+											کسب‌وکار شما باشد.
 										</p>
 									</div>
 								</div>
@@ -296,13 +285,14 @@ Template Name: Skills Saei
 									</div>
 									<div class="description">
 										<p>
-											ساعی با بهره‌گیری از برترین متخصصان
+											ساعی با بهره گیری از برترین متخصصان
 											داخلی و خارجی به سازمان‌ها کمک
 											می‌کند تا فرآیندهای کسب‌وکار خود را
 											بهینه‌سازی کرده و با استفاده از
-											تکنولوژی‌های روز جهان مانند اقدام به
-											پیاده سازی بهترین رویه‌های جهانی
-											نمایند
+											تکنولوژیهای روز جهان مانند SAP,
+											SAGE, MicroSoft اقدام به پیاده سازی
+											بهترین رویه‌های جهانی (Best
+											Practices) نمایند.
 										</p>
 									</div>
 								</div>
@@ -332,11 +322,8 @@ Template Name: Skills Saei
 							</div>
 							<div class="skill-content">
 								<div class="sa-paragraph-box">
-									<!-- <div class="title">
-										<h4>خدمات پیاده سازی بیگ دیتا</h4>
-									</div> -->
 									<div class="description">
-										<ul class="oh-our-value">
+										<ul>
 											<li>
 												سامانه جامع مدیریت ارتباط با
 												مشترکین CRM
@@ -347,7 +334,7 @@ Template Name: Skills Saei
 											</li>
 											<li>
 												سامانه مدیریت چرخه عمر مشترکین
-												CLM 
+												CLM
 											</li>
 											<li>
 												برای تحلیل دقیق داده ها برای
@@ -355,7 +342,7 @@ Template Name: Skills Saei
 												مشترکین از طریق کمپینهای هدفمند
 											</li>
 											<li>
-												مدیریت تقلبات fraud management 
+												مدیریت تقلبات fraud management
 											</li>
 											<li>
 												سیستم حفاظت 360 درجه در مقابل
@@ -364,7 +351,7 @@ Template Name: Skills Saei
 												افزایش دقت، چابکی و اعتماد
 												دیجیتال
 											</li>
-											<li>سامانه مدیریت عملیات OSS </li>
+											<li>سامانه مدیریت عملیات OSS</li>
 											<li>
 												سیستم جامع مدیریت عملیات شبکه،
 												مونیتورینگ بهره وری و پشتیبانی و
@@ -404,28 +391,36 @@ Template Name: Skills Saei
 							</div>
 							<div class="skill-content">
 								<div class="sa-paragraph-box">
-									<!-- <div class="title">
-										<h4>محصولات ما:</h4>
-									</div> -->
 									<div class="description">
-										<ul class="oh-our-value">
+										<ul>
 											<li>
-												برنامه‌ریزی استراتژیک دیجیتال:
+												<strong
+													>برنامه‌ریزی استراتژیک
+													دیجیتال:</strong
+												>
 												همسو کردن اهداف کسب‌وکار شما با
 												راهکارهای تحول دیجیتال
 											</li>
 											<li>
-												نقشه راه فناوری: شناسایی و
-												پیاده‌سازی فناوری‌های مناسب برای
-												دستیابی به رشد پایدار
+												<strong
+													>نقشه راه فناوری:</strong
+												>
+												شناسایی و پیاده‌سازی فناوری‌های
+												مناسب برای دستیابی به رشد پایدار
 											</li>
 											<li>
-												بازمهندسی فرآیندهای کسب‌وکار:
+												<strong
+													>بازمهندسی فرآیندهای
+													کسب‌وکار:</strong
+												>
 												افزایش بهره‌وری عملیاتی از طریق
 												اتوماسیون و بهبود فرآیندهای کاری
 											</li>
 											<li>
-												تصمیم‌گیری مبتنی بر داده:
+												<strong
+													>تصمیم‌گیری مبتنی بر
+													داده:</strong
+												>
 												استفاده از تحلیل داده و هوش
 												مصنوعی برای شناسایی فرصت‌های
 												جدید
@@ -439,110 +434,6 @@ Template Name: Skills Saei
 				</div>
 			</div>
 		</div>
-
-    <!-- Page JavaScript -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const tabsWrapper = document.getElementById("tabs-wrapper");
-        const tabs = document.querySelectorAll(".tab");
-        const prevArrow = document.getElementById("prev-arrow");
-        const nextArrow = document.getElementById("next-arrow");
-        const navbarLinks =
-            document.querySelectorAll(".sticky-navbar a");
-
-        let activeIndex = 0;
-
-        function updateActiveTab(index) {
-            tabs[activeIndex].classList.remove("active");
-            document
-                .querySelector(tabs[activeIndex].dataset.target)
-                .classList.remove("active");
-            activeIndex = index;
-            tabs[activeIndex].classList.add("active");
-            document
-                .querySelector(tabs[activeIndex].dataset.target)
-                .classList.add("active");
-            tabs[activeIndex].scrollIntoView({
-                behavior: "smooth",
-                block: "nearest",
-                inline: "center",
-            });
-            updateArrows();
-        }
-
-        function updateArrows() {
-            if (activeIndex === 0) {
-                prevArrow.classList.add("hidden");
-            } else {
-                prevArrow.classList.remove("hidden");
-            }
-            if (activeIndex === tabs.length - 1) {
-                nextArrow.classList.add("hidden");
-            } else {
-                nextArrow.classList.remove("hidden");
-            }
-        }
-
-        prevArrow.addEventListener("click", function() {
-            if (activeIndex > 0) {
-                updateActiveTab(activeIndex - 1);
-            }
-        });
-
-        nextArrow.addEventListener("click", function() {
-            if (activeIndex < tabs.length - 1) {
-                updateActiveTab(activeIndex + 1);
-            }
-        });
-
-        tabs.forEach((tab, index) => {
-            tab.addEventListener("click", function(event) {
-                event.preventDefault();
-                event.stopPropagation();
-                updateActiveTab(index);
-            });
-        });
-
-        updateArrows();
-
-        // Scrollspy functionality
-        function onScroll() {
-            let currentSection = "";
-            document
-                .querySelectorAll(".section-scroll")
-                .forEach((section) => {
-                    const sectionTop = section.offsetTop;
-                    if (pageYOffset >= sectionTop - 50) {
-                        currentSection = section.getAttribute("id");
-                    }
-                });
-
-            navbarLinks.forEach((link) => {
-                link.classList.remove("active");
-                if (
-                    link.getAttribute("data-target") ===
-                    `#${currentSection}`
-                ) {
-                    link.classList.add("active");
-                }
-            });
-        }
-
-        window.addEventListener("scroll", onScroll);
-
-        navbarLinks.forEach((link) => {
-            link.addEventListener("click", function(event) {
-                event.preventDefault();
-                const targetId = this.getAttribute("data-target");
-                document
-                    .querySelector(targetId)
-                    .scrollIntoView({
-                        behavior: "smooth"
-                    });
-            });
-        });
-    });
-    </script>
 
     <?php get_template_part( 'parts/footer' ); ?>
     <?php wp_footer(); ?>
