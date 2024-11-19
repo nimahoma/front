@@ -169,198 +169,52 @@ Template Name: Job Offers
                         <div
                             class="sa-teams-item-layout page-section-bottom"
                         >
-                            <div class="sa-teams-item">
-                                <div class="sa-ti-wrapper">
-                                    <div class="title">
-                                        <h5 class="en-font sa-teams-titles">
-                                            NOC (Network
-                                            <br />
-                                            Operation System)
-                                        </h5>
-                                    </div>
-                                    <div class="subtitle">
-                                        <p>
-                                            واحد خدمات مدیریت شده و امنیت
-                                            ساعی به ارائه پشتیبانی جامع در
-                                            تمامی نیازهای زیرساختی و امنیتی
-                                            به سازمانهای بزرگ اختصاص دارد.
-                                            با بیش از یک دهه تجربه در ارائه
-                                            طیف گسترده‌ای از خدمات شامل
-                                            مدیریت حرفه‌ای سرویس‌ها، مرکز
-                                            عملیات شبکه و مرکز عملیات امنیت
-                                            شبانه روزی ، میتوانید مطمئن
-                                            باشید که سرویسهای دیجیتال سازمان
-                                            شما همواره در دسترس، کارآمد امن
-                                            و همسو با اهداف کسب‌وکار شما
-                                            باشد
-                                        </p>
-                                    </div>
-                                    <button class="sa-ti-modal-link">
-                                        <span>
-                                            <img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-vector.png"
-                                                alt=""
-                                            />
-                                            فرصت‌های شغلی
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="sa-teams-item">
-                                <div class="sa-ti-wrapper">
-                                    <div class="title">
-                                        <h5 class="en-font sa-teams-titles">
-                                            Digital Security
-                                        </h5>
-                                    </div>
-                                    <div class="subtitle">
-                                        <p>
-                                            این تیم وظیفه خطیر حفاظت از
-                                            سیستمها و داده های مشتریان را بر
-                                            عهده داشته و با استفاده از
-                                            محصولات روز دنیا بالاترین سطح
-                                            امنیت را تضمین میکند
-                                        </p>
-                                    </div>
-                                    <div class="sa-ti-btn">
-                                        <button class="sa-ti-modal-link">
-                                            <span>
-                                                <img
-                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-vector.png"
-                                                    alt=""
-                                                />
-                                                فرصت‌های شغلی
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sa-teams-item">
-                                <div class="sa-ti-wrapper">
-                                    <div class="title">
-                                        <h5 class="en-font sa-teams-titles">
-                                            Data Services
-                                        </h5>
-                                    </div>
-                                    <div class="subtitle">
-                                        <p>
-                                            تیم دیتای ما با جمع‌آوری داده‌ها
-                                            از منابع مختلف، تضمین صحت آن‌ها
-                                            و تحلیل و پردازش داده‌ها،
-                                            خروجیهای ارزشمندی برای
-                                            تصمیم‌گیری‌های هوشمندانه به
-                                            مشتریان ارائه می‌دهد
-                                        </p>
-                                    </div>
-                                    <div class="sa-ti-btn">
-                                        <button class="sa-ti-modal-link">
-                                            <span>
-                                                <img
-                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-vector.png"
-                                                    alt=""
-                                                />
-                                                فرصت‌های شغلی
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sa-teams-item">
-                                <div class="sa-ti-wrapper">
-                                    <div class="title">
-                                        <h5 class="en-font sa-teams-titles">
-                                            Back Office
-                                        </h5>
-                                    </div>
-                                    <div class="subtitle">
-                                        <p>
-                                            ستون فقرات شرکت! یک تیم چابک،
-                                            صمیمی، حرفه ای و همواره در دسترس
-                                            که عملیات روزانه را هدایت میکند
-                                        </p>
-                                    </div>
-                                    <div class="sa-ti-btn">
-                                        <button class="sa-ti-modal-link">
-                                            <span>
-                                                <img
-                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-vector.png"
-                                                    alt=""
-                                                />
-                                                فرصت‌های شغلی
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sa-teams-item">
-                                <div class="sa-ti-wrapper">
-                                    <div class="title">
-                                        <h5 class="en-font sa-teams-titles">
-                                            PMO (Project
-                                            <br />
-                                            Management Office)
-                                        </h5>
-                                    </div>
-                                    <div class="subtitle">
-                                        <p>
-                                            ترکیبی از تجربه، دانش و تعهد تیم
-                                            مدیریت پروژه را به یکی از
-                                            مهمترین موتورهای پیش برنده ساعی
-                                            تبدیل کرده است. دهها پروژه موفق
-                                            در طی سالهای اخیر دستاورد بی
-                                            نظیر این تیم بوده است
-                                        </p>
-                                    </div>
-                                    <div class="sa-ti-btn">
-                                        <button
-                                            type="button"
-                                            class="sa-ti-modal-link"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#teams-hr_modal"
-                                        >
-                                            <span>
-                                                <img
-                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-vector.png"
-                                                    alt=""
-                                                />
-                                                فرصت‌های شغلی
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sa-teams-item">
-                                <div class="sa-ti-wrapper">
-                                    <div class="title">
-                                        <h5 class="en-font sa-teams-titles">
-                                            Managed Services
-                                        </h5>
-                                    </div>
-                                    <div class="subtitle">
-                                        <p>
-                                            این تیم به عنوان یک بازوی
-                                            استراتژیک، همراه مشتریان است تا
-                                            از بهره‌برداری بهینه و کارآمد از
-                                            سیستمها اطمینان حاصل شود. یک
-                                            دقیق تضمین می‌کند که سیستم‌ها
-                                            همیشه در دسترس، ایمن و با
-                                            بالاترین کارایی عمل کنند، تا
-                                            مشتریان با آرامش خاطر به تمرکز
-                                            روی هسته اصلی کسب‌وکار خود
-                                            بپردازند
-                                        </p>
-                                    </div>
-                                    <button class="sa-ti-modal-link">
-                                        <span>
-                                            <img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-vector.png"
-                                                alt=""
-                                            />
-                                            فرصت‌های شغلی
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
+
+
+                        
+                        <?php
+$categories = get_categories(array(
+    'taxonomy' => 'category',
+    'hide_empty' => false,
+));
+
+if ($categories) {
+    
+    $index = 0;
+    foreach ($categories as $category) {
+        ?>
+<div class="sa-teams-item">
+    <div class="sa-ti-wrapper">
+        <div class="title">
+            <h5 class="en-font sa-teams-titles"><?php echo esc_html($category->name); ?></h5>
+        </div>
+
+        <div class="subtitle">
+        <p><?php echo esc_html($category->description); ?></p>
+        </div>
+        
+        <div class="sa-ti-btn">
+            <button type="button" class="sa-ti-modal-link" data-bs-toggle="modal"
+                data-bs-target="#categoryModal<?php echo esc_attr($category->term_id); ?>">
+                <span>
+                    <img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-vector.png"
+                        alt=""
+                    />
+                    فرصت‌های شغلی
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<?php   
+    $index++;
+    }
+}
+?>
+
+
                         </div>
 
                         <div class="sa-employment-steps page-section-top">
@@ -407,239 +261,36 @@ Template Name: Job Offers
                         </div>
                     </section>
 
-                    <!-- <div
-                        class="modal fade"
-                        id="teams-hr_modal"
-                        data-bs-keyboard="false"
-                        tabindex="-1"
-                        aria-hidden="true"
-                    >
-                        <div
-                            class="sa-modal-teams modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
-                        >
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title">
-                                        HR موقعیت‌های شغلی تیم
-                                    </h3>
-                                    <button
-                                        type="button"
-                                        class="btn-close"
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close"
-                                    >
-                                        <i
-                                            class="fa-sharp-duotone fa-solid fa-xmark"
-                                        ></i>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <div
-                                        class="accordion"
-                                        id="HR_accordion"
-                                    >
-                                        <div class="accordion-item">
-                                            <h2
-                                                class="accordion-header"
-                                                id="head_HR"
-                                            >
-                                                <button
-                                                    class="accordion-button"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#HR_teams-xxx"
-                                                    aria-expanded="true"
-                                                    aria-controls="HR_teams-xxx"
-                                                >
-                                                    <i
-                                                        class="fa-sharp-duotone fa-solid fa-caret-left"
-                                                    ></i>
-                                                    برنامه نویس ارشد
-                                                    Front-End
-                                                </button>
-                                                <a
-                                                    class="saei-btn"
-                                                    href="#"
-                                                >
-                                                    <span>درخواست</span>
-                                                </a>
-                                            </h2>
-                                            <div
-                                                id="HR_teams-xxx"
-                                                class="accordion-collapse collapse show"
-                                                aria-labelledby="head_HR"
-                                                data-bs-parent="#HR_accordion"
-                                            >
-                                                <div class="accordion-body">
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن
-                                                    <br />اطلاعات مورد نیاز
-                                                    برای این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2
-                                                class="accordion-header"
-                                                id="headingTwo"
-                                            >
-                                                <button
-                                                    class="accordion-button collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseTwo"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseTwo"
-                                                >
-                                                    <i
-                                                        class="fa-sharp-duotone fa-solid fa-caret-left"
-                                                    ></i>
-                                                    برنامه نویس Back-End
-                                                </button>
-                                                <a
-                                                    class="saei-btn"
-                                                    href="#"
-                                                >
-                                                    <span>درخواست</span>
-                                                </a>
-                                            </h2>
-                                            <div
-                                                id="collapseTwo"
-                                                class="accordion-collapse collapse"
-                                                aria-labelledby="headingTwo"
-                                                data-bs-parent="#HR_accordion"
-                                            >
-                                                <div class="accordion-body">
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن
-                                                    <br />اطلاعات مورد نیاز
-                                                    برای این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2
-                                                class="accordion-header"
-                                                id="headingThree"
-                                            >
-                                                <button
-                                                    class="accordion-button collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseThree"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseThree"
-                                                >
-                                                    <i
-                                                        class="fa-sharp-duotone fa-solid fa-caret-left"
-                                                    ></i>
-                                                    برنامه نویس Python
-                                                </button>
-                                                <a
-                                                    class="saei-btn"
-                                                    href="#"
-                                                >
-                                                    <span>درخواست</span>
-                                                </a>
-                                            </h2>
-                                            <div
-                                                id="collapseThree"
-                                                class="accordion-collapse collapse"
-                                                aria-labelledby="headingThree"
-                                                data-bs-parent="#HR_accordion"
-                                            >
-                                                <div class="accordion-body">
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن
-                                                    <br />اطلاعات مورد نیاز
-                                                    برای این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2
-                                                class="accordion-header"
-                                                id="headingFour"
-                                            >
-                                                <button
-                                                    class="accordion-button collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseFour"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseFour"
-                                                >
-                                                    <i
-                                                        class="fa-sharp-duotone fa-solid fa-caret-left"
-                                                    ></i>
-                                                    برنامه نویس Python
-                                                </button>
-                                                <a
-                                                    class="saei-btn"
-                                                    href="#"
-                                                >
-                                                    <span>درخواست</span>
-                                                </a>
-                                            </h2>
-                                            <div
-                                                id="collapseFour"
-                                                class="accordion-collapse collapse"
-                                                aria-labelledby="headingFour"
-                                                data-bs-parent="#HR_accordion"
-                                            >
-                                                <div class="accordion-body">
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن
-                                                    <br />اطلاعات مورد نیاز
-                                                    برای این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                    اطلاعات مورد نیاز برای
-                                                    این جاب پوزیشن<br />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+<?php   
+
+// Loop through categories again to create modals (outside of the grid)
+foreach ($categories as $category) {
+    ?>
+<!-- Modal Structure -->
+<div class="modal fade" id="categoryModal<?php echo esc_attr($category->term_id); ?>" tabindex="-1"
+    aria-labelledby="categoryModalLabel<?php echo esc_attr($category->term_id); ?>" aria-hidden="true">
+    <div class="sa-modal-teams modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="categoryModalLabel<?php echo esc_attr($category->term_id); ?>">Related Job
+                    Offers for <?php echo esc_html($category->name); ?></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<i class="fa-sharp-duotone fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <?php
+                    // Call the function to generate the accordion for this category
+                    saeiTheme_category_jobs_accordion($category->term_id);
+                    ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php
+}
+?>
 
                     <section
                         class="section-scroll sa-join-us last-things page-section-top"
