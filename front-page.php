@@ -23,14 +23,15 @@
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 
-    <div class="page page-wrapper">
+
+	<div class="page-wrapper">
 		<section class="about-us">
 			<div class="wrapper">
 				<div class="hero-banner sa-banner">
 					<div class="container">
 						<div class="sa-b-content">
 							<h1
-								class="sa-strong-title sa-slogan-color mb-0 en-font"
+								class="sa-strong-title mb-0 en-font"
 								data-aos="fade-up"
 								data-aos-offset="-250"
 								data-aos-delay="85"
@@ -41,7 +42,7 @@
 								Your Partner in
 							</h1>
 							<h1
-								class="sa-strong-title sa-slogan-color mb-3 en-font"
+								class="sa-strong-title mb-3 en-font"
 								data-aos="fade-up"
 								data-aos-offset="-250"
 								data-aos-delay="85"
@@ -49,7 +50,7 @@
 								data-aos-easing="ease-in-out"
 								data-aos-anchor-placement="top-center"
 							>
-								Digital Transformation Journey.
+								Digital Transformation Journey
 							</h1>
 						</div>
 					</div>
@@ -81,7 +82,7 @@
 							<div class="sa-m-c-content">
 								<div class="title">
 									<h4 class="wow animate__pulse">
-										ماموريت ساعی
+										ماموريت
 									</h4>
 								</div>
 								<div class="desc">
@@ -89,7 +90,7 @@
 										ماموريت ما ارایه ی راه حلهای
 										نوآورانه برای تسهيل تحول دیجیتال
 										در کسب و کارها و ارتقای ارزشهای
-										فناورانه در کشور است
+										فناورانه در کشور است.
 									</p>
 								</div>
 							</div>
@@ -104,7 +105,7 @@
 							<div class="sa-m-c-content">
 								<div class="title">
 									<h4 class="wow animate__pulse">
-										چشم انداز ساعی
+										چشم انداز
 									</h4>
 								</div>
 								<div class="desc">
@@ -113,7 +114,7 @@
 										و جلب رضایت مشتری در تمامی
 										بازارها، تبدیل به شريک برتر
 										سازمان ها در تحول دیجیتال در سطح
-										کشور گردیم
+										کشور گردیم.
 									</p>
 								</div>
 							</div>
@@ -168,15 +169,7 @@
 						</div>
 						<div class="sa-teams-items-wrapper">
 							<div class="wrapper">
-								<div
-									class="sa-teams-item"
-									data-aos="fade-up"
-									data-aos-offset="-250"
-									data-aos-delay="85"
-									data-aos-duration="900"
-									data-aos-easing="ease-in-out"
-									data-aos-anchor-placement="top-center"
-								>
+								<div class="sa-teams-item">
 									<div class="title">
 										<h5 class="en-font">
 											NOC (Network
@@ -191,15 +184,7 @@
 										سازمانهای بزرگ اختصاص دارد
 									</p>
 								</div>
-								<div
-									class="sa-teams-item"
-									data-aos="fade-up"
-									data-aos-offset="-250"
-									data-aos-delay="85"
-									data-aos-duration="1100"
-									data-aos-easing="ease-in-out"
-									data-aos-anchor-placement="top-center"
-								>
+								<div class="sa-teams-item">
 									<div class="title">
 										<h5 class="en-font">
 											Digital Security
@@ -213,15 +198,7 @@
 										کند
 									</p>
 								</div>
-								<div
-									class="sa-teams-item"
-									data-aos="fade-up"
-									data-aos-offset="-250"
-									data-aos-delay="85"
-									data-aos-duration="1300"
-									data-aos-easing="ease-in-out"
-									data-aos-anchor-placement="top-center"
-								>
+								<div class="sa-teams-item">
 									<div class="title">
 										<h5 class="en-font">
 											Data Services
@@ -235,15 +212,7 @@
 										مشتریان ارائه می‌دهد
 									</p>
 								</div>
-								<div
-									class="sa-teams-item"
-									data-aos="fade-up"
-									data-aos-offset="-250"
-									data-aos-delay="85"
-									data-aos-duration="1500"
-									data-aos-easing="ease-in-out"
-									data-aos-anchor-placement="top-center"
-								>
+								<div class="sa-teams-item">
 									<div class="title">
 										<h5 class="en-font">
 											Back Office
@@ -255,15 +224,7 @@
 										که عملیات روزانه را هدایت میکند
 									</p>
 								</div>
-								<div
-									class="sa-teams-item"
-									data-aos="fade-up"
-									data-aos-offset="-250"
-									data-aos-delay="85"
-									data-aos-duration="1700"
-									data-aos-easing="ease-in-out"
-									data-aos-anchor-placement="top-center"
-								>
+								<div class="sa-teams-item">
 									<div class="title">
 										<h5 class="en-font">
 											PMO (Project
@@ -278,15 +239,7 @@
 										تبدیل کرده است
 									</p>
 								</div>
-								<div
-									class="sa-teams-item"
-									data-aos="fade-up"
-									data-aos-offset="-250"
-									data-aos-delay="85"
-									data-aos-duration="1800"
-									data-aos-easing="ease-in-out"
-									data-aos-anchor-placement="top-center"
-								>
+								<div class="sa-teams-item">
 									<div class="title">
 										<h5 class="en-font">
 											Managed Services
@@ -491,7 +444,7 @@
 				</div>
 			</div>
 		</section>
-    </div>
+	</div>
 
     <?php get_template_part( 'parts/footer' ); ?>
     <?php wp_footer(); ?>
