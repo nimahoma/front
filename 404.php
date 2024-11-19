@@ -12,24 +12,24 @@
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 
-    <div class="job-offer-single-page">
-        <div class="container">
-            <div class="breadcrumb-wrapper first-things">
-                <?php 
-                    saeiTheme_breadcrumb();
-                    ?>
+    <div class="page 404-page">
+        <div class="wrapper-404">
+            <div class="vector-wrapper">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/404.webp" alt="" />
             </div>
-            <div class="page-wrapper Internal-pages" id="job-offer-single">
-                <div class="page-content-wrapper job-offer-single-content-wrapper">
-                    <div class="404-content">
-                        ارور 404 - صفحه پیدا نشد ...
+            <div class="content-wrapper-404">
+                <p>
+                    متأسفانه صفحه‌ای که به دنبال آن هستید وجود ندارد یا حذف
+                    شده
+                </p>
+                <h5>گشتم نبود نگرد نیست!</h5>
+                <a href="https://3dsun.ir/">
+                    <div class="arrow">
+                        <span></span>
+                        <span></span>
                     </div>
-                </div>
-                <aside class="job-offer-single-sidebar">
-                    <div class="job-offer-single-sidebar-sticky">
-
-                    </div>
-                </aside>
+                    <span class="home-404">صفحه اصلی</span>
+                </a>
             </div>
         </div>
     </div>
