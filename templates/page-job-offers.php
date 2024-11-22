@@ -8,6 +8,16 @@ Template Name: Job Offers
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+	
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="<?php echo get_template_directory_uri(); ?>/assets/img/web-app-manifest-192x192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="<?php echo get_template_directory_uri(); ?>/assets/img/web-app-manifest-512x512.png">
+
+	<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/site.webmanifest">
+
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
     <?php wp_head(); ?>
 </head>
@@ -51,7 +61,10 @@ Template Name: Job Offers
                     >
                         <div class="sa-paragraph-box first-things">
                             <div class="title">
-                                <h1 class="sa-strong-title">
+                                <h1
+                                    class="sa-strong-title sa-aos"
+                                    data-aos="fade-up"
+								>
                                     ما را بشناسید
                                 </h1>
                             </div>
@@ -86,10 +99,16 @@ Template Name: Job Offers
                                 class="sa-thumbnail-layout our-values-cards mb-0"
                             >
                                 <div class="wrapper">
-                                    <div class="ovc-item">
+                                    <div
+											class="ovc-item sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="50"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="900"
+										>
                                         <div class="img-wrapper">
                                             <img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-2.png"
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-1.svg"
                                                 alt=""
                                             />
                                         </div>
@@ -97,10 +116,16 @@ Template Name: Job Offers
                                             <p>صداقت و شفافیت</p>
                                         </div>
                                     </div>
-                                    <div class="ovc-item">
+                                    <div
+											class="ovc-item sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="50"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1000"
+										>
                                         <div class="img-wrapper">
                                             <img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-4.png"
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-2.svg"
                                                 alt=""
                                             />
                                         </div>
@@ -108,10 +133,16 @@ Template Name: Job Offers
                                             <p>مسئولیت‌پذیری</p>
                                         </div>
                                     </div>
-                                    <div class="ovc-item">
+                                    <div
+											class="ovc-item sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="50"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1100"
+										>
                                         <div class="img-wrapper">
                                             <img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-5.png"
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-3.svg"
                                                 alt=""
                                             />
                                         </div>
@@ -119,10 +150,16 @@ Template Name: Job Offers
                                             <p>یادگیری و یاددهی</p>
                                         </div>
                                     </div>
-                                    <div class="ovc-item">
+                                    <div
+											class="ovc-item sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="50"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1200"
+										>
                                         <div class="img-wrapper">
                                             <img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-6.png"
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-4.svg"
                                                 alt=""
                                             />
                                         </div>
@@ -130,10 +167,16 @@ Template Name: Job Offers
                                             <p>مشتری مداری</p>
                                         </div>
                                     </div>
-                                    <div class="ovc-item">
+                                    <div
+											class="ovc-item sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="50"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1300"
+										>
                                         <div class="img-wrapper">
                                             <img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-3.png"
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-5.svg"
                                                 alt=""
                                             />
                                         </div>
@@ -141,10 +184,16 @@ Template Name: Job Offers
                                             <p>نوآوری</p>
                                         </div>
                                     </div>
-                                    <div class="ovc-item">
+                                    <div
+											class="ovc-item sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="50"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1400"
+										>
                                         <div class="img-wrapper">
                                             <img
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-1.png"
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-6.svg"
                                                 alt=""
                                             />
                                         </div>
@@ -163,7 +212,12 @@ Template Name: Job Offers
                     >
                         <div class="sa-paragraph-box no-padding">
                             <div class="title">
-                                <h1 class="sa-strong-title">تیم‌ها</h1>
+                                <h1
+                                    class="sa-strong-title sa-aos"
+                                    data-aos="fade-up"
+                                >
+                                    تیم‌ها
+                                </h1>
                             </div>
                         </div>
                         <div
@@ -173,50 +227,58 @@ Template Name: Job Offers
 
                         
                         <?php
-$categories = get_categories(array(
-    'taxonomy' => 'category',
-    'hide_empty' => false,
-));
+                            $categories = get_categories(array(
+                                'taxonomy' => 'category',
+                                'hide_empty' => false,
+                            ));
 
-if ($categories) {
-    
-    $index = 0;
-    foreach ($categories as $category) {
-        ?>
-<div class="sa-teams-item">
-    <div class="sa-ti-wrapper">
-        <div class="title">
-            <h5 class="en-font sa-teams-titles"><?php echo esc_html($category->name); ?></h5>
-        </div>
+                            if ($categories) {
+                                
+                                $index = 0;
+                                $args = [
+                                    'taxonomy'   => 'category',
+                                    'hide_empty' => false,
+                                    'exclude'    => [1],
+                                    'orderby'    => 'term_id', // یا 'term_id', 'slug', 'count'
+                                ];
+                                $categories = get_terms($args);
+                                foreach ($categories as $category) {
+                                    ?>
+                            <div class="sa-teams-item">
+                                <div class="sa-ti-wrapper">
+                                    <div class="title">
+                                        <h5 class="en-font sa-teams-titles"><?php echo esc_html($category->name); ?></h5>
+                                    </div>
 
-        <div class="subtitle">
-        <p><?php echo esc_html($category->description); ?></p>
-        </div>
-        
-        <div class="sa-ti-btn">
-            <button type="button" class="sa-ti-modal-link" data-bs-toggle="modal"
-                data-bs-target="#categoryModal<?php echo esc_attr($category->term_id); ?>">
-                <span>
-                    <img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-vector.png"
-                        alt=""
-                    />
-                    فرصت‌های شغلی
-                </span>
-            </button>
-        </div>
-    </div>
-</div>
+                                    <div class="subtitle">
+                                    <p><?php echo esc_html($category->description); ?></p>
+                                    </div>
+                                    
+                                    <div class="sa-ti-btn">
+                                        <button type="button" class="sa-ti-modal-link" data-bs-toggle="modal"
+                                            data-bs-target="#categoryModal<?php echo esc_attr($category->term_id); ?>">
+                                            <span>
+                                                <img
+                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-vector.png"
+                                                    alt=""
+                                                />
+                                                فرصت‌های شغلی
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
-<?php   
-    $index++;
-    }
-}
-?>
+                            <?php   
+                                $index++;
+                                }
+                            }
+                        ?>
 
 
                         </div>
 
+                        
                         <div class="sa-employment-steps page-section-top">
                             <div class="sa-paragraph-box no-padding">
                                 <div class="title mb-5">
@@ -225,32 +287,62 @@ if ($categories) {
                             </div>
                             <div class="sa-employment-steps-box">
                                 <div class="wrapper">
-                                    <div class="sa-employment-steps-item">
+                                    <div
+                                        class="sa-employment-steps-item"
+                                        data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-anchor-placement="top-bottom"
+                                    >
                                         ۱<span class="bottom"
                                             >بررسی رزومه</span
                                         >
                                     </div>
-                                    <div class="sa-employment-steps-item">
+                                    <div
+                                        class="sa-employment-steps-item"
+                                        data-aos="fade-down"
+                                        data-aos-duration="1200"
+                                        data-aos-anchor-placement="top-bottom"
+                                    >
                                         ۲<span class="top"
                                             >ارزیابی و مصاحبه عمومی
                                             (اولیه)</span
                                         >
                                     </div>
-                                    <div class="sa-employment-steps-item">
+                                    <div
+                                        class="sa-employment-steps-item"
+                                        data-aos="fade-up"
+                                        data-aos-duration="1300"
+                                        data-aos-anchor-placement="top-bottom"
+                                    >
                                         ۳<span class="bottom"
                                             >مصاحبه تخصصی با معاونت‌های فنی
                                             یا اجرایی</span
                                         >
                                     </div>
-                                    <div class="sa-employment-steps-item">
+                                    <div
+                                        class="sa-employment-steps-item"
+                                        data-aos="fade-down"
+                                        data-aos-duration="1500"
+                                        data-aos-anchor-placement="top-bottom"
+                                    >
                                         ۴<span class="top">مصاحبه جذب</span>
                                     </div>
-                                    <div class="sa-employment-steps-item">
+                                    <div
+                                        class="sa-employment-steps-item"
+                                        data-aos="fade-up"
+                                        data-aos-duration="1600"
+                                        data-aos-anchor-placement="top-bottom"
+                                    >
                                         ۵<span class="bottom"
                                             >تکمیل مدارک استخدام</span
                                         >
                                     </div>
-                                    <div class="sa-employment-steps-item">
+                                    <div
+                                        class="sa-employment-steps-item"
+                                        data-aos="fade-down"
+                                        data-aos-duration="1800"
+                                        data-aos-anchor-placement="top-bottom"
+                                    >
                                         ۶<span class="top"
                                             >شروع به کار و معرفی به
                                             تیم</span
@@ -261,36 +353,36 @@ if ($categories) {
                         </div>
                     </section>
 
-<?php   
+                    <?php   
 
-// Loop through categories again to create modals (outside of the grid)
-foreach ($categories as $category) {
-    ?>
-<!-- Modal Structure -->
-<div class="modal fade" id="categoryModal<?php echo esc_attr($category->term_id); ?>" tabindex="-1"
-    aria-labelledby="categoryModalLabel<?php echo esc_attr($category->term_id); ?>" aria-hidden="true">
-    <div class="sa-modal-teams modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="categoryModalLabel<?php echo esc_attr($category->term_id); ?>">Related Job
-                    Offers for <?php echo esc_html($category->name); ?></h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-					<i class="fa-sharp-duotone fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <?php
-                    // Call the function to generate the accordion for this category
-                    saeiTheme_category_jobs_accordion($category->term_id);
+                    // Loop through categories again to create modals (outside of the grid)
+                    foreach ($categories as $category) {
+                        ?>
+                    <!-- Modal Structure -->
+                    <div class="modal fade" id="categoryModal<?php echo esc_attr($category->term_id); ?>" tabindex="-1"
+                        aria-labelledby="categoryModalLabel<?php echo esc_attr($category->term_id); ?>" aria-hidden="true">
+                        <div class="sa-modal-teams modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="categoryModalLabel<?php echo esc_attr($category->term_id); ?>">
+                                        <?php echo esc_html($category->name); ?></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-sharp-duotone fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <?php
+                                        // Call the function to generate the accordion for this category
+                                        saeiTheme_category_jobs_accordion($category->term_id);
+                                        ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php
+                    }
                     ?>
-            </div>
-        </div>
-    </div>
-</div>
-
-<?php
-}
-?>
 
                     <section
                         class="section-scroll sa-join-us last-things page-section-top"
@@ -298,7 +390,10 @@ foreach ($categories as $category) {
                     >
                         <div class="sa-paragraph-box no-padding">
                             <div class="title">
-                                <h1 class="sa-strong-title">
+                                <h1
+                                    class="sa-strong-title sa-aos"
+                                    data-aos="fade-up"
+                                >
                                     به ما بپیوندید
                                 </h1>
                             </div>
@@ -306,107 +401,9 @@ foreach ($categories as $category) {
 
                         <div class="sa-joinus-form">
                             <div class="wrapper">
-                                <form id="sa_joinus_form">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label
-                                                    id="name-label"
-                                                    for="name"
-                                                    >نام کامل خود را وارد
-                                                    کنید</label
-                                                >
-                                                <input
-                                                    type="text"
-                                                    name="name"
-                                                    id="name"
-                                                    placeholder="نام و نام خانوادگی"
-                                                    class="form-control"
-                                                    required=""
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label
-                                                    id="email-label"
-                                                    for="email"
-                                                    >ایمیل</label
-                                                >
-                                                <input
-                                                    type="email"
-                                                    name="email"
-                                                    id="email"
-                                                    placeholder="example@example.com"
-                                                    class="form-control"
-                                                    required=""
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label
-                                                    id="file-label"
-                                                    for="file"
-                                                    >آپلود رزومه</label
-                                                >
-                                                <input
-                                                    type="file"
-                                                    name="file"
-                                                    id="file"
-                                                    placeholder="روزمه خود را آپلود کنید"
-                                                    class="form-control"
-                                                    required=""
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-group">
-                                                <label for="phone"
-                                                    >شماره تماس</label
-                                                >
-                                                <div class="relative">
-                                                    <input
-                                                        class="form-control"
-                                                        type="text"
-                                                        maxlength="11"
-                                                        oninput="this.value=this.value.replace(/[^0-9]/g,'');"
-                                                        required=""
-                                                        placeholder="09123456789"
-                                                        name="phone"
-                                                        id="phone"
-                                                        aria-describedby="phone-help"
-                                                        aria-invalid="false"
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label
-                                                    >اطلاعات تکمیلی</label
-                                                >
-                                                <textarea
-                                                    id="comments"
-                                                    class="form-control"
-                                                    name="comment"
-                                                    rows="5"
-                                                    placeholder="لطفا توضیحات خود را در این قسمت بنویسید"
-                                                ></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="sa-dt-btn">
-                                        <button
-                                            class="saei-btn"
-                                            type="submit"
-                                            id="submit"
-                                        >
-                                            <span>ارسال درخواست</span>
-                                        </button>
-                                    </div>
-                                </form>
+                            <?php
+                                echo do_shortcode('[contact-form-7 id="94b3bf1" title="فرم تماس"]');
+                            ?>
                             </div>
                         </div>
                     </section>

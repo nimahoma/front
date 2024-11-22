@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-md-2 col-12">
                     <div class="footer-logo">
-                        <a class="sa-logo" href="#">
+                        <a class="sa-logo footer-logo-svg" href="#">
                             <img
                                 src="<?php echo get_template_directory_uri(); ?>/assets/img/footer-logo.png"
                                 alt=""
