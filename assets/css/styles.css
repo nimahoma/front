@@ -628,7 +628,7 @@ body.admin-bar .header {
 }
 
 .sa-team-banner {
-  padding-bottom: 2.2rem;
+  padding: 0 0 5rem;
   background-image: url(../img/our-team-v2.webp);
   background-repeat: no-repeat;
   background-position: center center;
@@ -737,6 +737,12 @@ body.admin-bar .header {
 .sa-skills-tiles-wrapper .sa-skills-tiles-item a {
   display: block;
   height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item a:hover {
+  filter: grayscale(1);
+  margin-top: 5px;
+  background: var(--white-color);
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img {
   background-size: contain;
@@ -744,11 +750,6 @@ body.admin-bar .header {
   height: 100%;
   padding: 1rem;
   z-index: 2;
-  transition: all 0.3s ease-in-out;
-}
-.sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img:hover {
-  filter: blur(1.5px) grayscale(1);
-  margin-top: 5px;
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .skill-dss {
   background-image: url("../img/saei-digital-security-solution.webp");
