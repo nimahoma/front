@@ -8,6 +8,14 @@ Template Name: About Saei
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+	
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="<?php echo get_template_directory_uri(); ?>/assets/img/web-app-manifest-192x192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="<?php echo get_template_directory_uri(); ?>/assets/img/web-app-manifest-512x512.png">
+
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
     <?php wp_head(); ?>
 </head>
@@ -53,7 +61,12 @@ Template Name: About Saei
 								class="sa-paragraph-box page-section-bottom first-things"
 							>
 								<div class="title">
-									<h1 class="sa-strong-title">داستان ما:</h1>
+									<h1
+										class="sa-strong-title sa-aos"
+										data-aos="fade-up"
+									>
+										داستان ما:
+									</h1>
 								</div>
 								<div class="description">
 									<p>
@@ -69,24 +82,34 @@ Template Name: About Saei
 										استراتژیک برای شرکت‌ها و سازمان‌های
 										بزرگ، به ویژه در همکاری با شرکت‌های
 										بین‌المللی برتر در زمینه‌ی مخابرات،
-										تثبیت کند
+										تثبیت کند.
 									</p>
 								</div>
 							</div>
 							<div class="sa-paragraph-box page-section-bottom">
-								<div class="title">
+								<div
+									class="title sa-aos"
+									data-aos="fade-right"
+									data-aos-offset="100"
+									data-aos-easing="ease-in-sine"
+								>
 									<h4>ماموریت:</h4>
 								</div>
 								<div class="description">
 									<p>
 										ماموريت ما ارایه ی راه حلهای نوآورانه
 										برای تسهيل تحول دیجیتال در کسب و کارها و
-										ارتقای ارزشهای فناورانه در کشور است
+										ارتقای ارزشهای فناورانه در کشور است.
 									</p>
 								</div>
 							</div>
 							<div class="sa-paragraph-box page-section-bottom">
-								<div class="title">
+								<div
+									class="title sa-aos"
+									data-aos="fade-right"
+									data-aos-offset="100"
+									data-aos-easing="ease-in-sine"
+								>
 									<h4>چشم انداز:</h4>
 								</div>
 								<div class="description">
@@ -94,12 +117,12 @@ Template Name: About Saei
 										ما قصد داریم با تمرکز بر نوآوری و جلب
 										رضایت مشتری در تمامی بازارها، تبدیل به
 										شريک برتر سازمان‌ها در تحول دیجیتال در
-										سطح کشور گردیم
+										سطح کشور گردیم.
 									</p>
 								</div>
 							</div>
 							<div class="sa-paragraph-box">
-								<div class="title">
+								<div class="title sa-aos" data-aos="fade-up">
 									<h4>ارزش های ما در ساعی</h4>
 								</div>
 								<div class="description">
@@ -111,17 +134,21 @@ Template Name: About Saei
 										در جهت تحقق آن‌ها تلاش خواهند کرد.
 									</p>
 									<ul class="oh-our-value">
-										<li>
+										<li class=" sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="100"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="900">
 											<div class="oh-ov">
 												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-2.png"
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-1.svg"
 													alt=""
 												/>
 											</div>
 											<p>
-												<strong
+												<span class="sa-strong"
 													>صداقت و شفافیت در رفتار و
-													گفتار:</strong
+													گفتار:</span
 												>
 												صداقت و شفافیت در رفتار و گفتار
 												در ساعی به مفهوم ایجاد یک محیط
@@ -131,15 +158,21 @@ Template Name: About Saei
 												داخلی و خارجی برقرار است.
 											</p>
 										</li>
-										<li>
+										<li class=" sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="100"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1000">
 											<div class="oh-ov">
 												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-4.png"
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-2.svg"
 													alt=""
 												/>
 											</div>
 											<p>
-												<strong>مسئولیت‌پذیری:</strong>
+												<span class="sa-strong"
+													>مسئولیت‌پذیری:</span
+												>
 												مسئولیت‌پذیری به عنوان یک ارزش
 												سازمانی به معنای تاکید بر پذیرش
 												مسئولیت امور محوله با رعایت
@@ -148,44 +181,60 @@ Template Name: About Saei
 												و خارج از سازمان است.
 											</p>
 										</li>
-										<li>
+										<li class=" sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="100"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1100">
 											<div class="oh-ov">
 												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-5.png"
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-3.svg"
 													alt=""
 												/>
 											</div>
 											<p>
-												<strong
-													>یادگیری و یاددهی:</strong
+												<span class="sa-strong"
+													>یادگیری و یاددهی:</span
 												>
 												تاکید بر اهمیت رشد فردی و جمعی
 												از طریق فرایند دایمی آموزش و به
-												اشتراک‌گذاری دانش
+												اشتراک‌گذاری دانش.
 											</p>
 										</li>
-										<li>
+										<li class=" sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="100"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1200">
 											<div class="oh-ov">
 												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-6.png"
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-4.svg"
 													alt=""
 												/>
 											</div>
 											<p>
-												<strong>مشتری مداری:</strong>
+												<span class="sa-strong"
+													>مشتری مداری:</span
+												>
 												توجه به مشتری و رفع نیازهایش به
-												عنوان رکن اصلی شرکت
+												عنوان رکن اصلی شرکت.
 											</p>
 										</li>
-										<li>
+										<li class=" sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="100"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1300">
 											<div class="oh-ov">
 												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-3.png"
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-5.svg"
 													alt=""
 												/>
 											</div>
 											<p>
-												<strong>نوآوری مداوم:</strong>
+												<span class="sa-strong"
+													>نوآوری مداوم:</span
+												>
 												نوآوری مداوم به عنوان یک ارزش
 												سازمانی به معنای تعهد به خلق و
 												پیاده‌سازیایده‌ها، محصولات و
@@ -193,17 +242,21 @@ Template Name: About Saei
 												آن‌هاست.
 											</p>
 										</li>
-										<li>
+										<li class=" sa-aos"
+											data-aos="fade-right"
+											data-aos-offset="100"
+											data-aos-easing="ease-in-sine"
+											data-aos-duration="1400">
 											<div class="oh-ov">
 												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-1.png"
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-6.svg"
 													alt=""
 												/>
 											</div>
 											<p>
-												<strong
+												<span class="sa-strong"
 													>احترام به ارزش‌های
-													انسانی:</strong
+													انسانی:</span
 												>
 												احترام به شان و ارزش‌های انسانی
 												در ساعی خارج از توجه به دین،
@@ -221,7 +274,9 @@ Template Name: About Saei
 						>
 							<div class="sa-paragraph-box no-padding">
 								<div class="title">
-									<h1 class="sa-strong-title">لحظات شاخص</h1>
+									<h1 class="sa-strong-title sa-aos"
+										data-aos="fade-up"
+										>لحظات شاخص</h1>
 								</div>
 							</div>
 
@@ -653,7 +708,9 @@ Template Name: About Saei
 						>
 							<div class="sa-paragraph-box no-padding">
 								<div class="title">
-									<h1 class="sa-strong-title">منابع</h1>
+									<h1 class="sa-strong-title sa-aos"
+										data-aos="fade-up"
+										>منابع</h1>
 								</div>
 							</div>
 							<div class="sa-resources-item-wrapper">

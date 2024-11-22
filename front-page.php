@@ -16,6 +16,14 @@
         }
         ?>
     </title>
+	
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="<?php echo get_template_directory_uri(); ?>/assets/img/web-app-manifest-192x192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="<?php echo get_template_directory_uri(); ?>/assets/img/web-app-manifest-512x512.png">
+
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
     <?php wp_head(); ?>
 </head>
@@ -143,9 +151,9 @@
 								data-aos-duration="900"
 							>
 								<p class="mb-2">
-									<strong
+									<span class="sa-strong"
 										>سرمایه انسانی؛ قلب تپنده‌ی
-										موفقیت ساعی</strong
+										موفقیت ساعی</span
 									>
 								</p>
 								<p>
@@ -181,7 +189,7 @@
 										واحد خدمات مدیریت شده و امنیت به
 										ارائه پشتیبانی جامع در تمامی
 										نیازهای زیرساختی و امنیتی به
-										سازمانهای بزرگ اختصاص دارد
+										سازمانهای بزرگ اختصاص دارد.
 									</p>
 								</div>
 								<div class="sa-teams-item">
@@ -195,7 +203,7 @@
 										داده های مشتریان را بر عهده دارد
 										و با استفاده از محصولات روز دنیا
 										بالاترین سطح امنیت را تضمین می
-										کند
+										کند.
 									</p>
 								</div>
 								<div class="sa-teams-item">
@@ -208,8 +216,7 @@
 										این تیم با جمع‌آوری داده‌ها
 										تضمین صحت آن‌ها، تحلیل و پردازش
 										داده‌ها، خروجیهای ارزشمندی برای
-										تصمیم‌گیری‌های هوشمندانه به
-										مشتریان ارائه می‌دهد
+										مشتریان ارائه می‌دهد.
 									</p>
 								</div>
 								<div class="sa-teams-item">
@@ -221,7 +228,7 @@
 									<p>
 										ستون فقرات شرکت! یک تیم چابک،
 										صمیمی، حرفه ای و همواره در دسترس
-										که عملیات روزانه را هدایت میکند
+										که عملیات روزانه را هدایت میکند.
 									</p>
 								</div>
 								<div class="sa-teams-item">
@@ -236,7 +243,7 @@
 										ترکیبی از تجربه، دانش و تعهد تیم
 										مدیریت پروژه را به یکی از
 										مهمترین موتورهای پیش برنده ساعی
-										تبدیل کرده است
+										تبدیل کرده است.
 									</p>
 								</div>
 								<div class="sa-teams-item">
@@ -249,7 +256,7 @@
 										این تیم به عنوان یک بازوی
 										استراتژیک، همراه مشتریان است تا
 										از بهره‌برداری بهینه و کارآمد از
-										سیستمها اطمینان حاصل شود
+										سیستمها اطمینان حاصل شود.
 									</p>
 								</div>
 							</div>
@@ -288,19 +295,13 @@
 							معنادار ایجاد
 							<br />
 							کنیم، تجربه مشتریان را بهبود بخشیم و با سرعت
-							و مقیاسی کم‌نظیر صنایع را متحول سازیم
+							و مقیاسی کم‌نظیر صنایع را متحول سازیم.
 						</p>
 					</div>
 					<div class="sa-skills-tiles">
 						<div class="sa-skills-tiles-wrapper">
 							<div
 								class="sa-skills-tiles-item"
-								data-aos="fade-up"
-								data-aos-offset="-250"
-								data-aos-delay="85"
-								data-aos-duration="1100"
-								data-aos-easing="ease-in-out"
-								data-aos-anchor-placement="top-center"
 							>
 								<a
 									href="https://3dsun.ir/skills/#digital_security_solutions_2"
@@ -320,12 +321,6 @@
 							</div>
 							<div
 								class="sa-skills-tiles-item"
-								data-aos="fade-up"
-								data-aos-offset="-250"
-								data-aos-delay="85"
-								data-aos-duration="900"
-								data-aos-easing="ease-in-out"
-								data-aos-anchor-placement="top-center"
 							>
 								<a
 									href="https://3dsun.ir/skills/#managed_services_3"
@@ -343,12 +338,6 @@
 							</div>
 							<div
 								class="sa-skills-tiles-item"
-								data-aos="fade-up"
-								data-aos-offset="-250"
-								data-aos-delay="85"
-								data-aos-duration="700"
-								data-aos-easing="ease-in-out"
-								data-aos-anchor-placement="top-center"
 							>
 								<a
 									href="https://3dsun.ir/skills/#data_service_1"
@@ -366,12 +355,6 @@
 							</div>
 							<div
 								class="sa-skills-tiles-item"
-								data-aos="fade-up"
-								data-aos-offset="-250"
-								data-aos-delay="85"
-								data-aos-duration="1700"
-								data-aos-easing="ease-in-out"
-								data-aos-anchor-placement="top-center"
 							>
 								<a
 									href="https://3dsun.ir/skills/#digital_transformation_consulting_services_6"
@@ -391,12 +374,6 @@
 							</div>
 							<div
 								class="sa-skills-tiles-item"
-								data-aos="fade-up"
-								data-aos-offset="-250"
-								data-aos-delay="85"
-								data-aos-duration="1500"
-								data-aos-easing="ease-in-out"
-								data-aos-anchor-placement="top-center"
 							>
 								<a
 									href="https://3dsun.ir/skills/#telecome_solutions_5"
@@ -416,12 +393,6 @@
 							</div>
 							<div
 								class="sa-skills-tiles-item"
-								data-aos="fade-up"
-								data-aos-offset="-250"
-								data-aos-delay="85"
-								data-aos-duration="1300"
-								data-aos-easing="ease-in-out"
-								data-aos-anchor-placement="top-center"
 							>
 								<a
 									href="https://3dsun.ir/skills/#digital_enterprise_application_4"
