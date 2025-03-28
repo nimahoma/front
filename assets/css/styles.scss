@@ -623,7 +623,7 @@ body.admin-bar{
 .sa-b-content{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     padding: var(--sa-p-2);
     position: absolute;
 	margin-top: 64px;
@@ -634,7 +634,7 @@ body.admin-bar{
 	clip-path: polygon(-.01em 0, calc(100% + .01em) 0, calc(100% + .01em) calc(100% + .01em), -.01em calc(100% + .01em));
 	h1.sa-strong-title{
 		font-size: 55px;
-		
+		font-weight: 100;
 	}
 }
 .about-us-plus{
@@ -725,9 +725,7 @@ body.admin-bar{
 				margin-bottom: -5rem;
 			}
 			.sa-teams-items-wrapper{
-				width: 95%;
 				margin-right: 1rem;
-				padding: 0 3rem;
 			}
 		}
 	}
@@ -810,53 +808,72 @@ body.admin-bar{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 19px;
-    background-color: #EAEAEA;
     padding: 19px 19px;
-    width: 89%;
     margin: auto;
 	.sa-skills-tiles-item{
 		width: 100%;
 		height: 360px;
 		background-color: var(--white-color);
+		border: 1px solid var(--primary-color);
 		a{
-			display: block;
+			display: flex;
+			flex-direction: column;
 			height: 100%;
 			transition: all .3s ease-in-out;
-			&:hover {
-				filter: grayscale(1);
-				margin-top: 5px;
-				background: var(--white-color);
-			}
+			// &:hover {
+			// 	filter: grayscale(1);
+			// 	margin-top: 5px;
+			// 	background: var(--white-color);
+			// }
 		}
 		.sa-background-img{
-			background-size: contain;
-			background-position: center bottom;
-			height: 100%;
-			padding: 1rem;
+			display: flex;
+			padding: 4rem;
 			z-index: 2;
+			height: 75%;
 		}
-		.skill-dss{
-			background-image: url('../img/saei-digital-security-solution.webp');
-		}
-		.skill-ms{
-			background-image: url('../img/saei-managed-services.webp');
-		}
-		.skill-bds{
-			background-image: url('../img/saei-data-services.webp');
-		}
-		.skill-dt{
-			background-image: url('../img/saei-digital-transformation.webp');
-		}
-		.skill-ts{
-			background-image: url('../img/saei-telecome-solutions.webp');
-		}
-		.skill-dea{
-			background-image: url('../img/saei-digital-enterprise.webp');
-		}
+		// .skill-dss{
+		// 	background-image: url('../img/saei-digital-security-solution.webp');
+		// }
+		// .skill-ms{
+		// 	background-image: url('../img/saei-managed-services.webp'); 
+		// }
+		// .skill-bds{
+		// 	background-image: url('../img/digital-security-solutions.svg');
+		// }
+		// .skill-dt{
+		// 	background-image: url('../img/saei-digital-transformation.webp');
+		// }
+		// .skill-ts{
+		// 	background-image: url('../img/saei-telecome-solutions.webp');
+		// }
+		// .skill-dea{
+		// 	background-image: url('../img/saei-digital-enterprise.webp');
+		// }
 		.title{
+			position: relative;
+			background-color: var(--primary-color);
+			background-image: url(../img/sa-background-img.svg);
+			height: 25%;
+			padding: 1rem;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			&::after{
+				content: "";
+				position: absolute;
+				right: 10%;
+				bottom: 1rem;
+				margin: auto;
+				background-image: url('../img/sa-skills-arrow.svg');
+				background-repeat: no-repeat;
+				width: 27px;
+				height: 27px;
+			}
 			h4{
-				font-weight: 400;
+				font-weight: 300;
 				font-size: 25px;
+				color: #333333;
 			}
 		}
 	}
@@ -876,7 +893,7 @@ body.admin-bar{
 
 
 
-						ABOU SAEI PAGE
+						ABOUT SAEI PAGE
 
 
 =============================================================================
@@ -910,6 +927,11 @@ ul.oh-our-value{
 .sa-resources.page-section-bottom.page-section-top{
 	border:none;
 }
+.sa-resources-item-wrapper{
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 32px;
+}
 .sa-resources-item{
 	border: 1px solid #707070;
     margin-bottom: 2rem;
@@ -937,10 +959,10 @@ ul.oh-our-value{
 }
 .sa-ri-img{
 	img{
-		width: 70%;
+		width: auto;
 		display: flex	;
 		margin: auto;
-		padding: 1.5rem;
+		padding: 2.5rem;
 	}
 }
 .sa-paragraph-box.full-width-box-tab{
@@ -1788,11 +1810,18 @@ ul.oh-our-value{
 			justify-content: center;
 		}
 	}
+	
+
 	.sa-team-banner{
 		padding: var(--sa-p-3);
-		.sa-t-content{
-			.col-12{
-				margin-bottom: 1rem;
+		.wrapper{
+			.sa-t-content{
+				.col-12{
+					margin-bottom: 1rem;
+				}
+				.sa-teams-items-wrapper{
+					margin-right: unset;
+				}
 			}
 		}
 		.sa-t-c-btn{
@@ -1815,9 +1844,123 @@ ul.oh-our-value{
 			}
 		}
 	}
+	.sa-mission{
+		.wrapper{
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			.sa-mission-card:first-child{
+				border-left: unset;
+				border-bottom: 2px solid var(--primary-color);
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	.sa-team-banner{
+		background-size: cover;
+		.wrapper {
+			.sa-t-content{
+				grid-template-columns: repeat(1, minmax(0, 1fr));
+				.sa-t-c-title{
+					margin: 2rem 0;
+				}
+			}
+		}
+	}
+	.sa-teams-items-wrapper{
+		.wrapper{
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+		}
+	}
+	.sa-skills{
+		.sa-dt-about{ 
+			h1{
+				font-size: 2rem;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
 	.sa-skills-tiles-wrapper{
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 		gap: 15px;
+	}
+	.know-us{
+		.our-values-cards{
+			.wrapper{
+				grid-template-columns: repeat(1, minmax(0, 1fr));
+			}
+		}
+	}
+
+
+	.job-offers-page{ 
+		.container{
+			overflow: auto;
+		}
+	}
+
+	.sa-employment-steps-box {
+		padding: 10rem 0 2rem;
+	}
+	.sa-employment-steps-box{
+		.wrapper{
+			flex-direction: column;
+		}
+	}
+	.sa-employment-steps-box{
+		.wrapper{
+			.sa-employment-steps-item:nth-child(even){
+				margin-bottom: 10rem;
+				padding: 30px;
+			}
+		}
+	}
+	.sa-employment-steps-box{
+		.wrapper{
+			.sa-employment-steps-item:nth-child(odd){
+				margin-bottom: 12.5rem;
+				padding: 30px;
+			}
+		}
+	}
+	.sa-employment-steps-box{
+		.wrapper{
+			.sa-employment-steps-item:last-child{
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	.sa-employment-steps-box{
+		.wrapper {
+			.sa-employment-steps-item:nth-child(even)::before {
+				bottom: 50%;
+				top: auto;
+			}
+		}
+	}
+	.sa-employment-steps-box{
+		.wrapper{
+			.sa-employment-steps-item span.top {
+				bottom: 100px;
+			}
+		}
+	}
+	.sa-employment-steps-box{
+		.wrapper{
+			.sa-employment-steps-item:nth-child(even)::after {
+				bottom: 107px;
+			}
+		}
+	}
+	.sa-resources-item-wrapper {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		gap: 0;
+	}
+	.sa-ri-img{
+		img{
+			width: 65%;
+			padding: 2.5rem;
+		}
 	}
 	.footer-content {
 		.footer-menu-title{
@@ -1841,6 +1984,9 @@ ul.oh-our-value{
 		display: block;
 	}
 	.page-sticky-sidebar {
+
+		display: none;
+
 		width: 100%;
         top: calc(100% - 48px);
         margin-bottom: 0;
@@ -1892,8 +2038,13 @@ ul.oh-our-value{
 		.modal-content{
 			padding: 1rem;
 			.modal-header{
+				justify-content: flex-end;
 				.modal-title{
 					font-size: 20px;
+				}
+				.btn-close{
+					left: auto;
+					right: 7%;
 				}
 			}
 		}

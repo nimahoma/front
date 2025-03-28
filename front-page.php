@@ -299,118 +299,130 @@
 						</p>
 					</div>
 					<div class="sa-skills-tiles">
-						<div class="sa-skills-tiles-wrapper">
-							<div
-								class="sa-skills-tiles-item"
-							>
-								<a
-									href="https://3dsun.ir/skills/#digital_security_solutions_2"
-								>
-									<div
-										class="sa-background-img skill-dss"
-									>
-										<div class="title">
-											<h4 class="en-font">
-												Digital Security
-												<br />
-												Solutions
-											</h4>
-										</div>
+								<div class="sa-skills-tiles-wrapper">
+									<div class="sa-skills-tiles-item">
+										<a
+											href="https://3dsun.ir/skills/#data_service_1"
+										>
+											<div
+												class="sa-background-img skill-dss"
+											>
+												<img
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/data-services.svg"
+													alt=""
+												/>
+											</div>
+											<div class="title">
+												<h4 class="en-font">
+													Data Services
+												</h4>
+											</div>
+										</a>
 									</div>
-								</a>
-							</div>
-							<div
-								class="sa-skills-tiles-item"
-							>
-								<a
-									href="https://3dsun.ir/skills/#managed_services_3"
-								>
-									<div
-										class="sa-background-img skill-ms"
-									>
-										<div class="title">
-											<h4 class="en-font">
-												Managed Services
-											</h4>
-										</div>
+									<div class="sa-skills-tiles-item">
+										<a
+											href="https://3dsun.ir/skills/#managed_services_3"
+										>
+											<div
+												class="sa-background-img skill-dss"
+											>
+												<img
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/managed-services.svg"
+													alt=""
+												/>
+											</div>
+											<div class="title">
+												<h4 class="en-font">
+													Managed Services
+												</h4>
+											</div>
+										</a>
 									</div>
-								</a>
-							</div>
-							<div
-								class="sa-skills-tiles-item"
-							>
-								<a
-									href="https://3dsun.ir/skills/#data_service_1"
-								>
-									<div
-										class="sa-background-img skill-bds"
-									>
-										<div class="title">
-											<h4 class="en-font">
-												Data Services
-											</h4>
-										</div>
+									<div class="sa-skills-tiles-item">
+										<a
+											href="https://3dsun.ir/skills/#digital_security_solutions_2"
+										>
+											<div
+												class="sa-background-img skill-dss"
+											>
+												<img
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-security-solutions.svg"
+													alt=""
+												/>
+											</div>
+											<div class="title">
+												<h4 class="en-font">
+													Digital Security
+													<br />
+													Solutions
+												</h4>
+											</div>
+										</a>
 									</div>
-								</a>
-							</div>
-							<div
-								class="sa-skills-tiles-item"
-							>
-								<a
-									href="https://3dsun.ir/skills/#digital_transformation_consulting_services_6"
-								>
-									<div
-										class="sa-background-img skill-dt"
-									>
-										<div class="title">
-											<h4 class="en-font">
-												Digital Transformation
-												<br />
-												Consulting Services
-											</h4>
-										</div>
+									<div class="sa-skills-tiles-item">
+										<a
+											href="https://3dsun.ir/skills/#digital_enterprise_application_4"
+										>
+											<div
+												class="sa-background-img skill-dss"
+											>
+												<img
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-enterprise-application.svg"
+													alt=""
+												/>
+											</div>
+											<div class="title">
+												<h4 class="en-font">
+													Digital Enterprise
+													<br />
+													Application
+												</h4>
+											</div>
+										</a>
 									</div>
-								</a>
-							</div>
-							<div
-								class="sa-skills-tiles-item"
-							>
-								<a
-									href="https://3dsun.ir/skills/#telecome_solutions_5"
-								>
-									<div
-										class="sa-background-img skill-ts"
-									>
-										<div class="title">
-											<h4 class="en-font">
-												Telecom
-												<br />
-												Solution
-											</h4>
-										</div>
+									<div class="sa-skills-tiles-item">
+										<a
+											href="https://3dsun.ir/skills/#telecome_solutions_5"
+										>
+											<div
+												class="sa-background-img skill-dss"
+											>
+												<img
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/telecome-solutions.svg"
+													alt=""
+												/>
+											</div>
+											<div class="title">
+												<h4 class="en-font">
+													Telecome
+													<br />
+													Solutions
+												</h4>
+											</div>
+										</a>
 									</div>
-								</a>
-							</div>
-							<div
-								class="sa-skills-tiles-item"
-							>
-								<a
-									href="https://3dsun.ir/skills/#digital_enterprise_application_4"
-								>
-									<div
-										class="sa-background-img skill-dea"
-									>
-										<div class="title">
-											<h4 class="en-font">
-												Digital Enterprise
-												<br />
-												Application
-											</h4>
-										</div>
+									<div class="sa-skills-tiles-item">
+										<a
+											href="https://3dsun.ir/skills#digital_transformation_consulting_services_6"
+										>
+											<div
+												class="sa-background-img skill-dss"
+											>
+												<img
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-transformation-consulting-services.svg"
+													alt=""
+												/>
+											</div>
+											<div class="title">
+												<h4 class="en-font">
+													Digital Transformation
+													<br />
+													Consulting Services
+												</h4>
+											</div>
+										</a>
 									</div>
-								</a>
-							</div>
-						</div>
+								</div>
 					</div>
 				</div>
 			</div>
