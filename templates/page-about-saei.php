@@ -52,6 +52,7 @@ Template Name: About Saei
 						</div>
 					</aside>
 
+					
 					<div class="page-content-wrapper overflow-hidden">
 						<section
 							class="section-scroll our-history page-section-bottom"
@@ -65,24 +66,23 @@ Template Name: About Saei
 										class="sa-strong-title sa-aos"
 										data-aos="fade-up"
 									>
-										داستان ما:
+										داستان ما
 									</h1>
 								</div>
 								<div class="description">
 									<p>
-										شرکت SAEI شرکت ساعی که در سال ۱۳۸۹ تاسیس
-										شده است، با بهره‌گیری از تیمی متشکل از
-										بیش از ۱۵۰ نیروی جوان، متخصص و متعهد، به
-										عنوان یکی از شرکت‌های پیشرو در حوزه
-										فناوری اطلاعات و ارتباطات و مخابرات در
-										ایران فعالیت می‌کند. این شرکت با تکیه بر
-										دانش فنی پیشرفته و تجربه‌های موفق در
-										مدیریت و اجرای پروژه‌های بزرگ، توانسته
-										است جایگاه خود را به عنوان یک شریک
-										استراتژیک برای شرکت‌ها و سازمان‌های
-										بزرگ، به ویژه در همکاری با شرکت‌های
-										بین‌المللی برتر در زمینه‌ی مخابرات،
-										تثبیت کند.
+										شرکت ساعی که در سال ۱۳۸۹ تاسیس شده است،
+										با بهره‌گیری از تیمی متشکل از بیش از ۱۵۰
+										نیروی جوان، متخصص و متعهد، به عنوان یکی
+										از شرکت‌های پیشرو در حوزه فناوری اطلاعات
+										و ارتباطات و مخابرات در ایران فعالیت
+										می‌کند. این شرکت با تکیه بر دانش فنی
+										پیشرفته و تجربه‌های موفق در مدیریت و
+										اجرای پروژه‌های بزرگ، توانسته است جایگاه
+										خود را به عنوان یک شریک استراتژیک برای
+										شرکت‌ها و سازمان‌های بزرگ، به ویژه در
+										همکاری با شرکت‌های بین‌المللی برتر در
+										زمینه‌ی مخابرات، تثبیت کند.
 									</p>
 								</div>
 							</div>
@@ -90,10 +90,10 @@ Template Name: About Saei
 								<div
 									class="title sa-aos"
 									data-aos="fade-right"
-									data-aos-offset="100"
+									data-aos-offset="300"
 									data-aos-easing="ease-in-sine"
 								>
-									<h4>ماموریت:</h4>
+									<h4>ماموریت</h4>
 								</div>
 								<div class="description">
 									<p>
@@ -107,16 +107,16 @@ Template Name: About Saei
 								<div
 									class="title sa-aos"
 									data-aos="fade-right"
-									data-aos-offset="100"
+									data-aos-offset="300"
 									data-aos-easing="ease-in-sine"
 								>
-									<h4>چشم انداز:</h4>
+									<h4>چشم انداز</h4>
 								</div>
 								<div class="description">
 									<p>
 										ما قصد داریم با تمرکز بر نوآوری و جلب
 										رضایت مشتری در تمامی بازارها، تبدیل به
-										شريک برتر سازمان‌ها در تحول دیجیتال در
+										شريک برتر سازمان ها در تحول دیجیتال در
 										سطح کشور گردیم.
 									</p>
 								</div>
@@ -127,18 +127,21 @@ Template Name: About Saei
 								</div>
 								<div class="description">
 									<p class="mb-4">
-										ارزش‌های ما در ساعی پایه و اساس تمامی
-										فعالیت‌ها و تصمیم‌گیری‌های ماست این
-										ارزش‌ها به بخش جدایی‌ناپذیری از فرهنگ
-										ساعی تبدیل شده‌اند و همه‌ی افراد در ساعی
-										در جهت تحقق آن‌ها تلاش خواهند کرد.
+										ارزش‌های ما در ساعی پایه و اساس
+										تمامی فعالیت‌ها و تصمیم‌گیری‌های ماست.
+										این ارزش‌ها به بخش جدایی‌ناپذیری از
+										فرهنگ ساعی تبدیل شده‌اند و همه‌ی افراد
+										در ساعی در جهت تحقق آن‌ها تلاش خواهند
+										کرد.
 									</p>
 									<ul class="oh-our-value">
-										<li class=" sa-aos"
+										<li
+											class="sa-aos"
 											data-aos="fade-right"
 											data-aos-offset="100"
 											data-aos-easing="ease-in-sine"
-											data-aos-duration="900">
+											data-aos-duration="900"
+										>
 											<div class="oh-ov">
 												<img
 													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-1.svg"
@@ -150,19 +153,22 @@ Template Name: About Saei
 													>صداقت و شفافیت در رفتار و
 													گفتار:</span
 												>
-												صداقت و شفافیت در رفتار و گفتار
+												صداقت و شفافیت در رفتار و گفتار
 												در ساعی به مفهوم ایجاد یک محیط
-												کاری است که در آن اعتماد،
-												امانت‌داری و ارتباطات روشن و
-												قابل فهم میان همه‌ی ذینفعان
-												داخلی و خارجی برقرار است.
+												کاری است که در آن
+												اعتماد، امانت‌داری و ارتباطات
+												روشن و قابل فهم میان همه‌ی
+												ذینفعان داخلی و خارجی برقرار
+												است.
 											</p>
 										</li>
-										<li class=" sa-aos"
+										<li
+											class="sa-aos"
 											data-aos="fade-right"
 											data-aos-offset="100"
 											data-aos-easing="ease-in-sine"
-											data-aos-duration="1000">
+											data-aos-duration="900"
+										>
 											<div class="oh-ov">
 												<img
 													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-2.svg"
@@ -173,19 +179,22 @@ Template Name: About Saei
 												<span class="sa-strong"
 													>مسئولیت‌پذیری:</span
 												>
-												مسئولیت‌پذیری به عنوان یک ارزش
+												مسئولیت‌پذیری به عنوان یک ارزش
 												سازمانی به معنای تاکید بر پذیرش
-												مسئولیت امور محوله با رعایت
-												امانت‌داری است. این ارزش پایه و
-												اساس ایجاد اعتماد و اعتبار داخل
-												و خارج از سازمان است.
+												مسئولیت امور محوله با
+												رعایت امانت‌داری است. این ارزش
+												پایه و اساس ایجاد اعتماد و
+												اعتبار داخل و خارج از سازمان
+												است.
 											</p>
 										</li>
-										<li class=" sa-aos"
+										<li
+											class="sa-aos"
 											data-aos="fade-right"
 											data-aos-offset="100"
 											data-aos-easing="ease-in-sine"
-											data-aos-duration="1100">
+											data-aos-duration="900"
+										>
 											<div class="oh-ov">
 												<img
 													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-3.svg"
@@ -201,11 +210,13 @@ Template Name: About Saei
 												اشتراک‌گذاری دانش.
 											</p>
 										</li>
-										<li class=" sa-aos"
+										<li
+											class="sa-aos"
 											data-aos="fade-right"
 											data-aos-offset="100"
 											data-aos-easing="ease-in-sine"
-											data-aos-duration="1200">
+											data-aos-duration="900"
+										>
 											<div class="oh-ov">
 												<img
 													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-4.svg"
@@ -220,11 +231,13 @@ Template Name: About Saei
 												عنوان رکن اصلی شرکت.
 											</p>
 										</li>
-										<li class=" sa-aos"
+										<li
+											class="sa-aos"
 											data-aos="fade-right"
 											data-aos-offset="100"
 											data-aos-easing="ease-in-sine"
-											data-aos-duration="1300">
+											data-aos-duration="900"
+										>
 											<div class="oh-ov">
 												<img
 													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-5.svg"
@@ -242,11 +255,13 @@ Template Name: About Saei
 												آن‌هاست.
 											</p>
 										</li>
-										<li class=" sa-aos"
+										<li
+											class="sa-aos"
 											data-aos="fade-right"
 											data-aos-offset="100"
 											data-aos-easing="ease-in-sine"
-											data-aos-duration="1400">
+											data-aos-duration="900"
+										>
 											<div class="oh-ov">
 												<img
 													src="<?php echo get_template_directory_uri(); ?>/assets/img/our-values-6.svg"
@@ -274,9 +289,12 @@ Template Name: About Saei
 						>
 							<div class="sa-paragraph-box no-padding">
 								<div class="title">
-									<h1 class="sa-strong-title sa-aos"
+									<h1
+										class="sa-strong-title sa-aos"
 										data-aos="fade-up"
-										>لحظات شاخص</h1>
+									>
+										لحظات شاخص
+									</h1>
 								</div>
 							</div>
 
@@ -313,20 +331,22 @@ Template Name: About Saei
 												class="sa-paragraph-box full-width-box-tab"
 											>
 												<div class="title">
-													<h5>ساعی در شب یلدای سال ۱۳۸۹</h5>
+													<h5>
+														ساعی در شب یلدای سال
+														۱۳۸۹
+													</h5>
 												</div>
 												<div class="description">
 													<p>
-														شرکت سامانه جامع ساعی در
-														شب یلدای سال ۱۳۸۹ با
-														حضور جمعی از متخصصین
-														حوزه فناوری اطلاعات و
-														مخابرات تأسیس شد. هدف
-														این شرکت از همان ابتدا
-														ارائه خدمات نوآورانه و
-														تخصصی در حوزه فناوری
-														اطلاعات و مخابرات بود.
-														ساعی با تمرکز بر
+														شرکت ساعی در شب یلدای
+														سال ۱۳۸۹ با حضور جمعی از
+														متخصصین حوزه فناوری
+														اطلاعات و مخابرات تأسیس
+														شد. هدف این شرکت از همان
+														ابتدا ارائه خدمات
+														نوآورانه و تخصصی در حوزه
+														فناوری اطلاعات و مخابرات
+														بود. ساعی با تمرکز بر
 														بومی‌سازی فناوری‌های
 														پیشرفته و تطبیق آن‌ها با
 														نیازهای محلی، توانست به
@@ -358,9 +378,9 @@ Template Name: About Saei
 												<div class="description">
 													<p>
 														در سال ۱۳۹۲، شرکت ساعی
-														با افزودن پروژه‌های(VAS)
-														خدمات ارزش افزوده به
-														حوزه فعالیت‌های خود،
+														با افزودن پروژه‌های
+														(VAS) خدمات ارزش افزوده
+														به حوزه فعالیت‌های خود،
 														گامی مهم در توسعه خدمات
 														و افزایش توانمندی‌های
 														خود برداشت. این
@@ -370,9 +390,9 @@ Template Name: About Saei
 														طراحی و اجرا شدند، تأثیر
 														قابل‌توجهی بر رشد و
 														توسعه شرکت داشتند. با
-														آغاز پروژه‌های VAS، شرکت
-														ساعی با بهره‌گیری از
-														فناوری‌های روز دنیا و
+														آغاز پروژه‌های (VAS) ،
+														شرکت ساعی با بهره‌گیری
+														از فناوری‌های روز دنیا و
 														تیمی متخصص، موفق به
 														ارتقای سطح خدمات خود شد.
 														این تحول استراتژیک باعث
@@ -385,7 +405,7 @@ Template Name: About Saei
 														و پیچیده و همچنین تعهد
 														آن به توسعه پایدار منابع
 														انسانی و زیرساخت‌های
-														سازمانی است​​.
+														سازمانی است.
 													</p>
 													<!-- <span
 														class="key-moments-date"
@@ -437,7 +457,7 @@ Template Name: About Saei
 														تثبیت کرد، بلکه امکان
 														توسعه راهکارهای مبتنی بر
 														داده برای مشتریان مختلف
-														را نیز فراهم ساخت​​.
+														را نیز فراهم ساخت.
 													</p>
 													<!-- <span
 														class="key-moments-date"
@@ -455,13 +475,13 @@ Template Name: About Saei
 												</div>
 												<div class="description">
 													<p>
-														شرکت سامانه جامع ساعی در
-														سال‌های اخیر فرآیند
-														ری‌برندینگ خود را به
-														عنوان بخشی از استراتژی
-														توسعه و بهبود هویت
-														سازمانی آغاز کرده است.
-														این اقدام با هدف
+														شرکت ساعی در سال‌های
+														اخیر فرآیند ری‌برندینگ
+														خود را به عنـــوان بخشی
+														از استـــراتژی توســـعه
+														و بهبــود هویت
+														سازمـــانی آغــاز کرده
+														است. این اقدام با هدف
 														بازتعریف مأموریت،
 														چشم‌انداز و ارزش‌های
 														اصلی شرکت و همچنین تطبیق
@@ -504,7 +524,7 @@ Template Name: About Saei
 														قوی برای ورود ساعی به
 														عصر دیجیتال و تقویت
 														جایگاه آن در میان رقبا
-														فراهم کند​​.
+														فراهم کند.
 													</p>
 													<!-- <span
 														class="key-moments-date"
@@ -559,7 +579,7 @@ Template Name: About Saei
 														مدیریت و پیاده‌سازی
 														پروژه‌های پیچیده فناوری
 														اطلاعات و ارتباطات به
-														نمایش گذاشت​​.
+														نمایش گذاشت.
 													</p>
 													<!-- <span
 														class="key-moments-date"
@@ -586,40 +606,41 @@ Template Name: About Saei
 														نیازهای روزافزون صنعت
 														فناوری اطلاعات و
 														مخابرات، پروژه Zero
-														Trust Security را به
-														عنوان رویکردی نوین در
-														حوزه امنیت سایبری آغاز
-														کرده است. این مدل امنیتی
-														به جای اعتماد به کاربران
-														یا دستگاه‌ها براساس
-														موقعیت یا شبکه آن‌ها،
-														اصل "عدم اعتماد، حتی پس
-														از تأیید" را اعمال
-														می‌کند. در این رویکرد،
-														هر کاربر و دستگاه باید
-														پیش از دریافت دسترسی،
-														مجدداً اعتبارسنجی و
-														تأیید شود. ساعی در این
-														پروژه بر روی سه حوزه
-														کلیدی تمرکز کرده است:
+														Trust را به عنوان
+														رویکردی نوین در حوزه
+														امنیت سایبری آغاز کرده
+														است. این مدل امنیتی به
+														جای اعتماد به کاربران یا
+														دستگاه‌ها براساس موقعیت
+														یا شبکه آن‌ها، اصل "عدم
+														اعتماد، حتی پس از تأیید"
+														را اعمال می‌کند. در این
+														رویکرد، هر کاربر و
+														دستگاه باید پیش از
+														دریافت دسترسی، مجدداً
+														اعتبارسنجی و تأیید شود.
+														ساعی در این پروژه بر روی
+														سه حوزه کلیدی تمرکز کرده
+														است:
 													</p>
 													<ul class="sa-tabs-list">
 														<li>
 															<strong
 																>مدیریت هویت و
-																دسترسی (IAM):
+																دسترسی (IAM) :
 															</strong>
-															برای کنترل دسترسی‌ها
-															و اطمینان از اینکه
-															فقط افراد مجاز به
-															منابع سازمانی دسترسی
+															برای کنترل برای
+															کنترل دسترسی‌ها و
+															اطمینان از اینکه فقط
+															افراد مجاز به منابع
+															سازمانی دسترسی
 															دارند.
 														</li>
 														<li>
 															<strong
 																>حفاظت از نقاط
-																انتهایی:</strong
-															>
+																انتهایی:
+															</strong>
 															به منظور ایجاد
 															لایه‌های امنیتی
 															اضافی برای
@@ -629,8 +650,8 @@ Template Name: About Saei
 														<li>
 															<strong
 																>دسترسی ایمن از
-																راه دور:</strong
-															>
+																راه دور:
+															</strong>
 															به‌ویژه برای تأمین
 															امنیت کارکنانی که به
 															صورت دورکاری فعالیت
@@ -660,7 +681,7 @@ Template Name: About Saei
 															مشتریان ساعی معرفی
 															شده و به شکل محصولی
 															مستقل در بازار عرضه
-															شود​.
+															شود.
 														</li>
 													</ul>
 													<!-- <span
@@ -708,9 +729,12 @@ Template Name: About Saei
 						>
 							<div class="sa-paragraph-box no-padding">
 								<div class="title">
-									<h1 class="sa-strong-title sa-aos"
+									<h1
+										class="sa-strong-title sa-aos"
 										data-aos="fade-up"
-										>منابع</h1>
+									>
+										منابع
+									</h1>
 								</div>
 							</div>
 							<div class="sa-resources-item-wrapper">
@@ -725,6 +749,13 @@ Template Name: About Saei
 										<div class="title">
 											<h5>منشور اخلاقی</h5>
 										</div>
+										<!-- <div class="subtitle">
+											<p>
+												لورم ایپسوم متن ساختگی
+												با تولید سادگی نامفهوم
+												از صنعت چاپ،
+											</p>
+										</div> -->
 										<div class="sa-dt-btn sa-ri-btn">
 											<a
 												href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
@@ -751,6 +782,13 @@ Template Name: About Saei
 										<div class="title">
 											<h5>گزارش سالانه ۱۴۰۲</h5>
 										</div>
+										<!-- <div class="subtitle">
+											<p>
+												لورم ایپسوم متن ساختگی
+												با تولید سادگی نامفهوم
+												از صنعت چاپ،
+											</p>
+										</div> -->
 										<div class="sa-dt-btn sa-ri-btn">
 											<a
 												href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
@@ -777,6 +815,13 @@ Template Name: About Saei
 										<div class="title">
 											<h5>برندبوک ساعی</h5>
 										</div>
+										<!-- <div class="subtitle">
+											<p>
+												لورم ایپسوم متن ساختگی
+												با تولید سادگی نامفهوم
+												از صنعت چاپ،
+											</p>
+										</div> -->
 										<div class="sa-dt-btn sa-ri-btn">
 											<a
 												href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
@@ -795,6 +840,7 @@ Template Name: About Saei
 							</div>
 						</section>
 					</div>
+
 				</div>
 			</div>
 		</div>

@@ -182,6 +182,7 @@ a {
   font-family: "Yekan-Bakh-Regular", sans-serif;
   margin: 0;
   line-height: 25px;
+  text-align: justify;
 }
 
 .en-font {
@@ -538,16 +539,28 @@ body.admin-bar .header {
 =============================================================================
 =============================================================================
 ============================================================================*/
-.about-us .sa-banner {
-  background-image: url("../img/hero-banner-abstract.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+.about-us .wrapper {
+  position: relative;
   height: 100vh;
+  width: 100%;
 }
-.about-us .sa-banner .container {
+.about-us .wrapper .sa-banner {
+  height: 100vh;
+  z-index: 9;
+}
+.about-us .wrapper .sa-banner .container {
   position: relative;
   height: 100%;
+}
+.about-us .wrapper .hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
 }
 
 .sa-banner {
@@ -569,7 +582,7 @@ body.admin-bar .header {
 }
 .sa-b-content h1.sa-strong-title {
   font-size: 55px;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 .about-us-plus {
@@ -588,6 +601,7 @@ body.admin-bar .header {
   font-size: 16px;
   font-family: "Yekan-Bakh-Regular", sans-serif;
   font-weight: 100;
+  text-align: center;
 }
 .about-us-plus .aup-btn .saei-btn:hover {
   color: var(--text-color);
@@ -624,8 +638,9 @@ body.admin-bar .header {
 }
 .sa-mission .wrapper .sa-mission-card .sa-m-c-content p {
   font-size: 18px;
-  width: 80%;
+  width: 85%;
   margin: 1rem auto 0;
+  text-align: center;
 }
 
 .sa-team-banner {
@@ -674,6 +689,7 @@ body.admin-bar .header {
 }
 .sa-teams-items-wrapper .wrapper .sa-teams-item p {
   line-height: 20px;
+  text-align: justify;
 }
 
 .sa-t-c-title {
@@ -695,6 +711,7 @@ body.admin-bar .header {
 }
 .sa-t-c-title p {
   margin-bottom: 0.5rem;
+  text-align: justify;
 }
 .sa-t-c-title .sa-t-c-btn .saei-btn {
   width: 100%;
@@ -717,6 +734,7 @@ body.admin-bar .header {
 }
 .sa-skills .sa-dt-about p {
   font-size: 20px;
+  text-align: center;
 }
 
 .sa-skills-tiles-wrapper {
@@ -731,33 +749,40 @@ body.admin-bar .header {
   height: 360px;
   background-color: var(--white-color);
   border: 1px solid var(--primary-color);
+  transition: all 0.3s ease-in-out;
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item a {
   display: flex;
   flex-direction: column;
   height: 100%;
-  transition: all 0.3s ease-in-out;
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img {
   display: flex;
+  justify-content: center;
   padding: 4rem;
   z-index: 2;
   height: 75%;
 }
+.sa-skills-tiles-wrapper .sa-skills-tiles-item .sa-background-img img {
+  width: auto;
+  transition: all 0.3s ease-in-out;
+}
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .title {
   position: relative;
   background-color: var(--primary-color);
-  background-image: url(../img/sa-background-img.svg);
+  background-image: url("../img/sa-background-img.svg");
+  background-size: cover;
   height: 25%;
   padding: 1rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  transition: all 0.3s ease-in-out;
 }
 .sa-skills-tiles-wrapper .sa-skills-tiles-item .title::after {
   content: "";
   position: absolute;
-  right: 10%;
+  right: 1rem;
   bottom: 1rem;
   margin: auto;
   background-image: url("../img/sa-skills-arrow.svg");
@@ -769,6 +794,15 @@ body.admin-bar .header {
   font-weight: 300;
   font-size: 25px;
   color: #333333;
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item:hover {
+  background-color: var(--primary-color);
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item:hover .title {
+  background-color: #ffffff;
+}
+.sa-skills-tiles-wrapper .sa-skills-tiles-item:hover img {
+  filter: invert(1);
 }
 
 .sa-dt-btn {
@@ -854,6 +888,14 @@ ul.oh-our-value li .oh-ov {
 
 .sa-paragraph-box.full-width-box-tab {
   position: relative;
+}
+.sa-paragraph-box.full-width-box-tab p {
+  text-align: justify;
+}
+
+.section-scroll.sa-resources {
+  padding-bottom: 8rem;
+  padding-top: 5rem;
 }
 
 /*============================================================================
@@ -1098,6 +1140,63 @@ ul.oh-our-value li .oh-ov {
 =============================================================================
 =============================================================================
 =============================================================================*/
+.skills-page .page-content-wrapper {
+  width: 100%;
+}
+.skills-page .page-content-wrapper .sa-paragraph-box {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.skills-page .page-content-wrapper .accordion {
+  padding: 3rem;
+  padding-top: 0;
+}
+.skills-page .page-content-wrapper .accordion .accordion-item {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  background: var(--smoke-color);
+  border: unset;
+  border-radius: unset;
+}
+.skills-page .page-content-wrapper .accordion .accordion-item .accordion-header {
+  border: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
+}
+.skills-page .page-content-wrapper .accordion .accordion-item .accordion-header button.accordion-button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: unset;
+  border-radius: unset;
+  box-shadow: unset;
+  position: relative;
+}
+.skills-page .page-content-wrapper .accordion .accordion-item .accordion-header button.accordion-button:after {
+  content: "";
+  background-image: unset;
+}
+.skills-page .page-content-wrapper .accordion .accordion-item .accordion-header button.accordion-button i {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: rotate(0) translateY(-50%);
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.skills-page .page-content-wrapper .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed) {
+  color: var(--black-color);
+}
+.skills-page .page-content-wrapper .accordion .accordion-item .accordion-header button.accordion-button:not(.collapsed) i {
+  top: 30%;
+  transform: rotate(-90deg) translateY(-50%);
+  right: -15px;
+}
+.skills-page .page-content-wrapper .accordion .accordion-item .accordion-body {
+  padding: 0 2rem 1rem;
+}
 .skills-page .skill-content .description ul {
   list-style: disc;
   margin-right: 1rem;
@@ -1138,6 +1237,8 @@ ul.oh-our-value li .oh-ov {
 .wrapper-404 .content-wrapper-404 p {
   margin-bottom: 1rem;
   font-weight: 700;
+  text-align: center;
+  line-height: 180%;
 }
 .wrapper-404 .content-wrapper-404 h5 {
   margin-bottom: 1rem;
@@ -1222,7 +1323,10 @@ ul.oh-our-value li .oh-ov {
   border-top: 2px solid #ffcc00;
   border-radius: 10px 0 0 0;
 }
-.footer-content .footer-menu-item {
+.footer-content .footer-menu {
+  padding-left: 0;
+}
+.footer-content .footer-menu .footer-menu-item {
   color: var(--white-color);
   font-weight: 300;
   font-family: "Yekan-Bakh-Thin";
@@ -1271,6 +1375,7 @@ ul.oh-our-value li .oh-ov {
 .sa-tabs-list li {
   list-style: disc;
   margin-bottom: 0.5rem;
+  text-align: justify;
 }
 
 .tabs-container {
@@ -1577,8 +1682,11 @@ ul.oh-our-value li .oh-ov {
     right: -10px;
     left: auto;
   }
-  .hero-banner.sa-banner {
+  .about-us .wrapper {
     height: max-content;
+  }
+  .hero-banner.sa-banner {
+    height: max-content !important;
   }
   .hero-banner.sa-banner .sa-b-content {
     position: relative;
