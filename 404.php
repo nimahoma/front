@@ -20,7 +20,9 @@
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?>
 
-    <div class="page 404-page">
+
+
+	<div class="page 404-page">
 			<div class="wrapper-404">
 				<div class="vector-wrapper">
 					<img
@@ -31,8 +33,11 @@
 				</div>
 				<div class="content-wrapper-404">
 					<p>
-						متأسفانه صفحه‌ای که به دنبال آن هستید وجود ندارد یا حذف
-						شده
+						متأسفیم، صفحه مورد نظر شما یافت نشد یا در حال حاضر در
+						دسترس نمی‌باشد.
+						<br />
+						لطفاً از منوی اصلی استفاده کرده یا به صفحه نخست
+						بازگردید.
 					</p>
 					<!-- <h5>گشتم نبود نگرد نیست!</h5> -->
 					<a href="https://3dsun.ir/">
@@ -45,6 +50,7 @@
 				</div>
 			</div>
 		</div>
+
 
     <?php get_template_part( 'parts/footer' ); ?>
     <?php wp_footer(); ?>

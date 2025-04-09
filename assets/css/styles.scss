@@ -218,6 +218,7 @@ a{
 font-family: "Yekan-Bakh-Regular", sans-serif; 
 margin:0;
 line-height: 25px;
+text-align: justify;
 } 
 
 .en-font{
@@ -605,15 +606,31 @@ body.admin-bar{
 
 //== 1. ABOUT US ==
 .about-us{
-	.sa-banner{
-		background-image: url("../img/hero-banner-abstract.webp");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
+	.wrapper{
+		position: relative;
 		height: 100vh;
-		.container{
-			position: relative;
+		width: 100%;
+		.sa-banner{
+			// background-image: url("../img/hero-banner-abstract.webp");
+			// background-size: cover;
+			// background-repeat: no-repeat;
+			// background-position: center center;
+			height: 100vh;
+			z-index: 9;
+			.container{
+				position: relative;
+				height: 100%;
+			}
+		}
+		.hero-video{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
 			height: 100%;
+			transform: translate(-50%, -50%);
+			object-fit: cover;
+			z-index: 1;
 		}
 	}
 }
@@ -634,7 +651,7 @@ body.admin-bar{
 	clip-path: polygon(-.01em 0, calc(100% + .01em) 0, calc(100% + .01em) calc(100% + .01em), -.01em calc(100% + .01em));
 	h1.sa-strong-title{
 		font-size: 55px;
-		font-weight: 100;
+		font-weight: 600;
 	}
 }
 .about-us-plus{
@@ -652,6 +669,7 @@ body.admin-bar{
 			font-size: 16px;
 			font-family: "Yekan-Bakh-Regular", sans-serif;
 			font-weight: 100;
+			text-align: center;
 		}
 	}
 	.aup-btn{
@@ -696,8 +714,9 @@ body.admin-bar{
 				}
 				p{
 					font-size: 18px;
-					width: 80%;
+					width: 85%;
 					margin: 1rem auto 0;
+					text-align: center;
 				}
 			}
 		}
@@ -750,6 +769,7 @@ body.admin-bar{
 			}
 			p{
 				line-height: 20px;
+				text-align: justify;
 			}
 		}
 	}
@@ -774,6 +794,7 @@ body.admin-bar{
 	}
 	p{
 		margin-bottom: .5rem;
+		text-align: justify;
 	}
 	.sa-t-c-btn{
 		.saei-btn{
@@ -800,6 +821,7 @@ body.admin-bar{
 		}
 		p{
 			font-size: 20px;
+			text-align: center;
 		}
 	}
 }
@@ -815,54 +837,38 @@ body.admin-bar{
 		height: 360px;
 		background-color: var(--white-color);
 		border: 1px solid var(--primary-color);
+		transition: all .3s ease-in-out;
 		a{
 			display: flex;
 			flex-direction: column;
 			height: 100%;
-			transition: all .3s ease-in-out;
-			// &:hover {
-			// 	filter: grayscale(1);
-			// 	margin-top: 5px;
-			// 	background: var(--white-color);
-			// }
 		}
 		.sa-background-img{
 			display: flex;
+			justify-content: center;
 			padding: 4rem;
 			z-index: 2;
 			height: 75%;
+			img{
+				width: auto;
+				transition: all .3s ease-in-out;
+			}
 		}
-		// .skill-dss{
-		// 	background-image: url('../img/saei-digital-security-solution.webp');
-		// }
-		// .skill-ms{
-		// 	background-image: url('../img/saei-managed-services.webp'); 
-		// }
-		// .skill-bds{
-		// 	background-image: url('../img/digital-security-solutions.svg');
-		// }
-		// .skill-dt{
-		// 	background-image: url('../img/saei-digital-transformation.webp');
-		// }
-		// .skill-ts{
-		// 	background-image: url('../img/saei-telecome-solutions.webp');
-		// }
-		// .skill-dea{
-		// 	background-image: url('../img/saei-digital-enterprise.webp');
-		// }
 		.title{
 			position: relative;
 			background-color: var(--primary-color);
-			background-image: url(../img/sa-background-img.svg);
+			background-image: url('../img/sa-background-img.svg');
+			background-size: cover;
 			height: 25%;
 			padding: 1rem;
 			display: flex;
 			justify-content: flex-end;
 			align-items: flex-end;
+			transition: all .3s ease-in-out;
 			&::after{
 				content: "";
 				position: absolute;
-				right: 10%;
+				right: 1rem;
 				bottom: 1rem;
 				margin: auto;
 				background-image: url('../img/sa-skills-arrow.svg');
@@ -874,6 +880,15 @@ body.admin-bar{
 				font-weight: 300;
 				font-size: 25px;
 				color: #333333;
+			}
+		}
+		&:hover {
+			background-color: var(--primary-color);
+			.title{
+				background-color: #ffffff;
+			}
+			img{
+				filter: invert(1);
 			}
 		}
 	}
@@ -967,8 +982,15 @@ ul.oh-our-value{
 }
 .sa-paragraph-box.full-width-box-tab{
 	position: relative;
+	p{
+		text-align: justify;
+	}
 }
 
+.section-scroll.sa-resources{
+    padding-bottom: 8rem;
+    padding-top: 5rem;
+}
 
 /*============================================================================
 ============================================================================== <?php echo get_template_directory_uri(); ?>/assets/
@@ -1229,6 +1251,63 @@ ul.oh-our-value{
 =============================================================================
 =============================================================================*/
 .skills-page{
+	.page-content-wrapper{
+		width: 100%;
+		.sa-paragraph-box{
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+		.accordion{
+			padding: 3rem;
+			padding-top: 0; 
+			.accordion-item {
+				margin-bottom: 1rem;
+				padding: 0 1rem;
+				background: var(--smoke-color);
+				border: unset;
+				border-radius: unset;
+				.accordion-header {
+					border: unset;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-right: 1rem;
+					button.accordion-button {
+						font-size: 2rem;
+						padding: 1rem 2rem;
+						background: transparent;
+						border: unset;
+						border-radius: unset;
+						box-shadow: unset;
+						position: relative;
+						&:after{
+							content: "";
+							background-image: unset;
+						}
+						i{
+							position: absolute;
+							right: -10px;
+							top: 50%;
+							transform: rotate(0) translateY(-50%);
+							color: var(--primary-color);
+							transition: all .3s ease-in-out; 
+						}
+						&:not(.collapsed) {
+							color: var(--black-color);
+						  i{
+							top: 30%;
+							transform: rotate(-90deg) translateY(-50%);
+							right: -15px;
+						  }
+						}
+					}
+				}
+				.accordion-body {
+					padding: 0 2rem 1rem;
+				}
+			}
+		}
+	}
 	.skill-content{
 		.description{
 			ul{
@@ -1242,6 +1321,7 @@ ul.oh-our-value{
 		}
 	}
 }
+
 
 
 /*============================================================================
@@ -1273,6 +1353,8 @@ ul.oh-our-value{
 		p{
 			margin-bottom: 1rem;
 			font-weight: 700;
+			text-align: center;
+			line-height: 180%;
 		}
 		h5{
 			margin-bottom: 1rem;
@@ -1361,8 +1443,8 @@ ul.oh-our-value{
     border-left: 2px solid #ffcc00;
     border-top: 2px solid #ffcc00;
     border-radius: 10px 0 0 0;
-	
-
+	.footer-menu{
+		padding-left: 0;
 		.footer-menu-item{
 			color: var(--white-color);
 			font-weight: 300;
@@ -1370,12 +1452,9 @@ ul.oh-our-value{
 			line-height: 150%;
 			margin-bottom: 0.25rem;
 		}
-		// .footer-menu-title {
-		// 	font-weight: 800;
-		// 	font-family: Yekan-Bakh-ExtraBold;
-		// 	margin-bottom: .5rem;
-		// }
+
 	}
+}
 
 .footer-contact-info{
 	ul{
@@ -1430,6 +1509,7 @@ ul.oh-our-value{
 	li{
 		list-style: disc;
 		margin-bottom: .5rem;
+		text-align: justify;
 	}
 }
 .tabs-container {
@@ -1745,7 +1825,7 @@ ul.oh-our-value{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {
 	.first-things{
-		padding-top: 4rem;
+		padding-top: 5rem;
 	}
 	.last-things{
 		padding-bottom: 2rem;
@@ -1776,9 +1856,11 @@ ul.oh-our-value{
 			}
 		}
 	}
-	
-	.hero-banner.sa-banner{
+	.about-us .wrapper{
 		height: max-content;
+	}
+	.hero-banner.sa-banner{
+		height: max-content !important;
 		.sa-b-content{
 			position: relative;
 			width: 100%;
@@ -2065,6 +2147,28 @@ ul.oh-our-value{
 			.page-content-wrapper,
 			.job-offer-single-sidebar{
 				width: 100%;
+			}
+		}
+	}
+}
+.skills-page{
+	.page-content-wrapper{
+		.accordion {
+			padding: 1rem;
+			.accordion-item{
+				.accordion-header{
+					button.accordion-button {
+						font-size: 1.05rem;
+						text-align: right;
+					}
+				}
+				.skill-content{
+					.title{
+						h4 {
+							font-size: 16px;
+						}
+					}
+				}
 			}
 		}
 	}

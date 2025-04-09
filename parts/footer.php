@@ -1,4 +1,3 @@
-
 <footer id="footer" class="footer sec-padding">
     <div class="container">
         <div class="container-fluid">
@@ -89,9 +88,7 @@
                                                 class="fa-light fa-location-dot"
                                             ></i>
                                             <a href="#"
-                                                >تهران، بلوار نلسون
-                                                ماندلا، بن‌بست آناهیتا،
-                                                پلاک ۲، واحد۱</a
+                                                >تهران، بلوار نلسون ماندلا، بن بست آناهیتا، پلاک ۲، طبقه ۱ و ۲</a
                                             >
                                         </li>
                                     </ul>
