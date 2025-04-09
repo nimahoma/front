@@ -1657,7 +1657,7 @@ ul.oh-our-value li .oh-ov {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {
   .first-things {
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
   .last-things {
     padding-bottom: 2rem;
@@ -1898,6 +1898,17 @@ ul.oh-our-value li .oh-ov {
     width: 100%;
   }
 }
+.skills-page .page-content-wrapper .accordion {
+  padding: 1rem;
+}
+.skills-page .page-content-wrapper .accordion .accordion-item .accordion-header button.accordion-button {
+  font-size: 1.05rem;
+  text-align: right;
+}
+.skills-page .page-content-wrapper .accordion .accordion-item .skill-content .title h4 {
+  font-size: 16px;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   #header.header {

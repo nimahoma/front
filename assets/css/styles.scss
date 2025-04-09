@@ -1825,7 +1825,7 @@ ul.oh-our-value{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {
 	.first-things{
-		padding-top: 4rem;
+		padding-top: 5rem;
 	}
 	.last-things{
 		padding-bottom: 2rem;
@@ -2147,6 +2147,28 @@ ul.oh-our-value{
 			.page-content-wrapper,
 			.job-offer-single-sidebar{
 				width: 100%;
+			}
+		}
+	}
+}
+.skills-page{
+	.page-content-wrapper{
+		.accordion {
+			padding: 1rem;
+			.accordion-item{
+				.accordion-header{
+					button.accordion-button {
+						font-size: 1.05rem;
+						text-align: right;
+					}
+				}
+				.skill-content{
+					.title{
+						h4 {
+							font-size: 16px;
+						}
+					}
+				}
 			}
 		}
 	}
