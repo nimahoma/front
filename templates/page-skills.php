@@ -21,7 +21,7 @@ Template Name: Skills Saei
 </head>
 
 <body <?php body_class(); ?>>
-    <?php get_template_part( 'parts/header' ); ?>
+    <?php get_template_part( 'parts/header' ); ?> 
 
 	
 	<div class="page skills-page">
