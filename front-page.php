@@ -44,7 +44,7 @@
 							playsinline
 						>
 							<source
-								src="<?php echo get_template_directory_uri(); ?>/assets/img/Comp-2.mp4"
+								src="<?php echo get_template_directory_uri(); ?>/assets/img/Saei-hero-bg-1.mp4"
 								type="video/mp4"
 							/>
 							مرورگر شما از ویدیو پشتیبانی نمی‌کند.

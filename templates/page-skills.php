@@ -22,7 +22,8 @@ Template Name: Skills Saei
 
 <body <?php body_class(); ?>>
     <?php get_template_part( 'parts/header' ); ?> 
-
+	
+	
 	
 	<div class="page skills-page">
 			<div class="container">
@@ -57,7 +58,7 @@ Template Name: Skills Saei
 								</h2>
 								<div
 									id="HR_teams-xxx"
-									class="accordion-collapse collapse show"
+									class="accordion-collapse collapse"
 									aria-labelledby="head_HR"
 									data-bs-parent="#HR_accordion"
 								>
@@ -564,6 +565,8 @@ Template Name: Skills Saei
 				</div>
 			</div>
 		</div>
+
+	
 	
 	<?php get_template_part( 'parts/footer' ); ?>
     <?php wp_footer(); ?>
