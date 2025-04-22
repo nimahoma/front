@@ -806,6 +806,10 @@ body.admin-bar .header {
   filter: invert(1);
 }
 
+.sa-skills-tiles-wrapper-mobile {
+  display: none;
+}
+
 .sa-dt-btn {
   display: flex;
   justify-content: center;
@@ -824,6 +828,10 @@ body.admin-bar .header {
 =============================================================================
 =============================================================================
 ============================================================================*/
+.oh-our-value-mobile {
+  display: none;
+}
+
 ul.oh-our-value {
   list-style: disc;
   margin-top: 1rem;
@@ -844,6 +852,10 @@ ul.oh-our-value li .oh-ov {
   margin-left: 1.2rem;
   padding-left: 1rem;
   border-left: 1px solid var(--primary-color);
+}
+
+.sa-resources-item-wrapper-mobile {
+  display: none;
 }
 
 .sa-resources.page-section-bottom.page-section-top {
@@ -1657,6 +1669,9 @@ ul.oh-our-value li .oh-ov {
 ============================================================================*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {
+  p, span, a {
+    font-size: 13px;
+  }
   .first-things {
     padding-top: 5rem;
   }
@@ -1686,52 +1701,28 @@ ul.oh-our-value li .oh-ov {
   .about-us .wrapper {
     height: max-content;
   }
-  .hero-banner.sa-banner {
-    height: max-content !important;
+  .about-us .wrapper .hero-banner.sa-banner {
+    height: 50vh;
   }
-  .hero-banner.sa-banner .sa-b-content {
+  .about-us .wrapper .hero-banner.sa-banner .sa-b-content {
     position: relative;
     width: 100%;
     top: auto;
-    transform: unset;
+    transform: translateY(25vh);
     left: auto;
     right: auto;
+    margin-top: 0rem;
+    padding: 1rem;
   }
-  .hero-banner.sa-banner .sa-b-content .sa-strong-title {
-    font-size: var(--sa-font-size-stronge-mobile);
-  }
-  .hero-banner.sa-banner .sa-b-content p {
-    font-size: var(--sa-font-size-paragraphe-mobile);
+  .about-us .wrapper .hero-banner.sa-banner .sa-b-content .sa-strong-title {
+    font-size: 27px;
   }
   .about-us-plus {
-    flex-direction: column;
-    padding: 2rem;
+    padding: 0;
+    height: 8px;
   }
-  .about-us-plus .aup-title h4 {
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .about-us-plus .aup-btn {
-    display: flex;
-    justify-content: center;
-  }
-  .sa-team-banner {
-    padding: var(--sa-p-3);
-  }
-  .sa-team-banner .wrapper .sa-t-content .col-12 {
-    margin-bottom: 1rem;
-  }
-  .sa-team-banner .wrapper .sa-t-content .sa-teams-items-wrapper {
-    margin-right: unset;
-  }
-  .sa-team-banner .sa-t-c-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-  }
-  .sa-team-banner .sa-t-c-btn button {
-    width: 100%;
+  .about-us-plus .aup-title {
+    display: none;
   }
   .tumbnail-item .tumbnail-decription {
     margin-bottom: 1.5rem;
@@ -1748,27 +1739,116 @@ ul.oh-our-value li .oh-ov {
     border-bottom: 2px solid var(--primary-color);
     margin-bottom: 2rem;
   }
+  .sa-mission .wrapper .sa-mission-card .sa-m-c-content {
+    margin: 1.5rem 0;
+  }
+  .sa-mission .wrapper .sa-mission-card .sa-m-c-content .title h4 {
+    font-size: 20px;
+  }
+  .sa-mission .wrapper .sa-mission-card .sa-m-c-content p {
+    font-size: 13px;
+    width: 90%;
+  }
   .sa-team-banner {
+    padding: 0 0 2rem;
     background-size: cover;
+    background-image: unset;
+    background-color: var(--primary-color);
   }
   .sa-team-banner .wrapper .sa-t-content {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    display: flex;
+    flex-direction: column;
   }
   .sa-team-banner .wrapper .sa-t-content .sa-t-c-title {
     margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  .sa-team-banner .wrapper .sa-t-content .sa-t-c-title h2 {
+    font-size: 35px;
+    color: #464646;
+    margin-bottom: 1rem !important;
+  }
+  .sa-team-banner .wrapper .sa-t-content .sa-t-c-title p {
+    font-size: 13px;
+    color: #464646;
+    margin-bottom: 1rem !important;
+  }
+  .sa-team-banner .wrapper .sa-t-content .sa-t-c-title .mb-2 .sa-strong {
+    font-size: 16px;
+    font-family: "Yekan-Bakh-FaNum-Bold", sans-serif;
+  }
+  .sa-team-banner .wrapper .sa-t-content .sa-t-c-title .sa-t-c-btn .saei-btn {
+    background-color: var(--white-color);
+    width: auto;
+    height: auto;
+    padding: 0.5rem 3rem;
+  }
+  .sa-team-banner .wrapper .sa-t-content .sa-teams-items-wrapper {
+    margin: 0 1rem;
+  }
+  .sa-team-banner .wrapper .sa-t-content .sa-teams-items-wrapper .wrapper .sa-teams-item p {
+    font-size: 13px;
+    line-height: 150%;
   }
   .sa-teams-items-wrapper .wrapper {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .sa-teams-items-wrapper .wrapper .sa-teams-item {
+    background-color: var(--white-color);
+  }
+  .sa-teams-items-wrapper .wrapper .sa-teams-item .title {
+    min-height: max-content;
+    margin-bottom: 0.85rem;
+  }
+  .sa-teams-items-wrapper .wrapper .sa-teams-item .title br {
+    display: none;
+  }
   .sa-skills .sa-dt-about h1 {
-    font-size: 2rem;
+    font-size: 35px;
   }
   .sa-skills .sa-dt-about p {
-    font-size: 1rem;
+    font-size: 13px;
+    width: 90%;
+    margin: auto;
+  }
+  .sa-skills .sa-dt-about p br {
+    display: none;
   }
   .sa-skills-tiles-wrapper {
+    display: none;
+  }
+  .sa-skills-tiles-wrapper-mobile {
+    display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 15px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  .sa-skills-tiles-wrapper-mobile .sa-skills-tiles-item-mobile a {
+    direction: ltr;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    padding: 1rem 1rem 1rem 2rem;
+  }
+  .sa-skills-tiles-wrapper-mobile .sa-skills-tiles-item-mobile a .icon {
+    width: 10%;
+    height: fit-content;
+  }
+  .sa-skills-tiles-wrapper-mobile .sa-skills-tiles-item-mobile a .title {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    margin: 0;
+    margin-left: 1rem;
+  }
+  .sa-skills-tiles-wrapper-mobile .sa-skills-tiles-item-mobile a .arrow {
+    width: 21px;
+    height: fit-content;
+    padding: 0;
   }
   .know-us .our-values-cards .wrapper {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1776,54 +1856,109 @@ ul.oh-our-value li .oh-ov {
   .job-offers-page .container {
     overflow: auto;
   }
+  .job-offers-page .know-us .sa-strong-title {
+    font-size: 35px;
+  }
+  .job-offers-page .sa-teams .sa-strong-title {
+    font-size: 35px;
+  }
+  .job-offers-page .sa-teams .sa-teams-item .sa-ti-wrapper {
+    height: auto;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .job-offers-page .sa-teams .sa-teams-item .sa-ti-wrapper .subtitle p {
+    height: auto;
+    overflow-y: unset;
+  }
+  .job-offers-page .sa-teams .sa-teams-item .sa-ti-wrapper .sa-ti-modal-link {
+    margin: 0;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .job-offers-page .sa-join-us .sa-strong-title {
+    font-size: 35px;
+  }
   .sa-employment-steps-box {
-    padding: 10rem 0 2rem;
+    padding: 1rem 0;
   }
   .sa-employment-steps-box .wrapper {
     flex-direction: column;
+    gap: 40px;
   }
-  .sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even) {
-    margin-bottom: 10rem;
-    padding: 30px;
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item {
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    padding: 0;
   }
-  .sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd) {
-    margin-bottom: 12.5rem;
-    padding: 30px;
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item::after {
+    width: 113px;
+    height: 113px;
   }
-  .sa-employment-steps-box .wrapper .sa-employment-steps-item:last-child {
-    margin-bottom: 2rem;
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item::before {
+    height: 100%;
+    width: 75px;
   }
-  .sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even)::before {
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item::before {
+    bottom: auto;
+    top: 50%;
+  }
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item::before:nth-child(even) {
     bottom: 50%;
     top: auto;
   }
-  .sa-employment-steps-box .wrapper .sa-employment-steps-item span.top {
-    bottom: 100px;
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even) {
+    padding-top: unset;
+    margin-top: unset;
+    padding-left: 2rem;
+    margin-left: -2rem;
   }
   .sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even)::after {
-    bottom: 107px;
+    bottom: unset;
+    left: 73px;
   }
-  .sa-resources-item-wrapper {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 0;
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(even)::before {
+    bottom: auto;
+    top: unset;
+    left: 50%;
+    right: auto;
   }
-  .sa-ri-img img {
-    width: 65%;
-    padding: 2.5rem;
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd) {
+    padding-bottom: unset;
+    margin-top: 0;
+    padding-right: 2rem;
+    margin-right: -2rem;
   }
-  .footer-content .footer-menu-title {
-    color: var(--primary-color);
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd)::after {
+    bottom: unset;
+    right: 73px;
   }
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item:nth-child(odd)::before {
+    bottom: unset;
+    top: auto;
+    right: 50%;
   }
-  .footer-logo a {
-    width: 40%;
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item span {
+    width: 130px;
+    height: 130px;
+    font-size: 13px;
+    padding: 10px;
+    line-height: 15px;
+    text-align: center;
   }
-  .footer-logo a img {
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item span.bottom {
+    right: 65px;
+    bottom: unset;
+  }
+  .sa-employment-steps-box .wrapper .sa-employment-steps-item span.top {
+    bottom: unset;
+    left: 65px;
+  }
+  .sa-joinus-form .sa-dt-btn p {
+    width: 100%;
+  }
+  .sa-joinus-form .sa-dt-btn .saei-btn {
     width: 100%;
   }
   .page-wrapper.Internal-pages {
@@ -1831,27 +1966,6 @@ ul.oh-our-value li .oh-ov {
   }
   .page-sticky-sidebar {
     display: none;
-    width: 100%;
-    top: calc(100% - 48px);
-    margin-bottom: 0;
-    background: var(--white-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 9;
-  }
-  .page-sticky-sidebar .sa-scrollspy-nav {
-    flex-direction: row;
-    justify-content: space-between;
-    background: var(--white-color);
-  }
-  .page-sticky-sidebar .sa-scrollspy-nav .sa-ss-nav-item {
-    border: none;
-    padding: 10px 5px;
-    background: var(--white-color);
-    border-top: 4px solid var(--white-color);
-  }
-  .page-sticky-sidebar .sa-scrollspy-nav .sa-ss-nav-item.active {
-    border: none;
-    border-top: 4px solid var(--primary-color);
   }
   .page-content-wrapper {
     width: 100%;
@@ -1894,6 +2008,116 @@ ul.oh-our-value li .oh-ov {
   .sa-modal-teams .modal-body .accordion-item .accordion-header .saei-btn {
     margin-bottom: 1rem;
   }
+  .about-saei-page .our-history .sa-strong-title {
+    font-size: 35px;
+  }
+  .about-saei-page ul.oh-our-value {
+    display: none;
+  }
+  .about-saei-page .accordion {
+    --bs-accordion-border-width: 0;
+  }
+  .about-saei-page .oh-our-value-mobile {
+    display: block;
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item {
+    border: 1px solid var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item:first-of-type {
+    border-radius: 0;
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item:last-of-type {
+    border-radius: 0;
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item .accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+    border-radius: 0;
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item .accordion-header .accordion-button {
+    display: flex;
+    border-radius: 0;
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item .accordion-header .accordion-button img {
+    max-width: 15%;
+    margin-left: 1rem;
+    height: 37px;
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item .accordion-header .accordion-button span {
+    position: relative;
+    left: unset;
+    color: unset;
+    bottom: unset;
+    line-height: unset;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item .accordion-header .accordion-button:after {
+    margin: 0;
+    position: absolute;
+    left: 1rem;
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+    box-shadow: unset;
+    background-color: var(--primary-color);
+  }
+  .about-saei-page .oh-our-value-mobile .accordion-item .accordion-header .accordion-button:focus {
+    box-shadow: unset;
+  }
+  .tabs-container,
+  .tab-content {
+    display: none;
+  }
+  .key-moments {
+    padding-bottom: 2rem;
+  }
+  .key-moments .sa-strong-title {
+    font-size: 35px;
+  }
+  .about-saei-page .oh-our-value-mobile.sa-aos-mobile .accordion-item .accordion-header .accordion-button {
+    background-color: var(--primary-color);
+  }
+  .about-saei-page .oh-our-value-mobile.sa-aos-mobile .accordion-item .accordion-header .accordion-button span {
+    text-align: center;
+    width: 100%;
+  }
+  .about-saei-page .oh-our-value-mobile.sa-aos-mobile .accordion-item .sa-paragraph-box {
+    margin: 0;
+    padding: 0;
+  }
+  .section-scroll.sa-resources {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  .sa-resources .sa-resources-item-wrapper {
+    display: none;
+  }
+  .sa-resources .sa-resources-item-wrapper-mobile {
+    display: block;
+  }
+  .sa-resources .sa-resources-item-wrapper-mobile .sa-resources-item-mobile {
+    border: 1px solid var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .sa-resources .sa-resources-item-wrapper-mobile .sa-resources-item-mobile .sa-r-i-m-content {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  .sa-resources .sa-resources-item-wrapper-mobile .sa-resources-item-mobile .sa-r-i-m-content img {
+    width: 15%;
+    margin-left: 1rem;
+  }
+  .sa-resources .sa-resources-item-wrapper-mobile .sa-resources-item-mobile .sa-r-i-m-content h5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .sa-resources .sa-resources-item-wrapper-mobile .sa-resources-item-mobile .sa-r-i-m-btn .saei-btn {
+    width: 100%;
+  }
+  .sa-resources .title .sa-strong-title {
+    font-size: 35px;
+  }
   .job-offer-single-page .page-wrapper .page-content-wrapper,
   .job-offer-single-page .page-wrapper .job-offer-single-sidebar {
     width: 100%;
@@ -1905,12 +2129,58 @@ ul.oh-our-value li .oh-ov {
   .skills-page .page-content-wrapper .accordion {
     padding: 1rem;
   }
+  .skills-page .page-content-wrapper .accordion .accordion-item {
+    background: var(--white-color);
+    border: 1px solid var(--primary-color);
+  }
+  .skills-page .page-content-wrapper .accordion .accordion-item .accordion-header {
+    margin: 0;
+  }
   .skills-page .page-content-wrapper .accordion .accordion-item .accordion-header button.accordion-button {
     font-size: 1.05rem;
     text-align: right;
+    padding: 1rem 0;
+  }
+  .skills-page .page-content-wrapper .accordion .accordion-item .accordion-header button.accordion-button i {
+    display: none;
+  }
+  .skills-page .page-content-wrapper .accordion .accordion-item .accordion-header button.accordion-button:after {
+    background-image: var(--bs-accordion-btn-icon);
+    position: absolute;
+    left: 1rem;
   }
   .skills-page .page-content-wrapper .accordion .accordion-item .skill-content .title h4 {
     font-size: 16px;
+  }
+  .footer-content .footer-menu-title {
+    color: var(--primary-color);
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .footer-logo a {
+    width: 40%;
+  }
+  .footer-logo a img {
+    width: 100%;
+  }
+  .footer-content .footer-menu {
+    margin: 0;
+  }
+  .footer-content .footer-menu .footer-menu-item {
+    margin-bottom: 0.69rem;
+  }
+  .footer-content .footer-contact-info {
+    margin-top: 2.5rem;
+  }
+  .footer-content .footer-contact-info ul {
+    margin-bottom: 0;
+  }
+  .footer-content .footer-contact-info ul li {
+    margin-bottom: 0.69rem;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -2045,6 +2315,11 @@ ul.oh-our-value li .oh-ov {
   }
 }
 @media only screen and (min-height: 900px) {
+  .sa-team-banner {
+    min-height: 65vh;
+  }
+}
+@media only screen and (max-width: 1366px) and (min-height: 768px) {
   .sa-team-banner {
     min-height: 65vh;
   }
