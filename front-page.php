@@ -32,6 +32,7 @@
     <?php get_template_part( 'parts/header' ); ?>
 
 
+
 	<div class="page home-page">
 			<div class="page-wrapper">
 				<section class="about-us">
@@ -44,8 +45,8 @@
 							playsinline
 						>
 							<source
-								src="<?php echo get_template_directory_uri(); ?>/assets/img/Saei-hero-bg-1.mp4"
-								type="video/mp4"
+								src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-bg.webm"
+								type="video/webm"
 							/>
 							مرورگر شما از ویدیو پشتیبانی نمی‌کند.
 						</video>
@@ -61,7 +62,7 @@
 										data-aos-easing="ease-in-out"
 										data-aos-anchor-placement="top-center"
 									>
-										Your Partner in
+										Your Partner in Digital
 									</h1>
 									<h1
 										class="sa-strong-title mb-3 en-font"
@@ -72,7 +73,7 @@
 										data-aos-easing="ease-in-out"
 										data-aos-anchor-placement="top-center"
 									>
-										Digital Transformation Journey
+										Transformation Journey
 									</h1>
 								</div>
 							</div>
@@ -184,9 +185,9 @@
 										data-aos-offset="-100"
 										data-aos-duration="900"
 									>
-										<button class="saei-btn">
+										<a href="https://saeigroup.ir/job-offers/" class="saei-btn">
 											به ما بپیوندید
-										</button>
+										</a>
 									</div>
 								</div>
 								<div class="sa-teams-items-wrapper">
@@ -316,7 +317,7 @@
 								<div class="sa-skills-tiles-wrapper">
 									<div class="sa-skills-tiles-item">
 										<a
-											href="https://3dsun.ir/skills/#data_service_1"
+											href="https://saeigroup.ir/skills/"
 										>
 											<div
 												class="sa-background-img skill-dss"
@@ -335,7 +336,7 @@
 									</div>
 									<div class="sa-skills-tiles-item">
 										<a
-											href="https://3dsun.ir/skills/#managed_services_3"
+											href="https://saeigroup.ir/skills/"
 										>
 											<div
 												class="sa-background-img skill-dss"
@@ -354,7 +355,7 @@
 									</div>
 									<div class="sa-skills-tiles-item">
 										<a
-											href="https://3dsun.ir/skills/#digital_security_solutions_2"
+											href="https://saeigroup.ir/skills/"
 										>
 											<div
 												class="sa-background-img skill-dss"
@@ -375,7 +376,7 @@
 									</div>
 									<div class="sa-skills-tiles-item">
 										<a
-											href="https://3dsun.ir/skills/#digital_enterprise_application_4"
+											href="https://saeigroup.ir/skills/"
 										>
 											<div
 												class="sa-background-img skill-dss"
@@ -396,7 +397,7 @@
 									</div>
 									<div class="sa-skills-tiles-item">
 										<a
-											href="https://3dsun.ir/skills/#telecome_solutions_5"
+											href="https://saeigroup.ir/skills/"
 										>
 											<div
 												class="sa-background-img skill-dss"
@@ -417,7 +418,7 @@
 									</div>
 									<div class="sa-skills-tiles-item">
 										<a
-											href="https://3dsun.ir/skills#digital_transformation_consulting_services_6"
+											href="https://saeigroup.ir/skills/"
 										>
 											<div
 												class="sa-background-img skill-dss"
@@ -434,6 +435,111 @@
 													Consulting Services
 												</h4>
 											</div>
+										</a>
+									</div>
+								</div>
+								<div class="sa-skills-tiles-wrapper-mobile">
+									<div class="sa-skills-tiles-item-mobile">
+										<a href="https://saeigroup.ir/skills/">
+											<img
+												class="icon"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/data-services.webp"
+												alt=""
+											/>
+											<h3 class="title en-font">
+												Data Services
+											</h3>
+											<img
+												class="arrow"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-skills-arrow.svg"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="sa-skills-tiles-item-mobile">
+										<a href="https://saeigroup.ir/skills/">
+											<img
+												class="icon"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-enterprise-application.webp"
+												alt=""
+											/>
+											<h3 class="title en-font">
+												Digital Enterprise Application
+											</h3>
+											<img
+												class="arrow"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-skills-arrow.svg"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="sa-skills-tiles-item-mobile">
+										<a href="https://saeigroup.ir/skills/">
+											<img
+												class="icon"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/managed-services.webp"
+												alt=""
+											/>
+											<h3 class="title en-font">
+												Managed Services
+											</h3>
+											<img
+												class="arrow"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-skills-arrow.svg"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="sa-skills-tiles-item-mobile">
+										<a href="https://saeigroup.ir/skills/">
+											<img
+												class="icon"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-security-solutions.webp"
+												alt=""
+											/>
+											<h3 class="title en-font">
+												Digital Security Solutions
+											</h3>
+											<img
+												class="arrow"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-skills-arrow.svg"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="sa-skills-tiles-item-mobile">
+										<a href="https://saeigroup.ir/skills/">
+											<img
+												class="icon"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-transformation-consulting-services.webp"
+												alt=""
+											/>
+											<h3 class="title en-font">
+												Digital Transformation
+												Consulting Services
+											</h3>
+											<img
+												class="arrow"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-skills-arrow.svg"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="sa-skills-tiles-item-mobile">
+										<a href="https://saeigroup.ir/skills/">
+											<img
+												class="icon"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/telecome-solutions.webp"
+												alt=""
+											/>
+											<h3 class="title en-font">
+												Telecome Solutions
+											</h3>
+											<img
+												class="arrow"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-skills-arrow.svg"
+												alt=""
+											/>
 										</a>
 									</div>
 								</div>

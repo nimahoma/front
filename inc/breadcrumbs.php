@@ -14,16 +14,16 @@ function saeiTheme_breadcrumb()
             if (is_single()) {
                 // Get the category the post belongs to
                 $category = get_the_category();
-                if ($category) {
-                    echo '<li class="sa-breadcrumb-item">';
-                    echo '<a href="' .
-                        get_category_link($category[0]->term_id) .
-                        '">' .
-                        $category[0]->cat_name .
-                        "</a>";
-                    echo " <span>/</span> ";
-                    echo "</li>";
-                }
+                // if ($category) {
+                //     echo '<li class="sa-breadcrumb-item">';
+                //     echo '<a href="' .
+                //         get_category_link($category[0]->term_id) .
+                //         '">' .
+                //         $category[0]->cat_name .
+                //         "</a>";
+                //     echo " <span>/</span> ";
+                //     echo "</li>";
+                // }
                 echo '<li class="sa-breadcrumb-item active">' .
                     get_the_title() .
                     "</li>";

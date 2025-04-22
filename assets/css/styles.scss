@@ -922,6 +922,9 @@ body.admin-bar {
 		}
 	}
 }
+.sa-skills-tiles-wrapper-mobile{
+	display: none;
+}
 .sa-dt-btn {
 	display: flex;
 	justify-content: center;
@@ -940,7 +943,9 @@ body.admin-bar {
 =============================================================================
 =============================================================================
 ============================================================================*/
-
+.oh-our-value-mobile{
+	display: none;
+}
 ul.oh-our-value {
 	list-style: disc;
 	margin-top: 1rem;
@@ -962,7 +967,9 @@ ul.oh-our-value {
 		}
 	}
 }
-
+.sa-resources-item-wrapper-mobile{
+	display: none;
+}
 .sa-resources.page-section-bottom.page-section-top {
 	border: none;
 }
@@ -1840,6 +1847,9 @@ ul.oh-our-value {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 480px) {
+	p, span, a{
+		font-size: 13px;
+	}
 	.first-things {
 		padding-top: 5rem;
 	}
@@ -1876,61 +1886,39 @@ ul.oh-our-value {
 	.about-us .wrapper {
 		height: max-content;
 	}
-	.hero-banner.sa-banner {
-		height: max-content !important;
-		.sa-b-content {
-			position: relative;
-			width: 100%;
-			top: auto;
-			transform: unset;
-			left: auto;
-			right: auto;
-			.sa-strong-title {
-				font-size: var(--sa-font-size-stronge-mobile);
-			}
-			p {
-				font-size: var(--sa-font-size-paragraphe-mobile);
+
+	.about-us{ 
+		.wrapper{
+			.hero-banner.sa-banner {
+				height: 50vh;
+				.sa-b-content {
+					position: relative;
+					width: 100%;
+					top: auto;
+					transform: translateY(25vh);
+					left: auto;
+					right: auto;
+					margin-top: 0rem;
+					padding: 1rem;
+					.sa-strong-title {
+						font-size: 27px;
+					}
+				}
 			}
 		}
 	}
 
+
+	
 	.about-us-plus {
-		flex-direction: column;
-		padding: 2rem;
+		padding: 0;
+        height: 8px;
 		.aup-title {
-			h4 {
-				line-height: 150%;
-				text-align: center;
-				margin-bottom: 1rem;
-			}
-		}
-		.aup-btn {
-			display: flex;
-			justify-content: center;
+			display: none; 
 		}
 	}
 
-	.sa-team-banner {
-		padding: var(--sa-p-3);
-		.wrapper {
-			.sa-t-content {
-				.col-12 {
-					margin-bottom: 1rem;
-				}
-				.sa-teams-items-wrapper {
-					margin-right: unset;
-				}
-			}
-		}
-		.sa-t-c-btn {
-			display: flex;
-			justify-content: center;
-			margin-top: 0.5rem;
-			button {
-				width: 100%;
-			}
-		}
-	}
+	
 	.tumbnail-item {
 		.tumbnail-decription {
 			margin-bottom: 1.5rem;
@@ -1950,15 +1938,70 @@ ul.oh-our-value {
 				border-bottom: 2px solid var(--primary-color);
 				margin-bottom: 2rem;
 			}
+			.sa-mission-card{
+				.sa-m-c-content{
+					margin: 1.5rem 0;
+					.title{
+						h4{
+							font-size: 20px;
+						}
+					}
+					p{
+						font-size: 13px;
+						width: 90%;
+					}
+				}
+			}
 		}
 	}
+	
 	.sa-team-banner {
+		padding: 0 0 2rem;
 		background-size: cover;
+        background-image: unset;
+        background-color: var(--primary-color);
 		.wrapper {
 			.sa-t-content {
-				grid-template-columns: repeat(1, minmax(0, 1fr));
+				display: flex;
+				flex-direction: column;
 				.sa-t-c-title {
 					margin: 2rem 0;
+					padding: 0 1rem;
+					h2{
+						font-size: 35px;
+						color: #464646;
+						margin-bottom: 1rem !important;
+					}
+					p{
+						font-size: 13px;
+						color: #464646; 
+						margin-bottom: 1rem !important;
+					}
+					.mb-2{
+						.sa-strong{
+							font-size: 16px;
+							font-family: "Yekan-Bakh-FaNum-Bold", sans-serif;
+						}
+					}
+					.sa-t-c-btn{
+						.saei-btn{
+							background-color: var(--white-color);
+							width: auto;
+							height: auto;
+							padding: .5rem 3rem;
+						}
+					}
+				}
+				.sa-teams-items-wrapper{
+					margin: 0 1rem;
+					.wrapper{
+						.sa-teams-item{
+							p {
+								font-size: 13px;
+								line-height: 150%;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1966,21 +2009,71 @@ ul.oh-our-value {
 	.sa-teams-items-wrapper {
 		.wrapper {
 			grid-template-columns: repeat(1, minmax(0, 1fr));
+			.sa-teams-item{
+				background-color: var(--white-color);
+				.title{
+					min-height: max-content;
+					margin-bottom: .85rem;
+					br{
+						display: none;
+					}
+				}
+			}
 		}
 	}
 	.sa-skills {
 		.sa-dt-about {
 			h1 {
-				font-size: 2rem;
+				font-size: 35px;
 			}
 			p {
-				font-size: 1rem;
+				font-size: 13px;
+				width: 90%;
+				margin: auto;
+				br{
+					display: none;
+				}
 			}
 		}
 	}
 	.sa-skills-tiles-wrapper {
-		grid-template-columns: repeat(1, minmax(0, 1fr));
-		gap: 15px;
+		display: none;
+	}
+	
+	.sa-skills-tiles-wrapper-mobile{
+		display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 15px;
+		margin: auto;
+        padding: 0 1rem;
+		.sa-skills-tiles-item-mobile{
+			a{
+				direction: ltr;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border: 1px solid var(--primary-color);
+				padding: 1rem 1rem 1rem 2rem;
+				.icon{
+					width: 10%;
+					height: fit-content;
+				}
+				.title{
+					text-align: left;
+					font-size: 18px;
+					font-weight: 400;
+					width: 80%;
+					margin: 0;
+					margin-left: 1rem;
+				}
+				.arrow{
+					width: 21px;
+					height: fit-content;
+					padding: 0;
+				}
+			}
+		}
 	}
 	.know-us {
 		.our-values-cards {
@@ -1994,84 +2087,125 @@ ul.oh-our-value {
 		.container {
 			overflow: auto;
 		}
+		.know-us{
+			.sa-strong-title {
+				font-size: 35px;
+			}
+		}
+		.sa-teams{
+			.sa-strong-title {
+				font-size: 35px;
+			}
+			.sa-teams-item{
+				.sa-ti-wrapper{
+					height: auto;
+					border: 1px solid var(--primary-color);
+					margin-bottom: 1rem;
+					.subtitle{
+						p{
+							height: auto;
+							overflow-y: unset;
+						}
+					}
+					.sa-ti-modal-link{
+						margin: 0;
+						padding: 0;
+						margin-top: 1rem;
+					}
+				}
+			}
+		}
+		.sa-join-us{
+			.sa-strong-title {
+				font-size: 35px;
+			}
+		}
 	}
 
+
 	.sa-employment-steps-box {
-		padding: 10rem 0 2rem;
-	}
-	.sa-employment-steps-box {
+		padding: 1rem 0;
 		.wrapper {
 			flex-direction: column;
-		}
-	}
-	.sa-employment-steps-box {
-		.wrapper {
-			.sa-employment-steps-item:nth-child(even) {
-				margin-bottom: 10rem;
-				padding: 30px;
+			gap: 40px;
+			.sa-employment-steps-item {
+				width: 40px;
+				height: 40px;
+				font-size: 17px;
+				padding: 0;
+				&::after {
+					width: 113px;
+					height: 113px;
+				}
+				&::before {
+					height: 100%;
+					width: 75px;
+				}
+				&::before {
+					bottom: auto;
+					top: 50%;
+	
+					&:nth-child(even) {
+						bottom: 50%;
+						top: auto;
+					}
+				}
+				&:nth-child(even) {
+					padding-top: unset;
+					margin-top: unset;
+					padding-left: 2rem;
+					margin-left: -2rem;
+					&::after {
+						bottom: unset;
+						left: 73px;
+					}
+					&::before {
+						bottom: auto;
+						top: unset;
+						left: 50%;
+						right: auto;
+					}
+				}
+				&:nth-child(odd) {
+					padding-bottom: unset;
+					margin-top: 0;
+					padding-right: 2rem;
+					margin-right: -2rem;
+					&::after {
+						bottom: unset;
+						right: 73px;
+					}
+					&::before {
+						bottom: unset;
+						top: auto;
+						right: 50%; 
+					}
+				}
+				span {
+					width: 130px;
+					height: 130px;
+					font-size: 13px;
+					padding: 10px;
+					line-height: 15px;
+					text-align: center;
+				}
+				span.bottom {
+					right: 65px;
+					bottom: unset;
+				}
+				span.top {
+					bottom: unset;
+					left: 65px;
+				}
 			}
 		}
 	}
-	.sa-employment-steps-box {
-		.wrapper {
-			.sa-employment-steps-item:nth-child(odd) {
-				margin-bottom: 12.5rem;
-				padding: 30px;
+	.sa-joinus-form{
+		.sa-dt-btn{
+			p{
+				width: 100%;
 			}
-		}
-	}
-	.sa-employment-steps-box {
-		.wrapper {
-			.sa-employment-steps-item:last-child {
-				margin-bottom: 2rem;
-			}
-		}
-	}
-	.sa-employment-steps-box {
-		.wrapper {
-			.sa-employment-steps-item:nth-child(even)::before {
-				bottom: 50%;
-				top: auto;
-			}
-		}
-	}
-	.sa-employment-steps-box {
-		.wrapper {
-			.sa-employment-steps-item span.top {
-				bottom: 100px;
-			}
-		}
-	}
-	.sa-employment-steps-box {
-		.wrapper {
-			.sa-employment-steps-item:nth-child(even)::after {
-				bottom: 107px;
-			}
-		}
-	}
-	.sa-resources-item-wrapper {
-		grid-template-columns: repeat(1, minmax(0, 1fr));
-		gap: 0;
-	}
-	.sa-ri-img {
-		img {
-			width: 65%;
-			padding: 2.5rem;
-		}
-	}
-	.footer-content {
-		.footer-menu-title {
-			color: var(--primary-color);
-		}
-	}
-	.footer-logo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 2rem;
-		a {
-			width: 40%;
-			img {
+			.saei-btn {
 				width: 100%;
 			}
 		}
@@ -2083,27 +2217,27 @@ ul.oh-our-value {
 	.page-sticky-sidebar {
 		display: none;
 
-		width: 100%;
-		top: calc(100% - 48px);
-		margin-bottom: 0;
-		background: var(--white-color);
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		z-index: 9;
-		.sa-scrollspy-nav {
-			flex-direction: row;
-			justify-content: space-between;
-			background: var(--white-color);
-			.sa-ss-nav-item {
-				border: none;
-				padding: 10px 5px;
-				background: var(--white-color);
-				border-top: 4px solid var(--white-color);
-				&.active {
-					border: none;
-					border-top: 4px solid var(--primary-color);
-				}
-			}
-		}
+		// width: 100%;
+		// top: calc(100% - 48px);
+		// margin-bottom: 0;
+		// background: var(--white-color);
+		// box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		// z-index: 9;
+		// .sa-scrollspy-nav {
+		// 	flex-direction: row;
+		// 	justify-content: space-between;
+		// 	background: var(--white-color);
+		// 	.sa-ss-nav-item {
+		// 		border: none;
+		// 		padding: 10px 5px;
+		// 		background: var(--white-color);
+		// 		border-top: 4px solid var(--white-color);
+		// 		&.active {
+		// 			border: none;
+		// 			border-top: 4px solid var(--primary-color);
+		// 		}
+		// 	}
+		// }
 	}
 	.page-content-wrapper {
 		width: 100%;
@@ -2156,6 +2290,146 @@ ul.oh-our-value {
 			}
 		}
 	}
+
+
+	.about-saei-page{
+		.our-history{
+			.sa-strong-title {
+				font-size: 35px;
+			}
+		}
+		ul.oh-our-value{
+			display: none;
+		}
+		.accordion{
+			--bs-accordion-border-width: 0;
+		}
+		.oh-our-value-mobile{
+			display: block;
+			.accordion-item{
+				border: 1px solid var(--primary-color);
+				margin-bottom: 1rem;
+				&:first-of-type{
+					border-radius: 0;
+				}
+				&:last-of-type{
+					border-radius: 0;
+				}
+				.accordion-item:last-of-type>{
+					.accordion-header{
+						.accordion-button.collapsed{
+							border-radius: 0;
+						}
+					}
+				}
+				.accordion-header{
+					.accordion-button{
+						display: flex;
+						border-radius: 0;
+						img{
+							max-width: 15%;
+							margin-left: 1rem;
+							height: 37px;
+						}
+						span{
+							position: relative;
+							left: unset;
+							color: unset;
+							bottom: unset;
+							line-height: unset;
+							font-size: 16px;
+							font-weight: 600;
+							text-align: right;
+						}
+						&:after{
+							margin: 0;
+							position: absolute;
+							left: 1rem;
+						}
+						&:not(.collapsed){
+							box-shadow: unset;
+							background-color: var(--primary-color);
+						}
+						&:focus{
+							box-shadow: unset;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+	.tabs-container,
+	.tab-content{
+		display: none;
+	}
+	.key-moments{
+		padding-bottom: 2rem;
+		.sa-strong-title{
+			font-size: 35px;
+		}
+	}
+	.about-saei-page{
+		.oh-our-value-mobile.sa-aos-mobile{
+			.accordion-item {
+				.accordion-header{
+					.accordion-button{
+						background-color: var(--primary-color);
+						span{
+							text-align: center;
+							width: 100%;
+						}
+					}
+				}
+				.sa-paragraph-box{
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	.section-scroll.sa-resources {
+		padding-bottom: 3rem;
+		padding-top: 2rem;
+	}
+	.sa-resources{
+		.sa-resources-item-wrapper {
+			display: none;
+		}
+		.sa-resources-item-wrapper-mobile{
+			display: block;
+			.sa-resources-item-mobile{
+				border: 1px solid var(--primary-color);
+				margin-bottom: 1rem;
+				.sa-r-i-m-content{
+					display: flex;
+					align-items: center;
+					padding: 1rem;
+					img{
+						width: 15%;
+						margin-left: 1rem;
+					}
+					h5{
+						font-size: 16px;
+						font-weight: 600;
+					}
+				}
+				.sa-r-i-m-btn{
+					.saei-btn{
+						width: 100%;
+					}
+				}
+			}
+		}
+		.title{
+			.sa-strong-title{
+				font-size: 35px;
+			}
+		}
+	}
+
+
 	.job-offer-single-page {
 		.page-wrapper {
 			.page-content-wrapper,
@@ -2168,15 +2442,28 @@ ul.oh-our-value {
 		}
 	}
 
+
 	.skills-page {
 		.page-content-wrapper {
 			.accordion {
 				padding: 1rem;
 				.accordion-item {
+					background: var(--white-color);
+					border: 1px solid var(--primary-color);
 					.accordion-header {
+						margin: 0;
 						button.accordion-button {
 							font-size: 1.05rem;
 							text-align: right;
+							padding: 1rem 0;
+							i{
+								display: none;
+							}
+							&:after{
+								background-image: var(--bs-accordion-btn-icon);
+								position: absolute;
+								left: 1rem;
+							}
 						}
 					}
 					.skill-content {
@@ -2186,6 +2473,40 @@ ul.oh-our-value {
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+	.footer-content {
+		.footer-menu-title {
+			color: var(--primary-color);
+		}
+	}
+	.footer-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+		a {
+			width: 40%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.footer-content{
+		.footer-menu{
+			margin: 0;
+			.footer-menu-item{
+				margin-bottom: .69rem;
+			}
+		}
+		.footer-contact-info{
+			margin-top: 2.5rem;
+			ul{
+				margin-bottom: 0;
+				li{
+					margin-bottom: .69rem;
 				}
 			}
 		}
@@ -2353,6 +2674,11 @@ ul.oh-our-value {
 
 
 @media only screen and (min-height: 900px){
+	.sa-team-banner {
+		min-height: 65vh; 
+	}
+}
+@media only screen and (max-width: 1366px) and (min-height: 768px){
 	.sa-team-banner {
 		min-height: 65vh; 
 	}
