@@ -1657,15 +1657,7 @@ Template Name: About Saei
 								>
 									<div class="accordion-body">
 										<p>
-											Lorem ipsum dolor sit amet
-											consectetur adipisicing elit.
-											Sapiente quas ut quo voluptas
-											accusantium eum rerum quibusdam
-											ducimus saepe, dolore
-											repellendus assumenda ullam
-											tempora neque officia
-											consectetur hic voluptates
-											consequuntur.
+											
 										</p>
 									</div>
 								</div>
@@ -1690,39 +1682,6 @@ Template Name: About Saei
 							<div class="sa-resources-item">
 								<div class="sa-ri-img mb-2">
 									<img
-										src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-resources-item-1.svg"
-										alt=""
-									/>
-								</div>
-								<div class="sa-ri-decription">
-									<div class="title">
-										<h5>منشور اخلاقی</h5>
-									</div>
-									<!-- <div class="subtitle">
-										<p>
-											لورم ایپسوم متن ساختگی
-											با تولید سادگی نامفهوم
-											از صنعت چاپ،
-										</p>
-									</div> -->
-									<div class="sa-dt-btn sa-ri-btn">
-										<a
-											href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
-											download
-										>
-											<button class="saei-btn">
-												<i
-													class="fas fa-download"
-												></i>
-												<span>دانلود</span>
-											</button>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="sa-resources-item">
-								<div class="sa-ri-img mb-2">
-									<img
 										src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-resources-item-2.svg"
 										alt=""
 									/>
@@ -1731,22 +1690,11 @@ Template Name: About Saei
 									<div class="title">
 										<h5>گزارش سالانه ۱۴۰۲</h5>
 									</div>
-									<!-- <div class="subtitle">
-										<p>
-											لورم ایپسوم متن ساختگی
-											با تولید سادگی نامفهوم
-											از صنعت چاپ،
-										</p>
-									</div> -->
 									<div class="sa-dt-btn sa-ri-btn">
-										<a
-											href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
-											download
-										>
+										<a href="<?php echo get_site_url(); ?>/wp-content/uploads/2024/05/BrandBook.pdf"
+										download="BrandBook.pdf">
 											<button class="saei-btn">
-												<i
-													class="fas fa-download"
-												></i>
+												<i class="fas fa-download"></i>
 												<span>دانلود</span>
 											</button>
 										</a>
@@ -1764,22 +1712,11 @@ Template Name: About Saei
 									<div class="title">
 										<h5>برندبوک ساعی</h5>
 									</div>
-									<!-- <div class="subtitle">
-										<p>
-											لورم ایپسوم متن ساختگی
-											با تولید سادگی نامفهوم
-											از صنعت چاپ،
-										</p>
-									</div> -->
 									<div class="sa-dt-btn sa-ri-btn">
-										<a
-											href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
-											download
-										>
+										<a href="<?php echo get_site_url(); ?>/wp-content/uploads/2024/05/BrandBook.pdf"
+										download="BrandBook.pdf">
 											<button class="saei-btn">
-												<i
-													class="fas fa-download"
-												></i>
+												<i class="fas fa-download"></i>
 												<span>دانلود</span>
 											</button>
 										</a>
@@ -1797,10 +1734,8 @@ Template Name: About Saei
 									<h5>برندبوک ساعی</h5>
 								</div>
 								<div class="sa-r-i-m-btn">
-									<a
-										href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
-										download=""
-									>
+									<a href="<?php echo get_site_url(); ?>/wp-content/uploads/2024/05/BrandBook.pdf"
+									download="BrandBook.pdf">
 										<button class="saei-btn">
 											<i class="fas fa-download"></i>
 											<span>دانلود</span>
@@ -1815,26 +1750,6 @@ Template Name: About Saei
 										alt=""
 									/>
 									<h5>گزارش سالانه ۱۴۰۲</h5>
-								</div>
-								<div class="sa-r-i-m-btn">
-									<a
-										href="https://gold3d.ir/saei/wp-content/uploads/2024/10/SAEI-BrandBook-2.pdf"
-										download=""
-									>
-										<button class="saei-btn">
-											<i class="fas fa-download"></i>
-											<span>دانلود</span>
-										</button>
-									</a>
-								</div>
-							</div>
-							<div class="sa-resources-item-mobile">
-								<div class="sa-r-i-m-content">
-									<img
-										src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-resources-item-1.svg"
-										alt=""
-									/>
-									<h5>منشور اخلاقی</h5>
 								</div>
 								<div class="sa-r-i-m-btn">
 									<a

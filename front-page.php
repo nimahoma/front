@@ -185,26 +185,24 @@
 										data-aos-offset="-100"
 										data-aos-duration="900"
 									>
-										<a href="https://saeigroup.ir/job-offers/" class="saei-btn">
+										<button class="saei-btn">
 											به ما بپیوندید
-										</a>
+										</button>
 									</div>
 								</div>
 								<div class="sa-teams-items-wrapper">
 									<div class="wrapper">
 										<div class="sa-teams-item">
 											<div class="title">
-												<h5 class="en-font">
-													NOC (Network
-													<br />
-													Operation System)
-												</h5>
+												<h5 class="en-font">NOC</h5>
 											</div>
 											<p>
-												واحد خدمات مدیریت شده و امنیت به
-												ارائه پشتیبانی جامع در تمامی
-												نیازهای زیرساختی و امنیتی به
-												سازمانهای بزرگ اختصاص دارد.
+												واحد Network Operating System
+												به‌صورت شبانه روزی مسئول پایش،
+												کنترل و واکنش سریع به رخدادهای
+												فناوری اطلاعات و شبکه است تا از
+												پایداری و کارایی سیستم‌ها
+												اطمینان حاصل شود.
 											</p>
 										</div>
 										<div class="sa-teams-item">
@@ -248,11 +246,7 @@
 										</div>
 										<div class="sa-teams-item">
 											<div class="title">
-												<h5 class="en-font">
-													PMO (Project
-													<br />
-													Managment Office)
-												</h5>
+												<h5 class="en-font">PMO</h5>
 											</div>
 											<p>
 												ترکیبی از تجربه، دانش و تعهد تیم
@@ -317,66 +311,7 @@
 								<div class="sa-skills-tiles-wrapper">
 									<div class="sa-skills-tiles-item">
 										<a
-											href="https://saeigroup.ir/skills/"
-										>
-											<div
-												class="sa-background-img skill-dss"
-											>
-												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/data-services.webp"
-													alt=""
-												/>
-											</div>
-											<div class="title">
-												<h4 class="en-font">
-													Data Services
-												</h4>
-											</div>
-										</a>
-									</div>
-									<div class="sa-skills-tiles-item">
-										<a
-											href="https://saeigroup.ir/skills/"
-										>
-											<div
-												class="sa-background-img skill-dss"
-											>
-												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/managed-services.webp"
-													alt=""
-												/>
-											</div>
-											<div class="title">
-												<h4 class="en-font">
-													Managed Services
-												</h4>
-											</div>
-										</a>
-									</div>
-									<div class="sa-skills-tiles-item">
-										<a
-											href="https://saeigroup.ir/skills/"
-										>
-											<div
-												class="sa-background-img skill-dss"
-											>
-												<img
-													src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-security-solutions.webp"
-													alt=""
-												/>
-											</div>
-											<div class="title">
-												<h4 class="en-font">
-													Digital Security
-													<br />
-													Solutions
-												</h4>
-											</div>
-										</a>
-									</div>
-									<div class="sa-skills-tiles-item">
-										<a
-											href="https://saeigroup.ir/skills/"
+											href="https://3dsun.ir/skills/#digital_enterprise_application_4"
 										>
 											<div
 												class="sa-background-img skill-dss"
@@ -397,7 +332,7 @@
 									</div>
 									<div class="sa-skills-tiles-item">
 										<a
-											href="https://saeigroup.ir/skills/"
+											href="https://3dsun.ir/skills/#telecome_solutions_5"
 										>
 											<div
 												class="sa-background-img skill-dss"
@@ -418,7 +353,28 @@
 									</div>
 									<div class="sa-skills-tiles-item">
 										<a
-											href="https://saeigroup.ir/skills/"
+											href="https://3dsun.ir/skills/#digital_security_solutions_2"
+										>
+											<div
+												class="sa-background-img skill-dss"
+											>
+												<img
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-security-solutions.webp"
+													alt=""
+												/>
+											</div>
+											<div class="title">
+												<h4 class="en-font">
+													Digital Security
+													<br />
+													Solutions
+												</h4>
+											</div>
+										</a>
+									</div>
+									<div class="sa-skills-tiles-item">
+										<a
+											href="https://3dsun.ir/skills#digital_transformation_consulting_services_6"
 										>
 											<div
 												class="sa-background-img skill-dss"
@@ -437,17 +393,72 @@
 											</div>
 										</a>
 									</div>
+									<div class="sa-skills-tiles-item">
+										<a
+											href="https://3dsun.ir/skills/#data_service_1"
+										>
+											<div
+												class="sa-background-img skill-dss"
+											>
+												<img
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/data-services.webp"
+													alt=""
+												/>
+											</div>
+											<div class="title">
+												<h4 class="en-font">
+													Data Services
+												</h4>
+											</div>
+										</a>
+									</div>
+									<div class="sa-skills-tiles-item">
+										<a
+											href="https://3dsun.ir/skills/#managed_services_3"
+										>
+											<div
+												class="sa-background-img skill-dss"
+											>
+												<img
+													src="<?php echo get_template_directory_uri(); ?>/assets/img/managed-services.webp"
+													alt=""
+												/>
+											</div>
+											<div class="title">
+												<h4 class="en-font">
+													Managed Services
+												</h4>
+											</div>
+										</a>
+									</div>
 								</div>
 								<div class="sa-skills-tiles-wrapper-mobile">
 									<div class="sa-skills-tiles-item-mobile">
 										<a href="https://saeigroup.ir/skills/">
 											<img
 												class="icon"
-												src="<?php echo get_template_directory_uri(); ?>/assets/img/data-services.webp"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-security-solutions.webp"
 												alt=""
 											/>
 											<h3 class="title en-font">
-												Data Services
+												Digital Security Solutions
+											</h3>
+											<img
+												class="arrow"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-skills-arrow.svg"
+												alt=""
+											/>
+										</a>
+									</div>
+									<div class="sa-skills-tiles-item-mobile">
+										<a href="https://saeigroup.ir/skills/">
+											<img
+												class="icon"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/telecome-solutions.webp"
+												alt=""
+											/>
+											<h3 class="title en-font">
+												Telecome Solutions
 											</h3>
 											<img
 												class="arrow"
@@ -494,11 +505,11 @@
 										<a href="https://saeigroup.ir/skills/">
 											<img
 												class="icon"
-												src="<?php echo get_template_directory_uri(); ?>/assets/img/digital-security-solutions.webp"
+												src="<?php echo get_template_directory_uri(); ?>/assets/img/data-services.webp"
 												alt=""
 											/>
 											<h3 class="title en-font">
-												Digital Security Solutions
+												Data Services
 											</h3>
 											<img
 												class="arrow"
@@ -517,23 +528,6 @@
 											<h3 class="title en-font">
 												Digital Transformation
 												Consulting Services
-											</h3>
-											<img
-												class="arrow"
-												src="<?php echo get_template_directory_uri(); ?>/assets/img/sa-skills-arrow.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-									<div class="sa-skills-tiles-item-mobile">
-										<a href="https://saeigroup.ir/skills/">
-											<img
-												class="icon"
-												src="<?php echo get_template_directory_uri(); ?>/assets/img/telecome-solutions.webp"
-												alt=""
-											/>
-											<h3 class="title en-font">
-												Telecome Solutions
 											</h3>
 											<img
 												class="arrow"

@@ -145,22 +145,28 @@
 		url("../fonts/YekanBakhNoEn-ExtraBlack.woff2") format("woff2");
 }
 @font-face {
-	font-family: Gilroy-Bold;
+	font-family: Gilroy-Heavy;
 	font-style: normal;
-	font-weight: 600;
-	src: url("../fonts/Gilroy-Bold.ttf") format("ttf");
+	font-weight: 900;
+	src: url("../fonts/Gilroy-Heavy.woff") format("woff");
 }
 @font-face {
-	font-family: Gilroy-SemiBold;
+	font-family: Gilroy-Bold;
 	font-style: normal;
-	font-weight: 400;
-	src: url("../fonts/Gilroy-SemiBold.ttf") format("ttf");
+	font-weight: 700;
+	src: url("../fonts/Gilroy-Bold.woff") format("woff");
+}
+@font-face {
+	font-family: Gilroy-Medium;
+	font-style: normal;
+	font-weight: 500;
+	src: url("../fonts/Gilroy-Medium.woff") format("woff");
 }
 @font-face {
 	font-family: Gilroy-Regular;
 	font-style: normal;
 	font-weight: 300;
-	src: url("../fonts/Gilroy-Regular.ttf") format("ttf");
+	src: url("../fonts/Gilroy-Regular.woff") format("woff");
 }
 :root {
 	--primary-color: #{$primary-color};
@@ -220,7 +226,7 @@ h4,
 h5,
 h6,
 .header .navbar .nav-item .nav-link {
-	font-family: "Yekan-Bakh-SemiBold", sans-serif;
+	font-family: "Yekan-Bakh-SemiBold","Gilroy-Medium", sans-serif;
 	margin: 0;
 	line-height: 2;
 	color: var(--black-color);
@@ -229,14 +235,14 @@ h6,
 p,
 span,
 a {
-	font-family: "Yekan-Bakh-Regular", sans-serif;
+	font-family: "Yekan-Bakh-Regular","Gilroy-Medium", sans-serif;
 	margin: 0;
 	line-height: 25px;
 	text-align: justify;
 }
 
 .en-font {
-	font-family: "Gilroy-Bold", sans-serif;
+	font-family: "Gilroy-Medium", sans-serif;
 	direction: ltr;
 	text-align: left;
 	line-height: 120%;
@@ -302,8 +308,8 @@ img {
 body {
 	background: var(--white-color);
 	color: var(--text-color);
-	font-family: "Yekan-Bakh-Regular", sans-serif;
-	font-size: 16px;
+	font-family: "Yekan-Bakh-Regular","Gilroy-Medium", sans-serif;
+	font-size: 16px; 
 	line-height: 150%;
 	direction: rtl;
 }
@@ -674,8 +680,8 @@ body.admin-bar {
 		-0.01em calc(100% + 0.01em)
 	);
 	h1.sa-strong-title {
-		font-size: 55px;
-		font-weight: 600;
+		font-size: 4rem; 
+		font-family: "Gilroy-Bold", sans-serif;
 	}
 }
 .about-us-plus {
@@ -783,9 +789,8 @@ body.admin-bar {
 			flex-direction: column;
 			.title {
 				margin-bottom: 0.5rem;
-				min-height: 44px;
+				min-height: 30px;
 				h5 {
-					font-family: "Gilroy-SemiBold", sans-serif;
 					font-size: 18px;
 				}
 			}
@@ -974,13 +979,13 @@ ul.oh-our-value {
 	border: none;
 }
 .sa-resources-item-wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 32px;
+    display: flex;
+    justify-content: space-evenly;
 }
 .sa-resources-item {
 	border: 1px solid #707070;
 	margin-bottom: 2rem;
+    width: 35%;
 	.sa-ri-decription {
 		padding: 0 1rem 1rem;
 		h5 {
@@ -1101,9 +1106,6 @@ ul.oh-our-value {
 		justify-content: space-between;
 		.title {
 			padding: 16px;
-			h5 {
-				font-family: "Gilroy-SemiBold", sans-serif;
-			}
 		}
 		.subtitle {
 			padding: 0 16px;
@@ -1248,6 +1250,7 @@ ul.oh-our-value {
 				border: 15px solid #eaeaea;
 				font-size: 16px;
 				padding: 1rem;
+				text-align: center; 
 				&::before {
 					content: "";
 					position: absolute;
@@ -1462,7 +1465,9 @@ ul.oh-our-value {
 		}
 	}
 }
-
+.footer-logo-mobile{
+	display: none;
+}
 .footer-content {
 	position: relative;
 	padding: 3rem 0 0 3rem;
@@ -1902,6 +1907,7 @@ ul.oh-our-value {
 					padding: 1rem;
 					.sa-strong-title {
 						font-size: 27px;
+						font-family: "Gilroy-Bold", sans-serif;
 					}
 				}
 			}
@@ -2054,10 +2060,10 @@ ul.oh-our-value {
 				justify-content: space-between;
 				align-items: center;
 				border: 1px solid var(--primary-color);
-				padding: 1rem 1rem 1rem 2rem;
+				padding: 1rem;
 				.icon{
-					width: 10%;
-					height: fit-content;
+					width: 20%;
+					height: auto;
 				}
 				.title{
 					text-align: left;
@@ -2069,7 +2075,7 @@ ul.oh-our-value {
 				}
 				.arrow{
 					width: 21px;
-					height: fit-content;
+					height: auto;
 					padding: 0;
 				}
 			}
@@ -2079,6 +2085,8 @@ ul.oh-our-value {
 		.our-values-cards {
 			.wrapper {
 				grid-template-columns: repeat(1, minmax(0, 1fr));
+				padding: 0 1rem;
+				row-gap: 1.5rem;
 			}
 		}
 	}
@@ -2216,28 +2224,6 @@ ul.oh-our-value {
 	}
 	.page-sticky-sidebar {
 		display: none;
-
-		// width: 100%;
-		// top: calc(100% - 48px);
-		// margin-bottom: 0;
-		// background: var(--white-color);
-		// box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		// z-index: 9;
-		// .sa-scrollspy-nav {
-		// 	flex-direction: row;
-		// 	justify-content: space-between;
-		// 	background: var(--white-color);
-		// 	.sa-ss-nav-item {
-		// 		border: none;
-		// 		padding: 10px 5px;
-		// 		background: var(--white-color);
-		// 		border-top: 4px solid var(--white-color);
-		// 		&.active {
-		// 			border: none;
-		// 			border-top: 4px solid var(--primary-color);
-		// 		}
-		// 	}
-		// }
 	}
 	.page-content-wrapper {
 		width: 100%;
@@ -2337,7 +2323,7 @@ ul.oh-our-value {
 							color: unset;
 							bottom: unset;
 							line-height: unset;
-							font-size: 16px;
+							font-size: .85rem;
 							font-weight: 600;
 							text-align: right;
 						}
@@ -2477,36 +2463,49 @@ ul.oh-our-value {
 			}
 		}
 	}
-	.footer-content {
-		.footer-menu-title {
-			color: var(--primary-color);
+	.footer{
+        padding: 5.85rem 0 3rem;
+		.footer-logo{
+			display: none;
 		}
-	}
-	.footer-logo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 2rem;
-		a {
-			width: 40%;
-			img {
-				width: 100%;
+		.footer-content {
+			.footer-menu-title {
+				color: var(--primary-color);
 			}
-		}
-	}
-	.footer-content{
-		.footer-menu{
-			margin: 0;
-			.footer-menu-item{
-				margin-bottom: .69rem;
-			}
-		}
-		.footer-contact-info{
-			margin-top: 2.5rem;
-			ul{
-				margin-bottom: 0;
-				li{
+			.footer-menu{
+				margin: 0;
+				position: relative;
+				.footer-menu-item{
 					margin-bottom: .69rem;
+				}
+			}
+			.footer-contact-info{
+				margin-top: 2.5rem;
+				ul{
+					margin-bottom: 0;
+					li{
+						margin-bottom: .69rem;
+					}
+				}
+			}
+		}
+		.footer-logo-mobile {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 25%;
+			position: absolute;
+			top: -11%;
+			right: 0;
+			padding: 1rem;
+			background-color: #333333;
+			padding-right: 0;
+			padding-left: 0.5rem;
+			a{
+				display: flex;
+				width: 100%;
+				img{
+					width: 100%;
 				}
 			}
 		}
