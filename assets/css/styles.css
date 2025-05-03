@@ -95,22 +95,28 @@
   src: url("../fonts/YekanBakhNoEn-ExtraBlack.woff") format("woff"), url("../fonts/YekanBakhNoEn-ExtraBlack.woff2") format("woff2");
 }
 @font-face {
-  font-family: Gilroy-Bold;
+  font-family: Gilroy-Heavy;
   font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 900;
+  src: url("../fonts/Gilroy-Heavy.woff") format("woff");
 }
 @font-face {
-  font-family: Gilroy-SemiBold;
+  font-family: Gilroy-Bold;
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Gilroy-SemiBold.ttf") format("ttf");
+  font-weight: 700;
+  src: url("../fonts/Gilroy-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Gilroy-Medium.woff") format("woff");
 }
 @font-face {
   font-family: Gilroy-Regular;
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Gilroy-Regular.ttf") format("ttf");
+  src: url("../fonts/Gilroy-Regular.woff") format("woff");
 }
 :root {
   --primary-color: #FFCC00;
@@ -170,7 +176,7 @@ h4,
 h5,
 h6,
 .header .navbar .nav-item .nav-link {
-  font-family: "Yekan-Bakh-SemiBold", sans-serif;
+  font-family: "Yekan-Bakh-SemiBold", "Gilroy-Medium", sans-serif;
   margin: 0;
   line-height: 2;
   color: var(--black-color);
@@ -179,14 +185,14 @@ h6,
 p,
 span,
 a {
-  font-family: "Yekan-Bakh-Regular", sans-serif;
+  font-family: "Yekan-Bakh-Regular", "Gilroy-Medium", sans-serif;
   margin: 0;
   line-height: 25px;
   text-align: justify;
 }
 
 .en-font {
-  font-family: "Gilroy-Bold", sans-serif;
+  font-family: "Gilroy-Medium", sans-serif;
   direction: ltr;
   text-align: left;
   line-height: 120%;
@@ -251,7 +257,7 @@ img {
 body {
   background: var(--white-color);
   color: var(--text-color);
-  font-family: "Yekan-Bakh-Regular", sans-serif;
+  font-family: "Yekan-Bakh-Regular", "Gilroy-Medium", sans-serif;
   font-size: 16px;
   line-height: 150%;
   direction: rtl;
@@ -582,8 +588,8 @@ body.admin-bar .header {
   clip-path: polygon(-0.01em 0, calc(100% + 0.01em) 0, calc(100% + 0.01em) calc(100% + 0.01em), -0.01em calc(100% + 0.01em));
 }
 .sa-b-content h1.sa-strong-title {
-  font-size: 55px;
-  font-weight: 600;
+  font-size: 4rem;
+  font-family: "Gilroy-Bold", sans-serif;
 }
 
 .about-us-plus {
@@ -682,10 +688,9 @@ body.admin-bar .header {
 }
 .sa-teams-items-wrapper .wrapper .sa-teams-item .title {
   margin-bottom: 0.5rem;
-  min-height: 44px;
+  min-height: 30px;
 }
 .sa-teams-items-wrapper .wrapper .sa-teams-item .title h5 {
-  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 18px;
 }
 .sa-teams-items-wrapper .wrapper .sa-teams-item p {
@@ -863,14 +868,14 @@ ul.oh-our-value li .oh-ov {
 }
 
 .sa-resources-item-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .sa-resources-item {
   border: 1px solid #707070;
   margin-bottom: 2rem;
+  width: 35%;
 }
 .sa-resources-item .sa-ri-decription {
   padding: 0 1rem 1rem;
@@ -981,9 +986,6 @@ ul.oh-our-value li .oh-ov {
 }
 .sa-teams-item .sa-ti-wrapper .title {
   padding: 16px;
-}
-.sa-teams-item .sa-ti-wrapper .title h5 {
-  font-family: "Gilroy-SemiBold", sans-serif;
 }
 .sa-teams-item .sa-ti-wrapper .subtitle {
   padding: 0 16px;
@@ -1125,6 +1127,7 @@ ul.oh-our-value li .oh-ov {
   border: 15px solid #eaeaea;
   font-size: 16px;
   padding: 1rem;
+  text-align: center;
 }
 .sa-employment-steps-box .wrapper .sa-employment-steps-item span::before {
   content: "";
@@ -1327,6 +1330,10 @@ ul.oh-our-value li .oh-ov {
 }
 .footer .footer-logo-svg img {
   width: auto;
+}
+
+.footer-logo-mobile {
+  display: none;
 }
 
 .footer-content {
@@ -1716,6 +1723,7 @@ ul.oh-our-value li .oh-ov {
   }
   .about-us .wrapper .hero-banner.sa-banner .sa-b-content .sa-strong-title {
     font-size: 27px;
+    font-family: "Gilroy-Bold", sans-serif;
   }
   .about-us-plus {
     padding: 0;
@@ -1831,11 +1839,11 @@ ul.oh-our-value li .oh-ov {
     justify-content: space-between;
     align-items: center;
     border: 1px solid var(--primary-color);
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 1rem;
   }
   .sa-skills-tiles-wrapper-mobile .sa-skills-tiles-item-mobile a .icon {
-    width: 10%;
-    height: fit-content;
+    width: 20%;
+    height: auto;
   }
   .sa-skills-tiles-wrapper-mobile .sa-skills-tiles-item-mobile a .title {
     text-align: left;
@@ -1847,11 +1855,13 @@ ul.oh-our-value li .oh-ov {
   }
   .sa-skills-tiles-wrapper-mobile .sa-skills-tiles-item-mobile a .arrow {
     width: 21px;
-    height: fit-content;
+    height: auto;
     padding: 0;
   }
   .know-us .our-values-cards .wrapper {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 0 1rem;
+    row-gap: 1.5rem;
   }
   .job-offers-page .container {
     overflow: auto;
@@ -2048,7 +2058,7 @@ ul.oh-our-value li .oh-ov {
     color: unset;
     bottom: unset;
     line-height: unset;
-    font-size: 16px;
+    font-size: 0.85rem;
     font-weight: 600;
     text-align: right;
   }
@@ -2152,35 +2162,50 @@ ul.oh-our-value li .oh-ov {
   .skills-page .page-content-wrapper .accordion .accordion-item .skill-content .title h4 {
     font-size: 16px;
   }
-  .footer-content .footer-menu-title {
+  .footer {
+    padding: 5.85rem 0 3rem;
+  }
+  .footer .footer-logo {
+    display: none;
+  }
+  .footer .footer-content .footer-menu-title {
     color: var(--primary-color);
   }
-  .footer-logo {
+  .footer .footer-content .footer-menu {
+    margin: 0;
+    position: relative;
+  }
+  .footer .footer-content .footer-menu .footer-menu-item {
+    margin-bottom: 0.69rem;
+  }
+  .footer .footer-content .footer-contact-info {
+    margin-top: 2.5rem;
+  }
+  .footer .footer-content .footer-contact-info ul {
+    margin-bottom: 0;
+  }
+  .footer .footer-content .footer-contact-info ul li {
+    margin-bottom: 0.69rem;
+  }
+  .footer .footer-logo-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    width: 25%;
+    position: absolute;
+    top: -11%;
+    right: 0;
+    padding: 1rem;
+    background-color: #333333;
+    padding-right: 0;
+    padding-left: 0.5rem;
   }
-  .footer-logo a {
-    width: 40%;
-  }
-  .footer-logo a img {
+  .footer .footer-logo-mobile a {
+    display: flex;
     width: 100%;
   }
-  .footer-content .footer-menu {
-    margin: 0;
-  }
-  .footer-content .footer-menu .footer-menu-item {
-    margin-bottom: 0.69rem;
-  }
-  .footer-content .footer-contact-info {
-    margin-top: 2.5rem;
-  }
-  .footer-content .footer-contact-info ul {
-    margin-bottom: 0;
-  }
-  .footer-content .footer-contact-info ul li {
-    margin-bottom: 0.69rem;
+  .footer .footer-logo-mobile a img {
+    width: 100%;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

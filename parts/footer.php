@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-2 col-12">
                     <div class="footer-logo">
-                        <a class="sa-logo footer-logo-svg" href="#">
+                        <a class="sa-logo footer-logo-svg" href="https://saeigroup.ir/">
                             <img
                                 src="<?php echo get_template_directory_uri(); ?>/assets/img/footer-logo.png"
                                 alt=""
@@ -14,6 +14,14 @@
                 </div>
                 <div class="col-md-10 col-12">
                     <div class="footer-content">
+                    <div class="footer-logo-mobile">
+                        <a class="sa-logo footer-logo-svg" href="https://saeigroup.ir/">
+                            <img
+                                src="<?php echo get_template_directory_uri(); ?>/assets/img/footer-logo.png"
+                                alt=""
+                            />
+                        </a>
+                    </div>
                         <div class="row">
                             <div class="col-md-6 col-12">
                                 <div class="row">
@@ -96,10 +104,10 @@
                             </div>
                         </div>
                         <div class="sa-footer-social">
-                            <a href="#">
+                            <a href="https://ir.linkedin.com/company/saei-group">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
-                            <a href="#">
+                            <a href="https://www.instagram.com/saeigroup.ir/">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
